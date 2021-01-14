@@ -27,21 +27,21 @@ Note that the source chain can be either an external chain or Cosmos.  Likewise 
 
 ### **Definitions**
 
-Source Chain - The blockchain where the tokens being considered were originally created and tracked. The chain which contains the canonical ledger for those tokens, their ownership, and supply. 
+**Source Chain** - The blockchain where the tokens being considered were originally created and tracked. The chain which contains the canonical ledger for those tokens, their ownership, and supply. 
 
-Source Tokens - The original tokens on this source chain
+**Source Tokens** - The original tokens on this source chain
 
-Lockup Group - A smart contract on ethereum that holds tokens or a transaction on sifchain that locks tokens on the source chain. The only way they can be removed from lockup is through interpreting a burn event that has come from the pegged chain through some relay process. 
+**Lockup Group** - A smart contract on ethereum that holds tokens or a transaction on sifchain that locks tokens on the source chain. The only way they can be removed from lockup is through interpreting a burn event that has come from the pegged chain through some relay process. 
 
-Lock Event - An event message that is generated on the source chain whenever an amount of source tokens are locked up in the lockup group on their source chain
+**Lock Event** - An event message that is generated on the source chain whenever an amount of source tokens are locked up in the lockup group on their source chain
 
-Pegged Chain - The second blockchain, where the value of the source tokens are being sent to
+**Pegged Chain** - The second blockchain, where the value of the source tokens are being sent to
 
-Pegged Tokens - A new type of token that is minted on the pegged chain that represents equivalent tokens on the source chain
+**Pegged Tokens** - A new type of token that is minted on the pegged chain that represents equivalent tokens on the source chain
 
-Burn Event - An event message that is generated on the pegged chain whenever an amount of pegged tokens are burned on the pegged chain
+**Burn Event** - An event message that is generated on the pegged chain whenever an amount of pegged tokens are burned on the pegged chain
 
-Relay Process - A verifiably correct process that results in event messages being passed from one chain to another chain, and results in the second chain verifying that it now correctly knows the state of the first chain. 
+**Relay Process** - A verifiably correct process that results in event messages being passed from one chain to another chain, and results in the second chain verifying that it now correctly knows the state of the first chain. 
 
 ### **Objective**
 
@@ -54,8 +54,8 @@ At any point in time, any user can quickly and easily convert between pegged tok
 
 Definition: A Trusted Peg is one for which the following hold for a relay process:
 
-* Availability: The process will run as expected by them when needed to, ie., be available
-* Security: The process will not run unless the expected conditions \(eg: lock event/burn event\) have occured correctly
-* Reliability: The process will run correctly, ie, the correct messages/events will be relayed and minting/burning will happen correctly in accordance with the details of those mint/burn events. 
-* Censorship Resistance: The process will be resistant to censorship
+* **Availability**: The process will run as expected by them when needed to, ie., be available
+* **Security**: The process will not run unless the expected conditions \(eg: lock event/burn event\) have occurred correctly
+* **Reliability**: The process will run correctly, ie, the correct messages/events will be relayed and minting/burning will happen correctly in accordance with the details of those mint/burn events. 
+* **Censorship Resistance**: The process will be resistant to censorship
 

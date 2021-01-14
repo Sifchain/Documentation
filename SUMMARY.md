@@ -4,7 +4,6 @@
 
 ## Getting Started
 
-* [Introduction to Sifchain](getting-started/introduction-to-sifchain.md)
 * [Technical Overview](getting-started/overview-of-technical-concepts/README.md)
   * [Cosmos SDK](getting-started/overview-of-technical-concepts/cosmos-sdk/README.md)
     * [Application-Specific Blockchains](getting-started/overview-of-technical-concepts/cosmos-sdk/application-specific-blockchains.md)
@@ -19,7 +18,7 @@
 * [Peggy](core-concepts/peggy/README.md)
   * [Pegged Tokens \(General Case\)](core-concepts/peggy/general-case-mode-for-pegged-tokens.md)
   * [Sifchain Ethereum Bridge](core-concepts/peggy/sifchain-ethereum-bridge.md)
-  * [User Flows](core-concepts/peggy/user-flows.md)
+  * [Peggy Use Cases](core-concepts/peggy/user-flows.md)
   * [Peggy Smart Contracts](core-concepts/peggy/peggy-smart-contracts.md)
 * [Sifchain Liquidity Pools](core-concepts/liquidity-pool/README.md)
   * [CLP Architecture](core-concepts/liquidity-pool/clp-architecture.md)
@@ -28,6 +27,7 @@
 ## Roles
 
 * [Validators](roles/validators.md)
+* [Validator Security](roles/validator-security.md)
 * [Swappers](roles/swappers.md)
 * [Liquidity Providers](roles/liquidity-providers.md)
 * [Traders](roles/traders.md)

@@ -28,17 +28,13 @@ $$
 units = \frac{P(rA+Ra)}{2RA}*slipAdjustment
 $$
 
-where‌
-
+```text
 r = rowan deposited‌
-
 a = asset deposited‌
-
-R = Rowan Balance \(before\)‌
-
-A = Asset Balance \(before\)‌
-
+R = Rowan Balance (before)‌
+A = Asset Balance (before)‌
 P = Existing Pool Units‌
+```
 
 The liquidity provider is allocated a portion of the fees collected from swappers proportional to their ownership of the pool. For example, If the liquidity provider owns 2% of the pool, they are allocated 2% of the fees collected. Learn more about asymmetric liquidity pools here‌
 
