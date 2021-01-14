@@ -41,6 +41,7 @@
   * [Running Sifnode on Kubernetes](resources/tutorials/running-sifchain-validator-on-kubernetes.md)
 * [Tokenomics](https://sifchain.finance/token-economics%20)
 * [Testnet Blockexplorer](https://blockexplorer-testnet.sifchain.finance/)
+* [BetaNet Launch](resources/betanet-launch.md)
 
 ## Join Sifchain
 
