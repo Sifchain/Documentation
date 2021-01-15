@@ -4,10 +4,10 @@
 
 #### **Becoming a Validator in the Sifchain network**
 
-To become a validator in the Sifchain netwrok, please refer to our tutorials linked below. This will guide you through the steps of setting up the Sifnode network and setting up you node.
+To become a validator in the Sifchain network, please refer to our tutorials linked below. These will guide you through the steps of setting up the Sifnode network and setting up you node.
 
-* Running Sifnode 
-* Running Sifnode on Kubernetes
+* [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/resources/tutorials/running-sifnode-and-becoming-a-sifchain-validator)\(EC2/Digital Ocean or local\)
+* [Running Sifnode on Kubernetes](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes) \(**recommended**\)
 
 #### **Validator Set**
 
