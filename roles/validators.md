@@ -4,7 +4,9 @@
 
 #### **Validator Set**
 
-Sifchain’s active validator set consists of the 100 top by stake validator nodes. The calculated stake includes both the validator’s individual stake and all of its delegations. This validator set is refreshed every block, so changes to a validator’s total stake that would shift it in or out of the validator set will be reflected in consensus immediately. There is no explicit minimum stake amount required to be a validator on Sifchain. The amount staked by the lowest validator in the set serves as an implicit minimum.
+Sifchain’s active validator set consists of the top 100 nodes, as measured by total stake. The calculated total stake includes both the validator’s individual stake and all of its delegations. This validator set is refreshed every block, so changes to a validator’s total stake that would shift it in or out of the validator set will be reflected in consensus immediately. There is no explicit minimum stake amount required to be a validator on Sifchain. The amount staked by the lowest validator in the set serves as an implicit minimum.
+
+In order to be a validator in Sifchain, you must have a Sifchain wallet address. This is so the validator can have ROWAN and use that ROWAN to stake their node. When validators stake their ROWAN, that ROWAN gets bonded to the network and cannot be transferred to any other address.
 
 #### **Delegation**
 
@@ -36,7 +38,7 @@ When withdrawing, all of the claimant’s available rewards are withdrawn from t
 
 #### **Unbonding**
 
-Validators and delegators can submit an unbonding transaction to remove their staked tokens. Once the transaction is processed the staked tokens will enter an unbonding period of 3 days. During the unbonding period the staked tokens are still susceptible to slashing penalties. After the unbonding period the tokens will be fully released to the user.
+Validators and delegators can submit an unbonding transaction to remove their staked tokens. Once the transaction is processed the staked tokens will enter an unbonding period of 21 days. During the unbonding period the staked tokens will bot earn any validator income, but are still susceptible to slashing penalties. After the unbonding period the tokens will be fully released to the user.
 
 #### Slashing
 
