@@ -2,6 +2,13 @@
 
 ### **Validators, Delegators, and Staking**
 
+#### **Becoming a Validator in the Sifchain network**
+
+To become a validator in the Sifchain netwrok, please refer to our tutorials linked below. This will guide you through the steps of setting up the Sifnode network and setting up you node.
+
+* Running Sifnode 
+* Running Sifnode on Kubernetes
+
 #### **Validator Set**
 
 Sifchain’s active validator set consists of the top 100 nodes, as measured by total stake. The calculated total stake includes both the validator’s individual stake and all of its delegations. This validator set is refreshed every block, so changes to a validator’s total stake that would shift it in or out of the validator set will be reflected in consensus immediately. There is no explicit minimum stake amount required to be a validator on Sifchain. The amount staked by the lowest validator in the set serves as an implicit minimum.
