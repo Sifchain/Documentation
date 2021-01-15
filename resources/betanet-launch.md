@@ -13,7 +13,30 @@ Welcome to the Sifchain DEX BetaNet! We are very excited about this launch and f
 
 ### Security Measures <a id="3857"></a>
 
-\(To input\)
+Sifchain has been proactive, and taken the necessary security measures to ensure the protection of funds, assets, and investments by Sifchain users. By leveraging best practices in security processes, and implementing tools that detect, prevent, and monitor any breach of data or funds, you can be assured that all precautions have been established to minimize risk. A list of the measures taken by Sifchain are outlined below:
+
+**People**
+
+* Halborn, a cybersecurity team focused on blockchain and smart contract security, has been engaged to assist with all aspects of security, from penetration testing, to incident response, to hardening of architecture.
+* Bug bounty program via HackerOne to have crowdsourced programs to find vulnerabilities in our websites and endpoints.
+* Security training and awareness is communicated to all employees through onboarding, and slack channel communications.
+* Internal team dedicated to secure development and testing.
+
+**Technology**
+
+* Cloudflare Protection to prevent Denial of Services impacting availability, and to block front end public-facing websites.
+* Source code scanning of all applications.
+* Dependabot detection of open source vulnerabilities in code libraries.
+* Cloud infrastructure monitoring, with access tracking and logging.
+* Cloud infrastructure hardening, including locking down network ports, vulnerability scanning, and security access lockdown.
+* Two-factor authentication into any secured system.
+* Sifchain and protocol auditing on all components, including Relayers, Balancers, Sifnodes, and Cosmos/Tendermint protocols.
+
+**Processes**
+
+* Penetration Testing performed by ethical hacking team, Halborn, on all software, networks, and systems before deploying into production.
+* Multiple smart contract audits.
+* Version control, disaster recovery, and continuous deployment practices to maintain security and integrity.
 
 ### Front End <a id="3857"></a>
 
