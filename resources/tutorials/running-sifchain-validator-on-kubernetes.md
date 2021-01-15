@@ -8,18 +8,12 @@ _This tutorial assumes that you have at least a basic understanding of setting u
 
 [Kubernetes](https://kubernetes.io/) is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 
-We are going to be using the Amazon Elastic Kubernetes Service \(Amazon EKS\) for this tutorial. make sure you have admin access to a AWS account before starting this tutorial. 
+Here's the rough breakdown of the overall cost of running a node :
 
-Here's the rough breakdown of the overall cost of running a node 
-
-_~ $73 per month for the EKS Control Plane_
-
-_~ $137 per month for a t2.xlarge instance_
-
-_~$70 in load balancer costs_
-
-_~$100 in disk costs_  
-
+* $73 per month for the EKS Control Plane
+* $137 per month for a t2.xlarge instance
+* $70 in load balancer costs
+* $100 in disk costs __
 
 **Install Dependencies:**
 
@@ -33,7 +27,7 @@ _~$100 in disk costs_
 
 **Configure AWS CLI Tool:**
 
-After installing the [AWS CLI tool](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) locally on your machine, next you need to add some AWS account credentials to complete the installation.
+We are going to be using the Amazon Elastic Kubernetes Service \(Amazon EKS\) for this tutorial. make sure you have admin access to a AWS account before starting this tutorial. After installing the [AWS CLI tool](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) locally on your machine, next you need to add some AWS account credentials to complete the installation.
 
 Head over to the AWS IAM console and create a new User with the following permission settings
 
@@ -60,6 +54,10 @@ Amazon EKS uses IAM to provide authentication to your Kubernetes cluster through
 Complete kubectl installation by installing aws-iam-authentication tool
 
 [https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
+
+### Network and Node Setup
+
+Please refer to this [link](https://github.com/Sifchain/sifnode/blob/develop/docs/tutorials/k8s.md) for the most up to date and accurate directions on how to finish this setup. 
 
 ### Scaffold and deploy a new cluster
 
