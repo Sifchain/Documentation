@@ -5,7 +5,6 @@
 There are multiple ways to get started with Sifnode and to become a validator of the network:
 
 * 1\) On your Ubuntu server \(EC2/Digital Ocean or local\).
-  * If you wish to do your setup via this route, please follow the tutorial outlined in our Readme [here](https://github.com/Sifchain/sifnode).
 * 2\) Via [Kubernetes](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes) \(**recommended** for validators and node operators\).
 
 ### Pre-requisites:
