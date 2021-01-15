@@ -31,9 +31,9 @@ We are going to be using the Amazon Elastic Kubernetes Service \(Amazon EKS\) fo
 
 Head over to the AWS IAM console and create a new User with the following permission settings
 
-![](../../.gitbook/assets/screen-shot-2021-01-05-at-4.46.21-am.png)
+![](../../../.gitbook/assets/screen-shot-2021-01-05-at-4.46.21-am.png)
 
-![](../../.gitbook/assets/screen-shot-2021-01-05-at-4.52.15-am.png)
+![](../../../.gitbook/assets/screen-shot-2021-01-05-at-4.52.15-am.png)
 
 Proceed to review and create the user. In the next screen you will be showing some credentials \(Access Key and secret\) Keeps these handy as we'll be using them in the next step.
 

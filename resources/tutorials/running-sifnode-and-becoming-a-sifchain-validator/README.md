@@ -1,4 +1,4 @@
-# Running Sifnode and becoming a Sifchain validator
+# Running Sifnode and becoming a Validator
 
 ## Sifchain Validator Tutorial
 
