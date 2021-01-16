@@ -53,7 +53,7 @@ Head over to the AWS IAM console and create a new User with the following permis
 
 ![](../../.gitbook/assets/screen-shot-2021-01-05-at-4.52.15-am.png)
 
-Proceed to review and create the user. In the next screen you will be showing some credentials \(Access Key and secret\) Keeps these handy as we'll be using them in the next step.
+Proceed to review and create the user. In the next screen you will be shown some credentials \(Access Key and secret\). Keep these handy as we'll be using them in the next step.
 
 ```text
 aws configure
@@ -75,7 +75,12 @@ Complete kubectl installation by installing aws-iam-authentication tool
 
 Please refer to this [link](https://github.com/Sifchain/sifnode/blob/develop/docs/chainOps/k8s.md) for the most up to date and accurate directions on how to finish this setup.  This documentation also includes demo videos to easily follow.
 
+## Setting up your Validator
 
+Now that you have your node up and running and you have ROWAN to stake with, you must now execute the following command:
+
+* `sifnodecli tx staking create-validator`
+  * 
 
 
 
