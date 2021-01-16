@@ -42,6 +42,7 @@
 * [Tokenomics](https://sifchain.finance/token-economics%20)
 * [Testnet Blockexplorer](https://blockexplorer-testnet.sifchain.finance/)
 * [BetaNet Launch](resources/betanet-launch.md)
+* [FAQ](resources/faq.md)
 
 ## Join Sifchain
 
