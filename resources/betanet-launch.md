@@ -9,7 +9,9 @@ description: >-
 
 ## BetaNet Definition
 
-Welcome to the Sifchain DEX BetaNet! We are very excited about this launch and for your participation in it. We encourage you to use all of the features the platform has to offer, and to provide any and all feedback you have within our \#support channel on [Discord](https://discord.gg/a2UHqapD9x). Please be aware that this is a BetaNet launch and we expect to improve and iterate as we receive feedback. 
+Welcome to the [Sifchain decentralized exchange \(DEX\) BetaNet](https://medium.com/sifchain-finance/betanet-launch-7b7eed1d27d8)! We are proud of our rapid progress and enthusiastic to have you participate. We encourage you to use all features our platform has to offer and to provide feedback within our [\#support channel on Discord](https://discord.com/invite/a2UHqapD9x).  
+  
+Be aware that this is a BetaNet launch - we will improve and iterate as we receive end-user feedback. Please reference below for a list of the security measures we have put in place for this launch. Check out our [Github](https://github.com/Sifchain/sifnode) and [developer documentation](https://github.com/Sifchain/sifnode/tree/develop/docs) for more information!
 
 ### Security Measures <a id="3857"></a>
 
