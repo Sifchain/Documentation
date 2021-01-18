@@ -8,6 +8,8 @@ description: >-
 
 ## **Introduction**
 
+Delegators are considered to be a secondary set of actors in the validator subsystem economy. Delegators earn shares of claims to rewards with their delegated stake tokens. Delegators incur a slashing risk depending upon their choice of validator.
+
 Delegation is a great way to earn validator income without running your own validator.  If you want to support ROWAN’s crypto-economic security but cannot run your own validator, you can delegate your capital to a validator. Delegators earn validator tokens, minus a commission rate retained by the validator.
 
 The commission fee is used by the validator to sponsor technical improvements to Sifchain. Validators are encouraged to offer reports about their contributions to Sifchain’s technical infrastructure. Delegators are encouraged to select validators based on their ability to support Sifchain’s technology innovations.
