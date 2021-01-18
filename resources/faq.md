@@ -22,11 +22,12 @@ For more details on the usage of ROWAN, please refer here \(Casey to input mediu
 There are a few different ways you can setup a Sifchain address. This address is needed to be able to acquire any Sifchain native token \(including ROWAN and all pegged tokens in the Sifchain ecosystem\). In order to get a Sifchain address, you can:
 
 1. Use the Sifchain-DEX-UI and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions here. \(Casey to input link\).
-2. Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
+2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
    1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
       1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
    2. Take this generated key and run: `rake "keys:import[<moniker>]"`
       1. This will give you your newly generate Sifchain address.
+3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
 
 ## How can I view my eROWAN in my MetaMask Wallet?
 

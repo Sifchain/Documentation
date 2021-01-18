@@ -36,9 +36,14 @@ The delegation process is the same for both validators and delegators; whereas a
 
 ### Prerequisites  
 
-* You have a Sifchain address. To get a Sifchain address, you can do one of the below two options:
-  * Access the Sifchain-Dex-UI \(coming soon!\) and create a new address through the Keplr Wallet Integration. 
-  * Run Command `sifnodecli keys add <name>` .  This command will give you your: address, public key, and mnemonic phrase. 
+* You have a Sifchain address. To get a Sifchain address, you can do one of the below options:
+  1. Use the Sifchain-DEX-UI and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions here. \(Casey to input link\).
+  2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
+     1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
+        1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
+     2. Take this generated key and run: `rake "keys:import[<moniker>]"`
+        1. This will give you your newly generate Sifchain address.
+  3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
 * You have ROWAN to delegate. 
 
 ### Delegate
@@ -62,7 +67,33 @@ The delegation process is the same for both validators and delegators; whereas a
 * See the status of a previous delegation: `sifnodecli query staking delegation <delegator-address> <validator-address>`
 * See a list of all delegations associated with your address: ****`sifnodecli query staking delegations <delegator-address>`
 
-##  **Unbond an existing delegation**
+## **Rewards**
+
+### **View**
+
+Delegators can view their unclaimed rewards with the following command: 
+
+* `sifnodecli query distribution rewards <delegator-address>` 
+* `sifnodecli query distribution rewards <delegator-address> <validator-address>`
+  * The first command will show all rewards for the specified delegator. The second will show only delegation rewards from the specified validator.
+
+### Withdraw
+
+Rewards must be claimed manually. The following command will withdraw rewards from a delegation to the specified validator:
+
+* `sifnodecli tx distribution withdraw-rewards <validator-address> --from <address>` 
+
+Delegators can also withdraw **all** outstanding rewards from **all** of their delegations with the following command:
+
+* `sifnodecli tx distribution withdraw-all-rewards --from <address>`
+
+By default, reward withdrawals will be sent to the source address. This default can be modified with the following command:
+
+* `sifnodecli tx distribution set-withdraw-address <address> --from <address>`  
+
+##  ****
+
+## **Unbond an existing delegation**
 
 If you want to unbond an existing delegation, you can follow the below steps:
 
