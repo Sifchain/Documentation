@@ -115,15 +115,12 @@ There are a few commands that can be run to edit the various details about your 
 * Query Delegation Information:
   * `sifnodecli query staking delegation <delegator-address> <validator-address>`
   * Queries info about a delegation between specified delegator and validator.
-* **Querying All Validators:**
-  * **sifnodecli query staking validators**
-  * **Queries info for all validators on the chain.**
-* **Querying Individual Validator:**
-  * **sifnodecli query staking validator &lt;validator-address&gt;**
-  * **Queries info about a specific validator.**
-* **Querying Delegations to aValidator:**
-  * **sifnodecli query staking delegations-to &lt;validator-address&gt;**
-  * **Queries info about all delegations made to a specific validator.** 
+* Query All Validators:
+  * `sifnodecli query staking validators`
+  * Queries info for all validators on the chain.
+* Querying Delegations to a Validator:
+  * `sifnodecli query staking delegations-to <validator-address>`
+  * Queries info about all delegations made to a specific validator. 
 
 #### Future Additions
 
