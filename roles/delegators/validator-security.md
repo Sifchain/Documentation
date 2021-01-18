@@ -14,8 +14,6 @@ We will update this page when more key storage solutions become available.
 
 Validators are responsible for ensuring that the network can sustain denial of service attacks.
 
-TODO: does sifchain support sentry nodes ?
-
 One recommended way to mitigate these risks is for validators to carefully structure their network topology in a so-called sentry node architecture.
 
 Validator nodes should only connect to full-nodes they trust because they operate them themselves or are run by other validators they know socially. A validator node will typically run in a data center. Most data centers provide direct links the networks of major cloud providers. The validator can use those links to connect to sentry nodes in the cloud. This shifts the burden of denial-of-service from the validator's node directly to its sentry nodes, and may require new sentry nodes be spun up or activated to mitigate attacks on existing ones.

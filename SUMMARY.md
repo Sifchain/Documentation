@@ -26,8 +26,7 @@
 
 ## Roles
 
-* [Validators](roles/validators/README.md)
-  * [Delegators](roles/validators/delegators.md)
+* [Validators](roles/validators.md)
 * [Delegators](roles/delegators/README.md)
   * [Validator Security](roles/delegators/validator-security.md)
 * [Swappers](roles/swappers.md)
