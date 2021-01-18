@@ -15,6 +15,12 @@ Sifchain’s active validator set consists of the top 100 nodes, as measured by 
 
 In order to be a validator in Sifchain, you must have a Sifchain wallet address. This is so the validator can have ROWAN and use that ROWAN to stake their node. When validators stake their ROWAN, that ROWAN gets bonded to the network and cannot be transferred to any other address.
 
+To query the current list of active validators with the following command: 
+
+* `sifnodecli query tendermint-validator-set`
+  * This query will show information about all validators in the validator set. Once your validator’s total delegated tokens is higher than the lowest staked validator in this set, your validator will enter the set. 
+  * You can view your validator’s current staked tokens with `sifnodecli query staking validator <validator-address>`
+
 #### **Delegation**
 
 Any Sifchain user can delegate their tokens to any number of validators on the network. Delegating to a validator entitles the user to a share of that validator’s block rewards based on the commission rate \(see below\) set by the validator. Delegating to a validator does not give that validator direct control over the delegator’s funds. However, the delegator does assume the risk of being slashed \(see below\) if the validator misbehaves. ****
@@ -28,6 +34,8 @@ When performing a delegation, we recommend you do due diligence on the following
    3. Maximum Commission Rate Change - This is the maximum daily increase possible. For example, if this is set to 5% then the most a node validator can change their rate by in a single 24 hour period is 5%.
 3. The top 100 node validator list and their staked/delegated amounts. It's important to do this because you want the node you are delegating to, to be a part of the network to ensure you are also earning rewards.
 4. We recommend that you continuously monitor your delegation and the node validators that you have delegated to.
+
+Please reference our [guide on Delegation here](https://docs.sifchain.finance/roles/delegators) for additional information.
 
 #### **Fees**
 
