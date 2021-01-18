@@ -1,5 +1,7 @@
 # Application-Specific Blockchains
 
+This is an overview of Application-Specific Blockchains, as provided by the Cosmos Team. The information below was originally posted [here](https://github.com/cosmos/cosmos-sdk/blob/master/docs/intro/why-app-specific.md). We have included all of this below for easy reference.
+
 ### What are application-specific blockchains?
 
 Application-specific blockchains are blockchains customized to operate a single application. Instead of building a decentralised application on top of an underlying blockchain like Ethereum, developers build their own blockchain from the ground up. This means building a full-node client, a light-client, and all the necessary interfaces \(CLI, REST, ...\) to interract with the nodes.

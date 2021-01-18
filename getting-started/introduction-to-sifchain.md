@@ -6,7 +6,7 @@
 
 Sifchain is the world's first omni-chain decentralized exchange. Built with the Cosmos SDK, Sifchain is 100x more efficient than current leading DeXes. Sifchain inherits the cross-chain capabilities of Thorchain and uses pegged tokens to support cross-chain transactions across a wide array of blockchains.
 
-### Cross-Chain development
+### Cross-Chain Development & Peg Zones
 
 Sifchain will support cross-chain transactions for 20-25 of the top blockchains such as Bitcoin, BinanceChain, Polkadot, and EOS. These blockchains represent the overwhelming majority of all cryptocurrency trading volume and will setup Sifchain to be used with a wide variety of cryptocurrencies. It will also simplify the process of blockchain integration, lowering the barrier of cost and development for the open-source community.
 
@@ -14,7 +14,7 @@ Inspired by the Cosmos’s peg zone model, Sifchain uses a pegged token model. A
 
 Unlike Bitcoin or Ethereum, which work on _probabilistic_ finality of blocks, the Cosmos SDK provides finality _guarantees_. This is important in relation to the confidence that a block will be finalized. Since Sifchain is built on Cosmos, this feature is automatically baked in, which is essential for cross-chain token swaps.
 
-Another situation that can arise is, how cross-chain token transfers occur between a finalistic and probabilistic blockchain?
+Another situation that can arise is how cross-chain token transfers occur between a finalistic and probabilistic blockchain?
 
 Again, Peg Zones come to the rescue. A peg zone can also be thought of as a  blockchain that tracks the state of another blockchain. By doing this, it acts as an adaptor zone or a “finality gadget”, which translates finality for probabilistically finalized blockchains by imposing a “finality threshold” at some arbitrary number of blocks to achieve pseudo-finality. Generally, this “translator” zone design can be classified as a 2-way peg \(2WP\).
 

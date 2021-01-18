@@ -1,50 +1,21 @@
 # Sifchain Ethereum Bridge
 
-## Key words
+## Definitions
 
-**Source Chain** - The blockchain where the tokens being considered were originally created and tracked. 
-
-**Source Tokens -** The original tokens on this source chain
-
-**Lockup Group** - A smart contract on ethereum that holds tokens or a transaction on sifchain that locks tokens on the source chain. The only way they can be removed from lockup is through interpreting a burn event that has come from the pegged chain through some relay process.
-
-**Lock Event** - An event message that is generated on the source chain whenever an amount of source tokens are locked up in the lockup group on their source chain
-
-**Pegged Chain** - The second blockchain, where the value of the source tokens are being sent to
-
-**Pegged Tokens** - A new type of token that is minted on the pegged chain that represents equivalent tokens on the source chain
-
-**Burn Event** - An event message that is generated on the pegged chain whenever an amount of pegged tokens are burned on the pegged chain
-
-**Relay Process** - A verifiably correct process that results in event messages being passed from one chain to another chain, and results in the second chain verifying that it now correctly knows the state of the first chain.
-
-**Relayer**: A piece of middleware that listens to transactions on one chain and submits them to another chain. This relayer will listen to events on both the ethereum and sifchain blockchain.
-
-**BridgeBank**: A smart contract on ethereum where users will unlock, lock, mint and burn funds to transfer them across the chains.
-
-**BridgeToken**: An ERC20 token that is created by the BridgeBank to represent a sifchain native asset on ethereum. BridgeTokens are minted by the BridgeBank whenever a user transfers a sifchain native asset to ethereum.
-
-**LogLock**: An event that is triggered when an ethereum native asset is locked in the BridgeBank contract.
-
-**LogBurn**: An event that is triggered when a sifchain native asset is burned from the BridgeBank contract.
-
-**MsgLock**: A sifchain event that signals that a sifchain native asset has been locked.
-
-**MsgBurn**: A sifchain event that signals that an ethereum native asset has been burned.
-
-**ProphecyClaim**: A transaction that tells us that a certain amount of coins should be sent to someone. This event is triggered by a lock or burn transaction on one chain, then the relayer submits this prophecy claim to the receiving chain.
-
-**Validators**: Whitelisted ethereum addresses who submit new prophecy claims.
-
-**Valset**: A smart contract that stores the whitelist of validators and their powers.
-
-**Oracle**: A smart contract that stores the current amount of sign off on a given prohpecy claim.
-
-**CosmosBridge**: A smart contract on ethereum where validators will submit new prophecy claims to unlock or mint assets on ethereum.
-
-**Validator Power**: The weight a single validator has on voting for a prophecy claim.
-
-**Consensus threshold**: The percent of validators power that must sign off on a prophecy claim for it to mint or unlock assets on the ethereum side.
+* **Relayer**: A piece of middleware that listens to transactions on one chain and submits them to another chain. This relayer will listen to events on both the Ethereum and Sifchain blockchain.
+* **BridgeBank**: A smart contract on Ethereum where users will unlock, lock, mint and burn funds to transfer them across the chains.
+* **BridgeToken**: An ERC20 token that is created by the BridgeBank to represent a Sifchain native asset on Ethereum. BridgeTokens are minted by the BridgeBank whenever a user transfers a Sifchain native asset to Ethereum.
+* **LogLock**: An event that is triggered when an Ethereum native asset is locked in the BridgeBank contract.
+* **LogBurn**: An event that is triggered when a Sifchain native asset is burned from the BridgeBank contract.
+* **MsgLock**: A Sifchain event that signals that a Sifchain native asset has been locked.
+* **MsgBurn**: A Sifchain event that signals that an Ethereum native asset has been burned.
+* **ProphecyClaim**: A transaction that tells us that a certain amount of coins should be sent to someone. This event is triggered by a lock or burn transaction on one chain, then the relayer submits this prophecy claim to the receiving chain.
+* **Validators**: Whitelisted Ethereum addresses who submit new prophecy claims.
+* **Valset**: A smart contract that stores the whitelist of validators and their powers.
+* **Oracle**: A smart contract that stores the current amount of sign off on a given prophecy claim.
+* **CosmosBridge**: A smart contract on Ethereum where validators will submit new prophecy claims to unlock or mint assets on Ethereum.
+* **Validator Power**: The weight a single validator has on voting for a prophecy claim.
+* **Consensus threshold**: The percent of validators power that must sign off on a prophecy claim for it to mint or unlock assets on the Ethereum side.
 
 ## Overview
 

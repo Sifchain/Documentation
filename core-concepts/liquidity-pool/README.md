@@ -1,6 +1,6 @@
 # Sifchain Liquidity Pools
 
-A liquidity pool is a primitive for many decentralized cryptocurrency trading platforms including [Uniswap](https://docs.ethhub.io/guides/graphical-guide-for-understanding-uniswap), [Sushiswap](https://boxmining.com/sushi/), [Balancer](https://docs.balancer.finance/getting-started/faq#balancer-pools), Mooniswap \(from 1inch\), MCDEX, [Thorchain](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools), Perpetual Protocol, [Curve](https://www.curve.fi/stableswap-paper.pdf), [Bancor](https://support.bancor.network/hc/en-us/articles/360000472072-What-Are-Bancor-Liquidity-Pools-#:~:text=Liquidity%20pools%20perform%20autonomous%2C%20peer,holding%20its%20%E2%80%9Cpool%20token%E2%80%9D.%29) and more. Binance has even created a liquidity pool swap program on its centralized exchange because the returns are so lucrative.‌
+A liquidity pool is a primitive for many decentralized cryptocurrency trading platforms including [Uniswap](https://docs.ethhub.io/guides/graphical-guide-for-understanding-uniswap), [Sushiswap](https://boxmining.com/sushi/), [Balancer](https://docs.balancer.finance/getting-started/faq#balancer-pools), Mooniswap \(from 1inch\), MCDEX, [Thorchain](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools), Perpetual Protocol, [Curve](https://www.curve.fi/stableswap-paper.pdf), [Bancor](https://support.bancor.network/hc/en-us/articles/360000472072-What-Are-Bancor-Liquidity-Pools-#:~:text=Liquidity%20pools%20perform%20autonomous%2C%20peer,holding%20its%20%E2%80%9Cpool%20token%E2%80%9D.%29) and more. Centralized exchanges have even created a liquidity pool swap program because the returns are so lucrative.‌
 
 Sifchain's liquidity pools are based on Sushiswap with extensibility in mind for potential updates. Rowan will be the settlement token for each pool, meaning each pool will contain Rowan as one asset and an external asset as the other. Sifchain’s swap UI will support swaps between external assets \(for example, cMKR:cCOMP\) but such transactions will actually require two swaps between two different liquidity pools \(for example, cMKR:ROWAN and then ROWAN:cCOMP\).‌
 
@@ -28,21 +28,29 @@ $$
 units = \frac{P(rA+Ra)}{2RA}*slipAdjustment
 $$
 
-where‌
-
+```text
 r = rowan deposited‌
-
 a = asset deposited‌
-
-R = Rowan Balance \(before\)‌
-
-A = Asset Balance \(before\)‌
-
+R = Rowan Balance (before)‌
+A = Asset Balance (before)‌
 P = Existing Pool Units‌
+```
 
 The liquidity provider is allocated a portion of the fees collected from swappers proportional to their ownership of the pool. For example, If the liquidity provider owns 2% of the pool, they are allocated 2% of the fees collected. Learn more about asymmetric liquidity pools here‌
 
 ​[https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c)‌
+
+### Generalized Model of Liquidity Allocation
+
+Sifchain’s [Automated Marker Maker\(AMM\) Specification](https://hackmd.io/6VK2LSYjRTyeNCoHpVt2hg) is based on a derivation of liquidity pool architecture from first principles. It is important to us that we don’t enforce any formula on users. At launch, Sifchain will use [Thorchain’s slip based fee formula](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools#slip-based-fee-model-clp). In the future, we’re going to update this to allow [governance to control the liquidity pool formula](https://twitter.com/sifchain/status/1319358940090560512?s=20) by voting with their Rowan [on a per liquidity pool basis](https://twitter.com/sifchain/status/1319361777616838659?s=20).
+
+We are currently extending this model to derive the optimum balance between [rewards to validators and rewards to liquidity providers](https://twitter.com/sifchain/status/1320954306632118272?s=20), especially in a regime where we deploy temporary liquidity mining rewards. So far, our [rebalancing policy](https://hackmd.io/@shrutiappiah/r1itFRrPv) is a vectorized extension of Thorchain’s [Incentive Pendulum](https://docs.thorchain.org/how-it-works/incentive-pendulum) but this is under active research.
+
+#### Rebalancing mechanism for system rewards distribution
+
+Inspired by Thorchain’s incentive pendulum, Sifchain combines liquidity provider rewards and validator block rewards into system income.
+
+In comparison, Thorchain’s incentive pendulum uses a scalar to define the ratio of total system income given to each subsystem. This means it is limited to two subsystems \(validator subsystem and liquidity provider subsystem\). On the other hand, Sifchain uses a vector in which each element is a weight on its subsystem’s income. This means it is extensible to more than two subsystems \(for example, Sifchain validator subsystem, Sifchain liquidity provider subsystem, peg zone validator subsystem, an external chain’s liquidity provider subsystem, etc.\). Near-term this will be immaterial but as IBC develops and Sifchain becomes more composable, it will be useful for allowing Sifchain to dynamically change rewards in its two subsystems in response to on-chain activity from other blockchains.
 
 ### Validator Subsystem <a id="validator-subsystem"></a>
 

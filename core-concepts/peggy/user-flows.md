@@ -1,4 +1,4 @@
-# User Flows
+# Peggy Use Cases
 
 ### **4 Different Peggy User Flows**
 
