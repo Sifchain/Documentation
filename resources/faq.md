@@ -9,7 +9,7 @@
 * To execute a swap from one token to another. Swaps will cost fees, of which are paid via ROWAN.
 * To add liquidity to a pool and earn swap fees accrued within that pool. 
 
-For more details on the usage of ROWAN, please refer here \(Casey to input medium article\). 
+For more details on the usage of ROWAN, please refer [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02). 
 
 **eROWAN** is the equivalent token of ROWAN on the Ethereum network. Users are able to transfer their ROWAN to eROWAN between the Ethereum and Sifchain networks via Peggy. 
 
