@@ -22,7 +22,7 @@ description: >-
 
 ### Setting up your node
 
-Please reference on of the two sub-pages for guides on how to setup the Sifchain network and your node:
+Please reference on of the two sub-pages for guides on how to setup the Sifchain network and your node. Once done, come back to this page for directions on how to stake your node.
 
 * [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server)\(EC2/Digital Ocean or local\)
 * [Running Sifnode on Kubernetes ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes)\(**recommended**\)
