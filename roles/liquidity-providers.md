@@ -50,5 +50,7 @@ Swappers who are in a hurry to exchange assets will tend to make larger swaps. L
 
 ## 4.\) Liquidity Mining Rewards
 
-The amount of liquidity mining rewards given to a liquidity provider as a bonus for participating in the network in its early stages 
+Sifchain will run a 12-week liquidity mining program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+
+To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here, section 'Liquidity Mining for Poolers'.](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
 
