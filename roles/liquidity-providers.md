@@ -14,11 +14,33 @@ Liquidity pools are important in[ **decentralized finance \(DeFi\)**](https://ww
 
 Sifchain enables liquidity providers to add liquidity into pools where they can earn income without constraints endemic to other exchanges. Liquidity providers can deposit any token Sifchain supports to the appropriate pool. They can add liquidity asymmetrically, meaning they can add only Rowan or only TKN for any token.
 
-Sifchain rewards users providing liquidity with various forms of income. To learn more about 
+Sifchain rewards users who provide liquidity with various forms of income. To learn more about what types of income you can expect to earn as a liquidity provider, please reference [here](https://docs.sifchain.finance/core-concepts/liquidity-pool).
 
 ## Liquidity Mining Rewards
 
 Sifchain will run a 12-week liquidity mining program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
 To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here, section 'Liquidity Mining for Poolers'.](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
+
+## Liquidity Provider Fees
+
+Liquidity provides will only need to pay gas fees when adding liquidity to a pool. There is a potential loss of value for a liquidity provider depending on how much slip is created in the pool's price with an asymmetric deposit. This slip calculation can be found [here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/clp-adr.md). 
+
+## Adding Liquidity
+
+There are a few ways you can add liquidity to a pool:
+
+* 1\) Sifchain-DEX-UI: You can use our user-friendly portal to add liquidity to an existing pool, or to create a brand new liquidity pool \(in the case where one does not exist yet\). Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui) for clear instructions on how to perform these actions.
+* 2\) Manually by running commands. Please refer to the list below for these commands:
+  * **Creating a Liquidity Pool:** `sifnodecli tx clp create-pool --from <key> --symbol <external-asset-symbol> --nativeAmount <amount> --externalAmount <amount>`
+    * --symbol refers to the new asset the pool is being created for, 
+    * --nativeAmount is the amount of Rowan that will be added to the newly created pool, 
+    * --externalAmount is the amount of the asset specified by symbol that will be added to the newly created pool. 
+    * Both amounts specified will be deducted from the address specified by --from. 
+    * A successful submission of this transaction will create a new pool for the specified asset and amounts.
+    * View newly created pool with the following command: `sifnodecli query clp pool <external-asset-symbol>` 
+      * &lt;external-asset-symbol&gt; will be the symbol for the asset specified during pool creation.
+  * **View share of pool & token balances**: Creating a pool will also create a new Liquidity Provider object for the creator of the pool. This object contains information about your share of the liquidity pool and token balances in the pool. Liquidity Provider objects can be queried with the following command: `sifnodecli query clp lp <external-asset-symbol> <lpAddress>`
+    * &lt;external-asset-symbol&gt; is the symbol for the liquidity pool and &lt;lpAddress&gt; is the address that provided the tokens to the pool.
+  * **Adding Liquidity to a Pool**:    
 
