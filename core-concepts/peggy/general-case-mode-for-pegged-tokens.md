@@ -1,6 +1,6 @@
 ---
 description: >-
-  This examples the general use case for Pegged Tokens and the framework that we
+  This explains the general use case for Pegged Tokens and the framework that we
   at Sifchain will use to accomplish the pegging/unpegging of tokens.
 ---
 
