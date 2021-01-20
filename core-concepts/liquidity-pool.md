@@ -24,6 +24,16 @@ With Sifchain, users who want to add liquidity to a pool can add any amount of e
 
 The formula that is used to calculate ownership % is designed to incentivize users to keep the liquidity pool balanced. As one side of the pool increases, users can gain a higher % of the overall pool by adding tokens to the other side.‌
 
+See additional information [here](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c‌) about the advantages of asymmetric liquidity pools.
+
+## Liquidity Provider Income Determination
+
+The amount of income that liquidity providers can earn is dependent on the below identified factors.
+
+### 1.\) Amount of Liquidity Provided
+
+#### Pool Ownership calculation
+
 Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool.
 
 $$
@@ -34,17 +44,29 @@ $$
 units = \frac{P(rA+Ra)}{2RA}*slipAdjustment
 $$
 
-```text
-r = rowan deposited‌
-a = asset deposited‌
-R = Rowan Balance (before)‌
-A = Asset Balance (before)‌
-P = Existing Pool Units‌
-```
+Definitions:
 
-The liquidity provider is allocated a portion of the fees collected from swappers proportional to their ownership of the pool. For example, If the liquidity provider owns 2% of the pool, they are allocated 2% of the fees collected. Learn more about asymmetric liquidity pools here‌
+* r = ROWAN deposited
+* a = Asset deposited
+* R = ROWAN Balance \(before\)
+* A = Asset Balance \(before\)
+* P = Existing Pool Units
 
-​[https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c)‌
+### 2.\) Time
+
+ The length of time a liquidity provider keeps their liquidity in a pool. We reward liquidity providers that keep their liquidity in the pool for longer durations of time.
+
+### **3.\)** Fee Revenue
+
+#### Swap Fees
+
+Liquidity Providers also get a share of the swap fees accrued for their contributions to the pool. Pools with higher daily volume generate more swap fees. Sifchain uses Thorchain's slip-based Continuous Liquidity Pool model to calculate trade slip, liquidity fee, and resulting swap.
+
+The liquidity provider is allocated a portion of the fees collected from swappers proportional to their ownership of the pool. For example, If the liquidity provider owns 2% of the pool, they are allocated 2% of the fees collected.
+
+**Potential Price Slippage**
+
+Swappers who are in a hurry to exchange assets will tend to make larger swaps. Larger swaps lead to greater price slips and therefore higher fees.
 
 ### Generalized Model of Liquidity Allocation
 
