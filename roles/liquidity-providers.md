@@ -48,7 +48,7 @@ Liquidity Providers also get a share of the swap fees accrued for their contribu
 
 Swappers who are in a hurry to exchange assets will tend to make larger swaps. Larger swaps lead to greater price slips and therefore higher fees.
 
-## 4.\) Liquidity Mining Rewards
+## Liquidity Mining Rewards
 
 Sifchain will run a 12-week liquidity mining program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
