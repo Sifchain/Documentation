@@ -26,9 +26,9 @@ Here is a list of known exchanges that support ROWAN/eRowan:
 
 ## What wallets support ROWAN/eROWAN?
 
-**ROWAN** is a token that exists within the Sifchain ecosystem, therefore you will need a Sifchain address to hold these tokens. Since Sifchain is built with the Cosmos SDK, you can use the Keplr wallet to generate a Sifchain address and custody your ROWAN. [Get the Keplr wallet](https://wallet.keplr.app/).
+**ROWAN** is a token that exists within the Sifchain ecosystem, therefore you will need a Sifchain address to hold these tokens. Since Sifchain is built with the Cosmos SDK, you can use the Keplr wallet to generate a Sifchain address and custody your ROWAN. Reference our instructions on how to setup your Keplr Wallet [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
 
-**eROWAN** is an ERC-20 token that exists within the Ethereum ecosystem, therefore you will need an Ethereum address to hold these tokens. There are [many Ethereum wallets](https://ethereum.org/en/wallets/), so you should find the one that best matches your security & usability preferences. We recommend [MetaMask](https://metamask.io/download.html).
+**eROWAN** is an ERC-20 token that exists within the Ethereum ecosystem, therefore you will need an Ethereum address to hold these tokens. Are the moment, we are supporting [MetaMask](https://metamask.io/download.html). 
 
 ## How can I setup a Sifchain address in order to acquire ROWAN and use the Sifchain-DEX?
 
