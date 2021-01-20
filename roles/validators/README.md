@@ -1,3 +1,9 @@
+---
+description: >-
+  Use this page to understand everything about being a validator within the
+  Sifchain network
+---
+
 # Validators
 
 ### **Validators, Delegators, and Staking**
