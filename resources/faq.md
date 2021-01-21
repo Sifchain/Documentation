@@ -13,7 +13,7 @@ For more details on the usage of ROWAN, please refer [here](https://medium.com/s
 
 **eROWAN** is the equivalent token of ROWAN on the Ethereum network. Users are able to transfer their ROWAN to eROWAN between the Ethereum and Sifchain networks via Peggy. 
 
-## Where can I get my first ROWAN and/or eROWAN?
+## How can I acquire ROWAN and/or eROWAN
 
 In order to hold ROWAN/eRowan you will first need a wallet to custody the tokens. See Wallet section for more on wallets.
 
