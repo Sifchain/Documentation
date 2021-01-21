@@ -42,5 +42,18 @@ There are a few ways you can add liquidity to a pool:
       * &lt;external-asset-symbol&gt; will be the symbol for the asset specified during pool creation.
   * **View share of pool & token balances**: Creating a pool will also create a new Liquidity Provider object for the creator of the pool. This object contains information about your share of the liquidity pool and token balances in the pool. Liquidity Provider objects can be queried with the following command: `sifnodecli query clp lp <external-asset-symbol> <lpAddress>`
     * &lt;external-asset-symbol&gt; is the symbol for the liquidity pool and &lt;lpAddress&gt; is the address that provided the tokens to the pool.
-  * **Adding Liquidity to a Pool**:    
+  * **Adding Liquidity to a Pool**: `sifnodecli tx clp add-liquidity --from <key> --symbol <external-asset-symbol> --nativeAmount <amount> --externalAmount <amount>`
+    * --symbol refers to the asset pool that the liquidity will be added to
+    * --nativeAmount is the amount of Rowan that will be added to the pool, and 
+    * --externalAmount is the amount of the asset specified by symbol that will be added to the pool. 
+    * Both amounts specified will be deducted from the address specified by --from. 
+    * A successful submission of this transaction will update the pool for the specified asset and amounts.
+
+      * View updated pool with the following command: `sifnodecli query clp lp <external-asset-symbol> <lpAddress>`
+        * &lt;external-asset-symbol&gt; will be the symbol for the asset specified during pool creation.
+        * &lt;lpAddress&gt; is the address that provided the tokens to the pool.  
+
+  
+  
+  
 
