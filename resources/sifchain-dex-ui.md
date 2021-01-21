@@ -52,3 +52,13 @@ In order to use our Peggy feature and to move assets from the Ethereum blockchai
 3. Follow the screen prompts to connect your Metamask wallet. 
 4. Once you have connected both of your Metamask and Keplr wallets, you are now ready to use all of the features Sifchain-DEX-UI has to offer!
 
+## Pegging Assets
+
+In order to move assets between Sifchain and an external Blockchain, you will use the 'Peg' feature. A few key things to understand about this feature:
+
+* **Gas Fees**
+  * 1\) In order to peg assets from Etheruem to Sifchain, you will need some ETH in order to pay for the gas fees to execute this transaction.
+  * 2\) In order to peg asstes from Sifchain back to Ethereum, you will need cETH in order to pay for the gas fees to execute this transaction.
+* **Time it takes to execute a Transaction**
+  * In order for a pegged transaction to be recognized, it needs to go through a 50 confirmations. This means that this transaction can take anywhere between 10 and 20 minutes to be recognized.
+
