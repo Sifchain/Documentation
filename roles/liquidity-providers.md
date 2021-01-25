@@ -28,6 +28,12 @@ To learn more about this program and what you can expect to earn as part of this
 
 Liquidity providers will only need to pay gas fees when adding liquidity to a pool. There is a potential loss of value for a liquidity provider depending on how much slip is created in the pool's price with an asymmetric deposit. This slip calculation can be found [here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/clp-adr.md). 
 
+## Liquidity Pool Ownership Calculation
+
+Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool.
+
+![](../.gitbook/assets/screen-shot-2021-01-24-at-4.39.26-pm.png)
+
 ## Adding Liquidity
 
 There are a few ways you can add liquidity to a pool:
