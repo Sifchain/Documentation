@@ -24,7 +24,7 @@ With Sifchain, users who want to add liquidity to a pool can add any amount of e
 
 The formula that is used to calculate ownership % is designed to incentivize users to keep the liquidity pool balanced. As one side of the pool increases, users can gain a higher % of the overall pool by adding tokens to the other side.‌
 
-See additional information [here](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c‌) about the advantages of asymmetric liquidity pools.
+See additional information [here](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c) about the advantages of asymmetric liquidity pools.
 
 ## Liquidity Provider Income Determination
 
