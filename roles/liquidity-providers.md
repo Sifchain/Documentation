@@ -8,7 +8,7 @@ The LPs are then compensated with swap fees and system rewards. Compensation is 
 
 Liquidity providers are able to deposit any token Sifchian supports to the appropriate pool. Anyone can create a liquidity pool by pooling Rowan and a new token into a pool initialization transaction. The price of the new token is set based on the amount of Rowan pooled. Sifchain enforces a minimum CLP size but multiple depositors can contribute to the creation of a single CLP.
 
-If users are simply adding to an already existing liquidity pool, they may do so asymmetrically. This means users can add either Rowan or the token \(TKN\) the pool comprises of. This is as opposed to Uniswap where users must add equal values of the settlement token \(ETH/UNI\) and the other token \(TKN\).  Liquidity providers are able to add or remove liquidity whenever they choose. 
+If users are simply adding to an already existing liquidity pool, they may do so asymmetrically. This means users can add either Rowan or the token \(TKN\) the pool comprises of. This is as opposed to Uniswap where users must add equal values of the settlement token \(ETH/UNI\) and the other token \(TKN\).  Liquidity providers are able to add or remove liquidity whenever they choose. Please refer to our [Core Concept Documentation on Liquidity Pools ](https://docs.sifchain.finance/core-concepts/liquidity-pool)for additional details around these concepts.
 
 ## Why provide liquidity to a pool?
 
@@ -26,7 +26,7 @@ To learn more about this program and what you can expect to earn as part of this
 
 ## Liquidity Provider Fees
 
-Liquidity provides will only need to pay gas fees when adding liquidity to a pool. There is a potential loss of value for a liquidity provider depending on how much slip is created in the pool's price with an asymmetric deposit. This slip calculation can be found [here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/clp-adr.md). 
+Liquidity providers will only need to pay gas fees when adding liquidity to a pool. There is a potential loss of value for a liquidity provider depending on how much slip is created in the pool's price with an asymmetric deposit. This slip calculation can be found [here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/clp-adr.md). 
 
 ## Adding Liquidity
 
