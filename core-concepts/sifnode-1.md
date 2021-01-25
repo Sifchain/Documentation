@@ -32,5 +32,3 @@ Chain data, consensus key, node key and configuration files will be stored in `.
 
 `sifnoded version` Print the current version of sifnoded 
 
-
-
