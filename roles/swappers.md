@@ -12,7 +12,7 @@ Sifchain allows its users to swap any asset on any bridged chain \(like Ethereum
 
 Users can swap for any number of reasons. A few of these are listed below:
 
-* 1\) Users may want to switch between tokens that have different utility, for example, switching from a social token supporting their favorite artist to a decentralized finance \(DeFi\) token expected to accrue value to a stable coin used to for fiat tax obligations. 
+* 1\) Users may want to switch between tokens that have different utility, for example, switching from a social token supporting their favorite artist to a decentralized finance \(DeFi\) token expected to accrue value to a stable coin used for fiat tax obligations. 
 * 2\) Users may want to swap in order to take advantage of arbitrage opportunities. 
 * 3\) Users may want to execute a momentum trading strategy based on their expectations about the future price of one or more tokens. 
 * 4\) Users may want to diversify their portfolio to consist of multiple assets, thus reducing risk of loss.
