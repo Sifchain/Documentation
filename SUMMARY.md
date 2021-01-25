@@ -14,7 +14,6 @@
 
 ## Core Concepts
 
-* [Sifnode](core-concepts/sifnode-1.md)
 * [Peggy](core-concepts/peggy/README.md)
   * [General Case for Pegged Tokens](core-concepts/peggy/general-case-mode-for-pegged-tokens.md)
   * [Sifchain Ethereum Bridge](core-concepts/peggy/sifchain-ethereum-bridge.md)
