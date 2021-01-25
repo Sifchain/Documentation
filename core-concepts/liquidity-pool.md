@@ -20,15 +20,15 @@ In many decentralized exchanges, users can add liquidity to liquidity pools and 
 
 With Sifchain, users who want to add liquidity to a pool can add any amount of either or both tokens. This is known as adding liquidity asymmetrically, which gives users ultimate flexibility. Based on the amount of tokens in the pool and the amount that the user adds, they will then own a percentage of the entire pool. Sifchain will initially use the same formula to calculate ownership as BEPSwap.‌
 
-**When a user only puts in one side of the pool, how is their ownership percentage calculated?**‌
+### **How does the system ensure that there’s enough liquidity in a pool, if users only have to add one token in the pool and not both?**
 
-The formula that is used to calculate ownership % is designed to incentivize users to keep the liquidity pool balanced. As one side of the pool increases, users can gain a higher % of the overall pool by adding tokens to the other side.‌
+The interesting thing about the formula that Sifchain uses to calculate ownership, is that it creates an economic incentive for users to balance the pool. If the pool gets too oversubscribed on one side, the formula gives users an incentive to add liquidity to the other side by giving them a higher ownership % to add to the side that needs more units to balance the pool.
 
 See additional information [here](https://medium.com/sifchain-finance/sifchain-technical-introduction-advantages-of-an-asymmetric-liquidity-pool-93bedae3986c) about the advantages of asymmetric liquidity pools.
 
 ## Liquidity Provider Income Determination
 
-The amount of income that liquidity providers can earn is dependent on the below identified factors.
+The amount of income that liquidity providers can earn is dependent on the below-identified factors.
 
 ### 1.\) Amount of Liquidity Provided
 
