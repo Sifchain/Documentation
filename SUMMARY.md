@@ -16,7 +16,7 @@
 
 * [Peggy](core-concepts/peggy/README.md)
   * [General Case for Pegged Tokens](core-concepts/peggy/general-case-mode-for-pegged-tokens.md)
-  * [Sifchain Ethereum Bridge](core-concepts/peggy/sifchain-ethereum-bridge.md)
+  * [Sifchain &lt;&gt; Ethereum Bridge](core-concepts/peggy/sifchain-ethereum-bridge.md)
   * [Peggy Use Cases](core-concepts/peggy/user-flows.md)
   * [Peggy Smart Contracts](core-concepts/peggy/peggy-smart-contracts.md)
 * [Sifchain Liquidity Pools](core-concepts/liquidity-pool.md)

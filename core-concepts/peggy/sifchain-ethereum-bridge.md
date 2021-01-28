@@ -1,4 +1,10 @@
-# Sifchain Ethereum Bridge
+---
+description: >-
+  This page gives an overview of Sifchain's implementation of Peggy between
+  Sifchain and Ethereum from a semi-technical standpoint
+---
+
+# Sifchain &lt;&gt; Ethereum Bridge
 
 ## Definitions
 
@@ -21,11 +27,11 @@
 
 ### Event Listener
 
-Peggy is a cross chain bridge that currently moves assets from ethereum to sifchain, and from sifchain to ethereum.
+Peggy is a cross-chain bridge that currently moves assets from Ethereum to Sifchain, and from Sifchain to Ethereum.
 
-To move assets from ethereum to sifchain, the relayer subscribes to the BridgeBank smart contract deployed on ethereum and listens for the LogLock and LogBurn messages. When the relayer receives lock or burn messages, it waits 30 blocks to ensure that the transaction is still valid, then submits new prophecy claims to sifchain. Other relayers then sign off on that prophecy claim and then once enough relayers have approved the prophecy claim, the assets are minted and sent to that sifchain recipient.
+To move assets from Ethereum to Sifchain, the relayer subscribes to the BridgeBank smart contract deployed on Ethereum and listens for the LogLock and LogBurn messages. When the relayer receives lock or burn messages, it waits 50 blocks to ensure that the transaction is still valid, then submits new prophecy claims to Sifchain. Other relayers then sign off on that prophecy claim and then once enough relayers have approved the prophecy claim, the assets are minted and sent to that Sifchain recipient.
 
-To move assets from sifchain to ethereum, the relayer subscribes to the cosmos chain and listens for MsgLock and MsgBurn event. Once that event is heard, a new ProphecyClaim is submitted to the ethereum CosmosBridge smart contract. Once enough validators sign off on the prophecy claim such that the consensus threshold is met, the funds are unlocked or minted on the ethereum side.
+To move assets from Sifchain to Ethereum, the relayer subscribes to the cosmos chain and listens for MsgLock and MsgBurn event. Once that event is heard, a new ProphecyClaim is submitted to the Ethereum CosmosBridge smart contract. Once enough validators sign off on the prophecy claim such that the consensus threshold is met, the funds are unlocked or minted on the Ethereum side.
 
 ## Smart contracts
 
