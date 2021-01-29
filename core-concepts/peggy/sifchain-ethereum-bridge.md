@@ -25,8 +25,6 @@ description: >-
 
 ## Overview
 
-### Event Listener
-
 Peggy is a cross-chain bridge that currently moves assets from Ethereum to Sifchain, and from Sifchain to Ethereum.
 
 To move assets from Ethereum to Sifchain, the relayer subscribes to the BridgeBank smart contract deployed on Ethereum and listens for the LogLock and LogBurn messages. When the relayer receives lock or burn messages, it waits 50 blocks to ensure that the transaction is still valid, then submits new prophecy claims to Sifchain. Other relayers then sign off on that prophecy claim and then once enough relayers have approved the prophecy claim, the assets are minted and sent to that Sifchain recipient.
@@ -35,20 +33,20 @@ To move assets from Sifchain to Ethereum, the relayer subscribes to the cosmos c
 
 ## Smart contracts
 
-Please note that only the whitelisted validators in the valset smart contract can submit or sign off on prophecy claims on ethereum.
+Please note that only the whitelisted validators in the valset smart contract can submit or sign off on prophecy claims on Ethereum.
 
-On the ethereum side of the world, we maintain smart contracts that will lock and burn funds to move them across the bridge. There are many smart contracts, this is the high level flow from eth to sifchain:
+On the Ethereum side of the world, we maintain smart contracts that will lock and burn funds to move them across the bridge. There are many smart contracts, this is the high-level flow from eth to Sifchain:
 
 1. User locks up funds in BridgeBank smart contract
 2. Relayer hears the event generated from the BridgeBank contract
 3. Relayer submits a new prophecy claim to mint assets on the cosmos side of the world.
 
-When a user transfers value from sifchain to ethereum this is what the flow looks like:
+When a user transfers value from Sifchain to Ethereum this is what the flow looks like:
 
 1. User locks or burns assets on the cosmos side of the world.
 2. Relayer hears this transaction and submits a new prophecy claim to the CosmosBridge smart contract
 3. Other relayers sign off on this transaction.
-4. Once enough relayers sign off on this prophecy claim and the consensus threshold is reached, one of two things happen. If this was a sifchain native asset being moved across the bridge, then we will mint assets for that user through the BridgeBank. If this asset being moved across the bridge was an ethereum native asset, then the BridgeBank will unlock those funds and send them to the user specified in the prohpecy claim.
+4. Once enough relayers sign off on this prophecy claim and the consensus threshold is reached, one of two things happen. If this was a sifchain native asset being moved across the bridge, then we will mint assets for that user through the BridgeBank. If this asset being moved across the bridge was an Ethereum native asset, then the BridgeBank will unlock those funds and send them to the user specified in the prohpecy claim.
 
 ## Smart contract Architecture
 
