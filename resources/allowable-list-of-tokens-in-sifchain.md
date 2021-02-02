@@ -1,10 +1,12 @@
 ---
 description: >-
   This page will be updated as we constantly adjust this list based on user
-  feedback and market conditions
+  feedback and market conditions.
 ---
 
 # Allowable List of Tokens in Sifchain
+
+Below is a list of tokens that you can Peg from Ethereum into Sifchain:
 
 * 1INCH \(1INCH Token\) 
 * Aave \(AAVE\) 
