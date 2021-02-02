@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Liquidity Providers \(LPs\) creating and adding to liquidity pools is what allows Sifchain to provide swapping functionality to take place. LPs provide assets that can then be swapped for other assets by other users. For example, a LP can come along and say they want to contribute to a Liquidity Pool of Token A &lt;&gt; ROWAN. So they would provide an amount/s of Token A and/or ROWAN to the pool for other people to swap for. 
+Liquidity Providers \(LPs\) creating and adding to liquidity pools is what allows Sifchain to provide swapping functionality. LPs provide assets that can then be swapped for other assets by other users. For example, a LP can come along and say they want to contribute to a Liquidity Pool of Token A &lt;&gt; ROWAN. So they would provide an amount/s of Token A and/or ROWAN to the pool for other people to swap for. 
 
 The LPs are then compensated with swap fees and system rewards. Compensation is affected by a number of factors related to the pool and the state of the network.
 
-Liquidity providers are able to deposit any token Sifchian supports to the appropriate pool. Anyone can create a liquidity pool by pooling Rowan and a new token into a pool initialization transaction. The price of the new token is set based on the amount of Rowan pooled. Sifchain enforces a minimum CLP size but multiple depositors can contribute to the creation of a single CLP.
+Liquidity providers are able to deposit any token Sifchian supports to the appropriate pool. Anyone can create a liquidity pool by pooling Rowan and a new token into a pool initialization transaction. The price of the new token is set based on the amount of Rowan pooled. Sifchain enforces a minimum LP size but multiple depositors can contribute to the creation of a single LP.
 
 If users are simply adding to an already existing liquidity pool, they may do so asymmetrically. This means users can add either Rowan or the token \(TKN\) the pool comprises of. This is as opposed to Uniswap where users must add equal values of the settlement token \(ETH/UNI\) and the other token \(TKN\).  Liquidity providers are able to add or remove liquidity whenever they choose. Please refer to our [Core Concept Documentation on Liquidity Pools ](https://docs.sifchain.finance/core-concepts/liquidity-pool)for additional details around these concepts.
 
@@ -71,6 +71,13 @@ For example:
 * Next, the user will specify how much of each token in the pool they want to withdraw. The user can specify any amount between 100% ROWAN to 100% of Token A.
 
 By using these two different values, the system gives LPs a very high level of precision in specifying exactly how much to withdraw from each side of the pool. This differs from other symmetric liquidity pools, where LPs must withdraw equal value from both sides.
+
+When removing liquidity from a pool, LP providers are also subjuct to swap fees and swap slippage. The reason for this is to prevent users from trying to avoid these price impacts that they would incur from doing a swap instead. This ensures that a user cannot use the adding and removing of liquidity as a means to game the system.
+
+For example:
+
+* If ROWAN price is 0.3USD and a LP deposits 30000 Rowan, and 300 USDT and then withdraws 100% USDT to get 3300 USDT and there is no swap, then they’ve essentially just performed a swap without having to pay a swap fee.
+* But if the LP deposited 30000 Rowan and 300 USDT and then withdraws symmetrically \(ie the same as the deposit\), they will recieve 3000 Rowan 300 USDT.
 
 There are a few ways you can remove liquidity to a pool:
 
