@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Sifchain allows its users to swap any asset on any bridged chain \(like Ethereum\) for any other assets. Rowan is the settlement token for all of Sifchain’s liquidity pools. Therefore, all liquidity pools contain an external asset like 'ETH' or 'MKR' and Rowan. Swaps between two external assets require two swaps against two liquidity pools. Traders can thus save on swap fees by denominating their holdings in Rowan as a sign of long term faith in the Sifchain project. The network aims to give users access to:
+Sifchain allows its users to swap any asset on any bridged chain \(like Ethereum\) for any other assets. Rowan is the settlement token for all of Sifchain’s liquidity pools. Therefore, all liquidity pools contain an external asset like 'ETH' or 'MKR' and Rowan. Swaps between two external assets require two swaps against two liquidity pools. This means that people who perform a swap for two external assets, will be charged two swap fees. Traders can thus save on swap fees by denominating their holdings in Rowan as a sign of long term faith in the Sifchain project. The network aims to give users access to:
 
 * A large variety of assets through cross-chain compatibility and simple asset listing
 * Superior user experience through open finance protocols and permissionless access
