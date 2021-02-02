@@ -65,5 +65,5 @@ In order to move assets between Sifchain and an external Blockchain, you will us
 ### Peg Tutorial
 
 * After connecting your Keplr and MetaMask wallets, you are now ready to move assets between Ethereum and Sifchain.
-* Sifchain has a list of allowable tokens that can be transferred into Sifchain. This list will be ever-evolving as we will continuously add now tokens. Please find that list here.
+* Sifchain has a list of allowable tokens that can be transferred into Sifchain. This list will be ever-evolving as we will continuously add now tokens. Please find that [list here](https://docs.sifchain.finance/resources/allowable-list-of-tokens-in-sifchain).
 
