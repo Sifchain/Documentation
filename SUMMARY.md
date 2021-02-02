@@ -27,9 +27,8 @@
 * [Validators](roles/validators/README.md)
   * [Validator Security](roles/validators/validator-security.md)
 * [Delegators](roles/delegators.md)
-* [Swappers](roles/swappers.md)
+* [Swappers & Traders](roles/swappers.md)
 * [Liquidity Providers](roles/liquidity-providers.md)
-* [Traders](roles/traders.md)
 
 ## Resources
 

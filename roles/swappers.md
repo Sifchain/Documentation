@@ -1,4 +1,4 @@
-# Swappers
+# Swappers & Traders
 
 ## Introduction
 
@@ -7,6 +7,10 @@ Sifchain allows its users to swap any asset on any bridged chain \(like Ethereum
 * A large variety of assets through cross-chain compatibility and simple asset listing
 * Superior user experience through open finance protocols and permissionless access
 * 1-transaction access to fast chains \(BinanceChain\), smart chains \(Ethereum\), censorship-resistant chains \(Bitcoin\) and private chains \(Monero\).
+
+Like any marketplace, the prices on Sifchain are maintained by profit-seeking traders. Traders exploit arbitrage opportunities in markets. They buy assets on markets with low prices and sell them on markets with high prices. This earns them a profit.
+
+Traders compare the exchange rates on Sifchain with the rates on external markets. If they find the price is lower on Sifchain they can buy here and sell on an external market. If they find the price is lower on external markets they can buy there and sell on Sifchain. This process is repeated at high-frequency. Over time, price information propagates and Sifchain settles with external markets.
 
 ## Why Swap?
 
