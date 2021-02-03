@@ -100,5 +100,112 @@ In order to move assets between Sifchain and an external Blockchain, you will us
 
 ![](../.gitbook/assets/screen-shot-2021-02-02-at-6.08.00-pm.png)
 
-* Once you click confirm, you will need to sign the transaction via your keplr wallet. After this, you can see the adjusted token amounts within a few seconds in your wallets and within the 'Peg' screen.
+* Once you click confirm, you will need to sign the transaction via your keplr wallet. After this, you can see the adjusted token amounts within a minute in your wallets and within the 'Peg' screen.
+
+## Pooling Assets
+
+Users can add any of their tokens to a liquidity pool and earn rewards for doing so. To learn more about the core concept of liquidity pools, how we at Sifchain use them, and details around why one would want to provide liquidity, please refer to our documentation here on [Sifchain Liquidity Pools](https://docs.sifchain.finance/core-concepts/liquidity-pool) and [Liquidity Providers](https://docs.sifchain.finance/roles/liquidity-providers).
+
+### Adding Liquidity
+
+* After connecting your Keplr and MetaMask wallets, and you have assets within Sifchain, you are now ready to add liquidity to our liquidity pools.
+* Sifchain has a list of allowable tokens that can be used within Sifchain. This list will be ever-evolving as we will continuously add new tokens based on user feedback and market conditions. Please find that [list here](https://docs.sifchain.finance/resources/allowable-list-of-tokens-in-sifchain).
+* To begin the 'add liquidity' process, navigate to the 'Pool' option within our Sifchain-DEX-UI. Here you will see a screen that looks like such:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-12.18.27-pm.png)
+
+* This screen shows the following:
+  * A list of liquidity pools that you currently have liquidity in. 
+  * The ability to click and 'manage' your existing pool. This will show you the total amount in that pool, your pool share, and give you the ability to add/remove liquidity from that pool. We will discuss the option further down this page under the 'Manage Liquidity' section.
+  * The ability to click and 'Add Liquidity' to a new pool \(or an existing pool\).
+* To add liquidity to a pool, click 'Add Liquidity'. This will take you here:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-12.24.30-pm.png)
+
+* Here you will want to select which token you will want to use to add liquidity. You can only add liquidity with a Sifchain Token and Rowan. Click on the 'Select' button to see a list of Tokens that are allowable and you have balances in.
+* Once you select the token you want to pool with, you will now see your available balance that you can pool. You can also click the 'Max' button which will automatically call in your total balance of that token.
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-1.50.38-pm.png)
+
+* IF the pool you are adding liquidity to already exists, then you do NOT need to add both your selected token and ROWAN. You may choose to add asymmetrically to the pool if you desire. You can also choose to add both your selected token and ROWAN to the pool as well if you desire. 
+* IF the pool does not exsit yet, you must put some amount of the selected token AND ROWAN to initiate the pool. This will set the initial prices of the pool.
+* Once you input your desired amounts, you will see some displayed statistics on the pool:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-1.54.34-pm.png)
+
+* The 'Pool Token Prices' display the prices of the tokens as they are in the pool at this very moment.
+* The 'Price Impact and Pool Share' display what those prices will be IF you were to execute your adding of liquidity. This will also show you the percentage of the pool you will own if you execute the add.
+* Now you can click 'Add Liquidity' and see another confirmation screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-1.57.00-pm.png)
+
+* Once you 'Confirm Supply', this will initiate your keplr wallet for you to sign the transaction. Once successful, you will now see this listed pool in Your Liquidity pairs to manage. This may take a few moments to be recognized:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-1.59.23-pm.png)
+
+### Manage Liquidity
+
+In the case you already have liquidity in a pool, you will be able to see the pool you have added to in the 'Your Liquidity' list and you can now 'manage' that liquidity. 
+
+* If you click on 'Manage', you will see information about the pool and your position in it:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-2.05.16-pm.png)
+
+* The 'Total Pooled' displays the total amount of those tokens that exist in the pool. 
+  * This 'Total Pooled' will contain the fees and rewards collected for this pool in real-time. This is so liquidity providers 'own' their percentage of these amounts and can withdraw them at any time. 
+* The 'Your pool share' shows the percentage of that pool that you 'own' and can withdraw at any time. 
+* You can use these amounts to determine the value of the pool that you own. 
+* From here, you can add additional liquidity to the pool by clicking 'Add Liquidity'. For directions around this action, please see the 'Adding Liquidity' section above.
+* You can also choose to 'Remove Liquidity' which we will discuss below.
+
+### Remove Liquidity
+
+* If you click on the Remove Liquidity button, you will be taken to a screen that looks like such:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-2.28.06-pm.png)
+
+* Here you will identify two different amounts:
+  * 1\) The percentage of your ownership you want to withdraw.
+  * 2\) In which asset you want to withdraw that ownership in.
+* For example, you can choose to withdraw all 100% of your ownership in equal parts ROWAN and other Token. 
+* In the 'You should Receive' section, this will display the amount of each token you will receive based upon the two amounts you selected.
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-2.31.40-pm.png)
+
+* You can finalize this withdrawal by clicking on the 'Remove Liquidity'. This will trigger you to sign the transaction via your keplr wallet. Once finalized, you will now see these amounts in your wallet and your liquidity pool share and amounts adjusted accordingly.  
+
+## Swapping Assets
+
+In Sifchain, users can swap any allowable asset to any other allowable asset \(given there is liquidity pooled for those assets\) via the 'swap' functionality.  
+
+* After connecting your Keplr and MetaMask wallets, and you have assets within Sifchain, you are now ready to use the swap functionality. 
+* Navigate to the 'Swap' option. Here you will see a screen that looks like such:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-3.02.59-pm.png)
+
+* This is where you can select what token you want to swap for another token. 
+  * The 'From' field is the token you will be providing via the swap.
+  * The 'To' field is what token you will be receiving via the swap. 
+* Once you select a token you want to swap from and a token you want to swap to, you can easily see your current balances of those tokens. 
+* As you input and change the number in the 'from' field, the 'to' field is automatically calculated based on the prices of those tokens as determined by the liquidity pools. 
+  * You can also adjust the number in the 'to' field to represent how much of that you want to receive and the number in the 'from' field will be automatically calculated.
+* Once you input your desired amount, you will see additional information and details regarding the swap:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-3.26.04-pm.png)
+
+* Slippage tolerance:
+  * This is the amount of slippage you are willing to take on with the transaction still successfully being processed. In the case where other users are executing other transactions \(removing/adding or liquidity, swaps\), the amount can vary in between the time it takes to execute the swap. By adding a slippage tolerance, you are saying that you are okay in a certain percentage of price discrepancy. 
+* Price:
+  * This will show you at what price you are receiving the token you are swapping for.
+* Minimum Received:
+  * This shows you the minimum amount that you will receive of the 'to' token based upon the slippage tolerance you are willing to accept.
+* Price Impact:
+  * This is the percentage impact to the amount of the 'to' token in the liquidity pool based upon how much you are swapping for.
+*  Liquidity Provider Fee:
+  * This represents the fee that is retained in the liquidity pool to be paid to the liquidity providers.
+* Once you click 'Swap', you will see a confirmation screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-03-at-3.32.59-pm.png)
+
+* You can now confirm the swap, sign the transaction via your keplr wallet and see the amounts adjusted in your wallet.
 
