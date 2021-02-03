@@ -62,8 +62,43 @@ In order to move assets between Sifchain and an external Blockchain, you will us
 * **Time it takes to execute a Transaction**
   * In order for a pegged transaction to be recognized, it needs to go through 50 confirmations. This means that this transaction can take anywhere between 10 and 20 minutes to be fully recognized.
 
-### Peg Tutorial
+### Pegging Tutorial
 
 * After connecting your Keplr and MetaMask wallets, you are now ready to move assets between Ethereum and Sifchain.
-* Sifchain has a list of allowable tokens that can be transferred into Sifchain. This list will be ever-evolving as we will continuously add now tokens. Please find that [list here](https://docs.sifchain.finance/resources/allowable-list-of-tokens-in-sifchain).
+* Sifchain has a list of allowable tokens that can be transferred into Sifchain. This list will be ever-evolving as we will continuously add new tokens based on user feedback and market conditions. Please find that [list here](https://docs.sifchain.finance/resources/allowable-list-of-tokens-in-sifchain).
+* In order to move any of these allowable Ethereum assets into the Sifchain environment, please follow the below steps.
+* Once in the Sifchain-DEX-UI, go to the 'Peg' feature.
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-4.50.13-pm.png)
+
+* On the 'External Tokens' list, you will see a list of all available tokens that you are able to 'peg' into Sifchain and your correlated balances in those tokens. 
+* Click on the 'PEG' button next to the token you want to move into Sifchain. This will bring you to the next screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-4.53.56-pm.png)
+
+* Now you can input the amount of that token you want to peg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to peg. We have automatically called in your Sifchain address as the recipient address of these pegged tokens. But you are free to change this address to any Sifchain address.
+* Next, click 'Peg'. This will bring up another confirmation screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-5.59.01-pm.png)
+
+* Once you confirm the details are correct, you can confirm the Peg. Please do note that pegging an asset from Ethereum into Sifchain needs to go through 50 Ethereum block confirmations. For this reason, this action can take upwards of 20 minutes. Please do be patient and refresh the screen often. You should see the amount you want to peg be deducted from your Ethereum address shortly after you execute the transaction. But you will not see the amount appear in your Sifchain wallet until it has gone through all 50 confirmations.
+* You are now free to use your newly pegged tokens via swaps, or by providing liquidity!
+
+### Un-Pegging Tutorial
+
+* You are free to move your pegged assets back into your Ethereum wallet at any time. To do this, go to the 'Peg' screen and click on your 'Sifchain Native' token tab:
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-6.04.14-pm.png)
+
+* Here you will see a list of all of the Sifchain Native tokens and your balances in those tokens. 
+* Click on the 'UNPEG' button next to the token you want to move back into your Ethereum wallet. This will bring you to the next screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-6.06.44-pm.png)
+
+* Now you can input the amount of that token you want to unpeg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to unpeg. We have automatically called in your Ethereum address as the recipient address of these unpegged tokens. But you are free to change this address to any Ethereum address. Once you input an amount, it will display the associated transaction fee that must be paid in cETH. Ensure you have enough cETH in your Sifchain wallet to pay for this fee.
+* Next, click 'Unpeg'. This will bring up another confirmation screen:
+
+![](../.gitbook/assets/screen-shot-2021-02-02-at-6.08.00-pm.png)
+
+* Once you click confirm, you will need to sign the transaction via your keplr wallet. After this, you can see the adjusted token amounts within a few seconds in your wallets and within the 'Peg' screen.
 
