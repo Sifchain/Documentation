@@ -35,6 +35,7 @@ Keplr will enable Swaps, Pooling and Pegging on the Sifchain network's user inte
 5. If you need to import an existing ledger account, click on the 'Import ledger' option:
    1. On the next screen, enter in your account name and click next. 
    2. Then connect your ledger and open the cosmos app.
+   3. For additional directions on ledger app setup, please see [directions here](https://stakingfac.medium.com/cosmos-keplr-guide-ledger-d71e9dded29d).
 6. Next, navigate to the Sifchain-DEX-UI and click on the 'Not Connected' button in the upper right-hand corner. Click on 'Keplr'. 
 7. A pop-up should open asking for you to Approve the 'Chain Add Request'. If you do not see this, please make sure the extension is enabled by clicking on the Keplr icon in upper right-hand corner. You may have to reload the page.
 8. Approve the chain "Chain Add Request" pop-up.
