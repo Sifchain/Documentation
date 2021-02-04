@@ -1,16 +1,12 @@
 # Liquidity Pooling Dynamic FAQs
 
-## Will we be able to delegate the entire amount of tokens via the Validator or just the 8.3% which unlocks after the first month?
-
-We haven't yet set a specific amount, but it'll likely be closer to 8.3%. Edit: As of now, 0% although that may change later
-
 ## Is there risk of stake slashing? if yes, where can we read more on this?
 
 There is always some risk as is with everything in the crypto industry. Though more information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
 
-## What are the unbonding periods for nodes / for delegations?
+## What are the un-bonding periods for nodes / for delegations?
 
-Our unbonding period is around set to around 21 days to avoid malpractice, from the date of unbond issued. More information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
+Our un-bonding period is around set to around 21 days to avoid malpractice, from the date of un-bond issued. More information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
 
 ## Have you had a chance to answer the previous question?
 
@@ -22,19 +18,23 @@ Yes, they are, more information can be found here: [https://medium.com/sifchain-
 
 ## What are the approximate costs of setting up a Validator?
 
-$100-$200/month, 5-10 manhours per month, some technical staff to handle it, but it works out profitable in the long run. We further recommend getting them to set it up for you, but to move ownership in your own hands so as to have maximum visibility on your capital.
+$100-$200/month, 5-10 man hours per month, some technical staff to handle it, but it works out profitable in the long run. We further recommend getting them to set it up for you, but to move ownership in your own hands so as to have maximum visibility on your capital.
+
+## How are validators paid?
+
+The validators are paid out based on validator income as per [this article](https://sifchain.finance/wp-content/uploads/2020/11/The-Token-Economics-of-Sifchain-edited-2.0.pdf) with further parameters as our [liquidity mining program](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02) for validators.
 
 ## What is the benefit of using kuberentes over non-kubernetes infrastructure, if any?
 
-Kubernetes is best for cluster management. It's possible to just do makeshift cluster management on your own although Kubernetes is now a standard for cluster orchestration among devops engineers
+Kubernetes is best for cluster management. It's possible to just do makeshift cluster management on your own although Kubernetes is now a standard for cluster orchestration among devops engineers.
 
 ## For storage, running a validator which kind of node type should I run? \(Archival node \| Fully pruning node \| Default pruning node\)
 
-At Sifchain we believe that the Archival is most complete, but feel free to make a different choice based on any different parameters
+At Sifchain we believe that the Archival is most complete, but feel free to make a different choice based on any different parameters.
 
 ## Will node operators be able to stake their unvested tokens in the validator?
 
-We've considered offering people the capcity to stake their unvested tokens. We will probably not allow all private sale tokens to be used in a node upon network launch so as to not crowd out validators who are buying from the public sale. We will answer more details on this later.
+We've considered offering people the capacity to stake their unvested tokens. We will probably not allow all private sale tokens to be used in a node upon network launch so as to not crowd out validators who are buying from the public sale. We will answer more details on this later.
 
 ## What does the reward model of running a validator on TestNet look like?
 
@@ -42,5 +42,5 @@ If you're interested in attracting additional capital for your validator, please
 
 ## Where can one take a look at the Sifchain UI?
 
-The UI can be viewed in OpenSource, here: [https://github.com/Sifchain/sifnode/tree/develop/ui](https://github.com/Sifchain/sifnode/tree/develop/ui)
+The UI code is available on Github [https://github.com/Sifchain/sifnode/tree/develop/ui](https://github.com/Sifchain/sifnode/tree/develop/ui)
 
