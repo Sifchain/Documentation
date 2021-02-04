@@ -42,7 +42,8 @@
 * [Testnet Blockexplorer](https://blockexplorer-testnet.sifchain.finance/)
 * [BetaNet Launch](resources/betanet-launch.md)
 * [Sifchain-DEX-UI](resources/sifchain-dex-ui.md)
-* [FAQ](resources/faq.md)
+* [FAQ](resources/faq/README.md)
+  * [Liquidity Pooling Dynamic FAQs](resources/faq/liquidity-pooling-dynamic-faqs.md)
 * [Allowable List of Tokens in Sifchain](resources/allowable-list-of-tokens-in-sifchain.md)
 
 ## Join Sifchain
