@@ -2,15 +2,15 @@
 
 ## Is there risk of stake slashing? if yes, where can we read more on this?
 
-There is always some risk as is with everything in the crypto industry. Though more information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
+There is always some risk as is with everything in the crypto industry. Though more information can be found [here](https://docs.sifchain.finance/roles/validators).
 
 ## What are the un-bonding periods for nodes / for delegations?
 
-Our un-bonding period is around set to around 21 days to avoid malpractice, from the date of un-bond issued. More information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
+Our un-bonding period is around set to around 21 days to avoid malpractice, from the date of un-bond issued. More information can be found [here](https://docs.sifchain.finance/roles/validators). 
 
 ## Are any rewards earned time-locked?
 
-Yes, they are, more information can be found here: [https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
+Yes, they are, more information can be found [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02) 
 
 ## What are the approximate costs of setting up a Validator?
 
@@ -18,7 +18,7 @@ $100-$200/month, 5-10 man hours per month, some technical staff to handle it, bu
 
 ## How are validators paid?
 
-The validators are paid out based on validator income as per [this article](https://sifchain.finance/wp-content/uploads/2020/11/The-Token-Economics-of-Sifchain-edited-2.0.pdf) with further parameters as our [liquidity mining program](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02) for validators.
+The validators are paid out based on validator income as per [this article](https://medium.com/sifchain-finance/validator-in-a-box-plug-and-play-passive-income-generator-47f4d26e428e) with further parameters as our [liquidity mining program](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02) for validators.
 
 ## What is the benefit of using kuberentes over non-kubernetes infrastructure, if any?
 
@@ -38,5 +38,5 @@ If you're interested in attracting additional capital for your validator, please
 
 ## Where can one take a look at the Sifchain UI?
 
-The UI code is available on Github [https://github.com/Sifchain/sifnode/tree/develop/ui](https://github.com/Sifchain/sifnode/tree/develop/ui)
+The UI code is available [on Github](https://github.com/Sifchain/sifnode/tree/develop/ui).
 
