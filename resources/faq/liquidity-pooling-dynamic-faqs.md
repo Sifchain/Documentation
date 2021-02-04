@@ -8,10 +8,6 @@ There is always some risk as is with everything in the crypto industry. Though m
 
 Our un-bonding period is around set to around 21 days to avoid malpractice, from the date of un-bond issued. More information can be found here: [https://docs.sifchain.finance/roles/validators](https://docs.sifchain.finance/roles/validators)
 
-## Have you had a chance to answer the previous question?
-
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
-
 ## Are any rewards earned time-locked?
 
 Yes, they are, more information can be found here: [https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
