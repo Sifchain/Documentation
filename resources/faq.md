@@ -21,7 +21,12 @@ When the Sifchain network is live you will soon be able to buy ROWAN/eRowan on d
 
 Here is a list of known exchanges that support ROWAN/eRowan:
 
+ROWAN:
+
 * [Uniswap](https://app.uniswap.org/#/swap) \(DEX\) — _coming soon_
+
+eROWAN:
+
 * [BitMax](https://bitmax.io/en/global-digital-asset-platform) \(CEX\) — _coming soon_
 
 ## What wallets support ROWAN/eROWAN?
