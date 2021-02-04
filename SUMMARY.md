@@ -42,7 +42,7 @@
 * [Tokenomics](https://sifchain.finance/token-economics%20)
 * [Testnet Blockexplorer](https://blockexplorer-testnet.sifchain.finance/)
 * [BetaNet Launch](resources/betanet-launch.md)
-* [Sifchain DEX](resources/sifchain-dex-ui.md)
+* [Sifchain DEX User Guide](resources/sifchain-dex-ui.md)
 * [FAQ](resources/faq.md)
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
 * [Sifchain Node Operators](resources/untitled.md)

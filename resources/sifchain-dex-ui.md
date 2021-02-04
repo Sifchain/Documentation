@@ -1,12 +1,14 @@
 ---
-description: Reference this page for all things related to Sichain's DEX UI.
+description: >-
+  Reference this page for all things related to Sichain's decentralized
+  exchange.
 ---
 
-# Sifchain DEX
+# Sifchain DEX User Guide
 
 ## Welcome
 
-Welcome to the Sifchain-DEX-UI! This is your portal to interact with the Sifchain system and enjoy all of the great features it has to offer. Read below for helpful 'how-to' guides for anything and everything you can do through this portal. 
+Welcome to the Sifchain DEX! This is your portal to interact with the Sifchain system and enjoy all of the great features it has to offer. Read below for helpful 'how-to' guides for anything and everything you can do through this portal. 
 
 ## Getting Started
 
