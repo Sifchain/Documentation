@@ -22,7 +22,7 @@ Validators are paid via Block Rewards. Please find additional information [here]
 
 ## Are rewards subject to any locking periods?
 
-Some rewards earned by Validators are subject to lock-up periods. More information can be found [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02) \(???\).
+Some rewards earned by Validators are subject to lock-up periods. We're currently designing this and will provide more information later.
 
 ## Is there a risk of my stake being slashed? If yes, where can we read more on this?
 
