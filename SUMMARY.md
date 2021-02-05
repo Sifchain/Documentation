@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome to Sifchain](README.md)
+* [About Sifchain](about-sifchain.md)
 
 ## Getting Started
 
