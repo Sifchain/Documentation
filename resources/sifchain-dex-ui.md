@@ -98,7 +98,7 @@ You are now free to use your newly pegged tokens via swaps, or by providing liqu
 
 ![](../.gitbook/assets/screen-shot-2021-02-02-at-6.06.44-pm.png)
 
-* Now you can input the amount of that token you want to unpeg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to unpeg. We have automatically called in your Ethereum address as the recipient address of these unpegged tokens. But you are free to change this address to any Ethereum address. Once you input an amount, it will display the associated transaction fee that must be paid in cETH. Ensure you have enough cETH in your Sifchain wallet to pay for this fee.
+* Now you can input the amount of that token you want to unpeg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to unpeg. We have automatically called in your Ethereum address as the recipient address of these unpegged tokens. Once you input an amount, it will display the associated transaction fee that must be paid in cETH. Ensure you have enough cETH in your Sifchain wallet to pay for this fee.
 * Next, click 'Unpeg'. This will bring up another confirmation screen:
 
 ![](../.gitbook/assets/screen-shot-2021-02-02-at-6.08.00-pm.png)
