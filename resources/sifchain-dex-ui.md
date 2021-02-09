@@ -60,7 +60,7 @@ In order to move assets between Sifchain and an external Blockchain, you will us
 
 * **Gas Fees**
   * 1\) In order to peg assets from Etheruem to Sifchain, you will need some ETH in order to pay for the gas fees to execute this transaction.
-  * 2\) In order to unpeg assets from Sifchain back to Ethereum, you will need cETH in order to pay for the gas fees to execute this transaction.
+  * 2\) In order to unpeg assets from Sifchain back to Ethereum, you will need cETH in order to pay for the transaction fees. You will also need a very small amount of ROWAN to pay the gas fees to execute this transaction.
 * **Time it Takes to Execute a Transaction**
   * In order for a pegged transaction to be recognized, it needs to go through 50 Ethereum confirmations. This means that this transaction can take anywhere between 10 and 20 minutes to be recognized on Sifchain.
   * Unpegging assets from Sifchain back into Ethereum requires significantly fewer confirmations and should only take ~1 minute to be recognized on Ethereum.
