@@ -4,7 +4,7 @@
 
 {% embed url="https://sifchain.finance/" %}
 
-_**Sifchain is the world's first omni-chain decentralized exchange. Swap & pool the native ROWAN token with ETH and popular ERC-20 tokens on the Sifchain DEX, which is 100x more efficient than other leading DEXes.**_ 
+_**Sifchain is the world's first omni-chain decentralized exchange. Swap & pool the native ROWAN token with ETH and popular ERC-20 tokens on the Sifchain DEX, which is 100x more efficient than other leading DEXes. Over time, Sifchain will support cross-chain transactions for 20+ of the top blockchains to become the leading value exchange platform in DeFi.**_ 
 
 ### Quick Links
 
@@ -16,8 +16,8 @@ _**Sifchain is the world's first omni-chain decentralized exchange. Swap & pool 
 * \*\*\*\*[**Validating**](https://docs.sifchain.finance/roles/validators) — Learn about why and how to validate
 * \*\*\*\*[**Delegating**](https://docs.sifchain.finance/roles/delegators) — Learn about why and how to delegate
 
-See the left-side menu for a complete list of Sifchain Documentation.
+See the left-side menu for a complete list of Sifchain Documentation and Resources.
 
-If you have any questions or suggestions to improve this site, please reach out to Sifchain on Telegram, Discord, or send an email to **info@sifchain.finance**.  
+If you have any questions or suggestions to improve this site, please reach out to Sifchain on [Telegram](https://t.me/sifchain), [Discord](https://discord.gg/vdNRZBttC8), or send an email to **info@sifchain.finance**.  
 
 
