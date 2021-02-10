@@ -23,9 +23,9 @@ Users can swap for any number of reasons. A few of these are listed below:
 
 ## How to Swap?
 
-For clear directions on how to execute a swap, refer to our [Sifchain-DEX-UI guide](https://docs.sifchain.finance/resources/sifchain-dex-ui). 
+For clear directions on how to execute a swap, refer to our [Sifchain-DEX-UI guide](https://docs.sifchain.finance/resources/sifchain-dex-ui#swapping-assets). 
 
 ## Swap Fees
 
-In order to pay Liquidity Providers a share of the swap fees accrued for their contribution to the liquidity pool. Sifchain uses Thorchain's slip-based Continuous Liquidity Pool model to calculate trade slip, liquidity fee, and the resulting swap. For additional information on these formulas, please reference our [documentation here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md).
+In order to pay Liquidity Providers for their contribution to the liquidity pool, swap fees are charged during the swapping process. Sifchain uses Thorchain's slip-based Continuous Liquidity Pool model to calculate trade slip, liquidity fee, and the resulting swap. For additional information on these formulas, please reference our [documentation here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md).
 
