@@ -28,6 +28,7 @@
 * [Validators](roles/validators/README.md)
   * [Validator Security](roles/validators/validator-security.md)
   * [Validator FAQs](roles/validators/validator-faqs.md)
+  * [Validator CLI Commands](roles/validators/validator-cli-commands.md)
 * [Delegators](roles/delegators.md)
 * [Swappers & Traders](roles/swappers.md)
 * [Liquidity Providers](roles/liquidity-providers.md)
