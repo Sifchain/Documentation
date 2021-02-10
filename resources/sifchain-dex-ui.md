@@ -12,7 +12,7 @@ Welcome to the Sifchain DEX! This is your portal to interact with the Sifchain s
 
 ## Getting Started
 
-In order to take full advantage of the Sifchain DEX, you must have a Keplr wallet for managing assets on Sifchain and a MataMask Wallet for managing assets on Ethereum.
+In order to take full advantage of the Sifchain DEX, you must have a Keplr wallet for managing assets on Sifchain and a MetaMask Wallet for managing assets on Ethereum.
 
 ### Create or Import a Sifchain Address with Keplr Wallet 
 
@@ -32,7 +32,7 @@ Keplr is the official wallet for ROWAN and is required to perform Swaps, Pooling
    3. Import ledger
       1. Within Keplr click on the 'Import ledger'
       2. On the next screen, enter in your account name and click 'Next' 
-      3. Cconnect your ledger and open the Cosmos app.
+      3. Connect your ledger and open the Cosmos app.
          1. For additional directions on ledger app setup, please see [directions here](https://stakingfac.medium.com/cosmos-keplr-guide-ledger-d71e9dded29d).
 3. Next, navigate to the Sifchain DEX and click on 'Connect Wallet'. Then click on 'Keplr' 
 4. Keplr should jump forward asking for you to Approve the 'Chain Add Request'. If you do not see this, please make sure the extension is enabled by clicking on the Keplr icon in upper right-hand corner. You may have to reload the page.
@@ -59,7 +59,7 @@ Once you have connected both of your Metamask and Keplr wallets, you are now rea
 In order to move assets between Sifchain and an external Blockchain, you will use the 'Peg' feature. A few key things to understand about this feature:
 
 * **Gas Fees**
-  * 1\) In order to peg assets from Etheruem to Sifchain, you will need some ETH in order to pay for the gas fees to execute this transaction.
+  * 1\) In order to peg assets from Ethereum to Sifchain, you will need some ETH in order to pay for the gas fees to execute this transaction.
   * 2\) In order to unpeg assets from Sifchain back to Ethereum, you will need cETH in order to pay for the transaction fees. You will also need a very small amount of ROWAN to pay the gas fees to execute this transaction.
 * **Time it Takes to Execute a Transaction**
   * In order for a pegged transaction to be recognized, it needs to go through 50 Ethereum confirmations. This means that this transaction can take anywhere between 10 and 20 minutes to be recognized on Sifchain.

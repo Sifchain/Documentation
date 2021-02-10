@@ -9,13 +9,13 @@ description: >-
 
 ## BetaNet Definition
 
-Welcome to the [Sifchain decentralized exchange \(DEX\) BetaNet](https://medium.com/sifchain-finance/betanet-launch-7b7eed1d27d8)! We are proud of our rapid progress and enthusiastic to have you participate. We encourage you to use all features our platform has to offer and to provide feedback within our [\#support channel on Discord](https://discord.com/invite/a2UHqapD9x).  
-  
+Welcome to the [Sifchain decentralized exchange \(DEX\) BetaNet](https://medium.com/sifchain-finance/betanet-launch-7b7eed1d27d8)! We are proud of our rapid progress and enthusiastic to have you participate. We encourage you to use all features our platform has to offer and to provide feedback within our [\#support channel on Discord](https://discord.com/invite/a2UHqapD9x).
+
 Be aware that this is a BetaNet launch - we will improve and iterate as we receive end-user feedback. Please reference below for a list of the security measures we have put in place for this launch. Check out our [Github](https://github.com/Sifchain/sifnode) and [developer documentation](https://github.com/Sifchain/sifnode/tree/develop/docs) for more information!
 
 ### Security Measures <a id="3857"></a>
 
-Sifchain has been proactive, and taken the necessary security measures to ensure the protection of funds, assets, and investments by Sifchain users. By leveraging best practices in security processes, and implementing tools that detect, prevent, and monitor any breach of data or funds, you can be assured that all precautions have been established to minimize risk. Audit reports are here - https://drive.google.com/drive/u/1/folders/1kkjdpNuRmTjaiIKA6CQISavCvj4Awpbc.  A list of the measures taken by Sifchain are outlined below:
+Sifchain has been proactive, and taken the necessary security measures to ensure the protection of funds, assets, and investments by Sifchain users. By leveraging best practices in security processes, and implementing tools that detect, prevent, and monitor any breach of data or funds, you can be assured that all precautions have been established to minimize risk. Audit reports are here - [https://drive.google.com/drive/u/1/folders/1kkjdpNuRmTjaiIKA6CQISavCvj4Awpbc](https://drive.google.com/drive/u/1/folders/1kkjdpNuRmTjaiIKA6CQISavCvj4Awpbc). A list of the measures taken by Sifchain are outlined below:
 
 **People**
 
