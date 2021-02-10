@@ -8,18 +8,18 @@ description: >-
 
 ## **Validators, Delegators, and Staking**
 
-This covers a functional overview of being a validator in the Sifchain Network. For technical help and CLI commands relating to these processes, please reference our Validator CLI Commands page. 
+This covers a functional overview of being a validator in the Sifchain Network. For technical help and CLI commands relating to these processes, please reference our [Validator CLI Commands page](https://docs.sifchain.finance/roles/validators/validator-cli-commands). 
 
 ### **Becoming a Validator in the Sifchain network**
 
-To become a validator in the Sifchain network, please refer to our tutorials linked below. These will guide you through the steps of setting up the Sifnode network and setting up you node.
+To become a validator in the Sifchain network, please refer to our tutorials linked below. These will guide you through the steps of setting up the Sifnode network and setting up your node.
 
 * [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server)\(EC2/Digital Ocean or local\)
 * [Running Sifnode on Kubernetes ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes)\(**recommended**\)
 
 ### **Validator Set**
 
-Sifchain’s active validator set consists of the top 100 nodes, as measured by total stake. The calculated total stake includes both the validator’s individual stake and all of its delegations. This validator set is refreshed every block, so changes to a validator’s total stake that would shift it in or out of the validator set will be reflected in consensus immediately. There is no explicit minimum stake amount required to be a validator on Sifchain. The amount staked by the lowest validator in the set serves as an implicit minimum.
+Sifchain’s active validator set consists of the top 100 nodes, as measured by total stake. The calculated total stake includes both the validator’s individual stake and all of its delegations. This validator set is refreshed every block, so changes to a validator’s total stake that would shift it in or out of the validator set will be reflected in consensus almost immediately. There is no explicit minimum stake amount required to be a validator on Sifchain. The amount staked by the lowest validator in the set serves as an implicit minimum.
 
 In order to be a validator in Sifchain, you must have a Sifchain wallet address. This is so the validator can have ROWAN and use that ROWAN to stake their node. When validators stake their ROWAN, that ROWAN gets bonded to the network and cannot be transferred to any other address.
 
@@ -55,11 +55,11 @@ When withdrawing, all of the claimant’s available rewards are withdrawn from t
 
 ### **Unbonding**
 
-Validators and delegators can submit an unbonding transaction to remove their staked tokens. Once the transaction is processed the staked tokens will enter an unbonding period of 21 days. During the unbonding period the staked tokens will bot earn any validator income, but are still susceptible to slashing penalties. After the unbonding period the tokens will be fully released to the user.
+Validators and delegators can submit an unbonding transaction to remove their staked tokens. Once the transaction is processed the staked tokens will enter an unbonding period of 21 days. During the unbonding period the staked tokens will not earn any validator income, but are still susceptible to slashing penalties. After the unbonding period the tokens will be fully released to the user.
 
 ### Slashing
 
-Validators commiting a slashable offence have their stake removed by a slash factor. Sifchain currently only penalizes validators for downtime. If a validator misses more than 50 blocks in any 100 block window they will be slashed and jailed. The slash penalty for downtime is 1% of the validator’s total stake including delegations; these tokens will be burned. The offending validator will be jailed for 10 minutes. While the validator is jailed they are removed from the validator set and cannot participate in consensus and thus will not receive block rewards. After the 10 minute jail period is over the validator must submit a transaction to unjail, at which point they will rejoin consensus.
+Validators committing a slashable offense will have their stake removed by a slash factor. Sifchain currently only penalizes validators for downtime. If a validator misses more than 50 blocks in any 100 block window, they will be slashed and jailed. The slash penalty for downtime is 1% of the validator’s total stake including delegations; these tokens will be burned. The offending validator will be jailed for 10 minutes. While the validator is jailed they are removed from the validator set and cannot participate in consensus and thus will not receive block rewards. After the 10 minute jail period is over the validator must submit a transaction to unjail, at which point they will rejoin consensus.
 
 ### Future Additions
 
@@ -70,7 +70,7 @@ Validators commiting a slashable offence have their stake removed by a slash fac
 
 ## Liquidity Mining Rewards
 
-Sifchain will run a **12 week** liquidity mining program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+Sifchain will run a **12-week** liquidity mining program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
 To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here, section 'Liquidity Mining for Validators'.](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
 
