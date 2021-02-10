@@ -15,19 +15,20 @@ For more details on the usage of ROWAN, please refer [here](https://medium.com/s
 
 ## How can I acquire ROWAN and/or eROWAN
 
-In order to hold ROWAN/eRowan you will first need a wallet to custody the tokens. See Wallet section for more on wallets.
+In order to hold ROWAN/eROWAN you will first need a wallet to custody the tokens. See Wallet section below for more on wallets.
 
-When the Sifchain network is live you will soon be able to buy ROWAN/eRowan on decentralized exchanges \(DEXs\) and centralized exchanges \(CEXs\). 
+When the Sifchain network is live you will soon be able to buy ROWAN/eROWAN on decentralized exchanges \(DEXs\) and centralized exchanges \(CEXs\). 
 
-Here is a list of known exchanges that support ROWAN/eRowan:
+Here is a list of known exchanges that support ROWAN/eROWAN:
 
 ROWAN:
 
-* [Uniswap](https://app.uniswap.org/#/swap) \(DEX\) — _coming soon_
+* Sifchain DEX — _coming soon_
+* [BitMax](https://bitmax.io/en/global-digital-asset-platform) \(CEX\) — _coming soon_
 
 eROWAN:
 
-* [BitMax](https://bitmax.io/en/global-digital-asset-platform) \(CEX\) — _coming soon_
+* [Uniswap](https://app.uniswap.org/#/swap) \(DEX\) — _coming soon_
 
 ## What wallets support ROWAN/eROWAN?
 
@@ -37,7 +38,7 @@ eROWAN:
 
 ## How can I setup a Sifchain address in order to acquire ROWAN and use the Sifchain-DEX?
 
-There are a few different ways you can setup a Sifchain address. This address is needed to be able to acquire any Sifchain native token \(including ROWAN and all pegged tokens in the Sifchain ecosystem\). In order to get a Sifchain address, you can do one of the following:
+There are a few different ways you can setup a Sifchain address. This address is needed to be able to custody ROWAN and all pegged tokens in the Sifchain ecosystem. In order to get a Sifchain address, you can do one of the following:
 
 1. \(Easiest\) Use the Sifchain DEX and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
 2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
@@ -63,7 +64,7 @@ Since eROWAN is a new token, it will not appear in the default list of tokens di
 
 ![](../.gitbook/assets/screen-shot-2021-02-10-at-10.28.36-am.png)
 
-Once the eROWAN token has been successfully added, you will see a screen similar to the one shown here.
+Once the eROWAN token has been successfully added, you should see a screen similar to the one shown here.
 
 ![](../.gitbook/assets/complete.png)
 
