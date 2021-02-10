@@ -6,7 +6,7 @@ The Ethereum network has been plagued with slow transactions and high fees for a
 
 While there are many cross-chain solutions; our solution for this problem is Peggy.
 
-In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allows people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain.
+In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allow people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain.
 
 We see Peggy’s deployment as a hallmark moment for growth of the Cosmos Network.  With Peggy and IBC, Ethereum users will be able to use their ETH and ERC20 tokens on Cosmos SDK platforms such as Kava, Akash, Terra, e-Money, IRIS, Secret Network, and of course, the Cosmos Hub.  Cosmos Network users will also be able to use their tokens on Ethereum and take advantage of its dapp network.  Cryptocurrency holders on both sides will be able to take advantage of the benefits of one chain while holding a position on a token native to another, bringing us one step closer to Sifchain’s mission of connecting liquidity on all blockchains. 
 
