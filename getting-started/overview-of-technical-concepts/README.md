@@ -6,7 +6,3 @@ The [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) is an open-source framewo
 
 {% page-ref page="cosmos-sdk/" %}
 
-{% page-ref page="starport-ibc/" %}
-
-
-

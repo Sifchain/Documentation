@@ -8,10 +8,6 @@
 * [Technical Overview](getting-started/overview-of-technical-concepts/README.md)
   * [Cosmos SDK](getting-started/overview-of-technical-concepts/cosmos-sdk/README.md)
     * [Application-Specific Blockchains](getting-started/overview-of-technical-concepts/cosmos-sdk/application-specific-blockchains.md)
-  * [Starport IBC](getting-started/overview-of-technical-concepts/starport-ibc/README.md)
-    * [Genesis File](getting-started/overview-of-technical-concepts/starport-ibc/genesis-file.md)
-    * [EVM Smart Contracts](getting-started/overview-of-technical-concepts/starport-ibc/evm-smart-contracts.md)
-    * [WASM smart contracts](getting-started/overview-of-technical-concepts/starport-ibc/wasm-smart-contracts.md)
 
 ## Core Concepts
 
