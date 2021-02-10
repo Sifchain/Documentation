@@ -26,9 +26,7 @@ Sifchain uses Gitflow to handle development.  Gitflow is described in more detai
    4. Integration partners will engage with the testnet to set up new test features for their products, making it easy to go live
    5. The Sifchain and broader cryptocurrency community will test the blockchain infrastructure to assess its quality and evaluate using it with their own portfolio or product integrations
 3. After 1 to 2 weeks of testing on the testnet, the feature in \`develop\` \(which at this part of the process is running on the testnet\) will be merged into \`master\` \(which runs on mainnet\)
-
    1. All PRs that merged from \`develop\` to \`master\` require the approval of at least one executive. 
-
 4.  When reporting bugs make sure to attach relevant information such as bug reproduction steps as well as evidence along with other details as mentioned in this template [**https://github.com/Sifchain/sifnode/blob/develop/.github/ISSUE\_TEMPLATE/bug\_report.md**](https://github.com/Sifchain/sifnode/blob/develop/.github/ISSUE_TEMPLATE/bug_report.md)
 
 ## Preparing Code for Review
