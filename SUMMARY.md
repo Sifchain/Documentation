@@ -32,7 +32,8 @@
 * [Delegators](roles/delegators/README.md)
   * [Delegator CLI commands](roles/delegators/delegator-cli-commands.md)
 * [Swappers & Traders](roles/swappers.md)
-* [Liquidity Providers](roles/liquidity-providers.md)
+* [Liquidity Providers](roles/liquidity-providers/README.md)
+  * [Liquidity Provider CLI Commands](roles/liquidity-providers/liquidity-provider-cli-commands.md)
 
 ## Resources
 
