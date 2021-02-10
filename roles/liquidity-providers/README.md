@@ -39,11 +39,11 @@ Below is the formula used to calculate the units owned by a user when they add R
 There are a few ways you can add liquidity to a pool:
 
 * 1\) Sifchain-DEX-UI: You can use our user-friendly portal to add liquidity to an existing pool, or to create a brand new liquidity pool \(in the case where one does not exist yet\). Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui#pooling-assets) for clear instructions on how to perform these actions.
-* 2\) Manually by running commands. Please refer to the Liquidity Provider CLI Commands page for additional information. 
+* 2\) Manually by running commands. Please refer to the [Liquidity Provider CLI Commands](https://docs.sifchain.finance/roles/liquidity-providers/liquidity-provider-cli-commands) page for additional information. 
 
 ## **Removing Liquidity**
 
-When removing liquidity in our asymmetric liquidity pool design, since users are allowed to stake one side or the other, they are also allowed to withdraw one side or the other. Because the system calculates the user’s overall ownership at the time they added liquidity, it can now use that ownership % to calculate the amount\(s\) to withdraw. 
+When removing liquidity in our asymmetric liquidity pool design, since users are allowed to stake one side or the other, they are also allowed to withdraw one side or the other. Because the system calculates the user’s overall ownership at the time they added liquidity, it can now use that ownership % to calculate the eligible amount\(s\) to withdraw. 
 
 For example:
 
@@ -53,27 +53,16 @@ For example:
 
 By using these two different values, the system gives LPs a very high level of precision in specifying exactly how much to withdraw from each side of the pool. This differs from other symmetric liquidity pools, where LPs must withdraw equal value from both sides.
 
-When removing liquidity from a pool, LP providers are also subjuct to swap fees and swap slippage. The reason for this is to prevent users from trying to avoid these price impacts that they would incur from doing a swap instead. This ensures that a user cannot use the adding and removing of liquidity as a means to game the system.
+When removing liquidity from a pool, LP providers are also subject to swap fees and swap slippage. The reason for this is to prevent users from trying to avoid these price impacts that they would incur from doing a swap instead. This ensures that a user cannot use the adding and removing of liquidity as a means to game the system.
 
 For example:
 
-* If ROWAN price is 0.3USD and a LP deposits 30000 Rowan, and 300 USDT and then withdraws 100% USDT to get 3300 USDT and there is no swap, then they’ve essentially just performed a swap without having to pay a swap fee.
-* But if the LP deposited 30000 Rowan and 300 USDT and then withdraws symmetrically \(ie the same as the deposit\), they will recieve 3000 Rowan 300 USDT.
+* If ROWAN price is 0.3USD and a LP deposits 30,000 Rowan, and 300 USDT and then withdraws 100% USDT to get 3,300 USDT and there is no swap, then they’ve essentially just performed a swap without having to pay a swap fee.
+* But if the LP deposited 30,000 Rowan and 300 USDT and then withdraws symmetrically \(ie the same as the deposit\), they will receive 3,000 Rowan 300 USDT.
 
 There are a few ways you can remove liquidity to a pool:
 
 * 1\) Sifchain-DEX-UI: You can use our user-friendly portal to remove liquidity at any time. Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui) for clear instructions on how to perform these actions.
-* 2\) Manually by running commands. Please refer to the list below for these commands:
-* **Remove Liquidity for a Pool:** `sifnodecli tx clp remove-liquidity --from <key> --symbol <external-asset-symbol> --wBasis <basis points> --asymmetry <basis-points-range>`
-  * --from is the address that provided tokens to the liquidity pool  
-  * --symbol is the asset symbol for the liquidity pool 
-  * --wBasis is the percentage of your share in the liquidity pool to be withdrawn expressed in basis points from 0 to 10000, 0 being 0% and 10000 being 100%
-  * --asymmetry determines the ratio of each token that will be withdrawn expressed in either negative or positive basis points from -10000 to 10000. An --asymmetry value of -10000 will result in a withdrawal of 100% Rowan, 0 will result in a withdrawal of 50% Rowan and 50% external asset, and 10000 will result in a withdrawal of 100% external asset.
-  * After successfully submitting a withdrawal transaction you can verify that the changes are reflected in the corresponding Liquidity Provider object by querying it with the following command:
-    * `sifnodecli query clp lp <external-asset-symbol> <lpAddress>` 
-      * &lt;external-asset-symbol&gt; is the symbol for the liquidity pool 
-      * &lt;lpAddress&gt; is the address that provided the tokens to the pool 
-      * If the withdrawal removed all of your shares from the pool \(10000 basis points\), the Liquidity Provider object will be deleted and this query will return nothing.
-  * You can also check that the tokens have been added back to the original address by querying the address’s balance with: 
-    * `sifnodecli query account <address>`  
+* 2\) Manually by running commands. 
+  * Please refer to the [Liquidity Provider CLI Commands](https://docs.sifchain.finance/roles/liquidity-providers/liquidity-provider-cli-commands) page for additional information. 
 
