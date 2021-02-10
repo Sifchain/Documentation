@@ -15,11 +15,12 @@ Be aware that this is a BetaNet launch - we will improve and iterate as we recei
 
 ### Security Measures <a id="3857"></a>
 
-Sifchain has been proactive, and taken the necessary security measures to ensure the protection of funds, assets, and investments by Sifchain users. By leveraging best practices in security processes, and implementing tools that detect, prevent, and monitor any breach of data or funds, you can be assured that all precautions have been established to minimize risk. A list of the measures taken by Sifchain are outlined below:
+Sifchain has been proactive, and taken the necessary security measures to ensure the protection of funds, assets, and investments by Sifchain users. By leveraging best practices in security processes, and implementing tools that detect, prevent, and monitor any breach of data or funds, you can be assured that all precautions have been established to minimize risk. Audit reports are here - https://drive.google.com/drive/u/1/folders/1kkjdpNuRmTjaiIKA6CQISavCvj4Awpbc.  A list of the measures taken by Sifchain are outlined below:
 
 **People**
 
-* Halborn, a cybersecurity team focused on blockchain and smart contract security, has been engaged to assist with all aspects of security, from penetration testing, to incident response, to hardening of architecture.
+* Halborn, a cybersecurity team focused on blockchain and smart contract security, has been engaged to assist with all aspects of security, from penetration testing, to incident response, to hardening of architecture, and has produced multiple audit reports.
+* Solidified and Cryptonics also produced audit reports.  These teams were isolated from development and focused solely on auditing to provide an independent evaluation of Sifchain's implementation.
 * Bug bounty program via HackerOne to have crowdsourced programs to find vulnerabilities in our websites and endpoints.
 * Security training and awareness is communicated to all employees through onboarding, and slack channel communications.
 * Internal team dedicated to secure development and testing.
