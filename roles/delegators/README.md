@@ -36,54 +36,23 @@ The delegation process is the same for both validators and delegators; whereas a
 
 ### Prerequisites  
 
-* You have a Sifchain address. To get a Sifchain address, you can do one of the below two options:
-  * Access the Sifchain-Dex-UI \(coming soon!\) and create a new address through the Keplr Wallet Integration. 
-  * Run Command `sifnodecli keys add <name>` .  This command will give you your: address, public key, and mnemonic phrase. 
+* You have a Sifchain address. To get a Sifchain address, you can do one of the below options:
+  1. Use the Sifchain-DEX-UI and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#create-or-import-a-sifchain-address-with-keplr-wallet).
+  2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
+     1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
+        1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
+     2. Take this generated key and run: `rake "keys:import[<moniker>]"`
+        1. This will give you your newly generate Sifchain address.
+  3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
 * You have ROWAN to delegate. 
 
-### Delegate
+You can now reference the Delegator CLI commands page for all relevant commands that will need to be run in order to execute a delegation. In the future, the Sifchain team will build a mechanism to do all of these actions via a web UI, but for the time being these actions are only supported through a CLI tool. 
 
-* 1\) In order to execute a delegation, you will need to do get the node validator address you are wanting to delegate to. You can do this by simply reaching out to your desired Node Operator and asking for their address, or you can query the network to get a list of all node validators by running the following command:
-  * `sifnodecli query staking validators`
-    * This will return a list of all validators \(whether or not they are included in the top 100\). 
-* 2\) Now you can  delegate tokens, run the following command:
-  * `sifnodecli tx staking delegate <validator-address> <amount> --from <address>`
-    * You’ll need to specify the address of the validator you’re delegating to, the amount you are delegating, and the address holding the tokens.
-* 2\) After submitting a delegation transaction you can check your delegation with:
-  * `sifnodecli query staking delegation <delegator-address> <validator-address>`
-    * Using this command with the validator address you used in the delegate command will show you information for your delegation to that validator.
+After you have successfully submitted a delegation, you now have the below actions that you are eligible to do:
 
-### Consolidated list of Commands
-
-* See a list of the top 100 staked validators:  `sifnodecli query tendermint-validator-set`
-* See a list of all validators and their commission rates:  `sifnodecli query staking validators`
-  * The validators in this list with the status '2' means they are in the top 100.
-* Execute a new delegation: `sifnodecli tx staking delegate <validator-address> <amount> --from <address>`
-* See the status of a previous delegation: `sifnodecli query staking delegation <delegator-address> <validator-address>`
-* See a list of all delegations associated with your address: ****`sifnodecli query staking delegations <delegator-address>`
-
-##  **Unbond an existing delegation**
-
-If you want to unbond an existing delegation, you can follow the below steps:
-
-* 1\) Submit an unbond transaction:
-  * `sifnodecli tx staking unbond <validator-address> <amount> --from <address>` 
-    * Specify the validator you want to unbond from, the amount to unbond, and your delegator address. If the validator is currently in the active validator set and not jailed, successful submission of this transaction will put the specified amount of the delegation into an unbonding period. The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address.
-  * 2\) Check the status of an existing unbond transaction:
-    * `sifnodecli query staking unbonding-delegation <delegator-address> <validator-address>`
-
-**Additional Notes:**
-
-* If a validator recently left the active validator set they will be in their own unbonding period. If a delegator unbonds their delegations at this time they will only have to wait as long as the remaining time in the validator’s unbonding period. To view this information about the validator, execute the following command:
-  * `sifnodecli query staking validator <validator-address>.`
-* If the validator is not in the active set of validatores and is not in an unbonding period, delegators will receive their tokens immediately after submitting an unbond transaction.
-
-## **Redelegate**
-
-Delegators can move an existing delegation from one validator to another without waiting through an unbonding period. To do this, execute the following command:
-
-* `sifnodecli tx staking redelegate <src-validator-address> <dst-validator-address> <amount> --from <key>`
-  * This will immediately move the specified amount from one validator to another.
+* **Claim your earned Rewards**: Rewards must be claimed manually.
+* **Unbond your delegation:** If the validator is currently in the active validator set and not jailed, successful submission of this transaction will put the specified amount of the delegation into an unbonding period. The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address.
+* **Redelegate your exsiting delegation to a different node operator**: Delegators can move an existing delegation from one validator to another without waiting through an unbonding period. 
 
 
 
