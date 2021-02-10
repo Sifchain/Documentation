@@ -37,9 +37,9 @@ eROWAN:
 
 ## How can I setup a Sifchain address in order to acquire ROWAN and use the Sifchain-DEX?
 
-There are a few different ways you can setup a Sifchain address. This address is needed to be able to acquire any Sifchain native token \(including ROWAN and all pegged tokens in the Sifchain ecosystem\). In order to get a Sifchain address, you can:
+There are a few different ways you can setup a Sifchain address. This address is needed to be able to acquire any Sifchain native token \(including ROWAN and all pegged tokens in the Sifchain ecosystem\). In order to get a Sifchain address, you can do one of the following:
 
-1. Use the Sifchain-DEX-UI and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
+1. \(Easiest\) Use the Sifchain DEX and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
 2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
    1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
       1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
@@ -49,21 +49,27 @@ There are a few different ways you can setup a Sifchain address. This address is
 
 ## How can I view my eROWAN in my MetaMask Wallet?
 
-Since eRowan is a new token, it will not appear in the default list of tokens displayed by MetaMask. There is an easy way to fix this in 3 steps:
+Since eROWAN is a new token, it will not appear in the default list of tokens displayed by MetaMask. There is an easy way to fix this in 3 steps:
 
 1. From the main view in MetaMask, scroll down on the “Assets” tab and select “Add Token”
 
 ![](../.gitbook/assets/screen-shot-2021-01-19-at-1.53.56-pm.png)
 
-2. Select the “Custom Token” tab and input the Token Contract Address for eRowan — _\[contract address coming soon\]_, then select Next.
+2. Select the “Custom Token” tab and input the Token Contract Address for eROWAN — `0x07baC35846e5eD502aA91AdF6A9e7aA210F2DcbE` then select Next.
 
-![](../.gitbook/assets/screen-shot-2021-01-19-at-1.59.29-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-10-at-10.28.20-am.png)
 
 3. Confirm the token by selecting “Add Tokens” on this final screen.
 
+![](../.gitbook/assets/screen-shot-2021-02-10-at-10.28.36-am.png)
+
+Once the eROWAN token has been successfully added, you will see a screen similar to the one shown here.
+
+![](../.gitbook/assets/complete.png)
+
 ## How can I convert my eROWAN to ROWAN?
 
-In order to convert your eROWAN to ROWAN, you will use Peggy. Find out more information about Peggy [here](https://docs.sifchain.finance/core-concepts/peggy). In order to utilize this functionality, we have put a front-end in place for you to easily convert your Ethereum assets into Sifchain assets \(in this case, your eROWAN into ROWAN\).  For step-by-step directions on how to do this via our Front-end portal, reference here \(Casey to input link to FE guide here\). 
+In order to convert your eROWAN to ROWAN, you will use the Sifchain DEX. For step-by-step directions on how to convert eROWAN to ROWAN, as well as move other Ethereum assets into our low-fee network, read the section "[Pegging Assets into Sifchain](sifchain-dex-ui.md#peg-assets-into-sifchain-tutorial)" in the Sifchain DEX User Guide. 
 
 ## 
 
