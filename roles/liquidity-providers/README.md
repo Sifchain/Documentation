@@ -39,26 +39,7 @@ Below is the formula used to calculate the units owned by a user when they add R
 There are a few ways you can add liquidity to a pool:
 
 * 1\) Sifchain-DEX-UI: You can use our user-friendly portal to add liquidity to an existing pool, or to create a brand new liquidity pool \(in the case where one does not exist yet\). Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui#pooling-assets) for clear instructions on how to perform these actions.
-* 2\) Manually by running commands. Please refer to the list below for these commands:
-  * **Creating a Liquidity Pool:** `sifnodecli tx clp create-pool --from <key> --symbol <external-asset-symbol> --nativeAmount <amount> --externalAmount <amount>`
-    * --symbol refers to the new asset the pool is being created for, 
-    * --nativeAmount is the amount of Rowan that will be added to the newly created pool, 
-    * --externalAmount is the amount of the asset specified by symbol that will be added to the newly created pool. 
-    * Both amounts specified will be deducted from the address specified by --from. 
-    * A successful submission of this transaction will create a new pool for the specified asset and amounts.
-    * View newly created pool with the following command: `sifnodecli query clp pool <external-asset-symbol>` 
-      * &lt;external-asset-symbol&gt; will be the symbol for the asset specified during pool creation.
-  * **View share of pool & token balances**: Creating a pool will also create a new Liquidity Provider object for the creator of the pool. This object contains information about your share of the liquidity pool and token balances in the pool. Liquidity Provider objects can be queried with the following command: `sifnodecli query clp lp <external-asset-symbol> <lpAddress>`
-    * &lt;external-asset-symbol&gt; is the symbol for the liquidity pool and &lt;lpAddress&gt; is the address that provided the tokens to the pool.
-  * **Adding Liquidity to a Pool**: `sifnodecli tx clp add-liquidity --from <key> --symbol <external-asset-symbol> --nativeAmount <amount> --externalAmount <amount>`
-    * --symbol refers to the asset pool that the liquidity will be added to
-    * --nativeAmount is the amount of Rowan that will be added to the pool, and 
-    * --externalAmount is the amount of the asset specified by symbol that will be added to the pool. 
-    * Both amounts specified will be deducted from the address specified by --from. 
-    * A successful submission of this transaction will update the pool for the specified asset and amounts.
-      * View updated pool with the following command: `sifnodecli query clp lp <external-asset-symbol> <lpAddress>`
-        * &lt;external-asset-symbol&gt; will be the symbol for the asset specified during pool creation.
-        * &lt;lpAddress&gt; is the address that provided the tokens to the pool. 
+* 2\) Manually by running commands. Please refer to the Liquidity Provider CLI Commands page for additional information. 
 
 ## **Removing Liquidity**
 
