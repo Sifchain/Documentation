@@ -52,7 +52,7 @@ Feel free to see our Tweets on how the SifDao could possibly take shape: [https:
 
 #### Security
 
-To ensure the security of the sifchain ecosystem, the SifCore team will lead the development and deployment of each bridge. The SifCore team intends to give all bridges the same security guarantees as described in the [general case](https://app.gitbook.com/@sifchain/s/sifchain/~/drafts/-MR1K8Tq8VRB5PXYz9on/core-concepts/peggy/general-case-mode-for-pegged-tokens) and model extensions. We may use Rowan as the collateral for these bridges or we may create another token solely to be used by these peg zones depending on a successful implementation of the rebalancing mechanism and market conditions.
+To ensure the security of the Sifchain ecosystem, the SifCore team will lead the development and deployment of each bridge. The SifCore team intends to give all bridges the same security guarantees as described in the [general case](https://app.gitbook.com/@sifchain/s/sifchain/~/drafts/-MR1K8Tq8VRB5PXYz9on/core-concepts/peggy/general-case-mode-for-pegged-tokens) and model extensions. We may use Rowan as the collateral for these bridges or we may create another token solely to be used by these peg zones depending on a successful implementation of the rebalancing mechanism and market conditions.
 
   
 
