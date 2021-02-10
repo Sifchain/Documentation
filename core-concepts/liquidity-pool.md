@@ -10,7 +10,7 @@ A liquidity pool is a primitive for many decentralized cryptocurrency trading pl
 
 Sifchain's liquidity pools are based on Sushiswap with extensibility in mind for potential updates. Rowan will be the settlement token for each pool, meaning each pool will contain Rowan as one asset and an external asset as the other. Sifchain’s swap UI will support swaps between external assets \(for example, cMKR:cCOMP\) but such transactions will actually require two swaps between two different liquidity pools \(for example, cMKR:ROWAN and then ROWAN:cCOMP\).‌
 
-Liquidity providers need to be able to add liquidity into Sifchain’s liquidity pools where they can earn income. Liquidity providers should be able to deposit any token Sifchian supports to the appropriate pool. They should be able to add [asymmetrically](https://medium.com/thorchain/asymmetric-withdrawals-on-bepswap-a6924ed2f28b), meaning they can add only Rowan or only TKN for any token. This is as opposed to Uniswap where users must add equal values of the settlement token \(ETH\) and the other token \(TKN\). Liquidity providers should be able to add or remove liquidity whenever they choose.‌
+Liquidity providers will be able to add liquidity into Sifchain’s liquidity pools where they can earn income. Liquidity providers should be able to deposit any token Sifchian supports to the appropriate pool. They will be able to add liqudity [asymmetrically](https://medium.com/thorchain/asymmetric-withdrawals-on-bepswap-a6924ed2f28b), meaning they can add only Rowan or only TKN for any token. This is as opposed to Uniswap where users must add equal values of the settlement token \(ETH\) and the other token \(TKN\). Liquidity providers will be able to add or remove liquidity whenever they choose.‌
 
 Sifchain allows swappers to send a transaction to a liquidity pool with the amount of tokens they want to give up in exchange for tokens on the other side of the pool. Sifchain uses both an order book and a CLP for trade completion.‌
 
@@ -34,7 +34,7 @@ The amount of income that liquidity providers can earn is dependent on the below
 
 #### Pool Ownership calculation
 
-Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool.
+Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool. The Liquidity Provider is then able to withdraw that amount of ownership at any time across either token within the pool. 
 
 $$
 slipAdjustment = 1 - |\frac{Ra-rA}{(2R + r)*(a +A)}|
@@ -54,7 +54,7 @@ Definitions:
 
 ### 2.\) Time
 
- The length of time a liquidity provider keeps their liquidity in a pool. We reward liquidity providers that keep their liquidity in the pool for longer durations of time.
+This is the length of time a liquidity provider keeps their liquidity in a pool. We reward liquidity providers that keep their liquidity in the pool for longer durations of time.
 
 ### **3.\)** Fee Revenue
 
