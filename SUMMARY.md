@@ -50,5 +50,4 @@
 ## Join Sifchain
 
 * [Sifchain Communities](join-sifchain/sifchain-communities.md)
-* [Contributing to Sifchain](join-sifchain/contributing-to-sifchain.md)
 
