@@ -27,7 +27,15 @@ Please reference on of the two sub-pages for guides on how to setup the Sifchain
 * [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server)\(EC2/Digital Ocean or local\)
 * [Running Sifnode on Kubernetes ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes)\(**recommended**\)
 
-### Stake your Node:
+### Acquiring ROWAN to bond:
+
+In order to acquire ROWAN you can: 
+
+* 1\) Purchase some from our token sale 
+* 2\) Attract delegations 
+* 3\) Acquire ROWAN via other decentralized exchanges
+
+### Stake your Node
 
 Now that you have your node up and running and you have ROWAN to stake with, you must now execute the following command:
 
