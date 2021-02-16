@@ -2,7 +2,7 @@
 
 ## Peggy Tutorial
 
-{% page-ref page="../../core-concepts/peggy/" %}
+{% page-ref page="../../core-concepts/peggy.md" %}
 
 1. Install Peggy [https://github.com/Sifchain/peggy\#installation](https://github.com/Sifchain/peggy#installation) . 
 2. Initialize Peggy 

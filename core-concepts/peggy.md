@@ -18,7 +18,7 @@ Peggy is the starting point for cross-chain value transfers from the Ethereum bl
 
 The system accepts incoming transfers of Ethereum tokens on an Ethereum smart contract, locking them while the transaction is validated and equitable funds issued to the intended recipient on the Cosmos bridge chain. The system supports value transfers from Cosmos-SDK based blockchains to the Ethereum blockchain as well through a reverse process.
 
-![](../../.gitbook/assets/screen-shot-2021-01-14-at-12.55.57-pm.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-12.55.57-pm.png)
 
 An Ethereum user can send tokens from their Ethereum wallet to a Peggy smart contract running on Ethereum.  Peggy validators observing the Peggy smart contract keep those Ethereum tokens in a lockup group and mint a corresponding allocation of pegged tokens to a user’s Cosmos Network wallet address.  
 
