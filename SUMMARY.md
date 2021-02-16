@@ -36,7 +36,7 @@
     * [Running Sifnode on Kubernetes](resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes.md)
     * [Running Sifnode on your Ubuntu server](resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server.md)
 * [Tokenomics](https://sifchain.finance/token-economics%20)
-* [Blockexplorers](resources/blockexplorers.md)
+* [Block Explorers](resources/blockexplorers.md)
 * [BetaNet Launch](resources/betanet-launch.md)
 * [Sifchain DEX User Guide](resources/sifchain-dex-ui.md)
 * [FAQ](resources/faq.md)
