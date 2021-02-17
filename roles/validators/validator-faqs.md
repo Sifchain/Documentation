@@ -20,6 +20,10 @@ At Sifchain we believe that the Archival is most complete, but feel free to make
 
 Validators are paid via Block Rewards. Please find additional information [here](https://docs.sifchain.finance/roles/validators#block-rewards). Validators will also earn additional rewards via our Liquidity Mining Program, which is referenced [here](https://docs.sifchain.finance/roles/validators#liquidity-mining-rewards).
 
+The calculation for this is as follows:
+
+* **Validator & Delegation Rewards** = \[30M Rowan / \(total\_rowan\_staked\_and\_delegated - total\_rowan\_staked\_by\_sifchain\] + Block Rewards \(Variable\).
+
 ## Are rewards subject to any locking periods?
 
 Some rewards earned by Validators are subject to lock-up periods. We're currently designing this and will provide more information later.

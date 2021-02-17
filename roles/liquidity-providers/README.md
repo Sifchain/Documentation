@@ -38,7 +38,7 @@ Below is the formula used to calculate the units owned by a user when they add R
 
 There are a few ways you can add liquidity to a pool:
 
-* 1\) Sifchain-DEX-UI: You can use our user-friendly portal to add liquidity to an existing pool, or to create a brand new liquidity pool \(in the case where one does not exist yet\). Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui#pooling-assets) for clear instructions on how to perform these actions.
+* 1\) [Sifchain-DEX-UI](https://dex.sifchain.finance): You can use our user-friendly portal to add liquidity to an existing pool, or to create a brand new liquidity pool \(in the case where one does not exist yet\). Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui#pooling-assets) for clear instructions on how to perform these actions.
 * 2\) Manually by running commands. Please refer to the [Liquidity Provider CLI Commands](https://docs.sifchain.finance/roles/liquidity-providers/liquidity-provider-cli-commands) page for additional information. 
 
 ## **Removing Liquidity**
