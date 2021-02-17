@@ -45,7 +45,7 @@ eROWAN:
 
 There are a few different ways you can setup a Sifchain address. This address is needed to be able to custody ROWAN and all pegged tokens in the Sifchain ecosystem. In order to get a Sifchain address, you can do one of the following:
 
-1. \(Easiest\) Use the Sifchain DEX and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
+1. \(Easiest\) Use the [Sifchain DEX](https://dex.sifchain.finance) and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).
 2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
    1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
       1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
