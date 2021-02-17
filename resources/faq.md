@@ -13,11 +13,13 @@ For more details on the usage of ROWAN, please refer [here](https://medium.com/s
 
 **eROWAN** is the equivalent token of ROWAN on the Ethereum network. Users are able to transfer their ROWAN to eROWAN between the Ethereum and Sifchain networks via Peggy. 
 
+**\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
+
 ## How can I acquire ROWAN and/or eROWAN
 
-In order to hold ROWAN/eROWAN you will first need a wallet to custody the tokens. See Wallet section below for more on wallets.
+In order to hold ROWAN/eROWAN you will first need a wallet to custody the tokens. See [Wallet](faq.md#what-wallets-support-rowan-erowan) section below for more on wallets.
 
-When the Sifchain network is live you will soon be able to buy ROWAN/eROWAN on decentralized exchanges \(DEXs\) and centralized exchanges \(CEXs\). 
+When the Sifchain network is live you will be able to buy ROWAN/eROWAN on decentralized exchanges \(DEXs\) and centralized exchanges \(CEXs\). 
 
 Here is a list of known exchanges that support ROWAN/eROWAN:
 
@@ -28,7 +30,10 @@ ROWAN:
 
 eROWAN:
 
-* [Uniswap](https://app.uniswap.org/#/swap) \(DEX\) — _coming soon_
+* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \(DEX\) — _coming soon_
+* Sushiswap \(DEX\) — _coming soon_
+
+**\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
 
 ## What wallets support ROWAN/eROWAN?
 
