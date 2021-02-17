@@ -71,12 +71,12 @@ After connecting your Keplr and MetaMask wallets, you are now ready to move asse
 
 * Once in the Sifchain DEX, go to the 'Peg' feature.
 
-![](../.gitbook/assets/screen-shot-2021-02-02-at-4.50.13-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.08.24-am.png)
 
 * On the 'External Tokens' list, you will see a list of all available tokens that you are able to 'Peg' into Sifchain as well as your correlated balances in those tokens. 
 * Click on the 'PEG' button next to the token you want to move into Sifchain. This will bring you to the next screen:
 
-![](../.gitbook/assets/screen-shot-2021-02-02-at-4.53.56-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.09.40-am.png)
 
 * Input the amount of that token you want to peg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to peg. We have automatically called in your Sifchain address as the recipient address of these pegged tokens.
 * Next, click 'Peg'. This will bring up another confirmation screen:
@@ -91,17 +91,17 @@ You are now free to use your newly pegged tokens via swaps, or by providing liqu
 
 * You are free to move your pegged assets back into your Ethereum wallet at any time. To do this, go to the 'Peg' screen and click on the 'Sifchain Native' token tab:
 
-![](../.gitbook/assets/screen-shot-2021-02-02-at-6.04.14-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.10.57-am.png)
 
 * Here you will see a list of all your Sifchain Native tokens and your balances in those tokens. 
 * Click on the 'UNPEG' button next to the token you want to move back into your Ethereum wallet. This will bring you to the next screen:
 
-![](../.gitbook/assets/screen-shot-2021-02-02-at-6.06.44-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.12.03-am.png)
 
 * Now you can input the amount of that token you want to unpeg. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to unpeg. We have automatically called in your Ethereum address as the recipient address of these unpegged tokens. Once you input an amount, it will display the associated transaction fee that must be paid in cETH. Ensure you have enough cETH in your Sifchain wallet to pay for this fee.
 * Next, click 'Unpeg'. This will bring up another confirmation screen:
 
-![](../.gitbook/assets/screen-shot-2021-02-02-at-6.08.00-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.14.27-am.png)
 
 * Once you click confirm, you will need to sign the transaction via your Keplr wallet. After this, you can see the adjusted token amounts within a minute in your wallets and within the 'Peg' screen.
 
@@ -115,7 +115,7 @@ After connecting your Keplr and MetaMask wallets, and you have assets within Sif
 
 * To begin the 'add liquidity' process, navigate to the 'Pool' option within the Sifchain DEX. Here you will see a screen that looks like the one shown here:
 
-![](../.gitbook/assets/screen-shot-2021-02-03-at-12.18.27-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.15.10-am.png)
 
 * This screen shows the following:
   * A list of liquidity pools that you currently have liquidity in. 
@@ -134,7 +134,7 @@ After connecting your Keplr and MetaMask wallets, and you have assets within Sif
 * IF the pool does not exist yet, then you must put some amount of the selected token AND ROWAN to initiate the pool. This will set the initial prices of the pool.
 * Once you input your desired amounts, you will see some displayed statistics on the pool:
 
-![](../.gitbook/assets/screen-shot-2021-02-03-at-1.54.34-pm.png)
+![](../.gitbook/assets/screen-shot-2021-02-17-at-11.16.27-am.png)
 
 * The 'Pool Token Prices' display the prices of the tokens as they are in the pool at this very moment.
 * The 'Price Impact and Pool Share' display what those prices will be IF you were to execute your adding of liquidity. This will also show you the percentage of the pool you will own if you execute the add.
