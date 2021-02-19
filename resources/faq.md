@@ -25,13 +25,13 @@ Here is a list of known exchanges that support ROWAN/eROWAN:
 
 ROWAN:
 
-* Sifchain DEX — _coming soon_
+* [Sifchain DEX](https://dex.sifchain.finance/) — _live now_
 * [BitMax](https://bitmax.io/en/global-digital-asset-platform) \(CEX\) — _coming soon_
 
 eROWAN:
 
-* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \(DEX\) — _coming soon_
-* Sushiswap \(DEX\) — _coming soon_
+* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \(DEX\) — _live now, only use official_ [_eRowan contract address_](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) __
+* [Sushiswap](https://app.sushiswap.fi/) \(DEX\) — _live now_
 
 **\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
 
