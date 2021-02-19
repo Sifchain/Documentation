@@ -43,7 +43,7 @@ Complete kubectl installation by installing aws-iam-authentication tool
 
 ### Network and Node Setup
 
-Please refer to this [link](https://github.com/Sifchain/sifnode/blob/develop/docs/chainOps/k8s.md) for the most up to date and accurate directions on how to finish this setup.
+Please refer to this [link](https://github.com/Sifchain/sifnode/tree/master/docs/chainOps/k8s) for the most up to date and accurate directions on how to finish this setup.
 
 ### Stake your Node:
 
