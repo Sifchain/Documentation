@@ -26,7 +26,6 @@ Here is a list of known exchanges that support ROWAN/eROWAN:
 ROWAN:
 
 * [Sifchain DEX](https://dex.sifchain.finance/) — _live now_
-* [BitMax](https://bitmax.io/en/global-digital-asset-platform) \(CEX\) — _coming soon_
 
 eROWAN:
 
