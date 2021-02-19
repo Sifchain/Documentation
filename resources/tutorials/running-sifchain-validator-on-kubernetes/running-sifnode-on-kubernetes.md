@@ -31,11 +31,11 @@ Overall costs will depend largely on your final setup.
 * [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * [Helm](https://helm.sh/docs/intro/install/)
 
-**Configure AWS CLI Tool:**
+### Configure the AWS CLI
 
 Please ensure you setup the AWS CLI as per the tutorial [here](https://aws.amazon.com/cli/).
 
-#### Configure kubectl tool
+### Configure kubectl
 
 Amazon EKS uses IAM to provide authentication to your Kubernetes cluster through the [AWS IAM authenticator for Kubernetes](https://github.com/kubernetes-sigs/aws-iam-authenticator). You can configure the stock `kubectl` client to work with Amazon EKS by installing the AWS IAM authenticator for Kubernetes and modifying your `kubectl` configuration file to use it for authentication.
 
