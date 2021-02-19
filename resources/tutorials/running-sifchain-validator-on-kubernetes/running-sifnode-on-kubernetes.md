@@ -39,9 +39,7 @@ Please ensure you setup the AWS CLI as per the tutorial [here](https://aws.amazo
 
 Amazon EKS uses IAM to provide authentication to your Kubernetes cluster through the [AWS IAM authenticator for Kubernetes](https://github.com/kubernetes-sigs/aws-iam-authenticator). You can configure the stock `kubectl` client to work with Amazon EKS by installing the AWS IAM authenticator for Kubernetes and modifying your `kubectl` configuration file to use it for authentication.
 
-Complete kubectl installation by installing aws-iam-authentication tool
-
-[https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
+Complete the kubectl setup by installing the `aws-iam-authentication` tool as described [here](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html).
 
 ### Network and Node Setup
 
