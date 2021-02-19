@@ -10,12 +10,14 @@ _This tutorial assumes that you have at least a basic understanding of setting u
 
 [Kubernetes](https://kubernetes.io/) is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 
-Here's the rough breakdown of the overall cost of running a node :
+Here's the rough breakdown of the overall cost of running a basic node:
 
-* $73 per month for the EKS Control Plane
-* $137 per month for a t2.xlarge instance
-* $70 in load balancer costs
-* $100 in disk costs
+* ~$75 per month for the EKS Control Plane
+* ~$135 per month for a t2.xlarge instance
+* ~$75 in load balancer costs
+* ~$100 in disk costs
+
+Overall costs will depend largely on your final setup.
 
 **Install Dependencies:**
 
@@ -43,7 +45,7 @@ Complete kubectl installation by installing aws-iam-authentication tool
 
 ### Network and Node Setup
 
-Please refer to this [link](https://github.com/Sifchain/sifnode/tree/master/docs/chainOps/k8s) for the most up to date and accurate directions on how to finish this setup.
+Please refer to this [link](https://github.com/Sifchain/sifnode/tree/master/docs/chainOps/k8s) for the most up to date and accurate directions on how to complete this setup.
 
 ### Stake your Node:
 
