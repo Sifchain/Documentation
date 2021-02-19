@@ -8,7 +8,7 @@ description: >-
 
 ### Network and Node Setup
 
-Please refer to this [link](https://github.com/Sifchain/sifnode/blob/develop/readme.md) for the most up to date and accurate directions on how to finish this setup.
+Please refer to this [link](https://github.com/Sifchain/sifnode/blob/master/docs/chainOps/standalone/tutorials/betanet.md) for the most up to date and accurate directions on how to finish this setup.
 
 ### Stake your Node:
 
