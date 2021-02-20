@@ -43,7 +43,7 @@ Sifchain has been proactive, and taken the necessary security measures to ensure
 
 ### Front End <a id="3857"></a>
 
-We have created our Sifchain DEX UI \(insert link\) to be **an extremely user-friendly interface** for people to interact with while engaging in the Sifchain network. Users will be able to easily execute token swaps, add to liquidity pools, and use [Peggy](https://blog.cosmos.network/sifchain-announces-peggy-cosmos-ethereum-cross-chain-bridge-eeb46a8f91db) through this interface. Users will be able to utilize wallets such as [Metamask](https://metamask.io/) and [Keplr](https://wallet.keplr.app/#/dashboard) for Sifchain. Our goal is to make everything easy and interoperable.
+We have created our [Sifchain DEX UI](https://dex.sifchain.finance/) to be **an extremely user-friendly interface** for people to interact with while engaging in the Sifchain network. Users will be able to easily execute token swaps, add to liquidity pools, and use [Peggy](https://blog.cosmos.network/sifchain-announces-peggy-cosmos-ethereum-cross-chain-bridge-eeb46a8f91db) through this interface. Users will be able to utilize wallets such as [Metamask](https://metamask.io/) and [Keplr](https://wallet.keplr.app/#/dashboard) for Sifchain. Our goal is to make everything easy and interoperable.
 
 ### Peggy <a id="aad4"></a>
 
