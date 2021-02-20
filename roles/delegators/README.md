@@ -38,15 +38,19 @@ The delegation process is the same for both validators and delegators; whereas a
 
 * You have a Sifchain address. To get a Sifchain address, you can do one of the below options:
   1. Use the Sifchain-DEX-UI and use our Keplr Wallet integration to setup a new Sifchain address. For directions on this, please refer to our instructions [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#create-or-import-a-sifchain-address-with-keplr-wallet).
-  2. If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
-     1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
-        1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
-     2. Take this generated key and run: `rake "keys:import[<moniker>]"`
-        1. This will give you your newly generate Sifchain address.
-  3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
-* You have ROWAN to delegate. 
+  2. You have ROWAN to delegate. 
 
-You can now reference the Delegator CLI commands page for all relevant commands that will need to be run in order to execute a delegation. In the future, the Sifchain team will build a mechanism to do all of these actions via a web UI, but for the time being these actions are only supported through a CLI tool. 
+### Ways to Delegate  
+
+* Go to the [Keplr Dashboard](https://wallet.keplr.app/#/dashboard), select Sifchain on the left hand side navigation bar, and click 'Stake'. This will take you to the list of validators in our network. Click on the 'manage' link on any of them you are interested in delagting to \(our managing your existing delegations with\). From here you can manage your delegations accorindgly.
+* If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
+  1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
+     1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
+  2. Take this generated key and run: `rake "keys:import[<moniker>]"`
+     1. This will give you your newly generate Sifchain address.
+  3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
+
+You can now reference the Delegator CLI commands page for all relevant commands that can be run in order to execute a delegation.
 
 After you have successfully submitted a delegation, you now have the below actions that you are eligible to do:
 
