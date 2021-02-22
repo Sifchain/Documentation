@@ -42,7 +42,10 @@ The delegation process is the same for both validators and delegators; whereas a
 
 ### Ways to Delegate  
 
-* Go to the [Keplr Dashboard](https://wallet.keplr.app/#/dashboard), select Sifchain on the left hand side navigation bar, and click 'Stake'. This will take you to the list of validators in our network. Click on the 'manage' link on any of them you are interested in delagting to \(our managing your existing delegations with\). From here you can manage your delegations accorindgly.
+* Go to the [Keplr Dashboard](https://wallet.keplr.app/#/dashboard), select Sifchain on the left hand side navigation bar, and click 'Stake'. This will take you to the list of validators in our network. Click on the 'manage' link beside any of them you are interested in delegating to \(or managing your existing delegations with\). From here you can manage your delegations accordingly.
+
+
+
 * If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
   1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
      1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
@@ -56,7 +59,7 @@ After you have successfully submitted a delegation, you now have the below actio
 
 * **Claim your earned Rewards**: Rewards must be claimed manually.
 * **Unbond your delegation:** If the validator is currently in the active validator set and not jailed, successful submission of this transaction will put the specified amount of the delegation into an unbonding period. The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address.
-* **Redelegate your exsiting delegation to a different node operator**: Delegators can move an existing delegation from one validator to another without waiting through an unbonding period. 
+* **Redelegate your existing delegation to a different node operator**: Delegators can move an existing delegation from one validator to another without waiting through an unbonding period. 
 
 
 
