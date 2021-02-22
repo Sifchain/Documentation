@@ -54,6 +54,8 @@ In order to use our Peggy feature and to move assets from the Ethereum blockchai
 
 Once you have connected both of your Metamask and Keplr wallets, you are now ready to peg liquidity into Sifchain and use all of the features Sifchain DEX has to offer!
 
+[Demo Video: Connecting Wallets to Sifchain DEX for the First Time](https://www.youtube.com/watch?v=xwp0HJeWU5U&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=1)
+
 ## Pegging Assets
 
 In order to move assets between Sifchain and an external Blockchain, you will use the 'Peg' feature. A few key things to understand about this feature:
@@ -87,6 +89,8 @@ After connecting your Keplr and MetaMask wallets, you are now ready to move asse
 
 You are now free to use your newly pegged tokens via swaps, or by providing liquidity!
 
+[Demo Video: Move Tokens \(“Pegging”\) Ethereum to Sifchain](https://www.youtube.com/watch?v=tyM9hPNvzW4&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=2)
+
 ### Unpeg Assets from Sifchain - Tutorial
 
 * You are free to move your pegged assets back into your Ethereum wallet at any time. To do this, go to the 'Peg' screen and click on the 'Sifchain Native' token tab:
@@ -104,6 +108,8 @@ You are now free to use your newly pegged tokens via swaps, or by providing liqu
 ![](../.gitbook/assets/screen-shot-2021-02-17-at-11.14.27-am.png)
 
 * Once you click confirm, you will need to sign the transaction via your Keplr wallet. After this, you can see the adjusted token amounts within a minute in your wallets and within the 'Peg' screen.
+
+[Demo Video: Move Tokens \(“Unpegging”\) Sifchain to Ethereum](https://www.youtube.com/watch?v=5-oR8JQlkrk&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=3)
 
 ## Pooling Assets
 
@@ -146,6 +152,8 @@ After connecting your Keplr and MetaMask wallets, and you have assets within Sif
 
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-1.59.23-pm.png)
 
+[Demo Video: Add Liquidity to a Pool in Sifchain DEX](https://www.youtube.com/watch?v=Rju9jamsjYE&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=4)
+
 ### Manage Liquidity
 
 In the case you already have liquidity in a pool, you will be able to see the pool you have added to in the 'Your Liquidity' list and you can now 'manage' that liquidity. 
@@ -176,6 +184,8 @@ In the case you already have liquidity in a pool, you will be able to see the po
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-2.31.40-pm.png)
 
 * You can finalize this withdrawal by clicking on the 'Remove Liquidity'. This will trigger you to sign the transaction via your Keplr wallet. Once finalized, you will now see these amounts in your wallet and your liquidity pool share and amounts adjusted accordingly.  
+
+[Demo Video: Remove Liquidity from a Pool in Sifchain DEX](https://www.youtube.com/watch?v=j1LGYkeAKRo&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=5)
 
 ## Swapping Assets
 
@@ -210,4 +220,6 @@ In Sifchain, users can swap any asset to any other asset \(given there is liquid
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-3.32.59-pm.png)
 
 * You can now confirm the swap, sign the transaction via your Keplr wallet and see the amounts adjusted in your wallet.
+
+[Demo Video: Token Swap in Sifchain DEX](https://www.youtube.com/watch?v=jG1BExJt_Bk&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=6)
 
