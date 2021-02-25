@@ -32,7 +32,13 @@ Liquidity providers will only need to pay gas fees when adding liquidity to a po
 
 Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool.
 
-![](../../.gitbook/assets/screen-shot-2021-01-24-at-4.39.26-pm.png)
+$$
+slipAdjustment = 1 - |\frac{Ra-rA}{(R + r)*(a +A)}|
+$$
+
+$$
+units = \frac{P(rA+Ra)}{2RA}*slipAdjustment
+$$
 
 ## Adding Liquidity
 
