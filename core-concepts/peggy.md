@@ -4,7 +4,7 @@
 
 The Ethereum network has been plagued with slow transactions and high fees for a long time.  Swappers would prefer to swap on a platform like Sifchain, which runs on the Cosmos network, a substantially more performant blockchain.  In order to move value from Ethereum tokens to a Cosmos network blockchain like Sifchain, users must use cross-chain software.
 
-While there are many cross-chain solutions; our solution for this problem is Peggy.
+Our solution for this problem is Peggy.
 
 In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allow people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain.
 
