@@ -34,7 +34,7 @@ The amount of income that liquidity providers can earn is dependent on the below
 
 #### Pool Ownership calculation
 
-Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool. The Liquidity Provider is then able to withdraw that amount of ownership at any time across either token within the pool. 
+Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool. The Liquidity Provider is then able to withdraw that amount of ownership at any time across either token within the pool.
 
 $$
 slipAdjustment = 1 - |\frac{Ra-rA}{(2R + r)*(a +A)}|
@@ -72,7 +72,7 @@ Swappers who are in a hurry to exchange assets will tend to make larger swaps. L
 
 Sifchain’s [Automated Marker Maker\(AMM\) Specification](https://hackmd.io/6VK2LSYjRTyeNCoHpVt2hg) is based on a derivation of liquidity pool architecture from first principles. It is important to us that we don’t enforce any formula on users. At launch, Sifchain will use [Thorchain’s slip based fee formula](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools#slip-based-fee-model-clp). In the future, we’re going to update this to allow [governance to control the liquidity pool formula](https://twitter.com/sifchain/status/1319358940090560512?s=20) by voting with their Rowan [on a per liquidity pool basis](https://twitter.com/sifchain/status/1319361777616838659?s=20).
 
-We are currently extending this model to derive the optimum balance between [rewards to validators and rewards to liquidity providers](https://twitter.com/sifchain/status/1320954306632118272?s=20), especially in a regime where we deploy temporary liquidity mining rewards. So far, our [rebalancing policy](https://hackmd.io/@shrutiappiah/r1itFRrPv) is a vectorized extension of Thorchain’s [Incentive Pendulum](https://docs.thorchain.org/how-it-works/incentive-pendulum) but this is under active research.
+We are currently extending this model to derive the optimum balance between [rewards to validators and rewards to liquidity providers](https://twitter.com/sifchain/status/1320954306632118272?s=20), especially in a regime where we deploy temporary validator subsidy rewards. So far, our [rebalancing policy](https://hackmd.io/@shrutiappiah/r1itFRrPv) is a vectorized extension of Thorchain’s [Incentive Pendulum](https://docs.thorchain.org/how-it-works/incentive-pendulum) but this is under active research.
 
 #### Rebalancing mechanism for system rewards distribution
 

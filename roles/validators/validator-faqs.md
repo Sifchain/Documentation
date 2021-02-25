@@ -18,7 +18,7 @@ At Sifchain we believe that the Archival is most complete, but feel free to make
 
 ## How are Validators paid?
 
-Validators are paid via Block Rewards. Please find additional information [here](https://docs.sifchain.finance/roles/validators#block-rewards). Validators will also earn additional rewards via our Liquidity Mining Program, which is referenced [here](https://docs.sifchain.finance/roles/validators#liquidity-mining-rewards).
+Validators are paid via Block Rewards. Please find additional information [here](https://docs.sifchain.finance/roles/validators#block-rewards). Validators will also earn additional rewards via our Validator Subsidy Program, which is referenced [here](https://docs.sifchain.finance/roles/validators#liquidity-mining-rewards).
 
 The calculation for this is as follows:
 

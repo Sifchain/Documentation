@@ -18,11 +18,11 @@ Sifchain enables liquidity providers to add liquidity into pools where they can 
 
 Sifchain rewards users who provide liquidity with various forms of income. To learn more about what types of income you can expect to earn as a liquidity provider, please reference [here](https://docs.sifchain.finance/core-concepts/liquidity-pool).
 
-## Liquidity Mining Rewards
+## Validator Subsidy Rewards
 
-Sifchain will run a 12-week liquidity mining program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+Sifchain will run a 12-week validatory subsidy program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
-To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here, section 'Liquidity Mining for Poolers'.](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
+To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02).
 
 ## Liquidity Provider Fees
 

@@ -1,16 +1,16 @@
 # Peggy
 
-### Introduction
+## Introduction
 
-The Ethereum network has been plagued with slow transactions and high fees for a long time.  Swappers would prefer to swap on a platform like Sifchain, which runs on the Cosmos network, a substantially more performant blockchain.  In order to move value from Ethereum tokens to a Cosmos network blockchain like Sifchain, users must use cross-chain software.
+The Ethereum network has been plagued with slow transactions and high fees for a long time. Swappers would prefer to swap on a platform like Sifchain, which runs on the Cosmos network, a substantially more performant blockchain. In order to move value from Ethereum tokens to a Cosmos network blockchain like Sifchain, users must use cross-chain software.
 
 Our solution for this problem is Peggy.
 
 In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allow people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain.
 
-We see Peggy’s deployment as a hallmark moment for growth of the Cosmos Network.  With Peggy and IBC, Ethereum users will be able to use their ETH and ERC20 tokens on Cosmos SDK platforms such as Kava, Akash, Terra, e-Money, IRIS, Secret Network, and of course, the Cosmos Hub.  Cosmos Network users will also be able to use their tokens on Ethereum and take advantage of its dapp network.  Cryptocurrency holders on both sides will be able to take advantage of the benefits of one chain while holding a position on a token native to another, bringing us one step closer to Sifchain’s mission of connecting liquidity on all blockchains. 
+We see Peggy’s deployment as a hallmark moment for growth of the Cosmos Network. With Peggy and IBC, Ethereum users will be able to use their ETH and ERC20 tokens on Cosmos SDK platforms such as Kava, Akash, Terra, e-Money, IRIS, Secret Network, and of course, the Cosmos Hub. Cosmos Network users will also be able to use their tokens on Ethereum and take advantage of its dapp network. Cryptocurrency holders on both sides will be able to take advantage of the benefits of one chain while holding a position on a token native to another, bringing us one step closer to Sifchain’s mission of connecting liquidity on all blockchains.
 
-### **Intro to Peggy’s Architecture**
+## **Intro to Peggy’s Architecture**
 
 Peggy is a CosmosSDK application for moving assets on and off of EVM based, POW chains.
 
@@ -20,9 +20,9 @@ The system accepts incoming transfers of Ethereum tokens on an Ethereum smart co
 
 ![](../.gitbook/assets/screen-shot-2021-01-14-at-12.55.57-pm.png)
 
-An Ethereum user can send tokens from their Ethereum wallet to a Peggy smart contract running on Ethereum.  Peggy validators observing the Peggy smart contract keep those Ethereum tokens in a lockup group and mint a corresponding allocation of pegged tokens to a user’s Cosmos Network wallet address.  
+An Ethereum user can send tokens from their Ethereum wallet to a Peggy smart contract running on Ethereum. Peggy validators observing the Peggy smart contract keep those Ethereum tokens in a lockup group and mint a corresponding allocation of pegged tokens to a user’s Cosmos Network wallet address.
 
-At maturity, Sifchain will utilize IBC and use a Peggy deployment with a separate peg-zone blockchain in which Peggy-specific validators stake collateral specifically used to secure the bridge. These peg-zone validators are subject to slashing as per Tendermint consensus rules on both the Cosmos SDK peg zone chain and the Ethereum smart contract side of that bridge. This solves crypto-economic security issues on the bridge. In exchange for being subject to this new slashing requirement, validators will earn a service rate. 
+At maturity, Sifchain will utilize IBC and use a Peggy deployment with a separate peg-zone blockchain in which Peggy-specific validators stake collateral specifically used to secure the bridge. These peg-zone validators are subject to slashing as per Tendermint consensus rules on both the Cosmos SDK peg zone chain and the Ethereum smart contract side of that bridge. This solves crypto-economic security issues on the bridge. In exchange for being subject to this new slashing requirement, validators will earn a service rate.
 
 At BetaNet launch, Sifchain's initial Peggy design will be slightly different than this due to the immaturity of IBC. At BetaNet launch, Peggy and Sifnode will co-exist together within Sifnode. This allows Sifchain to support cross-chain transfers, adding & removing of liquidity, and token swaps from day 1 without the reliance on IBC. Once IBC has matured and is production-ready, we will shift to this model to realize its scalability benefits.
 

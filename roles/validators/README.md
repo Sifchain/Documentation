@@ -68,9 +68,9 @@ Validators committing a slashable offense will have their stake removed by a sla
 * **Governance**: In the future, validators will be able to participate in governance proposals and votes that will alter the functionality of the chain.
 * **Dynamic Rebalancing Policy:** We plan to add a system that will dynamically rebalance rewards between the validator system outlined above and Sifchain’s liquidity pool system rewards. The goal of the policy is to prevent one system’s rewards from becoming more profitable than the other, which would over-incentivize users to participate in that system and lead to an imbalance in the chain.
 
-## Liquidity Mining Rewards
+## Validator Subsidy Rewards
 
-Sifchain will run a **12-week** liquidity mining program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+Sifchain will run a **12-week** validator subsidy program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
-To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here, section 'Liquidity Mining for Validators'.](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02)
+To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02).
 
