@@ -37,7 +37,7 @@ The amount of income that liquidity providers can earn is dependent on the below
 Below is the formula used to calculate the units owned by a user when they add Rowan or another asset to the liquidity pool. The Liquidity Provider is then able to withdraw that amount of ownership at any time across either token within the pool.
 
 $$
-slipAdjustment = 1 - |\frac{Ra-rA}{(2R + r)*(a +A)}|
+slipAdjustment = 1 - |\frac{Ra-rA}{(R + r)*(a +A)}|
 $$
 
 $$
