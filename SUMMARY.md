@@ -41,7 +41,7 @@
 * [Sifchain DEX User Guide](resources/sifchain-dex-ui.md)
 * [FAQ](resources/faq.md)
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
-* [Sifchain Node Operators](resources/untitled.md)
+* [Sifchain Node Operators](resources/node-operators.md)
 
 ## Join Sifchain
 
