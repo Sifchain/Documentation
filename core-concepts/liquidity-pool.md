@@ -18,7 +18,22 @@ Sifchain allows swappers to send a transaction to a liquidity pool with the amou
 
 In many decentralized exchanges, users can add liquidity to liquidity pools and earn a portion of the transaction fees charged to other users who want to swap tokens in the pool. The constraint that most liquidity pools put on liquidity providers is that they must put in an equal value of each token pair. For example, in the ETH/DAI liquidity pool in Uniswap, a user is required to add 2.64 ETH for every 1,000 DAI that is added at the time of this writing. And then based on the amount the user puts into the pool, they then receive a proportionate amount of the fees charged.‌
 
-With Sifchain, users who want to add liquidity to a pool can add any amount of either or both tokens. This is known as adding liquidity asymmetrically, which gives users ultimate flexibility. Based on the amount of tokens in the pool and the amount that the user adds, they will then own a percentage of the entire pool. Sifchain will initially use the same formula to calculate ownership as BEPSwap.‌
+With Sifchain, users who want to add liquidity to a pool can add any amount of either or both tokens. This is known as adding liquidity asymmetrically, which gives users ultimate flexibility. Based on the amount of tokens in the pool and the amount that the user adds, they will then own a percentage of the entire pool. Sifchain will initially use the same formula to calculate ownership as BEPSwap.
+
+{% hint style="info" %}
+**Important Notes** on adding liquidity asymmetrically vs. symmetrically:
+
+The way the Sifchain pooling logic works is that it incentivizes LPs to deposit symmetrically. HOWEVER: LPs should deposit asymmetrically if the pool is already imbalanced. 
+
+**Asymmetrical** deposits are when a user deposits an unequal value of the two assets to a pool. So for example, let's say a user deposits $1000 of ETH and $0 of ROWAN to the already-balanced ETH/ROWAN pool. The user is given a % ownership of the pool that takes into account the **slip** created in the price. Because of this, the liquidity provider will end up with less than $500 in ETH and less than $500 in ROWAN. The deeper the pool, the closer to a total of $1000 the LP will own.
+
+This means that LPs can get into a situation where they have 'less' than what they added. The ways that LPs can end up with "less" tokens are either through:
+
+1. Them doing asymmetric adds 
+2. From Rowan price shifts
+
+If an LP adds **symmetrically** their ownership is really just going to fluctuate with the price of Rowan and the balance of the pool they're in. These fluctuations should be proportional on each side. For example, if their cUSDT balance is going down, their Rowan balance should be going up and vice versa 
+{% endhint %}
 
 ### **How does the system ensure that there’s enough liquidity in a pool, if users only have to add one token in the pool and not both?**
 
