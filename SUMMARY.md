@@ -42,6 +42,7 @@
 * [FAQ](resources/faq.md)
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
 * [Sifchain Node Operators](resources/node-operators.md)
+* [Rewards Programs](resources/rewards-programs.md)
 
 ## Join Sifchain
 
