@@ -35,6 +35,20 @@ This means that LPs can get into a situation where they have 'less' than what th
 If an LP adds **symmetrically** their ownership is really just going to fluctuate with the price of Rowan and the balance of the pool they're in. These fluctuations should be proportional on each side. For example, if their cUSDT balance is going down, their Rowan balance should be going up and vice versa 
 {% endhint %}
 
+{% hint style="success" %}
+In order to help user's with the above asymetrical vs. symmetrical adding of liqudity, we have implemented the following:
+
+* 'Pool Equally' slider: If this is turned on \(it is on by default\), then we will automatically calculate the non-filled in 'Input' field for you as to where the slipAdjustment = 0% \(i.e the amounts added will be done some in a symmetrical way\). 
+* A user may choose to turn this 'Pool Equally' slider off. In this case, the user is free to input ANY amount in either field and we will not do any automatic calculations. However, we do want to inform users of cases where the amounts input are causing a significant slip. The rule we are following here is:
+* * If greater than 20% = Red
+  * If between 20% and 10% = Orange
+  * If between 1% and 10% = Yellow
+  * If less than 1% = No color
+* Please see below for a screenshot of this coloring and informational icon.
+{% endhint %}
+
+![](../.gitbook/assets/screen-shot-2021-03-18-at-10.50.05-am.png)
+
 ### **How does the system ensure that there’s enough liquidity in a pool, if users only have to add one token in the pool and not both?**
 
 The interesting thing about the formula that Sifchain uses to calculate ownership, is that it creates an economic incentive for users to balance the pool. If the pool gets too oversubscribed on one side, the formula gives users an incentive to add liquidity to the other side by giving them a higher ownership % to add to the side that needs more units to balance the pool.
