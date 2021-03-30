@@ -132,7 +132,11 @@ After connecting your Keplr and MetaMask wallets, and you have assets within Sif
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-12.24.30-pm.png)
 
 * Here you will want to select which token you will want to use to add liquidity. You can only add liquidity with a Sifchain Token and Rowan. Click on the 'Select' button to see a list of allowable tokens with which you have a balance.
-* Once you select the token with which you want to pool, you will now see your available balance. You may input any amount or click the 'Max' button which will automatically call in your total balance of that token.
+* Once you select the token with which you want to pool, you will now see your available balance. You may input any amount or click the 'Max' button which will automatically call in your total balance of that token. 
+
+{% hint style="info" %}
+IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This means that if you type in your total amount of current ROWAN, the transaction may fail as you do not have additional ROWAN to cover the gas fees.
+{% endhint %}
 
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-1.50.38-pm.png)
 
@@ -201,6 +205,11 @@ In Sifchain, users can swap any asset to any other asset \(given there is liquid
 * Once you select a token you want to swap 'From' and 'To,' you will see your current balances of these tokens. 
 * As you input and change the number in the 'From' field, the 'To' field is automatically calculated based on the prices of those tokens as determined by the liquidity pools. 
   * You can also adjust the number in the 'To' field to represent how much of that you want to receive and the number in the 'From' field will be automatically calculated.
+
+{% hint style="info" %}
+IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This means that if you type in your total amount of current ROWAN, the transaction may fail as you do not have additional ROWAN to cover the gas fees.
+{% endhint %}
+
 * Once you input your desired amount, you will see additional information and details regarding the swap:
 
 ![](../.gitbook/assets/screen-shot-2021-02-03-at-3.26.04-pm.png)
