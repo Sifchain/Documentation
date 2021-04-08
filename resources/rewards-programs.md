@@ -72,29 +72,23 @@ When an LM or VS award is claimed by a user, it will be dispersed at the end of 
 
 ### FAQ for LM and VS Rewards Programs
 
-During which time periods can I add liquidity/stake/delegate and earn rewards?
+* During which time periods can I add liquidity/stake/delegate and earn rewards?
+  * During the program eligibility dates of 02/19/2021 - 05/14/2021. We highly recommend that you add as much as you can during this time period to both our liquidity pools and stake/delegate to earn maximum rewards across both programs. 
+* If I add an amount on the very first date of the eligibility period and then add more on the very last date of eligibility, will I have two different 4 month multipliers happening?
+  * No. You will have one 4-month multiplier happening as based on your first add. When you add the 2nd amount, it will start earning rewards based on the current multiplier that it is the day of the add.  
+* Can I claim just a portion of my rewards?
+  * No, a user when claiming their Liquidity Mining rewards will be forced to claim all of them. A user claiming their Validator Subsidy rewards must claim all of them as well. 
+* When can I claim my rewards?
+  * Once we have the mechanism in place in our UI \(coming soon!\), you are free to initiate a claim at any time. Claims will be processed on a weekly basis. But again, please be aware that claiming rewards before the 4x multiplier is realized will impact your rewards earned, as mentioned above.
+* If I remove my liquidity/stake/delegate, will it automatically claim my rewards for me as well?
+  * No, you will still need to go to Sifchain's BetaNet and claim your rewards manually.
+* If I claim rewards and remove liquidity, can I re-add liquidity and gain more rewards
+  * Yes, so long as you re-add liquidity between 02/19/2021 - 05/14/2021
+* Where can I see my rewards? Is the amount that is shown in the DEX, is this my current claimable amount or my reserved amount?
+  * You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards). This is your current **claimable** amount. 
+  * We are currently working on building in the ability to claim these rewards. While claiming, we will show you your multiplier date and your current multiplier while you do a final confirmation on your claim.
 
-* During the program eligibility dates of 02/19/2021 - 05/14/2021. We highly recommend that you add as much as you can during this time period to both our liquidity pools and stake/delegate to earn maximum rewards across both programs. 
-
-If I add an amount on the very first date of the eligibility period and then add more on the very last date of eligibility, will I have two different 4 month multipliers happening?
-
-* No. You will have one 4-month multiplier happening as based on your first add. When you add the 2nd amount, it will start earning rewards based on the current multiplier that it is the day of the add.  
-
-Can I claim just a portion of my rewards?
-
-* No, a user when claiming their Liquidity Mining rewards will be forced to claim all of them. A user claiming their Validator Subsidy rewards must claim all of them as well. 
-
-When can I claim my rewards?
-
-* Once we have the mechanism in place in our UI \(coming soon!\), you are free to initiate a claim at any time. Claims will be processed on a weekly basis. But again, please be aware that claiming rewards before the 4x multiplier is realized will impact your rewards earned, as mentioned above.
-
-If I remove my liquidity/stake/delegate, will it automatically claim my rewards for me as well?
-
-* No, you will still need to go to Sifchain's BetaNet and claim your rewards manually.
-
-If I claim rewards and remove liquidity, can I re-add liquidity and gain more rewards
-
-* Yes, so long as you re-add liquidity between 02/19/2021 - 05/14/2021
+![](../.gitbook/assets/screen-shot-2021-04-08-at-4.57.13-pm.png)
 
 {% hint style="info" %}
 \*\*\*\*[**Example Calculator for Liquidity Providers and Validators**](https://docs.google.com/spreadsheets/d/13d9ioNjr8LLN48LqKOhtBn87zch8dodzARUMlsxU6os/edit?usp=sharing)\*\*\*\*
