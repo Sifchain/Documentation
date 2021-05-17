@@ -10,95 +10,123 @@ description: >-
 
 ### Liquidity Mining and Validator Subsidy Rewards on Sifchain
 
-Sifchain uses the Token Geyser mechanism to calculate liquidity mining \(LM\) rewards for liquidity providers and validator subsidy \(VS\) rewards for validators \(stakers\) and delegators. The model is based on [Ampleforth’s Token Geyser model](https://www.ampltalk.org/app/forum/ampl-geyser-19/topic/about-the-geyser-21/).
-
 Liquidity mining rewards are rewards given for adding liquidity in the Sifchain [liquidity pool subsystem](https://docs.sifchain.finance/roles/liquidity-providers), whereas validator subsidy rewards are provided for staking or [delegating](https://docs.sifchain.finance/roles/delegators) to the [validator subsystem](https://docs.sifchain.finance/roles/validators).
 
-* Liquidity Mining rewards are given to users who provide liquidity to liquidity pools. Liquidity pools offer capital for users to swap with. They include ROWAN and other assets \(e.g. ETH, wBTC, USDT, etc.\). Tokens added to a liquidity pool can be removed at any time.
-* Validator Subsidy rewards are given to users who stake or delegate liquidity to the validator subsystem. Validators secure all transactions on Sifchain via [Tendermint Consensus](https://docs.sifchain.finance/core-concepts/sifchain-consensus). Only ROWAN can be staked or delegated in this subsystem. Tokens added to the validator subsystem can be removed only after an [unbonding period](https://docs.sifchain.finance/roles/validators#unbonding).
+#### Liquidity Mining Rewards Introduction
 
-The amount of rewards accumulated is correlated to `user_pooling_token_time / global_pooling_token_time` for LM, or `user_staking_token_time / global_staking_token_time` for VS.
+Sifchain is running a liquidity mining program. There are 45 million ROWAN being initially allocated to this current rewards program. The eligibility window for the program started on Feb 19, 2021 and is set to end on June 30, 2021. All liquidity that is added to Sifchain during the eligibility window will be eligible for LM Rewards. Rewards will continue to accrue up until August 4th, 2021 \(regardless if a user has added liquidity early or late\).
 
-For example, imagine there are two users in the system, Alice and Bob. Alice has staked 10 ROWAN for 1 day, Bob has staked 5 ROWAN for 3 days.
+The total rewards in the program are split between different liquidity providers based on the proportion of total liquidity in the system that they have been providing over the duration of the program. Their total possible reward grows the longer they keep their liquidity in the system, up to a maximum of 4 months.
 
-`Alice_token_time = 10 tokens * 1 days = 10` 
+#### Global bucket
 
-`Bob_token_time = 5 * tokens * 3 days = 15`  
+* There can be multiple global reward buckets that each contain ROWAN to be rewarded across a 4-month time period. Initially, we will start with one bucket, but we may periodically top up with additional buckets as the program continues or is extended.
+* Reward ROWAN starts off in its global bucket, and as the program progresses will be moved over to individual users as they earn their rewards.
+* Participants will generate rewards through their behavior. By the end of each bucket's 4-month drain, its entire ROWAN reward will be drained into user rewards.
 
+#### Liquidity-Deposit Tickets
 
-`global_token_time = Alice_token_time + Bob_token_time = 25 token_days`  
+* Each time a user deposits liquidity to a liquidity pool during the program, they create an amount of liquidity-deposit tickets equal to the ROWAN value of the deposit made. Users will create new tickets each time they deposit liquidity.
 
+**Ticket Multiplier**
 
-`Alice earns (10 / 25) = 40% of the rewards`
+* Tickets are non-fungible. Each ticket has a multiplier that grows over time up from 25% to 100%.
 
-`Bob earns (15 / 25) = 60% of the rewards`  
+**Reward Generation**
 
+* Each time period, each ticket generates rewards from each global bucket on the basis of 1 share per ticket. The rewards are attached to the ticket.
 
-There are a couple of important fields we should define.  Everything below applies to LM and VS rewards:
+**Claiming rewards**
 
-* **Reward Multiplier**: This is the multiplier that will be used to calculate the amount of rewards a user has earned. The max multiplier is 4. 
-* **Daily Incremented Reserved Reward**: This is the incremental amount of reward that is reserved for a user per day.  This amount is continuously increased until a user claims and withdraws, or the user gets the maximum 4x multiplier.
-* **Reserved Reward**: This is the total amount of reward that has been reserved for a user \(based on the daily incremented reserved reward\). 
-* **Claimable Percentage**: This is the percentage of the reserved reward that is claimable at any given time by the user. When the multiplier is 1x, the user has a claimable percentage of 25%. This percentage will also increase linearly until it gets to 100% at the 4x multiplier. This means that if you keep all of your liquidity/stake/delegate in for 4 months, on the last day, the claimable percentage would be 100%.
-* **Claimable Reward**: This is the reserved reward multiplied by the claimable percentage. This is the amount of reward that a user can actually claim at any given time. This will be displayed to the user in the UI.
+* Users can claim their rewards at any time by resetting their tickets. Whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again.
 
-Users can get a maximum multiplier of 4x after 4 months of holding their liquidity/stake/delegate. The multiplier is in place to encourage long-term liquidity provision.  Any liquidity removal or unstaking or undelegating would reset the multiplier. For example:
+**Withdrawing Liquidity**
 
-`1. On 02/19/2021, Alice adds $200 worth of liquidity in a liquidity pool. Her reward multiplier starts at 1x and increases linearly over time. The $200 worth of liquidity earns rewards based on this multiplier and will do so as it increases.`  
+* Whenever a user withdraws their liquidity, they will automatically burn an equivalent amount of tickets to cover the withdrawal. The rewards in these tickets will also be automatically claimed, as above. Tickets will be burned in order from lowest multiplier to highest in order to preserve a user's best tickets with highest multipliers.
 
+#### Calculations
 
-`2. On 03/30/2021, when her multiplier is ~2x, Alice adds another $50 worth of liquidity to a liquidity pool. Her multiplier remains unaffected, and continues to increase over time. The newly added $50 worth of liquidity will earn rewards right away based on the ~2x multiplier.`  
+For each user, at any point in time, we will calculate the following and display in the DEX:
 
+* **Claimable Rewards**: The immediate current claimable reward.
+* **Pending Reward Dispensation**: The amount of rewards that has been claimed and is pending payout.
+* **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
+* **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
+* **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
-`3. On 5/20/2021, when her multiplier is at 3x, Alice removes $20 worth of liquidity. At this point, Alice has a ‘Reserved Reward’ and her ‘Claimable Reward’ amount is ~75.21% of this amount. Her multiplier will reset to 1x and will again begin to increase over time, applied to her remaining liquidity.`
+We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
 
-Redelegating does NOT reset the multiplier
+* **Reward Buckets**:
+  * **Rowan -** Amount of ROWAN still left to be rewarded in this bucket.
+  * **Initial Rowan** - This is the total amount of the ROWAN reward pool for the LM program in this bucket.
+  * **Duration -** The amount of epochs this bucket will be rewarded over.
+* **Total Tickets:** Our implementation groups together tickets with the same multiplier.
+  * **Amount** - This is the number of tickets in this group the user has.
+  * **Multiplier** - This is the current multiplier of all of the tickets in this group.
+  * **Reward** - This is the current **claimable** reward generated by all of the tickets in this group.
+  * **Timestamp** - This represents the timestamp of when the user was awarded these tickets.
+* **Claimed** - This is the current reward amount that has already been ‘claimed’ due to previous liquidity removals and/or claims made. This is a total amount across all ticket groups for that user.
+* **Dispensed** - This is the total amount of rewards that have been disbursed to the user from previous claims.
+* **Forfeited** - This is the amount of reward that was forfeited due to early liquidity removals and early reward claims.
+* **ClaimableRewards** - This is the total **cumulative** amount of claimable rewards for a user. This raw number does include already claimed amounts.
+* **Total Tickets** - The total amount of tickets the user has.
+* **Total Reward at Maturity** - This is a user's estimated projected full reward amount that will be earned over the entire program if they were to leave their current liquidity positions in place to the 'maturity date'. This number can fluctuate due to other market conditions and this number is a representation of the current market as it is in this very moment.
+* **Maturity Date** - This is the date that all rewards will hit full maturity. 
+* **Future Reward** - This is the amount the user should expect to receive once the program has ended and full multiplier is achieved. This does NOT include any past earned rewards.
+* **Current Yield on Tickets** - This is the yield the user will get in the future based on amount of tickets the user has \(which is the amount of liquidity they have provided, excluding impermanent loss\).
+* **Next Reward Projected APY on tickets** - This is the current APY the user is receiving based on their tickets \(excluding impermanent loss\).
 
-Only liquidity/stake/delegate added during the program eligibility window of 02/19/21-05/14/21 will be eligible for the multiplier.  Users can enter the program on the last day \(May 14\) and then hold their liquidity from 4 months thereafter to the max 4x multiplier if they claim their tokens in September.
-
-The LM rewards displayed on our statistics page and the VS rewards displayed on the rewards page are based on the assumption that users hold their liquidity for 4 months and therefore receive a maximum 4x multiplier for their rewards.
-
-Users who delegate to validators can earn their share of the validator subsidy rewards depending on the commission rate charged by their validator. For example, if a validator charges 10% commission from delegators, its delegators would earn 90% of the validator subsidy rewards allocated to their delegated liquidity, whereas the validator would receive the remaining 10% as a commission fee.
+#### Process for claiming rewards
 
 For both LM rewards and VS rewards, a user must claim their rewards in order to receive them. Claiming rewards would stop them from continuing to accumulate even if a user has kept their tokens in the subsystem. Therefore, we encourage users NOT to claim their rewards until they are ready to withdraw liquidity.
 
-* Note that claiming rewards is not yet possible in our UI, but it will soon be available. For now, all LM and VS rewards are still being accumulated since the start of both programs on Feb 19.
+Users need to burn or reset their tickets to claim their rewards. This can happen on: removal of liqudity and/or manually claiming of rewards throuh the DEX.
 
-Up to 30M ROWAN tokens are allocated to each LM rewards and VS rewards \(60M ROWAN in total\). This total amount of rewards would only be given away if all users left their tokens in the system unclaimed for long enough to receive the maximum multiplier \(4x\).
+Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims by calculating each user's earned reward amounts. This calculation of determining the amount is done at the end of the week, so it does not matter if a user submits a claim request on Monday or on Friday of that week. Both of their reward amount will be determined during the processing of this claims. The processing will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
 
-* Note that the liquidity mining rewards and the validator subsidy rewards are separate, as we encourage people to contribute to both programs as they provide different utilities for the system.
+#### Impermanent Loss Protection
 
-When an LM or VS award is claimed by a user, it will be dispersed at the end of the week it is claimed.
+We have implemented an Impermanent Loss \(IL\) Protection. If a user incurs any kind of IL, the user will continue to earn rewards based on the realized IL amount. 
 
-### FAQ for LM and VS Rewards Programs
+For Example: A user had 100K of liquidity at inception. This amount drops to 80K \(due to price fluctuations, etc\). The user removes all 80K. That user will now continue to earn LM rewards based on the 20K that was lost due to IL \(the 20k here is called the 'IL amount'\). If that user were to add additional liquidity, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts. 
 
+The IL amount ONLY comes into play IF a user removes their liquidity and realizes IL. These users will only stop earning LM rewards on their IL amount by claiming their LM rewards.
+
+#### FAQ for LM and VS Rewards Programs
+
+* How much ROWAN has been allocated to each program?
+  * 45M ROWAN tokens are allocated to each LM rewards and VS rewards \(90M ROWAN in total\). Note that the liquidity mining rewards and the validator subsidy rewards are separate, as we encourage people to contribute to both programs as they provide different utilities for the system.
 * During which time periods can I add liquidity/stake/delegate and earn rewards?
-  * During the program eligibility dates of 02/19/2021 - 05/14/2021. We highly recommend that you add as much as you can during this time period to both our liquidity pools and stake/delegate to earn maximum rewards across both programs. 
+  * During the program eligibility dates of 02/19/2021 - 06/30/2021. We highly recommend that you add as much as you can during this time period to both our liquidity pools and stake/delegate to earn maximum rewards across both programs. 
 * If I add an amount on the very first date of the eligibility period and then add more on the very last date of eligibility, will I have two different 4 month multipliers happening?
-  * No. You will have one 4-month multiplier happening as based on your first add. When you add the 2nd amount, it will start earning rewards based on the current multiplier that it is the day of the add.  
+  * Yes. You will receive different multipliers based on your different adds.
 * Can I claim just a portion of my rewards?
-  * No, a user when claiming their Liquidity Mining rewards will be forced to claim all of them. A user claiming their Validator Subsidy rewards must claim all of them as well. 
+  * Only if you were to withdraw some of your liquidity. In this case, only a portion of your iwuidity mining rewards would be claimed. If you were to go to the rewards page in the DEX however, a user when claiming their Liquidity Mining rewards will be forced to claim all of them. A user claiming their Validator Subsidy rewards must claim all of them as well. 
 * When can I claim my rewards?
   * Once we have the mechanism in place in our UI \(coming soon!\), you are free to initiate a claim at any time. Claims will be processed on a weekly basis. But again, please be aware that claiming rewards before the 4x multiplier is realized will impact your rewards earned, as mentioned above.
 * If I remove my liquidity/stake/delegate, will it automatically claim my rewards for me as well?
-  * No, you will still need to go to Sifchain's BetaNet and claim your rewards manually.
-* If I claim rewards and remove liquidity, can I re-add liquidity and gain more rewards
-  * Yes, so long as you re-add liquidity between 02/19/2021 - 05/14/2021
-* Where can I see my rewards? Is the amount that is shown in the DEX, is this my current claimable amount or my reserved amount?
-  * You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards). This is your current **claimable** amount. 
-  * We are currently working on building in the ability to claim these rewards. While claiming, we will show you your multiplier date and your current multiplier while you do a final confirmation on your claim.
-
-![](../.gitbook/assets/screen-shot-2021-04-08-at-4.57.13-pm.png)
+  * Yes. And this is based off of the logic mentioned above in the 'Withdrawing Liquidity' section.
+* If I claim rewards and remove liquidity, can I re-add liquidity and gain more rewards?
+  * Yes, so long as you re-add liquidity between 02/19/2021 - 06/30/2021
+* For the VS program, will redelegating reset my multiplier?
+  * Redelegating does NOT reset the multiplier.
+* How does a validator's commission rate come into play when determining earned reward amounts for the VS program?
+  * Users who delegate to validators can earn their share of the validator subsidy rewards depending on the commission rate charged by their validator. For example, if a validator charges 10% commission from delegators, its delegators would earn 90% of the validator subsidy rewards allocated to their delegated liquidity, whereas the validator would receive the remaining 10% as a commission fee.
+* Where can I see my rewards? 
+  * You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards) as well as other important fields about your reward position.
+  * You can also see even more details here: cryptoeconomics.sifchain.finance
 
 {% hint style="info" %}
-\*\*\*\*[**Example Calculator for Liquidity Providers and Validators**](https://docs.google.com/spreadsheets/d/13d9ioNjr8LLN48LqKOhtBn87zch8dodzARUMlsxU6os/edit?usp=sharing)\*\*\*\*
+Past, Present, and Projected LM and VS Rewards Tool
 
-These sample scenarios are provided as-is to showcase simple examples and do not consider some externalities such as fees, price fluctuations, or other users also adding and removing liquidity.
+We created [this tool](https://cryptoeconomics.sifchain.finance/) to allow users to see how their rewards have accumulated overtime, and how they are projected to accumulate into the future. 
 {% endhint %}
+
+
 
 ### Community Token Giveaway
 
-The eligibility for our [Community Token Giveaway](%20https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) is now closed, but have not been distributed yet. Please refer back here for updates on distribution status. 
+The eligibility for our [Community Token Giveaway](%20https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status. 
 
 ## Ongoing Programs
 
