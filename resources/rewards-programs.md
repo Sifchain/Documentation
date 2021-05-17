@@ -54,7 +54,7 @@ For each user, at any point in time, we will calculate the following and display
 * **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
 * **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
-We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
+TEST EDIT We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
 
 * **Reward Buckets**:
   * **Rowan -** Amount of ROWAN still left to be rewarded in this bucket.
