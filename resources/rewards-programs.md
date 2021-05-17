@@ -54,7 +54,7 @@ For each user, at any point in time, we will calculate the following and display
 * **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
 * **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
-TEST EDIT We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
+We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
 
 * **Reward Buckets**:
   * **Rowan -** Amount of ROWAN still left to be rewarded in this bucket.
@@ -84,13 +84,11 @@ Users need to burn or reset their tickets to claim their rewards. This can happe
 
 Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims by calculating each user's earned reward amounts. This calculation of determining the amount is done at the end of the week, so it does not matter if a user submits a claim request on Monday or on Friday of that week. Both of their reward amount will be determined during the processing of this claims. The processing will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
 
-#### Impermanent Loss Protection
+#### Impermanent Loss Mitigation
 
-We have implemented an Impermanent Loss \(IL\) Protection. If a user incurs any kind of IL, the user will continue to earn rewards based on the realized IL amount. 
+We have implemented an Impermanent Loss \(IL\) Mitigation. If a user realizes IL, the user will continue to earn rewards based on the realized IL amount. These values are based on the Rowan value of a user’s add.
 
-For Example: A user had 100K of liquidity at inception. This amount drops to 80K \(due to price fluctuations, etc\). The user removes all 80K. That user will now continue to earn LM rewards based on the 20K that was lost due to IL \(the 20k here is called the 'IL amount'\). If that user were to add additional liquidity, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts. 
-
-The IL amount ONLY comes into play IF a user removes their liquidity and realizes IL. These users will only stop earning LM rewards on their IL amount by claiming their LM rewards.
+For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a total of 100K Rowan worth of assets into a Sifchain liquidity pool. Let’s say this amount drops to 80K worth of Rowan due to price fluctuations. The user removes all 80K Rowan worth of assets. That user will continue to earn LM rewards based off of the 20K Rowan worth of assets that was lost due to IL (the 20k here is called the ‘IL amount’). The IL amount ONLY comes into play if a user removes their liquidity and realizes IL. If that user were to add additional liquidity after realizing this IL, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts.
 
 #### FAQ for LM and VS Rewards Programs
 
