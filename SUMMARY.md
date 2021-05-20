@@ -29,7 +29,6 @@
 
 ## Resources
 
-* [Troubleshooting](resources/troubleshooting.md)
 * [Tutorials](resources/tutorials/README.md)
   * [Peggy Tutorial](resources/tutorials/peggy-tutorial.md)
   * [Peggy ethBridge Tutorial](resources/tutorials/peggy-ethbridge-tutorial.md)
@@ -44,6 +43,7 @@
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
 * [Sifchain Node Operators](resources/node-operators.md)
 * [Rewards Programs](resources/rewards-programs.md)
+* [Troubleshooting](resources/troubleshooting.md)
 
 ## Join Sifchain
 
