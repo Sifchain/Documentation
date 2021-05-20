@@ -29,6 +29,7 @@
 
 ## Resources
 
+* [Troubleshooting](resources/troubleshooting.md)
 * [Tutorials](resources/tutorials/README.md)
   * [Peggy Tutorial](resources/tutorials/peggy-tutorial.md)
   * [Peggy ethBridge Tutorial](resources/tutorials/peggy-ethbridge-tutorial.md)

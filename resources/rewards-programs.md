@@ -88,7 +88,7 @@ Each week users can go into the DEX and submit a claim transaction to claim thei
 
 We have implemented an Impermanent Loss \(IL\) Mitigation. If a user realizes IL, the user will continue to earn rewards based on the realized IL amount. These values are based on the Rowan value of a user’s add.
 
-For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a total of 100K Rowan worth of assets into a Sifchain liquidity pool. Let’s say this amount drops to 80K worth of Rowan due to price fluctuations. The user removes all 80K Rowan worth of assets. That user will continue to earn LM rewards based off of the 20K Rowan worth of assets that was lost due to IL (the 20k here is called the ‘IL amount’). The IL amount ONLY comes into play if a user removes their liquidity and realizes IL. If that user were to add additional liquidity after realizing this IL, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts.
+For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a total of 100K Rowan worth of assets into a Sifchain liquidity pool. Let’s say this amount drops to 80K worth of Rowan due to price fluctuations. The user removes all 80K Rowan worth of assets. That user will continue to earn LM rewards based off of the 20K Rowan worth of assets that was lost due to IL \(the 20k here is called the ‘IL amount’\). The IL amount ONLY comes into play if a user removes their liquidity and realizes IL. If that user were to add additional liquidity after realizing this IL, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts.
 
 #### FAQ for LM and VS Rewards Programs
 
@@ -117,14 +117,12 @@ For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a
 {% hint style="info" %}
 Past, Present, and Projected LM and VS Rewards Tool
 
-We created [this tool](https://cryptoeconomics.sifchain.finance/) to allow users to see how their rewards have accumulated overtime, and how they are projected to accumulate into the future. 
+We created [this tool](https://cryptoeconomics.sifchain.finance/) to allow users to see how their rewards have accumulated overtime, and how they are projected to accumulate into the future.
 {% endhint %}
-
-
 
 ### Community Token Giveaway
 
-The eligibility for our [Community Token Giveaway](%20https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status. 
+The eligibility for our [Community Token Giveaway](https://github.com/Sifchain/Documentation/tree/72de89210777507705d7f593885ea877999900fc/sifchain-finance/community-distribution-tokens-5dc4b184948e/README.md) is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status.
 
 ## Ongoing Programs
 
