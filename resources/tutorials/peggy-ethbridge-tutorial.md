@@ -45,7 +45,7 @@ Peggy is a cross-chain ethereum bridge for cosmos-sdk based chains such as sifch
 2. Change into the smart-contacts directory `cd ./smart-contracts`
 3. Execute the sendLockTx.js script \(Send funds from your metaMask wallet into SifChain/Peggy\) \`truffle exec scripts/sendLockTx.js --network ropsten sif130ak88ylwxd6krketcsvurgydyva5wjp3ueunl eth 500000000000000000
 
-`Note; uUpdate this command with your local address. Numbers are in wei. Use`[https://eth-converter.com/\`](https://eth-converter.com/%60) if needed.
+`Note; uUpdate this command with your local address. Numbers are in wei.` Use [an ethereum](https://converter.murkin.me/) converter if needed.
 
 1. Check sifchain address for the now pegged ethereum called `ceth`: `sifnodecli q account sif130ak88ylwxd6krketcsvurgydyva5wjp3ueunl` Note: again, update with your local address
 

@@ -122,7 +122,7 @@ We created [this tool](https://cryptoeconomics.sifchain.finance/) to allow users
 
 ### Community Token Giveaway
 
-The eligibility for our [Community Token Giveaway](https://github.com/Sifchain/Documentation/tree/72de89210777507705d7f593885ea877999900fc/sifchain-finance/community-distribution-tokens-5dc4b184948e/README.md) is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status.
+The eligibility for our Community Token Giveaway is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status.
 
 ## Ongoing Programs
 
