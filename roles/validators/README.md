@@ -59,7 +59,7 @@ Validators and delegators can submit an unbonding transaction to remove their st
 
 ### Slashing
 
-Validators committing a slashable offense will have their stake removed by a slash factor. Sifchain currently only penalizes validators for downtime. If a validator misses more than 50 blocks in any 100 block window, they will be slashed and jailed. The slash penalty for downtime is 1% of the validator’s total stake including delegations; these tokens will be burned. The offending validator will be jailed for 10 minutes. While the validator is jailed they are removed from the validator set and cannot participate in consensus and thus will not receive block rewards. After the 10 minute jail period is over the validator must submit a transaction to unjail, at which point they will rejoin consensus.
+Validators committing a slashable offense will have their stake removed by a slash factor. Sifchain currently only penalizes validators for downtime. If a validator misses more than 250 blocks in any 5000 block window, they will be slashed and jailed. This means that validators will have around 7.5 hours to get their node back online without being jailed.The slash penalty for downtime is 0.01% of the validator’s total stake including delegations; these tokens will be burned. The offending validator will be jailed for 10 minutes. While the validator is jailed they are removed from the validator set and cannot participate in consensus and thus will not receive block rewards. After the 10 minute jail period is over the validator must submit a transaction to unjail, at which point they will rejoin consensus.
 
 ### Future Additions
 
