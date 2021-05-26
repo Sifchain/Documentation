@@ -42,14 +42,14 @@ The total rewards in the program are split between different liquidity providers
 
 **Withdrawing Liquidity**
 
-* Whenever a user withdraws their liquidity, they will automatically burn an equivalent amount of tickets to cover the withdrawal. The rewards in these tickets will also be automatically claimed, as above. Tickets will be burned in order from lowest multiplier to highest in order to preserve a user's best tickets with highest multipliers.
+* Whenever a user withdraws their liquidity, they will automatically burn an equivalent amount of tickets to cover the withdrawal. Tickets associated with these rewards will be automatically reset. Again, whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again. Tickets will be burned in order from lowest multiplier to highest in order to preserve a user's best tickets with highest multipliers.
+* When a user withdraws their liquidity, it will not automatically submit a claim for the associated rewards. While it will reset those reward tickets, a user will still need to go into the DEX and manually submit a claim transaction to fully claim those rewards.
 
 #### Calculations
 
 For each user, at any point in time, we will calculate the following and display in the DEX:
 
 * **Claimable Rewards**: The immediate current claimable reward.
-* **Pending Reward Dispensation**: The amount of rewards that has been claimed and is pending payout.
 * **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
 * **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
 * **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
@@ -80,9 +80,9 @@ We will also be calculating the following and displaying these in cryptoeconomic
 
 For both LM rewards and VS rewards, a user must claim their rewards in order to receive them. Claiming rewards would stop them from continuing to accumulate even if a user has kept their tokens in the subsystem. Therefore, we encourage users NOT to claim their rewards until they are ready to withdraw liquidity.
 
-Users need to burn or reset their tickets to claim their rewards. This can happen on: removal of liqudity and/or manually claiming of rewards throuh the DEX.
+Users need to burn or reset their tickets to claim their rewards. This can happen on: removal of liquidity and/or manually claiming of rewards through the DEX.
 
-Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims by calculating each user's earned reward amounts. This calculation of determining the amount is done at the end of the week, so it does not matter if a user submits a claim request on Monday or on Friday of that week. Both of their reward amount will be determined during the processing of this claims. The processing will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
+Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims by calculating each user's earned reward amounts. This calculation of determining the amount is done at the end of the week. However, because we burn the tickets at time of claim submission, it is beneficial to the user to wait until Friday to submit a claim transaction. Then, we will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
 
 #### Impermanent Loss Mitigation
 
@@ -99,17 +99,20 @@ For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a
 * If I add an amount on the very first date of the eligibility period and then add more on the very last date of eligibility, will I have two different 4 month multipliers happening?
   * Yes. You will receive different multipliers based on your different adds.
 * Can I claim just a portion of my rewards?
-  * Only if you were to withdraw some of your liquidity. In this case, only a portion of your iwuidity mining rewards would be claimed. If you were to go to the rewards page in the DEX however, a user when claiming their Liquidity Mining rewards will be forced to claim all of them. A user claiming their Validator Subsidy rewards must claim all of them as well. 
+  * No. A user will need to go to the rewards page in the DEX and submit a claim transaction which will claim ALL of their accumulated rewards. A user claiming their Validator Subsidy rewards must claim all of them as well. 
 * When can I claim my rewards?
   * Once we have the mechanism in place in our UI \(coming soon!\), you are free to initiate a claim at any time. Claims will be processed on a weekly basis. But again, please be aware that claiming rewards before the 4x multiplier is realized will impact your rewards earned, as mentioned above.
+* Does it matter if I submit my claim on a Monday vs. a Friday since the dispensation will only happen once a week on Friday or Saturday?
+  * Yes it does. Because, at the time of claim submission, the associated tickets for a user's rewards would be reset. However, the final payout amount isn't determined until the dispensation module is run. So, if you were to submit a claim on Monday, your multiplier would be reset and your rewards would continue to earn based on that reset-multiplier until Friday/Saturday \(when the dispensation module is run\). However, if you wait until Friday to submit a claim, then your rewards would continue to earn at higher multiplier up until that point in time. 
 * If I remove my liquidity/stake/delegate, will it automatically claim my rewards for me as well?
-  * Yes. And this is based off of the logic mentioned above in the 'Withdrawing Liquidity' section.
+  * Not fully. It will reset tickets associated with the rewards earned from the liquidity/stake/delegate, but it will NOT fully claim those rewards for you. You still need to go into the DEX and submit a claim transaction to claim your rewards. 
 * If I claim rewards and remove liquidity, can I re-add liquidity and gain more rewards?
   * Yes, so long as you re-add liquidity between 02/19/2021 - 06/30/2021
 * For the VS program, will redelegating reset my multiplier?
   * Redelegating does NOT reset the multiplier.
 * How does a validator's commission rate come into play when determining earned reward amounts for the VS program?
   * Users who delegate to validators can earn their share of the validator subsidy rewards depending on the commission rate charged by their validator. For example, if a validator charges 10% commission from delegators, its delegators would earn 90% of the validator subsidy rewards allocated to their delegated liquidity, whereas the validator would receive the remaining 10% as a commission fee.
+  * Each validator commission is allocated at the same time as its delegator reward. So, if a validator increases their commission rate today, it won't change yesterday's rewards, but it will change today & tomorrow's rewards unless they redelegate. If a user redelegates, their current rewards and current multiplier will continue to accrue where they left off. Past commissions allocated to the former validator will stay with the former validator, and future commissions with the new validator will accrue with the new validator. Validator commissions are subject to the same multipliers as their respective delegator rewards. These multipliers are applied at the time of reward distribution. Validator commissions are distributed when delegators claim their respective rewards.
 * Where can I see my rewards? 
   * You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards) as well as other important fields about your reward position.
   * You can also see even more details here: cryptoeconomics.sifchain.finance
