@@ -29,7 +29,7 @@ ROWAN:
 
 eROWAN:
 
-* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) v2 and v3 \(DEX\) — _live now, only use official_ [_eRowan contract address_ ](https://info.uniswap.org/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)\_\_
+* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) v2 and v3 \(DEX\) — _live now, only use official_ [_eRowan contract address_](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \_\_
 * [AEX](https://www.aex.com/page/trade.html#/?symbol=EROWAN_USDT) - _live now_
 
 **\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
