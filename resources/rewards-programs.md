@@ -12,11 +12,11 @@ description: >-
 
 Liquidity mining rewards are rewards given for adding liquidity in the Sifchain [liquidity pool subsystem](https://docs.sifchain.finance/roles/liquidity-providers), whereas validator subsidy rewards are provided for staking or [delegating](https://docs.sifchain.finance/roles/delegators) to the [validator subsystem](https://docs.sifchain.finance/roles/validators).
 
-#### Liquidity Mining Rewards Introduction
+#### Liquidity Mining & Validator Subsidy Rewards Introduction
 
-Sifchain is running a liquidity mining program. There are 45 million ROWAN being initially allocated to this current rewards program. The eligibility window for the program started on Feb 19, 2021 and is set to end on June 30, 2021. All liquidity that is added to Sifchain during the eligibility window will be eligible for LM Rewards. Rewards will continue to accrue up until August 4th, 2021 \(regardless if a user has added liquidity early or late\).
+Sifchain is running a liquidity mining program. There are 45 million ROWAN being initially allocated to this current rewards program. The eligibility window for the program started on Feb 19, 2021 and is set to end on June 30, 2021. All liquidity and stake that is added to Sifchain during the eligibility window will be eligible for LM and VS Rewards. Rewards will continue to accrue up until August 4th, 2021 \(regardless if a user has added liquidity early or late\).
 
-The total rewards in the program are split between different liquidity providers based on the proportion of total liquidity in the system that they have been providing over the duration of the program. Their total possible reward grows the longer they keep their liquidity in the system, up to a maximum of 4 months.
+For LM rewards, the total rewards in the program are split between the different liquidity providers based on the proportion of total liquidity in the system that they have been providing over the duration of the program. For VS rewards, the total rewards in the program are split between the different users who have provided stake or delegations. Their total possible reward grows the longer they keep their liquidity in the system, up to a maximum of 4 months.
 
 #### Global bucket
 
@@ -24,9 +24,9 @@ The total rewards in the program are split between different liquidity providers
 * Reward ROWAN starts off in its global bucket, and as the program progresses will be moved over to individual users as they earn their rewards.
 * Participants will generate rewards through their behavior. By the end of each bucket's 4-month drain, its entire ROWAN reward will be drained into user rewards.
 
-#### Liquidity-Deposit Tickets
+#### Tickets
 
-* Each time a user deposits liquidity to a liquidity pool during the program, they create an amount of liquidity-deposit tickets equal to the ROWAN value of the deposit made. Users will create new tickets each time they deposit liquidity.
+* For the duration of the program, each time a user deposits to a liquidity pool or stakes with validator, a corresponding “ticket” is made. This ticket stores the total ROWAN value of the deposit/stake made, which in turn determines how much ROWAN they will be rewarded. A new ticket is created each time a user pools liquidity or provides stake. Likewise, a proportional amount of tickets are burned each time a user withdraws their liquidity or removes their stake.
 
 **Ticket Multiplier**
 
@@ -36,45 +36,41 @@ The total rewards in the program are split between different liquidity providers
 
 * Each time period, each ticket generates rewards from each global bucket on the basis of 1 share per ticket. The rewards are attached to the ticket.
 
+#### Validator Subsidy Rewards: Handling of Delegations
+
+* Any users who provide stake are eligible to earn VS rewards. This includes users who stake and run their own node, as well as users who delegate to a node operator. 
+* When staking your own node, users will earn 100% of the rewards that are associated with the staked amounts. 
+* When delegating to an existing node, users will earn rewards based on the commission rate that the node operator is charging \(similar to how block rewards work\). As an example: If I am delegating to a node operator that charges 10% commission, all VS rewards that are earned based on my delegation: 90% of those rewards will go to me and 10% of those rewards will go to the node operator.
+* For node validators that have earned rewards based on delegations, these rewards have the following stipulations associated with them:
+  * These rewards only become claimable when either: a\) the delegators claim their portion of these rewards or b\) those rewards for those delegators reach full maturity. Once one of these actions happen, these rewards will be considered claimable by the node operator.
+
 **Claiming rewards**
 
 * Users can claim their rewards at any time by resetting their tickets. Whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again.
 
-**Withdrawing Liquidity**
+**Withdrawing Liquidity or Stake**
 
-* Whenever a user withdraws their liquidity, they will automatically burn an equivalent amount of tickets to cover the withdrawal. Tickets associated with these rewards will be automatically reset. Again, whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again. Tickets will be burned in order from lowest multiplier to highest in order to preserve a user's best tickets with highest multipliers.
-* When a user withdraws their liquidity, it will not automatically submit a claim for the associated rewards. While it will reset those reward tickets, a user will still need to go into the DEX and manually submit a claim transaction to fully claim those rewards.
+* Whenever a user withdraws their liquidity or stake, they will automatically burn an equivalent amount of tickets to cover the withdrawal. Tickets associated with these rewards will be automatically reset. Again, whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again. Tickets will be burned in order from lowest multiplier to highest in order to preserve a user's best tickets with highest multipliers.
+* When a user withdraws their liquidity or their stake, it will not automatically submit a claim for the associated rewards. While it will reset those reward tickets, a user will still need to go into the DEX and manually submit a claim transaction to fully claim those rewards.
 
 #### Calculations
 
 For each user, at any point in time, we will calculate the following and display in the DEX:
+
+For LM rewards:
 
 * **Claimable Rewards**: The immediate current claimable reward.
 * **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
 * **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
 * **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
-We will also be calculating the following and displaying these in cryptoeconomics.sifchain.finance as additional pieces of information to assist our users:
+For VS Rewards:
 
-* **Reward Buckets**:
-  * **Rowan -** Amount of ROWAN still left to be rewarded in this bucket.
-  * **Initial Rowan** - This is the total amount of the ROWAN reward pool for the LM program in this bucket.
-  * **Duration -** The amount of epochs this bucket will be rewarded over.
-* **Total Tickets:** Our implementation groups together tickets with the same multiplier.
-  * **Amount** - This is the number of tickets in this group the user has.
-  * **Multiplier** - This is the current multiplier of all of the tickets in this group.
-  * **Reward** - This is the current **claimable** reward generated by all of the tickets in this group.
-  * **Timestamp** - This represents the timestamp of when the user was awarded these tickets.
-* **Claimed** - This is the current reward amount that has already been ‘claimed’ due to previous liquidity removals and/or claims made. This is a total amount across all ticket groups for that user.
-* **Dispensed** - This is the total amount of rewards that have been disbursed to the user from previous claims.
-* **Forfeited** - This is the amount of reward that was forfeited due to early liquidity removals and early reward claims.
-* **ClaimableRewards** - This is the total **cumulative** amount of claimable rewards for a user. This raw number does include already claimed amounts.
-* **Total Tickets** - The total amount of tickets the user has.
-* **Total Reward at Maturity** - This is a user's estimated projected full reward amount that will be earned over the entire program if they were to leave their current liquidity positions in place to the 'maturity date'. This number can fluctuate due to other market conditions and this number is a representation of the current market as it is in this very moment.
-* **Maturity Date** - This is the date that all rewards will hit full maturity. 
-* **Future Reward** - This is the amount the user should expect to receive once the program has ended and full multiplier is achieved. This does NOT include any past earned rewards.
-* **Current Yield on Tickets** - This is the yield the user will get in the future based on amount of tickets the user has \(which is the amount of liquidity they have provided, excluding impermanent loss\).
-* **Next Reward Projected APY on tickets** - This is the current APY the user is receiving based on their tickets \(excluding impermanent loss\).
+* **Claimable Rewards**: The immediate current claimable reward.
+* **Reserved Commission Rewards**: These are rewards that a node validator has earned from their delegators, but are not yet claimable due to either: a\) the delegators not claiming their portion of these rewards yet or b\) those rewards for those delegators not reaching full maturity yet. Once one of these actions happen, these rewards will be considered claimable.
+* **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
+* **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
+* **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
 #### Process for claiming rewards
 
@@ -113,6 +109,8 @@ For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a
 * How does a validator's commission rate come into play when determining earned reward amounts for the VS program?
   * Users who delegate to validators can earn their share of the validator subsidy rewards depending on the commission rate charged by their validator. For example, if a validator charges 10% commission from delegators, its delegators would earn 90% of the validator subsidy rewards allocated to their delegated liquidity, whereas the validator would receive the remaining 10% as a commission fee.
   * Each validator commission is allocated at the same time as its delegator reward. So, if a validator increases their commission rate today, it won't change yesterday's rewards, but it will change today & tomorrow's rewards unless they redelegate. If a user redelegates, their current rewards and current multiplier will continue to accrue where they left off. Past commissions allocated to the former validator will stay with the former validator, and future commissions with the new validator will accrue with the new validator. Validator commissions are subject to the same multipliers as their respective delegator rewards. These multipliers are applied at the time of reward distribution. Validator commissions are distributed when delegators claim their respective rewards.
+* When a validator claims their claimable rewards based on commission, does it affect their un-claimable rewards based on commission?
+  * No, it does not. Even if a node operator claims their rewards based on their own stake or based on commissions that have since become claimable, it will have NO effect on the rewards that they have earned, but are not yet claimable. 
 * Where can I see my rewards? 
   * You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards) as well as other important fields about your reward position.
   * You can also see even more details here: cryptoeconomics.sifchain.finance
