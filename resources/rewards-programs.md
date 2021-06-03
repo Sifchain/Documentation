@@ -46,7 +46,7 @@ For LM rewards, the total rewards in the program are split between the different
 
 **Claiming rewards**
 
-* Users can claim their rewards at any time by resetting their tickets. Whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again.
+* Users can claim their rewards at any time but doing so will reset all of their tickets. Whenever a ticket is reset, it will release its rewards to the user based on its current multiplier. Reset tickets then start empty with a 25% multiplier again.
 
 **Withdrawing Liquidity or Stake**
 
