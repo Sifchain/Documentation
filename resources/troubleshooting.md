@@ -10,7 +10,7 @@ description: FAQ and troubleshooting on validators
  No need to log into the pod, as with the mnemonic you can drive your node from anywhere.
 
 **Any solutions to the jailing problem even when the node is running?**   
- If you don't save the validator key, then it can't sign blocks and will be jailed all the time. You should always backup this key ~/.sifnoded/config/priv\_validator\_key.json if you already created a validator.
+ If you don't save the validator key, then it can't sign blocks and will be jailed all the time. You should always backup this key `~/.sifnoded/config/priv_validator_key.json` if you already created a validator.
 
 **After UnJail: "jailed": false, "status":1. So I can't see my Validator Node in Dashboard**   
  It normally takes a few minutes for the block explorer to see the updates.
@@ -28,14 +28,14 @@ description: FAQ and troubleshooting on validators
 **Could you elaborate on what a double-sign infraction is?**   
  \([https://docs.sifchain.finance/roles/validators\#future-additions](https://docs.sifchain.finance/roles/validators#future-additions)\).
 
-\*\*How to increase the stake to my validator?   
+**How to increase the stake to my validator?**   
  You can use the [Delegator CLI commands](https://docs.sifchain.finance/roles/delegators/delegator-cli-commands) to delegate additional ROWAN to your validator
 
 **I can't create a validator because the validator address exists. How can I change the validator address? Or do I need to recreate the account?**   
  You need to delegate more funds to the validator with the `sifnodecli tx staking delegate` command
 
 **Trying to revive an existing validator from imported mnemonic**   
- You'd need to undelegate first, before you can re-create, from memory [https://docs.sifchain.finance/roles/validators/validator-cli-commands\#unbonding](https://docs.sifchain.finance/roles/validators/validator-cli-commands#unbonding) You should unbond, and then re-create.
+ You'd need to un-delegate first, before you can re-create, from memory [https://docs.sifchain.finance/roles/validators/validator-cli-commands\#unbonding](https://docs.sifchain.finance/roles/validators/validator-cli-commands#unbonding) You should unbond, and then re-create.
 
 **If I start from scratch but import an existing mnemonic I need to replace the priv\_validator\_key.json from my existing validator in the ~/.sifnoded/config/ directory?**   
  If a validator has already been created for your import wallet, then yes.
@@ -44,12 +44,12 @@ description: FAQ and troubleshooting on validators
  No, the only thing you need to extract from the validator is the public key.
 
 **How can I unbound my old validator?**   
- sifnodecli tx staking un-bond  990000000000000000rowan --fees 100000rowan --from BwareLabs --keyring-backend=file --chain-id=sifchain
+ `sifnodecli tx staking un-bond  990000000000000000rowan --fees 100000rowan --from <moniker> --keyring-backend=file --chain-id=sifchain`
 
 **What will happen with the old validator? I don't want to appear un-jail. I don’t to appear on the unjail**   
- It'll sit in the unbonding state for 3 weeks, before it's removed \(default cosmos unbonding period setting\).
+ It'll sit in the un-bonding state for 3 weeks, before it's removed \(default cosmos unbonding period setting\).
 
-**Error when calling the command "sifnodecli q tender mint-validator-set"**   
+**Error when calling the command `sifnodecli q tender mint-validator-set`**  
  Add the flag --trust-node
 
 **Do we need any tokens for validator status?**   
@@ -89,10 +89,12 @@ description: FAQ and troubleshooting on validators
  ~20-25M to set up the cluster. Another few minutes to deploy the sifnode pod, which should then take about an hour to sync.
 
 **Amazon EKS automatically detects and replaces unhealthy instances, but isn't this prune to double signing when a new instance is started to provide the HA ?**   
- 1\) Auto-scaling of pods is disabled by default and 2\) we use the Recreate strategy, whereby a pod will be terminated before a new one is started.
+ 1\) Auto-scaling of pods is disabled by default and 
+
+2\) Pod will be terminated before a new one is started.
 
 **rake "keys:import\[moniker\]" .../sifnode$ sifnodecli keys show  --keyring-backend file sifnodecli: command not found**   
- You'd need to run make clean install to build sifnodecli
+ You'd need to run `make clean install` to build sifnodecli
 
 ## Delegator
 
@@ -100,31 +102,33 @@ description: FAQ and troubleshooting on validators
  "The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address." You can read it here: [https://docs.sifchain.finance/roles/delegators](https://docs.sifchain.finance/roles/delegators)
 
 **Is it possible to cancel an undelegated request after it was successfully completed so that a redelegate request can be done instead?**   
- 1\) You can simply re-delegate your delegation from one validator to another without having to wait the 21 day unbonding period. 2\) If you are wanting to 'transfer tokens from 1 of your addresses to another address that is already staked/delegated', you cannot do that. You will need to undelegated and then move these to your new account and then restake/redelegate.
+ 1\) You can simply re-delegate your delegation from one validator to another without having to wait the 21 day unbonding period. 
 
-**If someone wanted to redelegate to my validator node but they made the mistake to undelegated instead and was wondering if it's any way possible to redelegate while in the 21 days undelegated period.**   
- No, I don't believe it is possible.
+2\) If you are wanting to 'transfer tokens from 1 of your addresses to another address that is already staked/delegated', you cannot do that. You will need to undelegated and then move these to your new account and then restake/redelegate.
+
+**Is it possible to redelegate while in the 21 days undelegated period.**   
+ Not possible.
 
 **What are the benefits of delegating tokens to a validator? I see 5% commission, anything i can read about it?**   
  Please read here: [https://docs.sifchain.finance/roles/delegators](https://docs.sifchain.finance/roles/delegators)
 
 **Got this error in the block explorer: staking: validator already exist for this operator address; must use new validator operator address: failed to execute message; message index: 0**    
- Try delegating more using the command: sifnodecli tx staking delegate -- .Run it with -h to see the options.
+ Try delegating more using the command: `sifnodecli tx staking delegate` .Run it with -h to see the options.
 
 ## Rewards
 
 **Where can I see my rewards?**   
- For LPs: You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards) as well as other important fields about your reward position. You can also see even more details here: cryptoeconomics.sifchain.finance
+ For LPs: You can see your current claimable amount here: [https://dex.sifchain.finance/\#/rewards](https://dex.sifchain.finance/#/rewards) as well as other important fields about your reward position. You can also see even more details here: [cryptoeconomics](https://cryptoeconomics.vercel.app/#&type=lm)
 
 **How to calculate block rewards?**   
- When the validator is the proposer of the round, that validator \(and their delegators\) receives between 1% and 5% of fee rewards, the reserve community tax is then charged, then the remainder is distributed proportionally by voting power to all bonded validators independent of whether they voted \(social distribution\). So every block, fees are collected, then the proposer bonus is taken out, then the fees are divided between the validators proportionally with their stake. From there, within each validator, the rewards are divided proportionally to each delegator minus the commission rate. HOWEVER! inflation to block rewards is coming VERY soon \(meaning that these returns will be much higher\). But in the meantime, our validator subsidies \(ie the liquidity mining program\) will be more than enough to cover the lack of high block rewards at the moment
+ When the validator is the proposer of the round, that validator \(and their delegators\) receives between 1% and 5% of fee rewards, the reserve community tax is then charged, then the remainder is distributed proportionally by voting power to all bonded validators independent of whether they voted \(social distribution\). So every block, fees are collected, then the proposer bonus is taken out, then the fees are divided between the validators proportionally with their stake. From there, within each validator, the rewards are divided proportionally to each delegator minus the commission rate. Also, depending on the elegibility window of the [Validator Subsidy program](rewards-programs.md#liquidity-mining-and-validator-subsidy-rewards-on-sifchain), you may get additional rewards
 
 **What would be the proper format to check outstanding rewards?**   
  '''sifnodecli query distribution validator-outstanding-rewards    --node "://localhost:26657" '''
 
 ## General
 
-**What are the differences between eks and standalone nodes?**   
+**What are the differences between EKS and standalone nodes?**   
  EKS is "heavier" than running a standalone node, but it's our preferred way and is far more reliable. Not only that, but as more and more services are added to the network, there will likely be additional nodes that validators will need to run and EKS provides the ability to seamlessly and easily deploy and manage those services.
 
 **What are the Sifchain validator nodes? Does it make sense to delegate my tokens to them?**   
@@ -134,7 +138,7 @@ description: FAQ and troubleshooting on validators
  slashing subcommands `sifnodecli q slashing -h`
 
 **Can you give me a example on how to change commision to 1%**   
- It'd probably be something like: sifnodecli tx staking edit-validator --commission-rate 1 --from  --keyring-backend file --node tcp://:26657 \(obviously replacing  with the name of your moniker in your keyring\). You can also add the flag --dry-run before running it, to test what it will do.
+You can launch: `sifnodecli tx staking edit-validator --commission-rate 1 --from  --keyring-backend file --node tcp://:26657` \(obviously replacing  with the name of your moniker in your keyring\). You can also add the flag --dry-run before running it, to test what it will do.
 
 **How do you import your mnemonic locally?**   
  `rake keys: import[<moniker>]`
@@ -152,15 +156,25 @@ description: FAQ and troubleshooting on validators
  Delete your pod rake "cluster:namespace:destroy\[,aws,sifnode,true\]" Generate a new mnemonic Redeploy sifnode with your new mnemonic.
 
 **Which branch to checkout for betanet to make clean install?**   
- step 1: `git clone https://github.com/Sifchain/sifnode` step 2: `git checkout master && git pull` step 3 is then the install command
+ step 1: `git clone https://github.com/Sifchain/sifnode` 
+
+step 2: `git checkout master && git pull` 
+
+step 3 is then the install command
 
 **Trying to turn "prometheus" on I need to get prometheus and grafana working for my monitoring and alerts. What are you guys using?**   
- We use several, DataDog and are exploring public solutions based on Prometheus/Grafana etc. To enable prometheus: 1. Log into the pod: `kubectl exec --stdin --tty <pod name> -n sifnode -- /bin/sh` 2. Edit the file `/root/.sifnoded/config/config.toml` 3. Log out of the pod, and restart it: `Kubectl scale deployment Sifnode --replicas=0 -n sifnode` and then once it's terminated: `kubectl scale deployment sifnode --replicas=1 -n sifnode`
+ We use several, DataDog and are exploring public solutions based on Prometheus/Grafana etc. To enable prometheus: 
+
+1. Log into the pod: `kubectl exec --stdin --tty <pod name> -n sifnode -- /bin/sh` 
+
+2. Edit the file `/root/.sifnoded/config/config.toml` 3. Log out of the pod, and restart it: `Kubectl scale deployment Sifnode --replicas=0 -n sifnode` 
+
+3. Once it's terminated: `kubectl scale deployment sifnode --replicas=1 -n sifnode`
 
 **I have Rowan at my Keplr wallet, how do I transfer it to the validatir wallet ?**   
  Once you have the address for the wallet you simply do a send transaction from within Keplr. You can also import the wallet into keplr.
 
-**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in** _**sifnodecli tx staking edit-validator**_   
+**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`** ``  
  You can pass docker compose flags to your instance....for example, you could provide a flag of '-d'and it would run the container in detached mode. \(It's a new, undocumented option, that we're testing.\)
 
 **How to get Rowans and use the DEX?**   
@@ -179,7 +193,7 @@ description: FAQ and troubleshooting on validators
  Pegging requires 50 blocks time
 
 **Why Rewards on Keplr are so low?**   
- When the validator is the proposer of the round, that validator \(and their delegators\) receives between 1% and 5% of fee rewards, the reserve community tax is then charged, then the remainder is distributed proportionally by voting power to all bonded validators independent of whether they voted \(social distribution\). So every block, fees are collected, then the proposer bonus is taken out, then the fees are divided between the validators proportionally with their stake. From there, within each validator, the rewards are divided proportionally to each delegator minus the commission rate. HOWEVER! inflation to block rewards is coming VERY soon \(meaning that these returns will be much higher\). But in the meantime, our validator subsidies \(ie the liquidity mining program\) will be more than enough to cover the lack of high block rewards at the moment
+ When the validator is the proposer of the round, that validator \(and their delegators\) receives between 1% and 5% of fee rewards, the reserve community tax is then charged, then the remainder is distributed proportionally by voting power to all bonded validators independent of whether they voted \(social distribution\). So every block, fees are collected, then the proposer bonus is taken out, then the fees are divided between the validators proportionally with their stake. From there, within each validator, the rewards are divided proportionally to each delegator minus the commission rate.
 
 **error ERROR: unknown address: account sif... does not exist**   
  Make sure that:
@@ -217,7 +231,7 @@ description: FAQ and troubleshooting on validators
 
   -Also in the youtube channel [youtube channel](https://www.youtube.com/channel/UCybJH9xaQx0cemM9_S8ZInA) you will be able to see a lot of tutorials
 
-**“Unkown failure” when LP or Pegging / Unpegging**   
+**“`Unkown failure`” when LP or Pegging / Unpegging**   
 
 
 * Check if you have enough ROWAN to pay the fees
@@ -230,15 +244,15 @@ description: FAQ and troubleshooting on validators
 * [https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706](https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706)
 
 **Error :- no required module provides package github.com/belitre/gotpl;**   
- run go get github.com/belitre/gotpl in the root sifnode repo directory
+ run `go get github.com/belitre/gotpl` in the root sifnode repo directory
 
 **How to change moniker**   
- sifnodecli tx staking edit-validator --moniker  moniker is also stored in ~/.sifnoded/config/config.toml file I guess easy to find as it says moniker in the config file
+Run  `sifnodecli tx staking edit-validator --moniker`  . Also, moniker is  stored in `~/.sifnoded/config/config.toml`
 
 **Instance deployed with 3 nodes running m5.2xlarge instances. Can this be changed?**   
  You can set the setting the variable cluster\_size in the sifnode block. An t2.large should be enough. Also: If you're familiar with Terraform, you can change the instance\_type config option, in the sifchain block, in the file .live//main.tf \(which will be where ever you cloned the repository to\) and re-run Terraform to apply the changes \(it will take your cluster down for ~15 minutes while it's re-sized, but this shouldn't be an issue with the recent changes to slashing we made\)
 
-**Enter keyring passphrase: ERROR: ABCIQuery: Post failed: Post "**[http://localhost:26657/](http://localhost:26657/)**": dial tcp :26657: connect: connection refused'**   
+**`Enter keyring passphrase: ERROR: ABCIQuery: Post failed:` Post "**[http://localhost:26657/](http://localhost:26657/)**": dial tcp :26657: connect: connection refused'**   
  Add the flag: `--node tcp://<IP Address>:26657`
 
 **ERROR: unknown address: Account does not exist**   
@@ -249,13 +263,17 @@ description: FAQ and troubleshooting on validators
   -Is your node is fully synced?
 
 **Failed to get from fields: The specified item could not be found in the keyring**   
- Add the flag: `--recover --keyring-backend file` Or run: `make clean install` Make sure you have the necessary pre-requisites installed: [https://github.com/Sifchain/sifnode/blob/74726d45e9f2dfbf20068cf7d827e2177d017f98/docs/chainOps/standalone/tutorials/betanet.md\#prerequisites--dependencies](https://github.com/Sifchain/sifnode/blob/74726d45e9f2dfbf20068cf7d827e2177d017f98/docs/chainOps/standalone/tutorials/betanet.md#prerequisites--dependencies) and run\`sifnodecli keys add  -i --recover --keyring-backend file Also: you can generate, sign and broadcast a transaction from anywhere. It does not have to be on the node itself \(that's why there's a --node flag\). That's one of the nice things about the Cosmos SDK. So, we recommend just importing the key locally and running sifnodecli from there, whenever you need to generate/sign/broadcast a transaction. Just make sure your node is fully synchronised before trying to become a validator.
+ Add the flag: `--recover --keyring-backend file` Or run: `make clean install` Make sure you have the necessary pre-requisites installed: [https://github.com/Sifchain/sifnode/blob/74726d45e9f2dfbf20068cf7d827e2177d017f98/docs/chainOps/standalone/tutorials/betanet.md\#prerequisites--dependencies](https://github.com/Sifchain/sifnode/blob/74726d45e9f2dfbf20068cf7d827e2177d017f98/docs/chainOps/standalone/tutorials/betanet.md#prerequisites--dependencies) and run\``sifnodecli keys add  -i --recover --keyring-backend=file` Also: you can generate, sign and broadcast a transaction from anywhere. It does not have to be on the node itself \(that's why there's a --node flag\). That's one of the nice things about the Cosmos SDK. So, we recommend just importing the key locally and running sifnodecli from there, whenever you need to generate/sign/broadcast a transaction. Just make sure your node is fully synchronised before trying to become a validator.
 
 **Incorrect phassprase**   
- Delete the key ring \(in `$HOME/.sifnodecli`\), and then re-import it by running r`ake “keys:import[<moniker>]”` Or In your `~/.sifnodecli` directory there will be a sub-directory named keyring-sifchain \(or something to that effect\). You can delete this and then run: sifnodecli keys add  -i --recover --keyring-backend file \(replace  with what your moniker is\).But only do the above if you have your mnemonic saved somewhere.. Or this command inside the container- sifnodecli keys add  -i --recover --keyring-backend file
+ Delete the key ring \(in `$HOME/.sifnodecli`\), and then re-import it by running r`ake “keys:import[<moniker>]”` 
+
+Or In your `~/.sifnodecli` directory there will be a sub-directory named keyring-sifchain \(or something to that effect\). You can delete this and then run: sifnodecli keys add  -i --recover --keyring-backend file \(replace  with what your moniker is\).But only do the above if you have your mnemonic saved somewhere.. 
+
+Or this command inside the container- `sifnodecli keys add  -i --recover --keyring-backend file`
 
 **--node flag, rpc endpoints**   
- --node flag is the RPC endpoint on the network you will broadcast to. For BetaNet this is tcp://rpc.sifchain.finance:80. For TestNet it's tcp://rpc-testnet.sifchain.finance:80.
+ --node flag is the RPC endpoint on the network you will broadcast to. For BetaNet this is tcp://rpc.sifchain.finance:80. For TestNet it's `tcp://rpc-testnet.sifchain.finance:80.`
 
 **Which commands run inside the container?**   
  You don't really need to run any commands from inside the container \(apart from obtaining the validator's public key\). You can import the mnemonic outisde of it and run the various staking etc commands from there.
@@ -264,7 +282,7 @@ description: FAQ and troubleshooting on validators
 
 ## Error
 
-\*\* I have the following problem on syncing: sifnoded\[..\]: panic: Failed to process committed block \(66880:5812B75425A312DF5C639A8C273E93D6D85987B385BB3342D25271D415D42F14\): wrong Block.Header.AppHash. Expected F2BC265B95B215   
+Problem on syncing: `sifnoded[..]: panic: Failed to process committed block`  `wrong Block.Header.AppHash. Expected ..`   
  If you want to compile your own, then you need to checkout tags/mainnet-genesis. In addition to that, you'll need to download Cosmovisor and set that up to run sifnode [https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) Cosmovisor handles auto-upgrading. However note it's a non-standard approach to running a sifnode.
 
 **I imported locally and got an address and public key. The public key I got after the import is different then what's running in the container \(i don't know if this matters\). Now when i run the validator create cmd I get 'failed to get from fields: The specified item could not be found in the keyring' here is my cmd:**  `sifnodecli tx staking create-validator \ --commission-max-change-rate="0.1" \ --commission-max-rate="0.1" \ --commission-rate="0.1" \ --amount="1rowan" \ --pubkey=sif...\ (output of 'docker exec -it 825fde6c1e10 sifnoded tendermint show-validator' not output of rake keys:import[<**moniker>]) --moniker=<moniker> \ --chain-id=sifchain \ --min-self-delegation="1" \ --gas-prices="0.5rowan" \ --from=<moniker> \ --node tcp://<IP ADDRESS>:26657 <br>` You must use the public key generated by sifnoded tendermint show-validator Also, add `--keyring-backend=file` to the above command. The amount is also too low. It should be at least 1000000000000000000rowan as amounts are expressed with the of 1e18.
@@ -286,19 +304,35 @@ description: FAQ and troubleshooting on validators
 ### Missing blocks: 
 
 1. Ensure that your validator is reachable on TCP ports 26656 and 26657, and that these ports are not blocked by your firewall. 
-2. Update your sifnode config.toml \(found in /root/.sifnoded/config/config.toml on the container\) and set a value for external\_address, in the \[p2p\] section. 
+2. Update your `sifnode config.toml` \(found in `/root/.sifnoded/config/config.toml` on the container\) and set a value for external\_address, in the \[p2p\] section. 
 
    For example, if your public IPv4 address is 1.2.3.4, then that line in the config would look like: external\_address = "1.2.3.4:26656"
 
 3. Or, move to AWS EKS \(k8s\). This is our preferred stack and as the network matures, there will be additional services you're going to have to run on your validators.
 
-Also try: 1. Stop the container so that the sifnoded service is no longer running. 2. Go back into the container \(just open up a shell\) and delete the file /root/.sifnoded/config/addrbook.json 3. Start the container back up again.
+Also try: 
 
-Also try: 1. Stop your sifnode container. 2. Log into your container \(but don't start sifnoded\) and run sifnoded unsafe-reset-all 3. Start your container up and let it resync state from genesis. This shouldn't take long at all.
+1. Stop the container so that the sifnoded service is no longer running. 
+
+2. Go back into the container \(just open up a shell\) and delete the file `/root/.sifnoded/config/addrbook.json` 
+
+3. Start the container back up again.
+
+Also try: 
+
+1. Stop your sifnode container. 
+
+2. Log into your container \(but don't start sifnoded\) and run sifnoded unsafe-reset-all 
+
+3. Start your container up and let it resync state from genesis. 
 
 Also: Be sure that if the private key is sitting outside the container, copy it to inside the container and it fixed the problem.
 
-If nothing worked so far: 1\)backup your private key file before running this. If it is missing all the blocks try to Copy private key to inside container `sudo cp /root/.sifnoded/config/ priv_validator_key.json /usr/local/sifnode/deploy/docker/mainnet/.sifnoded/config/` considering you deployed the sifchain at `/usr/local` otherwise replace this path to whatever your path is .Please **MAKE SURE YOU BACKUP priv\_validator\_key.json** at destination before doing that just in case you need to restore the private key file again. It just worked for me when my node was missing all the block.
+If nothing worked so far:
+
+1\) Please **MAKE SURE YOU BACKUP priv\_validator\_key.json** at destination before doing that just in case you need to restore the private key file again. After backing up your private key, you may follow with the next step
+
+2\)  If it is missing all the blocks try to Copy private key to inside container `sudo cp /root/.sifnoded/config/ priv_validator_key.json /usr/local/sifnode/deploy/docker/mainnet/.sifnoded/config/` considering you deployed the sifchain at `/usr/local` otherwise replace this path to whatever your path is .
 
 ### For standalone docker version: 
 
