@@ -60,13 +60,15 @@ For each user, at any point in time, we will calculate the following and display
 For LM rewards:
 
 * **Claimable Rewards**: The immediate current claimable reward.
+* **Pending Dispensation**: This is the amount that will be dispensed on Friday. Any new claimable amounts will need to be claimed after the next dispensation is processed.
 * **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
-* **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
+* **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, but does NOT include already claimed/disbursed previous rewards for that user.
 * **Projected Full Amount Maturity Date**: This displays the date the user will need to a\) keep their current liquidity positions in and b\) not claim their rewards until to realize the full projected amount. 
 
 For VS Rewards:
 
 * **Claimable Rewards**: The immediate current claimable reward.
+* **Pending Dispensation**: This is the amount that will be dispensed on Friday. Any new claimable amounts will need to be claimed after the next dispensation is processed.
 * **Reserved Commission Rewards**: These are rewards that a node validator has earned from their delegators, but are not yet claimable due to either: a\) the delegators not claiming their portion of these rewards yet or b\) those rewards for those delegators not reaching full maturity yet. Once one of these actions happen, these rewards will be considered claimable.
 * **Dispensed Rewards**: The amount of rewards that have been paid out to that user already.
 * **Projected Full Amount**: The projected total reward at maturity at the end of the program, assuming the amount of tickets across all users stays as is. This number takes into consideration projected future rewards, and already claimed/disbursed previous rewards for that user.
@@ -76,9 +78,9 @@ For VS Rewards:
 
 For both LM rewards and VS rewards, a user must claim their rewards in order to receive them. Claiming rewards would stop them from continuing to accumulate even if a user has kept their tokens in the subsystem. Therefore, we encourage users NOT to claim their rewards until they are ready to withdraw liquidity.
 
-Users need to burn or reset their tickets to claim their rewards. This can happen on: removal of liquidity and/or manually claiming of rewards through the DEX.
+Users need to burn or reset their tickets to claim their rewards. This can happen on: removal of liquidity/stake and/or manually claiming of rewards through the DEX.
 
-Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims by calculating each user's earned reward amounts. This calculation of determining the amount is done at the end of the week. However, because we burn the tickets at time of claim submission, it is beneficial to the user to wait until Friday to submit a claim transaction. Then, we will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
+Each week users can go into the DEX and submit a claim transaction to claim their rewards. These transactions will be gathered at the end of each week and then at the end of the week, we will process those claims and disburse them. The calculation of determining the amount that will be disbursed is done at time of claim submission. Because we burn the tickets at time of claim submission, it is beneficial to the user to wait until Friday to submit a claim transaction. At week end, we will generate a list of users and their reward payouts, which will be sent to the dispensation module to trigger the start of the distribution process.
 
 #### Impermanent Loss Mitigation
 

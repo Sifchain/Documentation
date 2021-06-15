@@ -34,6 +34,8 @@ eROWAN:
 
 **\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
 
+For users who need a small amount of ROWAN to execute their first transaction \(for example, to acquire more ROWAN via a swap\), please reach out to @OlegEnthusiast on Telegram with a request for a small amount of ROWAN. 
+
 ## What wallets support ROWAN/eROWAN?
 
 **ROWAN** is a token that exists within the Sifchain ecosystem, therefore you will need a Sifchain address to hold these tokens. Since Sifchain is built with the Cosmos SDK, you can use the Keplr wallet to generate a Sifchain address and custody your ROWAN. Reference our instructions on how to setup your Keplr Wallet [here](https://docs.sifchain.finance/resources/sifchain-dex-ui#setup-or-integrate-your-sifchain-address-via-keplr-wallet-integration).

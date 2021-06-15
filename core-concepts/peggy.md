@@ -6,7 +6,7 @@ The Ethereum network has been plagued with slow transactions and high fees for a
 
 Our solution for this problem is Peggy.
 
-In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allow people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain.
+In order for Sifchain to allow for cross-chain support and free movement of assets between chains, we have implemented a concept named 'Peggy'. Simply put, Peggy will allow people to freely move assets that exist on one chain to another, use those assets in that chain, and then allow the user to move those assets back to the source chain. You can think of this as importing tokens into Sifchain to use them within Sifchain, and then exporting those tokens to a different chain once you want to move them out of Sifchain.
 
 We see Peggy’s deployment as a hallmark moment for growth of the Cosmos Network. With Peggy and IBC, Ethereum users will be able to use their ETH and ERC20 tokens on Cosmos SDK platforms such as Kava, Akash, Terra, e-Money, IRIS, Secret Network, and of course, the Cosmos Hub. Cosmos Network users will also be able to use their tokens on Ethereum and take advantage of its dapp network. Cryptocurrency holders on both sides will be able to take advantage of the benefits of one chain while holding a position on a token native to another, bringing us one step closer to Sifchain’s mission of connecting liquidity on all blockchains.
 
@@ -14,7 +14,7 @@ We see Peggy’s deployment as a hallmark moment for growth of the Cosmos Networ
 
 Peggy is a CosmosSDK application for moving assets on and off of EVM based, POW chains.
 
-Peggy is the starting point for cross-chain value transfers from the Ethereum blockchain to Cosmos-SDK based blockchains as part of the Ethereum Cosmos Bridge project. Our approach to Peggy allows users of ETH and ERC-20 tokens on Ethereum to create pegged tokens on a Cosmos Network chain \(in our case, on Sifchain\). These pegged tokens can then be used within the Sifchain ecosystem, via pooling or swaps. When a user is done with these pegged assets, they may use Peggy to then transfer the assets back to their Ethereum address.
+Peggy is the starting point for cross-chain value transfers from the Ethereum blockchain to Cosmos-SDK based blockchains as part of the Ethereum Cosmos Bridge project. Our approach to Peggy allows users of ETH and ERC-20 tokens on Ethereum to create pegged tokens on a Cosmos Network chain \(in our case, on Sifchain\). These pegged tokens can then be used within the Sifchain ecosystem, via pooling or swaps. When a user is done with these pegged assets, they may use Peggy to then transfer the assets back to an external address.
 
 The system accepts incoming transfers of Ethereum tokens on an Ethereum smart contract, locking them while the transaction is validated and equitable funds issued to the intended recipient on the Cosmos bridge chain. The system supports value transfers from Cosmos-SDK based blockchains to the Ethereum blockchain as well through a reverse process.
 

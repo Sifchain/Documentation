@@ -11,7 +11,7 @@ _**Sifchain is the world's first omni-chain decentralized exchange. Swap & pool 
 * \*\*\*\*[**About Sifchain**](https://docs.sifchain.finance/about-sifchain) — A brief introduction to how Sifchain works
 * \*\*\*\*[**Get a wallet** ](https://docs.sifchain.finance/resources/sifchain-dex-ui#create-or-import-a-sifchain-address-with-keplr-wallet)— Create a wallet address to secure Sifchain assets
 * \*\*\*\*[**Get some ROWAN** ](https://docs.sifchain.finance/resources/faq#how-can-i-acquire-rowan-and-or-erowan)— Acquire Sifchain’s native token, ROWAN
-* \*\*\*\*[**About Sifchain DEX** ](https://docs.sifchain.finance/resources/sifchain-dex-ui)— Learn about pegging, swapping, and pooling assets
+* \*\*\*\*[**About Sifchain DEX** ](https://docs.sifchain.finance/resources/sifchain-dex-ui)— Learn about peggy \(importing & exporting tokens\), swapping, and pooling assets
 * \*\*\*\*[**Launch Sifchain DEX**](https://dex.sifchain.finance) — Open the app and start interacting with Sifchain!
 * \*\*\*\*[**Validating**](https://docs.sifchain.finance/roles/validators) — Learn about why and how to validate
 * \*\*\*\*[**Delegating**](https://docs.sifchain.finance/roles/delegators) — Learn about why and how to delegate
