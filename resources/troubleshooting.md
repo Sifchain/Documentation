@@ -61,6 +61,16 @@ description: FAQ and troubleshooting on validators
 **I am going to close out my validator. How do I do that without getting slashed?**   
  [https://docs.sifchain.finance/roles/validators/validator-cli-commands\#unbonding](https://docs.sifchain.finance/roles/validators/validator-cli-commands#unbonding)
 
+**How can i migrate the validator to another server and avoid double signing?**
+
+1. Launch the server with `rake` with any seed \(even the one that from the previous validator\). A private key json file will be generated as soon as a docker starts. 
+2. Delete the private key of the new node. 
+3. Copy the key of the old validator inside the container of the backup server, and rename it to a custom name\(e.g.  _priv\_key\_a\)_ while it is syncing. You can also still do it when the new node is already synced but you need to make sure that it is under a **different name**. 
+4. When the node backup server is synced up, and you have the renamed key sitting inside the config folder in the docker, rename the private key on the main server \(to be extra careful\) 
+5. Stop the main server docker, and make sure your node is not signing blocks. 
+6. On the backup server, rename the _priv\_key\_a_ to the actual naming convention.
+7.  Reboot the backup server docker container and the migration is completed. Be careful on the name of the private key and the sequence of stoping and starting the containers
+
 ## Standalone
 
 **With a standalone setup, to upgrade the docker image without having downtime I imagine I'd need to deploy and run a secondary instance, have it synced and signed \(i.e. running in parallel at this point\), then docker-compose pull docker-compose restart the primary. Does this sound reasonable?**   
@@ -139,6 +149,12 @@ description: FAQ and troubleshooting on validators
 
 **Can you give me a example on how to change commision to 1%**   
 You can launch: `sifnodecli tx staking edit-validator --commission-rate 1 --from  --keyring-backend file --node tcp://:26657` \(obviously replacing  with the name of your moniker in your keyring\). You can also add the flag --dry-run before running it, to test what it will do.
+
+**How can i change the logo of my validator?**
+
+ 1. Set up an identity here: [https://keybase.io/](https://keybase.io/) . 
+
+2. Edit your validator providing the key base key of your identity with the flag `—identity="XXXXXXXX".` You can also write a description and link it to your webpage, for example: `sifnodecli tx staking edit-validator and --website="your_website" plus --details="your_description" --identity="XXXXXXXX"`
 
 **How do you import your mnemonic locally?**   
  `rake keys: import[<moniker>]`
