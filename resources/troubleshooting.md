@@ -125,6 +125,9 @@ description: FAQ and troubleshooting on validators
 **Got this error in the block explorer: staking: validator already exist for this operator address; must use new validator operator address: failed to execute message; message index: 0**    
  Try delegating more using the command: `sifnodecli tx staking delegate` .Run it with -h to see the options.
 
+How can i increase the staked amount?  
+You can delegate more funds to your validator with: `sifnodecli tx staking delegate YOUR_VALIDATOR_ADDRESS <Amount*10^18>rowan --gas-prices="0.5rowan" --from=YOUR_MONIKER --keyring-backend=file --chain-id=sifchain` 
+
 ## Rewards
 
 **Where can I see my rewards?**   
