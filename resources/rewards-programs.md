@@ -8,7 +8,11 @@ description: >-
 
 ## Special Programs
 
-### Liquidity Mining and Validator Subsidy Rewards on Sifchain
+### .42 Cosmos-Assets Liquidity Mining Program
+
+More details on this coming very soon!
+
+### .39 Liquidity Mining and Validator Subsidy Rewards on Sifchain
 
 Liquidity mining rewards are rewards given for adding liquidity in the Sifchain [liquidity pool subsystem](https://docs.sifchain.finance/roles/liquidity-providers), whereas validator subsidy rewards are provided for staking or [delegating](https://docs.sifchain.finance/roles/delegators) to the [validator subsystem](https://docs.sifchain.finance/roles/validators).
 
