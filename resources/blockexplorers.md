@@ -2,7 +2,7 @@
 
 ## MainNet
 
-* [https://blockexplorer.sifchain.finance](https://blockexplorer.sifchain.finance)
+* [https://www.mintscan.io/sifchain](https://www.mintscan.io/sifchain)
 
 ## TestNet
 
