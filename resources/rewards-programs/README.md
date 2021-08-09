@@ -155,6 +155,10 @@ We take this per week distribution amount and create a payment schedule as such:
 * How are commission-based rewards handled in this new payout schedule?
   * For validator subsidy rewards that are based on the commission of their delegations: we are assuming that ALL delegators allow their rewards to fully mature, which means that all validators will receive their associated VS rewards based on the assumption that these delegators wait their time \(which maximizes the benefit to validators\). This will be paid out in a\) their 1st week \(as a claimable amount if it is considered claimable at this time\), and b\) will also be split among their futue payment schedule.
 
+#### Rules for determining LM and VS rewards prior to July 27th
+
+Please reference this sub-page to read about the rules that were used to determine a user's LM and VS rewards: 
+
 ### Community Token Giveaway
 
 The eligibility for our Community Token Giveaway is now closed. The first 1/4 of tokens have bee disbursed. Please refer back here for updates on distribution status.
