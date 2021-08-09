@@ -157,7 +157,7 @@ We take this per week distribution amount and create a payment schedule as such:
 
 #### Rules for determining LM and VS rewards prior to July 27th
 
-Please reference this sub-page to read about the rules that were used to determine a user's LM and VS rewards: 
+Please reference [this sub-page](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program) to read about the rules that were used to determine a user's LM and VS rewards.
 
 ### Community Token Giveaway
 
