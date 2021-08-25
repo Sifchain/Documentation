@@ -47,7 +47,7 @@ In order to help user's with the above asymetrical vs. symmetrical adding of liq
 * Please see below for a screenshot of this coloring and informational icon.
 {% endhint %}
 
-![](../.gitbook/assets/screen-shot-2021-03-18-at-10.50.05-am.png)
+![](../.gitbook/assets/screen-shot-2021-08-02-at-3.22.29-pm%20%281%29.png)
 
 ### **How does the system ensure that there’s enough liquidity in a pool, if users only have to add one token in the pool and not both?**
 

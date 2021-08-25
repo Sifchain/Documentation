@@ -28,6 +28,23 @@ Sifchain's initial Peggy design will be slightly different than this due to the 
 
 Sifchain is actively evaluating multiple cross-chain software frameworks that appear to have successfully implemented cross-chain data or value transfers. These include [Gravity](https://gravity.tech/), ChainBridge, Rosetta, Substrate-IBC, the Nomic Bitcoin bridge, PolyNetwork, and other projects.
 
+### IBC Connectivity
+
+On August \(x\), Sifchain welcomed in IBC connectivity. With IBC, users can now freely move any assets between Sifchain and any connected blockchain via IBC. Sifchain has taken the route of connecting to each individual chain. There were many reason for this decision, but essentially this allows the user experience of moving assets to be very easy and clear. Below is a list of connected blockchain at the moment, and which are coming soon. 
+
+* Connected:
+  * Cosmos
+  * Iris
+  * Akash
+  * Sentinel
+  * Osmosis
+  * Regen
+  * Crypto-org
+* Coming soon:
+  * ...
+
+IBC enables Sifchain users to export Cosmos-specific assets onto Ethereum and transfer Ethereum assets across any IBC-enabled blockchain. This is a huge step in Sifchain's goal of becoming the world's first omni-chain DEX.
+
 ### Continuous Liquidity Pools
 
 [**Liquidity pools**](https://www.investopedia.com/terms/l/liquidity.asp) ****enable you to buy or sell an asset for another asset on a crypto-currency exchange. Think of each liquidity pool as a mini-market within the larger market, ensuring reliability and expediency when you trade two different tokens.

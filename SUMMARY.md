@@ -45,6 +45,7 @@
 * [Sifchain Node Operators](resources/node-operators.md)
 * [Rewards Programs](resources/rewards-programs/README.md)
   * [Additional Information: .39 LM/VS Program](resources/rewards-programs/additional-information-.39-lm-vs-program.md)
+  * [Additional Information: .39 LM/VS Program](resources/rewards-programs/additional-information-.39-lm-vs-program-1.md)
 * [Troubleshooting](resources/troubleshooting.md)
 
 ## Join Sifchain
