@@ -55,8 +55,6 @@ In order to use our Peggy feature and to move assets from the Ethereum blockchai
 
 Once you have connected both of your Metamask and Keplr wallets, you are now ready to peg liquidity into Sifchain and use all of the features Sifchain DEX has to offer!
 
-[Demo Video: Connecting Wallets to Sifchain DEX for the First Time](https://www.youtube.com/watch?v=xwp0HJeWU5U&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=1) \(to do\)
-
 ## Importing/Exporting Assets
 
 In order to move assets between Sifchain and an external Blockchain, you will use the 'Import' feature, as possible through our implementation of Peggy and IBC.  We use Peggy when importing and exporting between Sifchain and Ethereum, and we use IBC when importing and exporting between Sifchain and other Cosmos-based blockchains. A few key things to understand about these features:
@@ -102,7 +100,7 @@ After connecting your Keplr and MetaMask wallets, you are now ready to move asse
 
 You are now free to use your newly imported tokens via swaps, or by providing liquidity!
 
-[Demo Video: Move Tokens \(“Pegging”\) Ethereum to Sifchain](https://www.youtube.com/watch?v=tyM9hPNvzW4&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=2) \(done\)
+[Demo Video: Move Tokens into Sifchain](https://www.youtube.com/watch?v=okuEndeGRHA&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=5)
 
 ### Export Assets from Sifchain - Tutorial
 
@@ -121,7 +119,7 @@ You are now free to use your newly imported tokens via swaps, or by providing li
 
 * Once you click confirm, you will need to sign the transaction via your Keplr wallet. After this, you can see the adjusted token amounts within a minute in your wallets and within the 'Balances' screen.
 
-[Demo Video: Move Tokens \(“Unpegging”\) Sifchain to Ethereum](https://www.youtube.com/watch?v=5-oR8JQlkrk&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=3) \(to do\)
+[Demo Video: Export Tokens out of Sifchain](https://www.youtube.com/watch?v=XPf57h4QfWg&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=3)
 
 ## Pooling Assets
 
@@ -168,7 +166,7 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 
 * Once you 'Confirm', this will initiate your Keplr wallet for you to sign the transaction. Once successful, you will now see this listed pool jump to the top of the Pools listing, and will indicate your % ownership of the pool as well as your net gain/loss. This may take a few moments to be recognized
 
-[Demo Video: Add Liquidity to a Pool in Sifchain DEX](https://www.youtube.com/watch?v=Rju9jamsjYE&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=4) \(to do\)
+[Demo Video: Add Liquidity to a Pool in Sifchain DEX](https://www.youtube.com/watch?v=Z5_w_RnUPIY&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=5)
 
 ### Liquidity Pools: Additional Details
 
@@ -201,7 +199,7 @@ The below details are included for each liqudity pool. If you have liquidity in 
 
 * You can finalize this withdrawal by clicking on the 'Remove Liquidity'. This will trigger you to sign the transaction via your Keplr wallet. Once finalized, you will now see these amounts in your wallet and your liquidity pool share and amounts adjusted accordingly.  
 
-[Demo Video: Remove Liquidity from a Pool in Sifchain DEX](https://www.youtube.com/watch?v=j1LGYkeAKRo&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=5) \(to do\)
+[Demo Video: Remove Liquidity from a Pool in Sifchain DEX](https://www.youtube.com/watch?v=c_BiSXQlnyg&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=3)
 
 ## Swapping Assets
 
@@ -242,5 +240,5 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 
 * You can now confirm the swap, sign the transaction via your Keplr wallet and see the amounts adjusted in your wallet.
 
-[Demo Video: Token Swap in Sifchain DEX](https://www.youtube.com/watch?v=jG1BExJt_Bk&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=6) \(done\)
+[Demo Video: Token Swap in Sifchain DEX](https://www.youtube.com/watch?v=WNamL5oX9Jw&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=1)
 
