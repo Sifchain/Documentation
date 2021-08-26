@@ -10,7 +10,30 @@ description: >-
 
 ### .42 Cosmos-Assets Liquidity Mining Program
 
-More details on this coming very soon!
+With the introduction of .42 and IBC within Sifchain, we have decided to launch a special Liquidity Mining program \(one that we are calling the '.42 LM program'\). The rules, and important details of this program are as follows:
+
+* We will be using the same concepts of our .39 Liquidity Mining Program \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). This explains our usage of tickets and ticket multipliers,  a global bucket, claiming your rewards, impacts of withdrawing liquidity, and IL protection.
+* The global bucket amount for this program will be 10,000,000 ROWAN.
+* The eligibility window will be set to 6 weeks, starting on August 24, 2021. This means any liqudity added to our eligible pools within this time frame will earn rewards.
+* The full maturation time period is also set to 6 weeks as well. 
+  * For example:
+    * If you add on eligible liquidity on day 1, you will earn rewards for 6 weeks and full maturation will occur at 6 weeks.
+    * If you add eligible liquidity on week 5, you will earn rewards for 1 week, and still have 6 week maturation period from the time you added.
+* The eligible pools are all CosmosSDK tokens on IBC \(ex: Atom, DVPN, AKT, etc.\). This means if you add any liquidity to any of these pools, you will be eligible to earn rewards.
+
+
+
+**Summary of eligibility requirements:**
+
+* A user will be eligible to receive these rewards IF they add liquidity to any Sifchain &lt;&gt; Cosmos Asset pool. As we add new Comos tokens to the DEX, those will also automatically be included as well. 
+* A user will be eligible to receive these rewards IF they add liquidity during the eligibility window. This window is set for 6 weeks starting on August 24, 2021.
+* A user will earn full maturity of their rewards once they keep the associated liquidity in 6 weeks.
+* If a user withdraws ANY of their liquidity across ANY pool, they will be subject to forfeiting their rewards \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). 
+
+**Recommendations:**
+
+* You should not remove ANY liquidity across ANY pool. If you do so, you are subject to the DQ rules.
+* We HIGHLY recommend that anyone that is interested in the new .42 LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new .42 LM eligible pools.
 
 ### .39 Liquidity Mining and Validator Subsidy Rewards on Sifchain
 
