@@ -8,20 +8,18 @@ description: >-
 
 ## Special Programs
 
-### .42 Cosmos-Assets Liquidity Mining Program
+### IBC Cosmos-Assets Liquidity Mining Program
 
-With the introduction of .42 and IBC within Sifchain, we have decided to launch a special Liquidity Mining program \(one that we are calling the '.42 LM program'\). The rules, and important details of this program are as follows:
+With the introduction of .42 and IBC within Sifchain, we have decided to launch a special Liquidity Mining program \(one that we are calling the 'IBC LM program'\). The rules, and important details of this program are as follows:
 
 * We will be using the same concepts of our .39 Liquidity Mining Program \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). This explains our usage of tickets and ticket multipliers,  a global bucket, claiming your rewards, impacts of withdrawing liquidity, and IL protection.
-* The global bucket amount for this program will be 10,000,000 ROWAN.
+* The total global bucket amount for this program will be 10,000,000 ROWAN. This bucket will be used as the single bucket across all eligible pools.
 * The eligibility window will be set to 6 weeks, starting on August 24, 2021. This means any liqudity added to our eligible pools within this time frame will earn rewards.
 * The full maturation time period is also set to 6 weeks as well. 
   * For example:
     * If you add on eligible liquidity on day 1, you will earn rewards for 6 weeks and full maturation will occur at 6 weeks.
     * If you add eligible liquidity on week 5, you will earn rewards for 1 week, and still have 6 week maturation period from the time you added.
-* The eligible pools are all CosmosSDK tokens on IBC \(ex: Atom, DVPN, AKT, etc.\). This means if you add any liquidity to any of these pools, you will be eligible to earn rewards.
-
-
+* The eligible pools are all CosmosSDK tokens on IBC \(ex: Atom, DVPN, AKT, etc.\). This means if you add any liquidity to ANY of these pools, you will be eligible to earn rewards.
 
 **Summary of eligibility requirements:**
 
@@ -30,10 +28,15 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 * A user will earn full maturity of their rewards once they keep the associated liquidity in 6 weeks.
 * If a user withdraws ANY of their liquidity across ANY pool, they will be subject to forfeiting their rewards \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). 
 
+**Claiming**
+
+* Come the 2nd week of the program, users will be eligible to claim their rewards in the DEX UI. They can do this by navigating to the 'Rewards' page in the DEX and click the claim button. 
+* All claimed rewards will be paid out at the end of the week. This means that if you were to submit a claim request for your claimable rewards, that request will be processed on Friday or Saturday of that week, unless specified by the Sifchain team. 
+
 **Recommendations:**
 
 * You should not remove ANY liquidity across ANY pool. If you do so, you are subject to the DQ rules.
-* We HIGHLY recommend that anyone that is interested in the new .42 LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new .42 LM eligible pools.
+* We HIGHLY recommend that anyone that is interested in the new IBC LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new IBC LM eligible pools.
 
 ### .39 Liquidity Mining and Validator Subsidy Rewards on Sifchain
 
