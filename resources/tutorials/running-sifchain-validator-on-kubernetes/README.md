@@ -10,11 +10,11 @@ description: >-
 
 * Make sure your provisioned EC2 machine meets the following requirements:
   * **Hardware:**
-    * Minimum**:** 2 vCPU, 4 GB RAM
-    * Recommended: 4vCPU, 8 GB RAM
+    * Minimum**:** 4 vCPU, 16 GB RAM
+    * Recommended: 8 vCPU, 32 GB RAM
   * **Storage**:
-    * Minimum: 50GB SSD
-    * Recommended: &gt;= 100 GB SSD. 200GB to be on the safer side.
+    * Minimum: 500GB SSD
+    * Recommended: &gt;= 1TB SSD.
     * Notes:
       * An archival node \(pruning = "nothing" \) grows at a rate of ~50 GB per month
       * A fully pruning node \(pruning = "everything" \) grows at a rate of ~10 GB per month
@@ -39,7 +39,7 @@ In order to acquire ROWAN you can:
 
 Now that you have your node up and running and you have ROWAN to stake with, you must now execute the following command:
 
-* `sifnodecli tx staking create-validator` 
+* `sifnoded tx staking create-validator` 
   * In order to execute this command, there are several decisions that must be made in relation to your node. Some of these settings will not be editable after creation \(pointed out below\), so please be sure about the values you are setting:
     * **commission-max-change-rate &lt;max-rate-change&gt;**
       * This is the most that you will be able to change your commission rate at a time. This value IS NOT editable after validator creation. Commission rates can be changed only once every 24 hours.
@@ -63,7 +63,7 @@ Now that you have your node up and running and you have ROWAN to stake with, you
       * This is a reference to the signer of this transaction \(your validator address/moniker\).
     * **keyring-backend file**
       * This specifies the location of your node’s keyring.
-* Next, you can verify that this was executed correctly by running this command: `sifnodecli query staking validator <validator-address> .` This will return information about your validator.
+* Next, you can verify that this was executed correctly by running this command: `sifnoded query staking validator <validator-address> .` This will return information about your validator.
 
 After you have setup your node and successfully staked it with ROWAN, you are now considered eligible to be a part of Sifchain's validator set. Please reference our [guide on being a Validator here for additional information](https://docs.sifchain.finance/roles/validators).   
 
