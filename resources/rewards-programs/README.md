@@ -26,7 +26,8 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 * A user will be eligible to receive these rewards IF they add liquidity to any Sifchain &lt;&gt; Cosmos Asset pool. As we add new Comos tokens to the DEX, those will also automatically be included as well. 
 * A user will be eligible to receive these rewards IF they add liquidity during the eligibility window. This window is set for 6 weeks starting on August 24, 2021.
 * A user will earn full maturity of their rewards once they keep the associated liquidity in 6 weeks.
-* If a user withdraws ANY of their liquidity across ANY pool, they will be subject to forfeiting their rewards \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). 
+* If a user removes liquidity from an IBC pool, this will be treated as a normal remove liquidity event and subject to our ticket burning logic \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). 
+* If a user withdraws ANY of their liquidity across ANY pool and is receiving any rewards from the legacy .39 program, they will be subject to forfeiting all their .39 rewards \(as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)\). 
 
 **Claiming**
 
@@ -35,7 +36,7 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 
 **Recommendations:**
 
-* You should not remove ANY liquidity across ANY pool. If you do so, you are subject to the DQ rules.
+* You should not remove ANY liquidity across ANY pool if you are receiving .39 rewards. If you do so, you are subject to the DQ rules of that program.
 * We HIGHLY recommend that anyone that is interested in the new IBC LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new IBC LM eligible pools.
 
 ### .39 Liquidity Mining and Validator Subsidy Rewards on Sifchain
