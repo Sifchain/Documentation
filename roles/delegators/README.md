@@ -51,7 +51,7 @@ The delegation process is the same for both validators and delegators; whereas a
      1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
   2. Take this generated key and run: `rake "keys:import[<moniker>]"`
      1. This will give you your newly generate Sifchain address.
-  3. If running locally, run Command `sifnodecli keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
+  3. If running locally, run Command `sifnoded keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase. 
 
 You can now reference the Delegator CLI commands page for all relevant commands that can be run in order to execute a delegation.
 
