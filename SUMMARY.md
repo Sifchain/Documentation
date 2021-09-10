@@ -40,6 +40,7 @@
 * [Block Explorers](resources/blockexplorers.md)
 * [BetaNet Launch](resources/betanet-launch.md)
 * [Sifchain DEX User Guide](resources/sifchain-dex-ui.md)
+* [Cosmos Token Address in Ethereum](resources/cosmos-token-address-in-ethereum.md)
 * [FAQ](resources/faq.md)
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
 * [Sifchain Node Operators](resources/node-operators.md)
