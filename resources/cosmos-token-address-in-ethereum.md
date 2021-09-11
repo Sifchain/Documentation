@@ -10,5 +10,11 @@ Users can now export CosmosSDK tokens to Ethereum while using Sifchain as the bi
 * **REGEN**: 0xeEE10b3736d5978924f392ED67497cfAE795128B
 * **AKT**: 0xC727f87871ee12Bbcedd2973746D1Deb7529aaD6
 
+**Import the Sifchain Token List in Ethereaum Exchanges**
+
+* In order to import the above tokens into a supported Ethereum exchange \(like Uniswapv2 or SushiSwap\), you can use this json file to import the Sifchain Token List: [https://sifchain.github.io/whitelists/uniswap.json](https://sifchain.github.io/whitelists/uniswap.json)
+
+![](../.gitbook/assets/screen-shot-2021-09-11-at-7.36.40-am.png)
+
  
 
