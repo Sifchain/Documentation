@@ -26,6 +26,7 @@ Here is a list of known exchanges that support ROWAN/eROWAN:
 ROWAN:
 
 * [Sifchain DEX](https://dex.sifchain.finance/) — _live now_
+* \_\_[_AscendEX_](https://ascendex.com/en/cashtrade-spottrading/usdt/rowan) _- live now_
 
 eROWAN:
 
