@@ -41,12 +41,12 @@
 * [BetaNet Launch](resources/betanet-launch.md)
 * [Sifchain DEX User Guide](resources/sifchain-dex-ui.md)
 * [Cosmos Tokens in Ethereum](resources/cosmos-token-address-in-ethereum.md)
-* [FAQ](resources/faq.md)
 * [Allowable List of Tokens in Sifchain](resources/list-of-allowable-tokens-in-sifchain.md)
 * [Sifchain Node Operators](resources/node-operators.md)
 * [Rewards Programs](resources/rewards-programs/README.md)
   * [Additional Information: .39 LM/VS Program](resources/rewards-programs/additional-information-.39-lm-vs-program.md)
 * [Troubleshooting](resources/troubleshooting.md)
+* [FAQ](resources/faq.md)
 
 ## Join Sifchain
 

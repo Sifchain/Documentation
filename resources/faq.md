@@ -30,6 +30,8 @@ ROWAN:
 
 eROWAN:
 
+* [QuickSwap: QUICK &lt;&gt; eROWAN](https://info.quickswap.exchange/pair/0x631f39d22430e889a3cfbea4fd73ed101059075f) ****- _live now_
+* [QuickSwap: ATOM &lt;&gt; eROWAN](https://info.quickswap.exchange/pair/0x7051810a53030171f01d89e9aebd8a599de1b530) - _live now_
 * [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) v2 and v3 \(DEX\) — _live now, only use official_ [_eRowan contract address_](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \_\_
 * [AEX](https://www.aex.com/page/trade.html#/?symbol=EROWAN_USDT) - _live now_
 
