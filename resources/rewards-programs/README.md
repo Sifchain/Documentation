@@ -8,7 +8,35 @@ description: >-
 
 ## Special Programs
 
-### IBC Cosmos-Assets Liquidity Mining Program
+### Sif's Harvest: Liquidity Mining Program
+
+We are excited to inform you of a new Liquidity Mining program launching October 4th, 2021, aptly named **Sif’s Harvest**. We have learned a lot from running our previous reward programs, and we designed this one with very careful consideration to ensure we were going to achieve the results that will help propel Sifchain.
+
+Our goal for this program is to put daily active user count on an exponential growth curve while encouraging adding of liquidity across all pools by offering great APY that is spread over a 6 week time-frame. We will encourage users to frequently engage in DEX activity by allowing them to claim and re-pool their rewards at no penalty to realize compounded gains.
+
+**Key facts around this upcoming Liquidity Mining program are below. We are simplifying the process, while enabling participants to earn more:**
+
+1. Liquidity Providers will have _no_ lockup period
+2. Claim rewards at any time \(Payouts for claims made weekly on Fridays\)
+3. LPs will expect ~345% APY
+4. All pools are eligible
+5. The LM program will run for six \(6\) weeks
+
+**FAQs:**
+
+* **Which pools are eligible for me to earn rewards from?** EVERY pool listed in the Sifchain DEX!
+* **When does this program start?**  It starts on October 3rd 5:30pm PST. This means that you will earn rewards on any and all liquidity you add starting on October 4th and going until the end of the program.
+* **When does the program end?** The program will run for 6 weeks. This means its end date will be: November 12th, 2021.
+* **How do I earn these rewards?** Simply add liquidity to any of our pools and that is it. Visit our Rewards page in the DEX to watch your rewards grow. 
+* **How do I claim my rewards? Are there any penalties for claiming them?** You can claim your rewards by going into the Sifchain DEX and going to the Rewards tab. Here you will be able see how many rewards you have earned and the ability to claim them. No, you will not be penalized for claiming them! In fact, we are encouraging users to claim these rewards each week so they can re-deposit them into the liquidity pool to earn even more rewards!
+* **When are claimed rewards paid out?** Claims will be processed each week and distribution will occur on Friday evenings PST. When these rewards are distributed, they will get automatically sent to your wallet. You are now free to use these any way you see fit \(like adding them back into a liquidity pool!\). 
+* **How much am I expected to earn by participating in this program?** We are aiming at a 345% APY. We will adjust the reward pool to ensure we stay around this percentage.  
+* **What if I have pending rewards in the .42 Liquidity Mining Program and Sif's Harvest Liquidity Mining program?** If you want to claim your rewards, you will need to claim ALL of your rewards \(hence why there is only 1 claim button now\). 
+* **If I add any liquidity before the program start, will that be eligible for these rewards?** No, only liquidity adds from the start of the program and until the end date of the program will be eligible to earn rewards.
+
+
+
+### .42 Liquidity Mining Program
 
 With the introduction of .42 and IBC within Sifchain, we have decided to launch a special Liquidity Mining program \(one that we are calling the 'IBC LM program'\). The rules, and important details of this program are as follows:
 
@@ -38,159 +66,6 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 
 * You should not remove ANY liquidity across ANY pool if you are receiving .39 rewards. If you do so, you are subject to the DQ rules of that program.
 * We HIGHLY recommend that anyone that is interested in the new IBC LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new IBC LM eligible pools.
-
-### .39 Liquidity Mining and Validator Subsidy Rewards on Sifchain
-
-Liquidity mining rewards are rewards given for adding liquidity in the Sifchain [liquidity pool subsystem](https://docs.sifchain.finance/roles/liquidity-providers), whereas validator subsidy rewards are provided for staking or [delegating](https://docs.sifchain.finance/roles/delegators) to the [validator subsystem](https://docs.sifchain.finance/roles/validators).
-
-#### Liquidity Mining & Validator Subsidy Rewards Introduction
-
-Sifchain is running a liquidity mining program. There are 45 million ROWAN being initially allocated to this current rewards program. The eligibility window for the program started on Feb 19, 2021 and is set to end on June 30, 2021. All liquidity and stake that is added to Sifchain during the eligibility window will be eligible for LM and VS Rewards. Rewards will continue to accrue up until August 4th, 2021 \(regardless if a user has added liquidity early or late\).
-
-For LM rewards, the total rewards in the program are split between the different liquidity providers based on the proportion of total liquidity in the system that they have been providing over the duration of the program. For VS rewards, the total rewards in the program are split between the different users who have provided stake or delegations. Their total possible reward grows the longer they keep their liquidity in the system, up to a maximum of 4 months.
-
-#### Updates to our LM and VS Program, valid as of July 27, 2021
-
-* On the very last block of .39 before we migrate to .42, we will take a snapshot of the current state of participants within the LM/VS program. This snapshot will include:
-  * Reward Type: LM or VS
-  * Each participant's total claimable amount as of August 4th
-  * Each participant's total fully projected amount as of August 4th
-  * Each participant's full maturation date
-    * Significance of the August 4th date: This is the date when rewards stop accruing. So by choosing this date for the claimable and fully projected amount, we ensure that all users have the ability to be paid out in full.
-* We will use this information to determine a payment schedule for each participant.
-* First, we determine each participant's **Payment Schedule dates**. We will have 3 various 'Payout Schedules' that a participant can fall into, as determined based on their full maturation date. Those payout schedules are as follows:
-  * Payout Schedule \#1: Full Maturation Date falls before September 1. Payout Dates:
-    * August 6
-    * August 13
-  * Payout Schedule \#2: Full Maturation Date falls between: September 1 - October 1. Payout Dates:
-    * August 6
-    * August 13
-    * August 20
-    * August 27
-    * September 3
-    * September 10
-  * Payout Schedule \#3: Full Maturation Date falls between October 1 - End of the program. 12 Payout Dates:
-    * August 6
-    * August 13
-    * August 20
-    * August 27
-    * September 3
-    * September 10
-    * September 17
-    * September 24
-    * October 1
-    * October 8
-    * October 15
-* Next, we will determine how much should be paid out to each participant on those dates. To do this, we take the:
-  * a\) claimable amount as of August 4th \(ie: CurrentClaimable\) and
-  * b\) your current outstanding previously claimed amount \(ie ClaimedRewardsSinceFinalDispensation\) and 
-  * c\) total fully projected amount as of August 4th \(ie: MaturatedRewardsTotal\),
-
-And we create a payment schedule using the following logic:
-
-* MaturatedRewardsTotal - CurrentClaimable = Weekly Regular Distribution Total \(wrdTotal\).
-* We take the wrdTotal and divide that by the number of payment dates to get a per week distribution amount.
-
-We take this per week distribution amount and create a payment schedule as such:
-
-* First payment schedule date = CurrentClaimable + ClaimedRewardsSinceFinalDispensation +
-
-   per week distribution amount.
-
-* Remaining payment schedule dates = per week distribution amount.
-* To illustrate the above logic with a few examples:
-  * Example Scenario A, Payment Schedule \#1:
-    * User: sif123
-    * Full maturation date = August 20
-    * MaturatedRewardsTotal: 125
-    * CurrentClaimable: 25
-    * WRDTotal: 100
-      * Math is MaturatedRewardsTotal - currentClaimable = wrdTotal
-    * Payout dates and amounts:
-      * August 6 = 25\(current claimable amount\) + 50\(100/2 weeks of WRD\)
-      * August 13 = 50
-  * Example Scenario B, Payment Schedule \#2:
-    * User: sif456
-    * Full maturation date = September 20
-    * MaturatedRewardsTotal: 100000
-    * CurrentClaimable: 30000
-    * WRDTotal: 70000
-      * Math is MaturatedRewardsTotal - currentClaimable = wrdTotal
-    * Payout dates and amounts:
-      * August 6 = 30000\(current claimable amount\) + 11666\(70000/6 weeks of WRD\)
-      * August 13 = 11666
-      * August 20 = 11666
-      * August 27 = 11666
-      * September 3 = 11666
-      * September 10 = 11666
-  * Example Scenario C, Payment Schedule \#3:
-    * User: sif789
-    * Full maturation date = October 20
-    * MaturatedRewardsTotal: 200000
-    * CurrentClaimable: 80000
-    * WRDTotal: 120000
-      * Math is MaturatedRewardsTotal - currentClaimable = wrdTotal
-    * Payout dates and amounts:
-      * August 6 = 80000\(current claimable amount\) + 10909\(120000/11 weeks of WRD\)
-      * August 13 = 10909
-      * August 20 = 10909
-      * August 27 = 10909
-      * September 3 = 10909
-      * September 10 = 10909
-      * September 17 = 10909
-      * September 24 = 10909
-      * October 1 = 10909
-      * October 8 = 10909
-      * October 15 = 10909
-* In order to maintain eligibility for this new program and for each payout week, participants must follow the below rules:
-  * For LM, a user cannot remove any liquidity at any point before their final payment date.
-  * For VS, a user cannot remove any of their stake or undelegate their stake before their final payment date.
-  * If a participant does any of the above actions, they have disqualified themselves from future payouts. Participants, if disqualified, will not be eligible to earn any additional payouts from that point forward.
-* With these new rules, there will be no need to 'manually claim' any amounts. The distributions will happen automatically on the specified payment schedule dates.
-* For additional specific details on exact payout amounts, please reference this [google sheet](https://docs.google.com/spreadsheets/d/1f-ibZyx5O2f1wsNxvi56Kg8fkdys_DVmwhf7mjKDrDU/edit?usp=sharing) where you can filter by your address and see your specific payout schedule details.
-  * Additional help on columns:
-    * **Address** - Your sifchain address
-    * **reward\_type** - The reward type \(either LM or VS\)
-    * **claimablerewardstotal** - claimable amount as of August 4th
-    * **maturatedrewardstotal** - total fully projected amount as of August 4th
-    * **maturitydate** - Full maturation date 
-    * **weekly\_regular\_distribution\_total** - MaturatedRewardsTotal - CurrentClaimable = Weekly Regular Distribution Total
-    * **per\_week\_distribution\_amount** - Weekly Regular Distribution Total / num\_weeks
-    * **num\_weeks** - Number of payment dates as determined by user's maturity date
-    * **distribution\_date** - Your determined Payment schedule \(see above for these schedules\)
-    * **claimedrewardssincefinaldispensation** - Your current outstanding previously claimed amount
-    * **firstweekdistribution\_amount** - The amount that will be paid out on your first reward distribution date. This is CurrentClaimable + ClaimedRewardsSinceFinalDispensation +
-
-       per week distribution amount.
-
-#### FAQ for LM and VS Rewards Programs
-
-* How much ROWAN has been allocated to each program?
-  * 45M ROWAN tokens are allocated to each LM rewards and VS rewards \(90M ROWAN in total\). Note that the liquidity mining rewards and the validator subsidy rewards are separate, as we encourage people to contribute to both programs as they provide different utilities for the system.
-* During which time periods can I add liquidity/stake/delegate and earn rewards?
-  * During the program eligibility dates of 02/19/2021 - 06/30/2021. We highly recommend that you add as much as you can during this time period to both our liquidity pools and stake/delegate to earn maximum rewards across both programs. 
-* Can I claim just a portion of my rewards?
-  * No. The rewards are automatically disbursed on the set payment dates.
-* When can I claim my rewards?
-  * No need to claim any rewards! We will dispense them automatically.
-* How can I get disqualified?
-  * For LM, a user cannot remove any liquidity at any point before their final payment date.
-  * For VS, a user cannot remove any of their stake or undelegate their stake before their final payment date.
-    * If a participant does any of the above actions, they have disqualified themselves from future payouts. Participants, if disqualified, will not be eligible to earn any additional payouts from that point forward.
-* Where can I see my payment schedule? 
-  * You can see details on this [google sheet](https://docs.google.com/spreadsheets/d/1f-ibZyx5O2f1wsNxvi56Kg8fkdys_DVmwhf7mjKDrDU/edit?usp=sharing).
-* How are commission-based rewards handled in this new payout schedule?
-  * For validator subsidy rewards that are based on the commission of their delegations: we are assuming that ALL delegators allow their rewards to fully mature, which means that all validators will receive their associated VS rewards based on the assumption that these delegators wait their time \(which maximizes the benefit to validators\). This will be paid out in a\) their 1st week \(as a claimable amount if it is considered claimable at this time\), and b\) will also be split among their future payment schedule.
-
-### Community Token Giveaway
-
-#### Rules for determining LM and VS rewards prior to July 27th
-
-Please reference this sub-page to read about the rules that were used to determine a user's LM and VS rewards: 
-
-Please reference [this sub-page](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program) to read about the rules that were used to determine a user's LM and VS rewards.
-
-### Community Token Giveaway
 
 ### Community Token Giveaway
 
