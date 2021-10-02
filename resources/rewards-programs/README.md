@@ -34,8 +34,6 @@ Our goal for this program is to put daily active user count on an exponential gr
 * **What if I have pending rewards in the .42 Liquidity Mining Program and Sif's Harvest Liquidity Mining program?** If you want to claim your rewards, you will need to claim ALL of your rewards \(hence why there is only 1 claim button now\). 
 * **If I add any liquidity before the program start, will that be eligible for these rewards?** No, only liquidity adds from the start of the program and until the end date of the program will be eligible to earn rewards.
 
-
-
 ### .42 Liquidity Mining Program
 
 With the introduction of .42 and IBC within Sifchain, we have decided to launch a special Liquidity Mining program \(one that we are calling the 'IBC LM program'\). The rules, and important details of this program are as follows:
@@ -66,26 +64,6 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 
 * You should not remove ANY liquidity across ANY pool if you are receiving .39 rewards. If you do so, you are subject to the DQ rules of that program.
 * We HIGHLY recommend that anyone that is interested in the new IBC LM program to pool new liquidity. Do not remove any as-is liquidity to move to the new IBC LM eligible pools.
-
-### Community Token Giveaway
-
-The eligibility for our Community Token Giveaway is now closed. The first 1/4 of tokens have been disbursed. Please refer back here for updates on distribution status.
-
-People who qualified for the airdrop as per the rules of our [community distribution in February](https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) will receive airdrop tokens in accordance with the new rules.
-
-The eligibility for our Community Token Giveaway is now closed. The first 1/4 of tokens have been disbursed. Please refer back here for updates on distribution status.
-
-* Releases will occur on a weekly basis rather than a monthly basis. 1/4th of the expected monthly drop will be released per week for 12 upcoming drops total.
-* In order to receive subsequent airdrops, you must pool an amount of liquidity \(as measured in Rowan\) equal to or greater than 95% of the liquidity you receive during the week after each airdrop. A simple way to meet this criteria is to just pool the airdrop after receiving it although you can pool any asset\(s\) you like.
-* You must not unpool any liquidity from the address receiving the airdrop until the last airdrop has been distributed. Doing so will disqualify you from receiving future airdrops.
-* We want clarify that users can pool \*95%\* of their airdrop rather than the entire 100%. This allows users substantial leeway to trade some of the Rowan before pooling.
-
-People who qualified for the airdrop as per the rules of our [community distribution in February](https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) will receive airdrop tokens in accordance with the new rules.
-
-* Releases will occur on a weekly basis rather than a monthly basis. 1/4th of the expected monthly drop will be released per week for 12 upcoming drops total.
-* In order to receive subsequent airdrops, you must pool an amount of liquidity \(as measured in Rowan\) equal to or greater than 95% of the liquidity you receive during the week after each airdrop. A simple way to meet this criteria is to just pool the airdrop after receiving it although you can pool any asset\(s\) you like.
-* You must not unpool any liquidity from the address receiving the airdrop until the last airdrop has been distributed. Doing so will disqualify you from receiving future airdrops.
-* We want clarify that users can pool \*95%\* of their airdrop rather than the entire 100%. This allows users substantial leeway to trade some of the Rowan before pooling.
 
 ## Ongoing Programs
 
