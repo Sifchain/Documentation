@@ -32,6 +32,11 @@ eROWAN:
 
 * [QuickSwap: QUICK &lt;&gt; eROWAN](https://info.quickswap.exchange/pair/0x631f39d22430e889a3cfbea4fd73ed101059075f) ****- _live now_
 * [QuickSwap: ATOM &lt;&gt; eROWAN](https://info.quickswap.exchange/pair/0x7051810a53030171f01d89e9aebd8a599de1b530) - _live now_
+* [QuickSwap: REGEN &lt;&gt; eROWAN](%20https://info.quickswap.exchange/pair/0x66c37a00e426a613b188180198aac12b0b4ae4d4) - _live now_
+* [QuickSwap: AKT &lt;&gt; eROWAN](%20https://info.quickswap.exchange/pair/0xa651ef83fa6a90e76206de4e79a5c69f80994556) - _live now_
+* [QuickSwap: XPRT &lt;&gt; eROWAN](https://info.quickswap.exchange/pair/0xf366df119532b2e0f4e416c81d6ff7728a60fe7d
+  ) - _live now_
+* [QuickSwap: IRIS &lt;&gt; eROWAN](%20https://info.quickswap.exchange/pair/0x58ffb271c6f3d92f03c49e08e2887810f65b8cd6) - _live now_
 * [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) v2 and v3 \(DEX\) — _live now, only use official_ [_eRowan contract address_](https://app.uniswap.org/#/swap?outputCurrency=0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe) \_\_
 * [AEX](https://www.aex.com/page/trade.html#/?symbol=EROWAN_USDT) - _live now_
 
