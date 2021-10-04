@@ -50,3 +50,7 @@ AKT \(Akash\): [https://analytics.sushi.com/pairs/0x8f84e2500b9d206f02d7d10d6bb6
 AKT \(Akash\): [https://etherscan.io/token/0xc727f87871ee12bbcedd2973746d1deb7529aad6](https://etherscan.io/token/0xc727f87871ee12bbcedd2973746d1deb7529aad6)  
 AKT \(Akash\): [https://info.quickswap.exchange/pair/0xa651ef83fa6a90e76206de4e79a5c69f80994556](https://info.quickswap.exchange/pair/0xa651ef83fa6a90e76206de4e79a5c69f80994556)
 
+### Polygon
+
+* eROWAN contract address in Polygon: 0xa7051C5a22d963b81D71C2BA64D46a877fBc1821
+
