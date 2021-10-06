@@ -4,35 +4,51 @@ description: Join the Sifchain community
 
 # Sifchain Communities
 
-### Telegram
+### Main Official Channels
 
-[https://t.me/sifchain](https://t.me/sifchain)
+[Telegram](https://t.me/sifchain)
 
-### Twitter
+[Twitter](https://twitter.com/sifchain)
 
-[https://twitter.com/sifchain](https://twitter.com/sifchain)
+[Medium](https://medium.com/sifchain-finance)
 
-### Youtube
+[Discord](https://discord.gg/FkvFjBMMus)
 
-[https://www.youtube.com/channel/UCybJH9xaQx0cemM9\_S8ZInA](https://www.youtube.com/channel/UCybJH9xaQx0cemM9_S8ZInA) 
+[YouTube](https://www.youtube.com/channel/UCybJH9xaQx0cemM9_S8ZInA)
 
-### Medium
+ [GitHub](https://github.com/Sifchain)
 
-[https://medium.com/sifchain-finance](https://medium.com/sifchain-finance)
+[Website](https://sifchain.finance/)
 
-### Discord
+### Local Language Channels
 
-[https://discord.gg/FkvFjBMMus](https://discord.gg/FkvFjBMMus)
+[Chinese Medium](https://sifchainasia.medium.com/)
 
-### Telegram Korea
+[Chinese Telegram](https://t.me/sifchainchinese)
 
-[https://t.me/SIFChain\_Kor](https://t.me/SIFChain_Kor)
+[German Telegram](https://t.me/sifchaingerman)
 
-### Medium Korea
+[Hindi Telegram](https://t.me/sifchain_hindi)
 
-[https://medium.com/sifchainkorea](https://medium.com/sifchainkorea)
+[Korean Telegram](https://t.me/SIFChain_Kor)
 
-### Sifchain announcements
+[Korean Medium](https://medium.com/sifchainkorea)
 
-[https://t.me/sifchainann](https://t.me/sifchainann)
+[Japanese Telegram](https://t.me/sifchain_japan)
+
+[Japanese Twitter](https://twitter.com/SifchainJ)
+
+[Japanese Medium](https://medium.com/sifchain-japan)
+
+[Portuguese Telegram](https://t.me/Sifchain_Portugues_BR)
+
+[Russian Telegram](https://t.me/sifchain_russian)
+
+[Spanish Telegram](https://t.me/Sifchain_Hispano_Esp)
+
+[Turkish Telegram](https://t.me/sifchain_turkish)
+
+[Vietnamese Telegram](https://t.me/sifchainvietnam)
+
+[Vietnamese Medium](https://medium.com/sifchain-vietnam)
 
