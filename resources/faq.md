@@ -42,7 +42,7 @@ eROWAN:
 
 **\*\*\*BE CAREFUL OF FAKE TOKENS\*\*\* The official eROWAN token contract address is:** [**https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe**](https://etherscan.io/token/0x07bac35846e5ed502aa91adf6a9e7aa210f2dcbe)
 
-For users who need a small amount of ROWAN to execute their first transaction \(for example, to acquire more ROWAN via a swap\), please reach out to @OlegEnthusiast on Telegram with a request for a small amount of ROWAN. 
+For users who need a small amount of ROWAN to execute their first transaction \(for example, to acquire more ROWAN via swap\), then you can use our Betanet coin faucet. If your new account's ROWAN balance within the Sifchain DEX is 0 following your first token import, then you should see a "Get Rowan" modal on the DEX interface. Follow the steps and you will receive enough Rowan to pay the gas fee to execute your first swap.
 
 ## What wallets support ROWAN/eROWAN?
 
