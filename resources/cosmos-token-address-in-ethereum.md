@@ -1,6 +1,6 @@
 # Cosmos Tokens in Ethereum & Polygon
 
-Users can now export CosmosSDK tokens to Ethereum while using Sifchain as the bridge to do so! In order to do this, a user would import their desired token from their connected Cosmos chain into Sifchain. They would then export that token from Sifchain to Ethereum. That CosmosSDK token is now in your MetaMask wallet and can be used within the Ethereum ecosystem. Users can pool these tokens in such exchanges as SushiSwap and Uniswapv3.
+Users can now export CosmosSDK tokens to Ethereum and Polygon while using Sifchain as the bridge to do so! In order to do this, a user would import their desired token from their connected Cosmos chain into Sifchain. They would then export that token from Sifchain to Ethereum. That CosmosSDK token is now in your MetaMask wallet and can be used within the Ethereum ecosystem (and/or bridged to Polygon). Users can pool these tokens in such exchanges as SushiSwap and Uniswapv3.
 
 ### Verified Token Addresses - Ethereum 
 
