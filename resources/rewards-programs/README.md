@@ -8,7 +8,52 @@ description: >-
 
 ## Special Programs
 
-### Sif's Harvest: Liquidity Mining Program
+### Sif's Fields of Gold Trading Competition&#x20;
+
+We would like to announce the **Sif’s Fields of Gold** trading competition that will kick-off on October 25th!\
+\
+Our goal for this program is to continue to put daily user count on an exponential growth curve while encouraging users to swap in both high volume amounts and/or high numbers of individual transactions. We are encouraging users to execute both in high volume swaps, as well as in high number of swaps by having two different scoreboards with dedicated reward pools.\
+\
+This competition will encourage anyone and everyone to swap on the Sifchain DEX, compete, and earn $ROWAN by doing so! This competition will ideally generate high values of system income paid to liquidity providers in the form of swap fees, and to node operators and delegators as transaction fees. So make sure you add liquidity, stake, or do both!
+
+We are also going to have additional reward pools for users who swap the most against specific pools. These are going to be sponsored by the relevant token’s project and the associated rewards will be paid out in their token! This means you can earn $ROWAN and other tokens by participating in this competition! More on these sponsoships below!\
+\
+Finally, we are planning to run a multi-day live stream with this event! The live stream will include various discussions with Sifchain Core team members. If you are interested in joining the live stream, please sign-up via the link below to be notified of the stream schedule and various discussion topics!
+
+**Some key facts around Sif’s Fields of Gold are below:**
+
+1. The competition will last for 30 days: From October 25th - November 23rd.
+2. There will be two different leaderboards:&#x20;
+   1. Based on total volume swapped over these 30 days (normalized in USDT).&#x20;
+   2. Based on total number of swaps over these 30 days
+3. Users will be able to see their position in each leaderboard via a scoreboard on the Sifchain DEX.
+4. The top 30 addresses in each leaderboard will be awarded prizes.
+5. The total reward pool for the Leaderboard - based on Total Volume: 3,000,000 ROWAN
+6. The total reward pool for the Leaderboard - based on Total Number of Swaps: 1,000,000 ROWAN
+7. The payout determination for the ‘Leaderboard - based on Total Volume’ will be based upon the percentage of the pie each user in the top 30 owns of that top 30. For example:&#x20;
+   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-19 at 5.01.42 PM.png>)
+8. The payout determination for the ‘Leaderboard - based on Number of Swaps’ will be pre-determined by placement for those in the top 30. The payout structure is as follows:
+   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-19 at 5.06.24 PM.png>)
+9. ALL trades against ALL pools are considered eligible.
+10. We will also have extra rewards for specific project-sponsored pools. This means that you can earn additional rewards by swapping the most against these pools, and these rewards will be paid out in non-ROWAN tokens from the sponsored project. More details on this to come closer to the launch of the competition!
+11. We encourage users to keep adding liquidity to our pools to earn swap fees from this competition.
+12. We encourage users to keep staking and delegating ROWAN to earn transaction fees during this competition.
+13. Sifchain currently has an [SDK](https://github.com/sifchain/clientsdk) that can be utilized for this trading competition programmatically.
+14. We will hold a multi-day live stream during this trading competition with dedicated topics to be discussed and lead by the Sifchain Core team.
+
+#### Current Pool Sponsors&#x20;
+
+* Akash on the AKT:ROWAN Pool
+* DinoSwap on the DINO:ROWAN Pool
+* rATOM on the rATOM:ROWAN Pool (coming soon!)
+* Oh! Finance in the OH:ROWAN Pool (coming soon!)
+
+#### Livestream Information
+
+* Livestream Schedule: Coming soon!
+* [Livestream Signup!](https://eepurl.com/hKHSOv)
+
+### Sif's Harvest & Sif's Bloom: Liquidity Mining Program
 
 We are excited to inform you of a new Liquidity Mining program launching October 4th, 2021, aptly named **Sif’s Harvest**. We have learned a lot from running our previous reward programs, and we designed this one with very careful consideration to ensure we were going to achieve the results that will help propel Sifchain.
 
