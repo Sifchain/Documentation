@@ -115,6 +115,7 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 
 ## Ongoing Programs
 
+
 ### Block Rewards
 
 Block rewards are earned and distributed to Validators and delegators to existing validators in real-time as blocks are processed. To earn these rewards, you must be a validator and acting member in consensus, OR a delegator to a validator and acting member in consensus. For more information on this, please refer [here](https://docs.sifchain.finance/roles/validators#block-rewards).
