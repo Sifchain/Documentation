@@ -18,7 +18,7 @@ Our goal for this program is to put daily active user count on an exponential gr
 
 1. Liquidity Providers will have _no_ lockup period
 2. Claim rewards at any time (Payouts for claims made weekly on Fridays)
-3. LPs will expect \~345% APY
+3. LPs will expect a highly-competitive APY percentage&#x20;
 4. All pools are eligible
 5. The LM program will run for six (6) weeks
 
@@ -30,11 +30,11 @@ We have implemented an Impermanent Loss (IL) Mitigation. If a user realizes IL, 
 * **Which pools are eligible for me to earn rewards from?** EVERY pool listed in the Sifchain DEX!
 * **When does this program start?**  It starts on October 3rd 5:30pm PST. This means that you will earn rewards on any and all liquidity you add starting on October 4th and going until the end of the program.
 * **When does the program end? **The program will run for 6 weeks. This means its end date will be: November 12th, 2021.
-* **How do I earn these rewards?** Simply add liquidity to any of our pools and that is it. Visit our Rewards page in the DEX to watch your rewards grow. 
+* **How do I earn these rewards?** Simply add liquidity to any of our pools and that is it. Visit our Rewards page in the DEX to watch your rewards grow.&#x20;
 * **How do I claim my rewards? Are there any penalties for claiming them?** You can claim your rewards by going into the Sifchain DEX and going to the Rewards tab. Here you will be able see how many rewards you have earned and the ability to claim them. No, you are not penalized for claiming early! With that being said: If you claim on Wednesday (for example), it locks your rewards to be claimed for that week at that amount. Your non-pending claim rewards will continue to accrue, but those rewards will not be claimable until the current pending claim has been paid out. SO if you are wanting to maximize your rewards that you are claiming each week, you should claim come **Friday early morning PST (before 8am PST)**
-* **When are claimed rewards paid out?** Claims will be processed each week and distribution will occur on Friday evenings PST. When these rewards are distributed, they will get automatically sent to your wallet. You are now free to use these any way you see fit (like adding them back into a liquidity pool!). 
-* **How much am I expected to earn by participating in this program?** We are aiming at a 345% APY. We may increase the reward pool in hopes to stay around this percentage. This will be based upon various market factors, strategic goals, and how Sifchain progresses over the duration of this program. The goal is to stay at a highly-competitive APY percentage to attract and maintain liquidity providers, while ensuring to build value in Sifchain and the $ROWAN token. 
-* **What if I have pending rewards in the .42 Liquidity Mining Program and Sif's Harvest Liquidity Mining program?** If you want to claim your rewards, you will need to claim ALL of your rewards (hence why there is only 1 claim button now). 
+* **When are claimed rewards paid out?** Claims will be processed each week and distribution will occur on Friday evenings PST. When these rewards are distributed, they will get automatically sent to your wallet. You are now free to use these any way you see fit (like adding them back into a liquidity pool!).&#x20;
+* **How much am I expected to earn by participating in this program?** We are aiming at a 345% APY. We may increase the reward pool in hopes to stay around this percentage. This will be based upon various market factors, strategic goals, and how Sifchain progresses over the duration of this program. The goal is to stay at a highly-competitive APY percentage to attract and maintain liquidity providers, while ensuring to build value in Sifchain and the $ROWAN token.&#x20;
+* **What if I have pending rewards in the .42 Liquidity Mining Program and Sif's Harvest Liquidity Mining program?** If you want to claim your rewards, you will need to claim ALL of your rewards (hence why there is only 1 claim button now).&#x20;
 * **If I add any liquidity before the program start, will that be eligible for these rewards? **No, only liquidity adds from the start of the program and until the end date of the program will be eligible to earn rewards.
 
 ### .42 Liquidity Mining Program
@@ -44,7 +44,7 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 * We will be using the same concepts of our .39 Liquidity Mining Program (as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)). This explains our usage of tickets and ticket multipliers,  a global bucket, claiming your rewards, impacts of withdrawing liquidity, and IL protection.
 * The total global bucket amount for this program will be 10,000,000 ROWAN. This bucket will be used as the single bucket across all eligible pools.
 * The eligibility window will be set to 6 weeks, starting on August 24, 2021. This means any liqudity added to our eligible pools within this time frame will earn rewards.
-* The full maturation time period is also set to 6 weeks as well. 
+* The full maturation time period is also set to 6 weeks as well.&#x20;
   * For example:
     * If you add on eligible liquidity on day 1, you will earn rewards for 6 weeks and full maturation will occur at 6 weeks.
     * If you add eligible liquidity on week 5, you will earn rewards for 1 week, and still have 6 week maturation period from the time you added.
@@ -52,16 +52,16 @@ With the introduction of .42 and IBC within Sifchain, we have decided to launch 
 
 **Summary of eligibility requirements:**
 
-* A user will be eligible to receive these rewards IF they add liquidity to any Sifchain <> Cosmos Asset pool. As we add new Comos tokens to the DEX, those will also automatically be included as well. 
+* A user will be eligible to receive these rewards IF they add liquidity to any Sifchain <> Cosmos Asset pool. As we add new Comos tokens to the DEX, those will also automatically be included as well.&#x20;
 * A user will be eligible to receive these rewards IF they add liquidity during the eligibility window. This window is set for 6 weeks starting on August 24, 2021.
 * A user will earn full maturity of their rewards once they keep the associated liquidity in 6 weeks.
-* If a user removes liquidity from an IBC pool, this will be treated as a normal remove liquidity event and subject to our ticket burning logic (as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)). 
-* If a user withdraws ANY of their liquidity across ANY pool and is receiving any rewards from the legacy .39 program, they will be subject to forfeiting all their .39 rewards (as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)). 
+* If a user removes liquidity from an IBC pool, this will be treated as a normal remove liquidity event and subject to our ticket burning logic (as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)).&#x20;
+* If a user withdraws ANY of their liquidity across ANY pool and is receiving any rewards from the legacy .39 program, they will be subject to forfeiting all their .39 rewards (as outlined [here](https://docs.sifchain.finance/resources/rewards-programs/additional-information-.39-lm-vs-program)).&#x20;
 
 **Claiming**
 
-* Come the 2nd week of the program, users will be eligible to claim their rewards in the DEX UI. They can do this by navigating to the 'Rewards' page in the DEX and click the claim button. 
-* All claimed rewards will be paid out at the end of the week. This means that if you were to submit a claim request for your claimable rewards, that request will be processed on Friday or Saturday of that week, unless specified by the Sifchain team. 
+* Come the 2nd week of the program, users will be eligible to claim their rewards in the DEX UI. They can do this by navigating to the 'Rewards' page in the DEX and click the claim button.&#x20;
+* All claimed rewards will be paid out at the end of the week. This means that if you were to submit a claim request for your claimable rewards, that request will be processed on Friday or Saturday of that week, unless specified by the Sifchain team.&#x20;
 
 **Recommendations:**
 
