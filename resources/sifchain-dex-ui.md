@@ -242,3 +242,5 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 
 [Demo Video: Token Swap in Sifchain DEX](https://www.youtube.com/watch?v=WNamL5oX9Jw&list=PLj5x_t273CNiBvcH6GjI9gBPzMFm9BlCL&index=1)
 
+## Arbitrage considerations
+Before you jump in for an arbitrage opportunity spotted in the [pool stats](https://dex.sifchain.finance/#/stats), please take into consideration the liquidity in a pool with respect to the amount you want to arbitrage. For example, let's say the USDC pool has a 2% arbitrage opportunity (for example in the case of 0.98 USDC = 1 USDT). At the time of writing that pool has $1,212,432.00 USDC of liquidity. Say you have 88000 USDT ready for that sweet sweet 2% (USDT swap for USDC). Reality is, that if you'd attempt that, you would encounter that the swap would result in 88000USDT -> 70500USDC (8258 USDC liquidity provider fee). Why? Well, because the price impact you would have on that pool is 10%, and as a result the USDC price adapts midway through the swap and the value of each USDC increases with every USDT swapped (read up on how AMMs work to know more).
