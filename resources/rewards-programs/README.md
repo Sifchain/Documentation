@@ -48,6 +48,8 @@ Finally, we are planning to run a multi-day live stream with this event! The liv
 * rATOM on the rATOM:ROWAN Pool (coming soon!)
 * Oh! Finance in the OH:ROWAN Pool (coming soon!)
 
+If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/5gy5BtkWsc)
+
 #### Livestream Information
 
 * Livestream Schedule: Coming soon!
