@@ -67,19 +67,19 @@ Since eROWAN is a new token, it will not appear in the default list of tokens di
 
 1. From the main view in MetaMask, scroll down on the “Assets” tab and select “Add Token”
 
-![](../.gitbook/assets/screen-shot-2021-01-19-at-1.53.56-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-01-19 at 1.53.56 PM.png>)
 
 1. Select the “Custom Token” tab and input the Token Contract Address for eROWAN — `0x07baC35846e5eD502aA91AdF6A9e7aA210F2DcbE` then select Next.
 
-![](../.gitbook/assets/screen-shot-2021-02-10-at-10.28.20-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-02-10 at 10.28.20 AM.png>)
 
 1. Confirm the token by selecting “Add Tokens” on this final screen.
 
-![](../.gitbook/assets/screen-shot-2021-02-10-at-10.28.36-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-02-10 at 10.28.36 AM.png>)
 
 Once the eROWAN token has been successfully added, you should see a screen similar to the one shown here.
 
-![](../.gitbook/assets/complete.png)
+![](../.gitbook/assets/Complete.png)
 
 ## How can I convert my eROWAN to ROWAN?
 

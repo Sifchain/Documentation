@@ -1,6 +1,6 @@
 # Welcome to Sifchain
 
-![](.gitbook/assets/twitter-header\_environment-1500x500px-large-logo.jpg)
+![](<.gitbook/assets/twitter header\_ENVIronment 1500x500px-large logo.jpg>)
 
 {% embed url="https://sifchain.finance/" %}
 

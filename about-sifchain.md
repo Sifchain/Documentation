@@ -18,7 +18,7 @@ In order to accomplish this cross-chain support, Sifchain uses a concept called 
 
 Peg-zones can also be thought of as a blockchain that tracks the state of another blockchain. By doing this, it acts as an adaptor zone or a “finality gadget”, which translates finality for probabilistically finalized blockchains by imposing a “finality threshold” at some arbitrary number of blocks to achieve pseudo-finality. Generally, this “translator” zone design can be classified as a 2-way peg (2WP).
 
-![](.gitbook/assets/screen-shot-2020-11-20-at-9.38.14-pm.png)
+![](<.gitbook/assets/Screen Shot 2020-11-20 at 9.38.14 PM.png>)
 
 Sifchain uses a two-way peg protocol, which allows the swapping of pegged tokens. For example, a trade of currencies LTC for TRX would be executed as transactions of pegged versions of those tokens (cLTC and cTRX) on the Cosmos SDK blockchain. Sifchain users will trade with pegged tokens within the Sifchain system.&#x20;
 

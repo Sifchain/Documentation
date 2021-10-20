@@ -42,7 +42,7 @@ Keplr is the official wallet for ROWAN and is required to perform Swaps, Pooling
 
 Your Sifchain address is now secured by the Keplr wallet which is now connected to the Sifchain DEX. You can now interact with Sifchain DEX. If you want to move assets between Sifchain and any of th Cosmos-based networks (ie: Cosmos, Akash, Iris, Sentinel, Persistance, Osmosis, Regen, Crypto-org), then you will also be interacting with the Keplr wallet, but via those chain connections. You can see your various addresses, and balances within those address, within your keplr wallet by clicking on the Keplr extension, and clicking on the dropdown option of the network:&#x20;
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-12.45.54-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 12.45.54 PM.png>)
 
 To see additional information about your account, click on the Keplr browser extension, select Sifchain in the dropdown chain options. This will show your Sifchain account name, your address, and your balances. You can also add additional accounts here, or simply switch accounts if you have multiple Sifchain addresses.
 
@@ -82,19 +82,19 @@ After connecting your Keplr and MetaMask wallets, you are now ready to move asse
 
 * Once in the Sifchain DEX, go to the 'Balances' feature
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-1.04.12-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.04.12 PM.png>)
 
 * This balances tab will show you a list of ALL allowable tokens to be imported into Sifchain. If you do not see a token you are desiring to import, please reach out to the Sifchain team on [Discord](https://discord.gg/bGxWngDAvw). &#x20;
 * Within this balances tab, you can see your associated Sifchain token balances with each of the tokens. This represents the amount of that token a user has **already** imported into Sifchain.
 * Click on the 'Import' button next to the token you want to move into Sifchain. This will bring you to the next screen:
 
-![](../.gitbook/assets/screen-shot-2021-07-28-at-2.11.45-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-07-28 at 2.11.45 PM (1).png>)
 
 * Here, you can select from which network you want to import from. Once you choose your network and the associated token, it will call in your balance of that token from that network. So for example, if you have ETH in Ethereum, it will call in your balance of ETH that currently exists in your MetaMask wallet in Ethereum. If you have ETH that you have exported into Cosmos and you select Cosmos in your network dropdown, it will call in your balance of ETH that currently exists in your Keplr wallet in Cosmos.
 * Input the amount of that token you want to import. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to import (minus an amount to cover estimated fees). We have automatically called in your Sifchain address as the recipient address of these pegged tokens.
 * Next, click 'Import'. This will bring up another confirmation screen:
 
-![](../.gitbook/assets/screen-shot-2021-07-28-at-2.31.12-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-07-28 at 2.31.12 PM.png>)
 
 * Once you confirm the details are correct, you can confirm the import. Please note that importing an asset from Ethereum into Sifchain needs to go through 50 Ethereum block confirmations. For this reason, this action can take upwards of 20 minutes. Please be patient. You should see the amount you want to import be deducted from your Ethereum address shortly after you execute the transaction. But you will not see the amount appear in your Sifchain wallet until it has gone through all 50 confirmations. As for importing from Cosmos-based chains, this can take, on average, 10 mintues to be fully processed. However, some transactions may take up to 60 mintues.
 
@@ -106,16 +106,16 @@ You are now free to use your newly imported tokens via swaps, or by providing li
 
 * You are free to export your Sifchain assets into Ethereum or Cosmos at any time. To do this, go to the 'Balances' screen, click on the 3 dots, and click on the 'Export' button. This button will only be clickable on those tokens you have a Sifchain Balance to export:
 
-![](../.gitbook/assets/screen-shot-2021-07-28-at-2.35.43-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-07-28 at 2.35.43 PM.png>)
 
 * Click on the 'Export' button next to the token you want to export out of Sifchain. This will bring you to the export modal:
 
-![](../.gitbook/assets/screen-shot-2021-07-28-at-2.41.22-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-07-28 at 2.41.22 PM.png>)
 
 * Now you can input the amount of that token you want to export. Feel free to use the 'Max' button which will auto-fill the amount with the maximum amount of that token you have to export (minus any ROWAN to cover for estimated fees). We will automatically call in your external address as the recipient address of these exported tokens. Once you input an amount, it will display the associated transaction fee. Ensure you have enough of that token in your Sifchain wallet to pay for this fee.
 * Next, click 'Export'. This will bring up another confirmation screen:
 
-![](../.gitbook/assets/screen-shot-2021-07-28-at-2.42.18-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-07-28 at 2.42.18 PM.png>)
 
 * Once you click confirm, you will need to sign the transaction via your Keplr wallet. After this, you can see the adjusted token amounts within a minute in your wallets and within the 'Balances' screen.
 
@@ -131,18 +131,18 @@ After connecting your Keplr and MetaMask wallets, and you have assets within Sif
 
 * To begin the 'add liquidity' process, navigate to the 'Pool' option within the Sifchain DEX. Here you will see a screen that looks like the one shown here:
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-1.24.21-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.24.21 PM.png>)
 
 * This screen shows the following:
   * A list of all pools within Sifchain.
   * A list of liquidity pools that you currently have liquidity in brought to the top of this list. For pools you have liquidity in, you will easily be able to see your gain/loss from providing liquditiy to that pool, as well as your pool share percentage.
   * The ability to expand each pool and see additional details about it. This will show you the total amount in that pool from everyone in the network, the price of the non-Rowan token, the arbitrage opportunity of that pool, the pool depth, and the pool trade volume in the last 24 hours. It will also give you the ability to add/remove liquidity from that pool.
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-1.27.48-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.27.48 PM.png>)
 
 * To add liquidity to a pool, click 'Add Liquidity'. This will take you here:
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-1.29.28-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.29.28 PM.png>)
 
 * Here you will want to select which token you will want to add liquidity with. You can only add liquidity with a Sifchain Token and Rowan. Click on the token dropdown to see a list of allowable tokensand your associated balances.
 * Once you select the token with which you want to pool, you will now see your available balance. You may input any amount or click the 'Max' button which will automatically call in your total balance of that token.&#x20;
@@ -155,14 +155,14 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 * IF the pool does not exist yet, then you must put some amount of the selected token AND ROWAN to initiate the pool. This will set the initial prices of the pool.
 * Once you input your desired amounts, you will see some displayed statistics on the pool:
 
-![](<../.gitbook/assets/screen-shot-2021-08-02-at-1.29.28-pm (1).png>)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.29.28 PM (1).png>)
 
 * The 'Pool Token Prices' display the prices of the tokens as they are in the pool at this very moment.
 * The 'Est. prices after pooling & Pool Share' display what those prices will be IF you were to execute your adding of liquidity. This will also show you the percentage of the pool you will own if you execute the add.
 * You can also turn on/off the 'Pool Equally' function. When turned on, it will automatically calculate the 'other' token for you so you are adding in a symmetric way. If you turn this feature off, then you are free to input any amount in either field manually. Please be aware of this feature by reading more [here](https://docs.sifchain.finance/core-concepts/liquidity-pool#asymmetric-liquidity-pool).
 * Now you can click 'Add Liquidity' and see another confirmation screen:
 
-![](../.gitbook/assets/screen-shot-2021-08-05-at-2.05.05-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-05 at 2.05.05 PM.png>)
 
 * Once you 'Confirm', this will initiate your Keplr wallet for you to sign the transaction. Once successful, you will now see this listed pool jump to the top of the Pools listing, and will indicate your % ownership of the pool as well as your net gain/loss. This may take a few moments to be recognized
 
@@ -172,7 +172,7 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 
 The below details are included for each liqudity pool. If you have liquidity in a pool, you will see additional details on it as well specific to your position in the pool:
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-1.43.51-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.43.51 PM.png>)
 
 * The 'Pool APY' displays the APY a user can earn from providing liquidity to this specific pool.&#x20;
 * The 'Gain/Loss' shows you the total net gain/loss (in USDT) from providing liquidity to this pool from the beginning of time. This is your total net gain/loss based on earnings from swap fees and any gains or losses associated with changes in the tokens' prices from the moment you ever added liquidity to this pool.
@@ -187,7 +187,7 @@ The below details are included for each liqudity pool. If you have liquidity in 
 
 * If you click on the 'Remove Liquidity' button, you will be taken to a screen that looks like the one here:
 
-![](../.gitbook/assets/screen-shot-2021-08-05-at-2.06.46-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-05 at 2.06.46 PM.png>)
 
 * Here you will identify two different amounts:
   * 1\) The percentage of your ownership you want to withdraw.
@@ -195,7 +195,7 @@ The below details are included for each liqudity pool. If you have liquidity in 
 * For example, you can choose to withdraw all 100% of your ownership in equal parts ROWAN and other Token.&#x20;
 * In the 'You will receive' section, this will display the amount of each token you will receive based upon the two amounts you selected.
 
-![](../.gitbook/assets/screen-shot-2021-08-05-at-2.07.38-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-05 at 2.07.38 PM.png>)
 
 * You can finalize this withdrawal by clicking on the 'Remove Liquidity'. This will trigger you to sign the transaction via your Keplr wallet. Once finalized, you will now see these amounts in your wallet and your liquidity pool share and amounts adjusted accordingly. &#x20;
 
@@ -207,7 +207,7 @@ In Sifchain, users can swap any asset to any other asset (given there is liquidi
 
 * Navigate to the 'Swap' option. Here you will see a screen that looks like the one shown here:
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-3.22.29-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 3.22.29 PM.png>)
 
 * This is where you can select what token you want to swap for another token.&#x20;
   * The 'From' field is the token you will be providing via the swap.
@@ -224,7 +224,7 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
 
 * Once you input your desired amount, you will see additional information and details regarding the swap:
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-3.29.30-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 3.29.30 PM.png>)
 
 * Price:
   * This will show you at what price you are receiving the token you are swapping for.
@@ -236,7 +236,7 @@ IMPORTANT NOTE: Please ensure you have enough ROWAN to cover the gas fees. This 
   * This represents the fee that is retained in the liquidity pool to be paid to the liquidity providers.
 * Once you click 'Swap', you will see a confirmation screen:
 
-![](../.gitbook/assets/screen-shot-2021-08-05-at-2.09.02-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-05 at 2.09.02 PM.png>)
 
 * You can now confirm the swap, sign the transaction via your Keplr wallet and see the amounts adjusted in your wallet.
 
