@@ -31,9 +31,9 @@ Finally, we are planning to run a multi-day live stream with this event! The liv
 5. The total reward pool for the Leaderboard - based on Total Volume: 3,000,000 ROWAN
 6. The total reward pool for the Leaderboard - based on Total Number of Swaps: 1,000,000 ROWAN
 7. The payout determination for the ‘Leaderboard - based on Total Volume’ will be based upon the percentage of the pie each user in the top 30 owns of that top 30. For example:
-   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-19 at 5.01.42 PM.png>)
+   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.33 AM.png>)
 8. The payout determination for the ‘Leaderboard - based on Number of Swaps’ will be pre-determined by placement for those in the top 30. The payout structure is as follows:
-   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-19 at 5.06.24 PM.png>)
+   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.13 AM.png>)
 9. ALL trades against ALL pools are considered eligible.
 10. We will also have extra rewards for specific project-sponsored pools. This means that you can earn additional rewards by swapping the most against these pools, and these rewards will be paid out in non-ROWAN tokens from the sponsored project. More details on this to come closer to the launch of the competition!
 11. We encourage users to keep adding liquidity to our pools to earn swap fees from this competition.
