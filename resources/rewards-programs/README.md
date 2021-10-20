@@ -10,7 +10,7 @@ description: >-
 
 ### Sif's Fields of Gold Trading Competition
 
-We would like to announce the **Sif’s Fields of Gold** trading competition that will kick off on October 25th!\
+We would like to announce the **Sif’s Fields of Gold** trading competition that will kick-off on October 25th!\
 \
 Our goal for this program is to continue to put daily user count on an exponential growth curve while encouraging users to swap in both high volume amounts and/or high numbers of individual transactions. We are encouraging users to execute both in high volume swaps, as well as in high number of swaps by having two different scoreboards with dedicated reward pools.\
 \
