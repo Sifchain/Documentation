@@ -16,30 +16,32 @@ Our goal for this program is to continue to put daily user count on an exponenti
 \
 This competition will encourage anyone and everyone to swap on the Sifchain DEX, compete, and earn $ROWAN by doing so! This competition will ideally generate high values of system income paid to liquidity providers in the form of swap fees, and to node operators and delegators as transaction fees. So make sure you add liquidity, stake, or do both!
 
-We are also going to have additional reward pools for users who swap the most against specific pools. These are going to be sponsored by the relevant token’s project and the associated rewards will be paid out in their token! This means you can earn $ROWAN and other tokens by participating in this competition! More on these sponsoships below!\
+We are also going to have additional reward pools for users who swap the most against specific pools. These are going to be sponsored by the relevant token’s project and the associated rewards will be paid out in their token! This means you can earn $ROWAN and other tokens by participating in this competition! More on these sponsorships below!\
 \
 Finally, we are planning to run a multi-day live stream with this event! The live stream will include various discussions with Sifchain Core team members. If you are interested in joining the live stream, please sign-up via the link below to be notified of the stream schedule and various discussion topics!
 
 **Some key facts around Sif’s Fields of Gold are below:**
 
-1. The competition will last for 30 days: From October 25th - November 23rd.
-2. There will be two different leaderboards:
+1. Agreement with the below terms are required to participate, including receiving rewards. Participation without accepting the waiver will exclude you from receiving rewards. Terms and Conditions: [https://docs.google.com/document/d/1DLfNTfB1lTvxQVW-NchX81w-fSDt4O65W6CsHyqLIBQ](https://docs.google.com/document/d/1DLfNTfB1lTvxQVW-NchX81w-fSDt4O65W6CsHyqLIBQ).&#x20;
+   1. A user can accept these terms and conditions by navigating here: [https://docs.google.com/forms/d/e/1FAIpQLSfodY32kaWrkZOG1JqvB62HLVvSIiBlT0mcnwVSl0Eg7IJblg/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfodY32kaWrkZOG1JqvB62HLVvSIiBlT0mcnwVSl0Eg7IJblg/viewform)
+2. The competition will last for 30 days: From October 25th - November 23rd.
+3. There will be two different leaderboards:
    1. Based on total volume swapped over these 30 days (normalized in USDT).
    2. Based on total number of swaps over these 30 days
-3. Users will be able to see their position in each leaderboard via a scoreboard on the Sifchain DEX.
-4. The top 30 addresses in each leaderboard will be awarded prizes.
-5. The total reward pool for the Leaderboard - based on Total Volume: 3,000,000 ROWAN
-6. The total reward pool for the Leaderboard - based on Total Number of Swaps: 1,000,000 ROWAN
-7. The payout determination for the ‘Leaderboard - based on Total Volume’ will be based upon the percentage of the pie each user in the top 30 owns of that top 30. For example:
+4. Users will be able to see their position in each leaderboard via a scoreboard on the Sifchain DEX.
+5. The top 30 addresses in each leaderboard will be awarded prizes.
+6. The total reward pool for the Leaderboard - based on Total Volume: 3,000,000 ROWAN
+7. The total reward pool for the Leaderboard - based on Total Number of Swaps: 1,000,000 ROWAN
+8. The payout determination for the ‘Leaderboard - based on Total Volume’ will be based upon the percentage of the pie each user in the top 30 owns of that top 30. For example:
    1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.33 AM.png>)
-8. The payout determination for the ‘Leaderboard - based on Number of Swaps’ will be pre-determined by placement for those in the top 30. The payout structure is as follows:
+9. The payout determination for the ‘Leaderboard - based on Number of Swaps’ will be pre-determined by placement for those in the top 30. The payout structure is as follows:
    1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.13 AM.png>)
-9. ALL trades against ALL pools are considered eligible.
-10. We will also have extra rewards for specific project-sponsored pools. This means that you can earn additional rewards by swapping the most against these pools, and these rewards will be paid out in non-ROWAN tokens from the sponsored project. More details on this to come closer to the launch of the competition!
-11. We encourage users to keep adding liquidity to our pools to earn swap fees from this competition.
-12. We encourage users to keep staking and delegating ROWAN to earn transaction fees during this competition.
-13. Sifchain currently has an [SDK](https://github.com/sifchain/clientsdk) that can be utilized for this trading competition programmatically.
-14. We will hold a multi-day live stream during this trading competition with dedicated topics to be discussed and lead by the Sifchain Core team.
+10. ALL trades against ALL pools are considered eligible.
+11. We will also have extra rewards for specific project-sponsored pools. This means that you can earn additional rewards by swapping the most against these pools, and these rewards will be paid out in non-ROWAN tokens from the sponsored project. More details on this to come closer to the launch of the competition!
+12. We encourage users to keep adding liquidity to our pools to earn swap fees from this competition.
+13. We encourage users to keep staking and delegating ROWAN to earn transaction fees during this competition.
+14. Sifchain currently has an [SDK](https://github.com/sifchain/clientsdk) that can be utilized for this trading competition programmatically.
+15. We will hold a multi-day live stream during this trading competition with dedicated topics to be discussed and lead by the Sifchain Core team.
 
 #### Current Pool Sponsors
 
