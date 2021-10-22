@@ -1,7 +1,7 @@
 ---
 description: >-
-  Your guide for setting up Sifnode and becoming a validator on a local
-  environment
+  Your guide for setting up Sifnode locally, or on your own server/VPS, and
+  becoming a validator.
 ---
 
 # Running Sifnode on your Ubuntu server
