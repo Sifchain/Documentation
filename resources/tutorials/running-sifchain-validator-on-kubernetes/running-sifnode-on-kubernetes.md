@@ -16,4 +16,4 @@ _This tutorial assumes that you have at least a basic understanding of setting u
 
 ## Network and Node Setup
 
-Please refer to this [link](https://github.com/Sifchain/sifchain-validators/blob/master/docs/SETUP.md) for the most up to date and accurate directions on how to complete this setup.
+Please refer to this [link](https://github.com/Sifchain/sifchain-validators/blob/master/docs/setup.md) for the most up to date and accurate directions on how to complete this setup.
