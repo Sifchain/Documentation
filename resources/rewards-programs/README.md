@@ -43,12 +43,30 @@ Finally, we are planning to run a multi-day live stream with this event! The liv
 14. Sifchain currently has an [SDK](https://github.com/sifchain/clientsdk) that can be utilized for this trading competition programmatically.
 15. We will hold a multi-day live stream during this trading competition with dedicated topics to be discussed and lead by the Sifchain Core team.
 
-#### Current Pool Sponsors
+#### Battle of the Tradewinds: Current Pool Sponsors
+
+During Sif's Fields of Gold, there will be several side competitions, named 'Battle of the Tradewinds'. These Battle of the Tradewinds competitions will reward users for swapping in the most volume against specific pools. Winners of these competitions will earn rewards in the non-ROWAN token. These are explained in more detail below.
 
 * Akash on the AKT:ROWAN Pool
+  * Payout: $10,000 in AKT
+  * To: Top 10 swappers by volume
+  * When: 10/27/21-11/3/21
 * DinoSwap on the DINO:ROWAN Pool
-* rATOM on the rATOM:ROWAN Pool (coming soon!)
-* Oh! Finance in the OH:ROWAN Pool (coming soon!)
+  * Payout: $10,000 in DINO
+  * To: Top 10 swapper by volume
+  * When: 10/29/21-11/05/21
+* IXO on the IXO:ROWAN Pool
+  * Payout: 1,600 IXO
+  * To: Top 3 swappers by volume
+  * When: 11/01/21-11/8/21
+* rATOM on the rATOM:ROWAN Pool
+  * Payout: $10,000 in FIS
+  * To: Top 10 swapper by volume
+  * When: 11/03/21-11/10/21
+* Linear on the LINA:ROWAN Pool
+  * Payout: $10,000 in LINA
+  * To: Top 10
+  * When: 11/8/21-11/15/21
 
 If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/5gy5BtkWsc)
 
