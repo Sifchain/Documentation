@@ -58,15 +58,15 @@ During Sif's Fields of Gold, there will be several side competitions, named 'Bat
 * IXO on the IXO:ROWAN Pool
   * Payout: 1,600 IXO
   * To: Top 3 swappers by volume
-  * When: 11/01/21-11/8/21
+  * When: TBD
 * rATOM on the rATOM:ROWAN Pool
   * Payout: $10,000 in FIS
   * To: Top 10 swapper by volume
-  * When: 11/03/21-11/10/21
+  * When: TBD
 * Linear on the LINA:ROWAN Pool
   * Payout: $10,000 in LINA
   * To: Top 10
-  * When: 11/8/21-11/15/21
+  * When: TBD
 
 If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/5gy5BtkWsc)
 
