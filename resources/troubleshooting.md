@@ -144,6 +144,30 @@ You can delegate more funds to your validator with: `sifnodecli tx staking deleg
 **What are the differences between EKS and standalone nodes?** \
 &#x20;EKS is "heavier" than running a standalone node, but it's our preferred way and is far more reliable. Not only that, but as more and more services are added to the network, there will likely be additional nodes that validators will need to run and EKS provides the ability to seamlessly and easily deploy and manage those services.
 
+**How do i change the instance type?**
+
+1\. Change the main.tf and set `instance_size` to `m5.2xlarge`.
+
+2\. Then run "terraform apply" and then approve the changes(this will take about 30 minutes)
+
+3\. Then, once your cluster is upgraded, you'll need to update the limits of sifnode, by running:
+
+`kubectl edit deployment sifnode -n sifnode`
+
+scroll to the section called `limits` and make sure it reads as follows:
+
+`limits:`
+
+`  memory: 30Gi`
+
+` requests:`
+
+`   cpu: "2"`
+
+`   memory: 16Gi`
+
+this will restart sifnode with more resource.
+
 **What are the Sifchain validator nodes? Does it make sense to delegate my tokens to them?** \
 &#x20;The Sifchain nodes are Alice, Jenna, Lisa, Mary, Sophie, Ambre, Elizabeth, and jane. All block rewards earned by these nodes will be distributed to other nodes. We recommend against delegating to our nodes
 
@@ -190,7 +214,7 @@ step 3 is then the install command
 
 3\. Once it's terminated: `kubectl scale deployment sifnode --replicas=1 -n sifnode`
 
-**I have Rowan at my Keplr wallet, how do I transfer it to the validatir wallet ?** \
+**I have Rowan at my Keplr wallet, how do I transfer it to the validator wallet ?** \
 &#x20;Once you have the address for the wallet you simply do a send transaction from within Keplr. You can also import the wallet into keplr.
 
 **Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`**` `\
