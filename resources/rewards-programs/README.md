@@ -8,72 +8,36 @@ description: >-
 
 ## Special Programs
 
-### Sif's Fields of Gold Trading Competition
+### Proposal: Sif's Expansion
 
-We would like to announce the **Sif’s Fields of Gold** trading competition that will kick-off on October 25th!\
-\
-Our goal for this program is to continue to put daily user count on an exponential growth curve while encouraging users to swap in both high volume amounts and/or high numbers of individual transactions. We are encouraging users to execute both in high volume swaps, as well as in high number of swaps by having two different scoreboards with dedicated reward pools.\
-\
-This competition will encourage anyone and everyone to swap on the Sifchain DEX, compete, and earn $ROWAN by doing so! This competition will ideally generate high values of system income paid to liquidity providers in the form of swap fees, and to node operators and delegators as transaction fees. So make sure you add liquidity, stake, or do both!
+This proposal is to vote on the implementation of ‘Sif’s Expansion’, an Inflationary Liquidity Mining Program. Details on this program are noted below. If this vote passes, then this will be implemented on November 16th, 2021, to ensure a constant transition from current Sif’s Bloom to Sif’s Expansion. Sif’s Expansion is described below:&#x20;
 
-We are also going to have additional reward pools for users who swap the most against specific pools. These are going to be sponsored by the relevant token’s project and the associated rewards will be paid out in their token! This means you can earn $ROWAN and other tokens by participating in this competition! More on these sponsorships below!\
-\
-Finally, we are planning to run a multi-day live stream with this event! The live stream will include various discussions with Sifchain Core team members. If you are interested in joining the live stream, please sign-up via the link below to be notified of the stream schedule and various discussion topics!
+* Sifchain will maintain a \~300% Total APR across 5 pools until either: Margin Trading is released, the community decides to end the program via the monthly vote, or the program needs to be halted (due to market and/or economic conditions).
+  * ROWAN:ATOM will maintain a \~300% APR for the entire duration of the program.
+  * The Sifchain community will decide via a vote every 4 weeks which other four pools will get the \~300% APR for the upcoming 4 week period. Because the vote occurs every 4 weeks, these pools may change from 4 week period to 4 week period.
+  * When voting for the 4 additional \~300% APR pools, these votes will be weighted.  More details on this process will come if this proposal passes.
+* All other pools will have \~100% APR for the duration of the program.
+* Every month until Margin Trading is released, the community will vote to extend, modify, or end this inflationary liquidity mining program. This will allow the community to view historical inflation and price movements and project the same data points in the future. &#x20;
+* In order for the Ecosystem Fund to support this, 200M ROWAN will be minted and sent to the Ecosystem Fund when this proposal passes. Additional Rowan may be minted in the future depending on the program's future needs and future community votes
 
-**Some key facts around Sif’s Fields of Gold are below:**
+**Important notes on this proposal:**
 
-1. Agreement with the below terms are required to participate, including receiving rewards. Participation without accepting the waiver will exclude you from receiving rewards. Terms and Conditions: [https://docs.google.com/document/d/1DLfNTfB1lTvxQVW-NchX81w-fSDt4O65W6CsHyqLIBQ](https://docs.google.com/document/d/1DLfNTfB1lTvxQVW-NchX81w-fSDt4O65W6CsHyqLIBQ).&#x20;
-   1. A user can accept these terms and conditions by navigating here: [https://docs.google.com/forms/d/e/1FAIpQLSfodY32kaWrkZOG1JqvB62HLVvSIiBlT0mcnwVSl0Eg7IJblg/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfodY32kaWrkZOG1JqvB62HLVvSIiBlT0mcnwVSl0Eg7IJblg/viewform)
-2. The competition will last for 30 days: From October 25th - November 23rd.
-3. There will be two different leaderboards:
-   1. Based on total volume swapped over these 30 days (normalized in USDT).
-   2. Based on total number of swaps over these 30 days
-4. Users will be able to see their position in each leaderboard via a scoreboard on the Sifchain DEX.
-5. The top 30 addresses in each leaderboard will be awarded prizes.
-6. The total reward pool for the Leaderboard - based on Total Volume: 3,000,000 ROWAN
-7. The total reward pool for the Leaderboard - based on Total Number of Swaps: 1,000,000 ROWAN
-8. The payout determination for the ‘Leaderboard - based on Total Volume’ will be based upon the percentage of the pie each user in the top 30 owns of that top 30. For example:
-   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.33 AM.png>)
-9. The payout determination for the ‘Leaderboard - based on Number of Swaps’ will be pre-determined by placement for those in the top 30. The payout structure is as follows:
-   1. ![](<../../.gitbook/assets/Screen Shot 2021-10-20 at 11.47.13 AM.png>)
-10. ALL trades against ALL pools are considered eligible.
-11. We will also have extra rewards for specific project-sponsored pools. This means that you can earn additional rewards by swapping the most against these pools, and these rewards will be paid out in non-ROWAN tokens from the sponsored project. More details on this to come closer to the launch of the competition!
-12. We encourage users to keep adding liquidity to our pools to earn swap fees from this competition.
-13. We encourage users to keep staking and delegating ROWAN to earn transaction fees during this competition.
-14. Sifchain currently has an [SDK](https://github.com/sifchain/clientsdk) that can be utilized for this trading competition programmatically.
-15. We will hold a multi-day live stream during this trading competition with dedicated topics to be discussed and lead by the Sifchain Core team.
+* For the initial implementation of this program, there will be no vesting constraints on the rewards that are earned from this program. However, we will be looking into implementing a time-specific vesting schedule which will reward those for keeping their liquidity pooled for longer durations. This decision is due to time constraints, the desire to continue rewards when Sif’s Bloom ends, and other team priorities (like Margin Trading and Omni-EVM).
+* Analysis will also be done to determine if the \~300% total APR for primary pools and \~100% APR for all other pools can come from a combination of swap fees, rewards from other projects, and inflation. Inflation would be used to cover any APR not generated by swap fees or rewards from other projects.
+* All existing liquidity in these pools will be eligible to earn rewards (for both the 300% APR voted pools and the ‘all-other’ 100% APR pools). For example, this means that once launched, all existing liquidity in the ROWAN:ATOM pool will start to earn rewards (as well as newly added liquidity).&#x20;
 
-#### Battle of the Tradewinds: Current Pool Sponsors
+**Important notes on voting:**
 
-During Sif's Fields of Gold, there will be several side competitions, named 'Battle of the Tradewinds'. These Battle of the Tradewinds competitions will reward users for swapping in the most volume against specific pools. Winners of these competitions will earn rewards in the non-ROWAN token. These are explained in more detail below.
-
-* Akash on the AKT:ROWAN Pool
-  * Payout: $10,000 in AKT
-  * To: Top 10 swappers by volume
-  * When: 10/27/21-11/3/21
-* DinoSwap on the DINO:ROWAN Pool
-  * Payout: $10,000 in DINO
-  * To: Top 10 swapper by volume
-  * When: 10/29/21-11/05/21
-* IXO on the IXO:ROWAN Pool
-  * Payout: 1,600 IXO
-  * To: Top 3 swappers by volume
-  * When: TBD
-* rATOM on the rATOM:ROWAN Pool
-  * Payout: $10,000 in FIS
-  * To: Top 10 swapper by volume
-  * When: TBD
-* Linear on the LINA:ROWAN Pool
-  * Payout: $10,000 in LINA
-  * To: Top 10
-  * When: TBD
-
-If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/5gy5BtkWsc)
-
-#### Livestream Information
-
-* Livestream Schedule: Coming soon!
-* [Livestream Signup!](https://eepurl.com/hKHSOv)
+* To submit a vote, please follow the below directions:
+  * Send a transaction to address: sif1seftxu8l6v7d50ltm3v7hl55jlyxrps53rmjl8
+  * This transaction should be for 0.1 ROWAN
+  * Indicate in the memo field only 1 of the following 2 options:
+    * Yes
+    * No
+* Each vote will be weighted. The weight of each vote will be determined by the amount of ROWAN that address holds at the end of the voting period.
+* Time frame to vote:
+  * Start: November 10th, 4:00pm PST
+  * End: November 13th, 4:00pm PST
 
 ### Sif's Harvest & Sif's Bloom: Liquidity Mining Program
 
