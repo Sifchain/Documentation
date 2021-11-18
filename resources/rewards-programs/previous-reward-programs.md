@@ -264,15 +264,6 @@ The eligibility for our Community Token Giveaway is now closed. The first 1/4 of
 
 People who qualified for the airdrop as per the rules of our [community distribution in February](https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) will receive airdrop tokens in accordance with the new rules.
 
-The eligibility for our Community Token Giveaway is now closed. The first 1/4 of tokens have been disbursed. Please refer back here for updates on distribution status.
-
-* Releases will occur on a weekly basis rather than a monthly basis. 1/4th of the expected monthly drop will be released per week for 12 upcoming drops total.
-* In order to receive subsequent airdrops, you must pool an amount of liquidity (as measured in Rowan) equal to or greater than 95% of the liquidity you receive during the week after each airdrop. A simple way to meet this criteria is to just pool the airdrop after receiving it although you can pool any asset(s) you like.
-* You must not unpool any liquidity from the address receiving the airdrop until the last airdrop has been distributed. Doing so will disqualify you from receiving future airdrops.
-* We want clarify that users can pool \*95%\* of their airdrop rather than the entire 100%. This allows users substantial leeway to trade some of the Rowan before pooling.
-
-People who qualified for the airdrop as per the rules of our [community distribution in February](https://medium.com/sifchain-finance/community-distribution-tokens-5dc4b184948e) will receive airdrop tokens in accordance with the new rules.
-
 * Releases will occur on a weekly basis rather than a monthly basis. 1/4th of the expected monthly drop will be released per week for 12 upcoming drops total.
 * In order to receive subsequent airdrops, you must pool an amount of liquidity (as measured in Rowan) equal to or greater than 95% of the liquidity you receive during the week after each airdrop. A simple way to meet this criteria is to just pool the airdrop after receiving it although you can pool any asset(s) you like.
 * You must not unpool any liquidity from the address receiving the airdrop until the last airdrop has been distributed. Doing so will disqualify you from receiving future airdrops.
