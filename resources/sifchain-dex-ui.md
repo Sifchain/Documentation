@@ -78,7 +78,7 @@ In order to move assets between Sifchain and an external Blockchain, you will us
 
 ### Importing Assets into Sifchain - Tutorial
 
-After connecting your Keplr and MetaMask wallets, you are now ready to move assets between external chains and Sifchain. Users are able to import assets from Cosmos and assets from Ethereum into Sifchain. Sifchain has a [list of allowable tokens](list-of-allowable-tokens-in-sifchain.md) that can be transferred into Sifchain. We will continuously add new tokens based on user feedback and market conditions. In order to move any of these allowable Ethereum or Cosmos assets into the Sifchain network, please follow the below steps.
+After connecting your Keplr and MetaMask wallets, you are now ready to move assets between external chains and Sifchain. Users are able to import assets from Cosmos and assets from Ethereum into Sifchain. Sifchain has a list of allowable tokens that can be transferred into Sifchain. We will continuously add new tokens based on user feedback and market conditions. In order to move any of these allowable Ethereum or Cosmos assets into the Sifchain network, please follow the below steps.
 
 * Once in the Sifchain DEX, go to the 'Balances' feature
 
@@ -127,7 +127,7 @@ Users can add any of their tokens to a liquidity pool and earn rewards for doing
 
 ### Adding Liquidity
 
-After connecting your Keplr and MetaMask wallets, and you have assets within Sifchain, you are now ready to add liquidity to our liquidity pools. Sifchain has a [list of allowable tokens](list-of-allowable-tokens-in-sifchain.md) that can be used within Sifchain. This list will be ever-evolving as we will continuously add new tokens based on user feedback and market conditions.
+After connecting your Keplr and MetaMask wallets, and you have assets within Sifchain, you are now ready to add liquidity to our liquidity pools. Sifchain has a list of allowable tokens that can be used within Sifchain. This list will be ever-evolving as we will continuously add new tokens based on user feedback and market conditions.
 
 * To begin the 'add liquidity' process, navigate to the 'Pool' option within the Sifchain DEX. Here you will see a screen that looks like the one shown here:
 
