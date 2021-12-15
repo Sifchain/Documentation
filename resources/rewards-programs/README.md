@@ -10,7 +10,7 @@ description: >-
 
 ### Sif's Expansion Liquidity Mining Program
 
-* Sifchain will maintain a \~300% Total APR across 5 pools until either: Margin Trading is released, the community decides to end the program via the monthly vote, or the program needs to be halted (due to market and/or economic conditions).
+* Sifchain will maintain a \~300% Total APR across 6 pools until either: Margin Trading is released, the community decides to end the program via the monthly vote, or the program needs to be halted (due to market and/or economic conditions).
   * ROWAN:ATOM will maintain a \~300% APR for the entire duration of the program.
   * The Sifchain community will decide via a vote every 4 weeks which other four pools will get the \~300% APR for the upcoming 4 week period. Because the vote occurs every 4 weeks, these pools may change from 4 week period to 4 week period.
   * When voting for the 4 additional \~300% APR pools, these votes will be weighted.  More details on this process will come if this proposal passes.
@@ -25,16 +25,20 @@ description: >-
 * Sifchain's IL Mitigation feature WILL be in place for this new program as well. See more details here on this:
   * We have implemented an Impermanent Loss (IL) Mitigation. If a user realizes IL, the user will continue to earn rewards based on the realized IL amount. These values are based on the Rowan value of a user’s add. For example, imagine a user deposits 50K Rowan and 50K Rowan worth of USDT for a total of 100K Rowan worth of assets into a Sifchain liquidity pool. Let’s say this amount drops to 80K worth of Rowan due to price fluctuations. The user removes all 80K Rowan worth of assets. That user will continue to earn LM rewards based off of the 20K Rowan worth of assets that was lost due to IL (the 20k here is called the ‘IL amount’). The IL amount ONLY comes into play if a user removes their liquidity and realizes IL. If that user were to add additional liquidity after realizing this IL, their LM Reward eligibility amount would be the sum of their IL amount + any added liquidity amounts.
 
-**Important notes on voting for the 4 pool choices:**
+**Important notes on voting for the 5 pool choices:**
 
 * Send a transaction to address sif1seftxu8l6v7d50ltm3v7hl55jlyxrps53rmjl8.
 * This transaction should be for .1 ROWAN
-* In the memo field, you will indicate the 4 pools you are voting for, seperated by commas. Please follow the below directions **exactly** when inputting information into the memo field:
-  * List ONLY 4 tokens you are voting for. These 4 tokens should be by their token symbol as listed within the Sifchain DEX, separated by commas, like this: TKN,TKN,TKN,TKN. An example of this is as follows: ETH,UST,USDC,JUNO
-  * You can list the same token all 4 times if that is what you desire. Example: ETH,ETH,ETH,ETH.
-  * If you list the 4 tokens in any other format than specified above, there is no guarantee that it will be counted. In order to ensure a successful vote, follow the above format **exactly**.
+* In the memo field, you will indicate the 5 pools you are voting for, seperated by commas. Please follow the below directions **exactly** when inputting information into the memo field:
+  * List ONLY 4 tokens you are voting for. These 4 tokens should be by their token symbol as listed within the Sifchain DEX, separated by commas, like this: TKN,TKN,TKN,TKN,TKN. An example of this is as follows: ETH,UST,USDC,JUNO,LUNA
+  * You can list the same token all 5 times if that is what you desire. Example: ETH,ETH,ETH,ETH,ETH.
+  * If you list the 5 tokens in any other format than specified above, there is no guarantee that it will be counted. In order to ensure a successful vote, follow the above format **exactly**.
   * Votes are limited 1 per Sifchain address. So if you submit two transactions, only 1 will be counted.
-  * The enabling of Sif's Expansion for all 100% APR pools and the 4 most voted on pools for 300% APR will commence on **11/22 Monday morning PST**.&#x20;
+
+**Sif's Expansion Dates**
+
+* Phase 1: 11/22 - 12/21
+* Phase 2: 12/21 - 1/17
 
 ## Ongoing Programs
 
