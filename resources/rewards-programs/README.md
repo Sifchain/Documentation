@@ -13,7 +13,7 @@ description: >-
 * Sifchain will maintain a \~300% Total APR across 6 pools until either: Margin Trading is released, the community decides to end the program via the monthly vote, or the program needs to be halted (due to market and/or economic conditions).
   * ROWAN:ATOM will maintain a \~300% APR for the entire duration of the program.
   * The Sifchain community will decide via a vote every 4 weeks which other four pools will get the \~300% APR for the upcoming 4 week period. Because the vote occurs every 4 weeks, these pools may change from 4 week period to 4 week period.
-  * When voting for the 4 additional \~300% APR pools, these votes will be weighted.  More details on this process will come if this proposal passes.
+  * When voting for the 5 additional \~300% APR pools, these votes will be weighted.  More details on this process will come if this proposal passes.
 * All other pools will have \~100% APR for the duration of the program.
 * Every month until Margin Trading is released, the community will vote to extend, modify, or end this inflationary liquidity mining program. This will allow the community to view historical inflation and price movements and project the same data points in the future. &#x20;
 
@@ -30,7 +30,7 @@ description: >-
 * Send a transaction to address sif1seftxu8l6v7d50ltm3v7hl55jlyxrps53rmjl8.
 * This transaction should be for .1 ROWAN
 * In the memo field, you will indicate the 5 pools you are voting for, seperated by commas. Please follow the below directions **exactly** when inputting information into the memo field:
-  * List ONLY 4 tokens you are voting for. These 4 tokens should be by their token symbol as listed within the Sifchain DEX, separated by commas, like this: TKN,TKN,TKN,TKN,TKN. An example of this is as follows: ETH,UST,USDC,JUNO,LUNA
+  * List ONLY 5 tokens you are voting for. These 5 tokens should be by their token symbol as listed within the Sifchain DEX, separated by commas, like this: TKN,TKN,TKN,TKN,TKN. An example of this is as follows: ETH,UST,USDC,JUNO,LUNA
   * You can list the same token all 5 times if that is what you desire. Example: ETH,ETH,ETH,ETH,ETH.
   * If you list the 5 tokens in any other format than specified above, there is no guarantee that it will be counted. In order to ensure a successful vote, follow the above format **exactly**.
   * Votes are limited 1 per Sifchain address. So if you submit two transactions, only 1 will be counted.
