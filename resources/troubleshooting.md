@@ -28,7 +28,7 @@ description: FAQ and troubleshooting on validators
 **Could you elaborate on what a double-sign infraction is?** \
 &#x20;([https://docs.sifchain.finance/roles/validators#future-additions](https://docs.sifchain.finance/roles/validators#future-additions)).
 
-**How to increase the stake to my validator? **\
+**How to increase the stake to my validator?** \
 **** You can use the [Delegator CLI commands](https://docs.sifchain.finance/roles/delegators/delegator-cli-commands) to delegate additional ROWAN to your validator
 
 **I can't create a validator because the validator address exists. How can I change the validator address? Or do I need to recreate the account?** \
@@ -122,7 +122,7 @@ description: FAQ and troubleshooting on validators
 **What are the benefits of delegating tokens to a validator? I see 5% commission, anything i can read about it?** \
 &#x20;Please read here: [https://docs.sifchain.finance/roles/delegators](https://docs.sifchain.finance/roles/delegators)
 
-**Got this error in the block explorer: staking: validator already exist for this operator address; must use new validator operator address: failed to execute message; message index: 0 ** \
+**Got this error in the block explorer: staking: validator already exist for this operator address; must use new validator operator address: failed to execute message; message index: 0** \
 &#x20;Try delegating more using the command: `sifnodecli tx staking delegate` .Run it with -h to see the options.
 
 How can i increase the staked amount?\
@@ -158,13 +158,13 @@ scroll to the section called `limits` and make sure it reads as follows:
 
 `limits:`
 
-`  memory: 30Gi`
+&#x20; `memory: 30Gi`
 
-` requests:`
+&#x20;`requests:`
 
-`   cpu: "2"`
+&#x20;  `cpu: "2"`
 
-`   memory: 16Gi`
+&#x20;  `memory: 16Gi`
 
 this will restart sifnode with more resource.
 
@@ -217,7 +217,7 @@ step 3 is then the install command
 **I have Rowan at my Keplr wallet, how do I transfer it to the validator wallet ?** \
 &#x20;Once you have the address for the wallet you simply do a send transaction from within Keplr. You can also import the wallet into keplr.
 
-**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`**` `\
+**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`**` ``` \
 &#x20;You can pass docker compose flags to your instance....for example, you could provide a flag of '-d'and it would run the container in detached mode. (It's a new, undocumented option, that we're testing.)
 
 **How to get Rowans and use the DEX?** \
@@ -286,10 +286,10 @@ step 3 is then the install command
 * [https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706](https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706)
 
 **Error :- no required module provides package github.com/belitre/gotpl;** \
-&#x20;run` go get github.com/belitre/gotpl` in the root sifnode repo directory
+&#x20;run `go get github.com/belitre/gotpl` in the root sifnode repo directory
 
 **How to change moniker** \
-Run ` sifnodecli tx staking edit-validator --moniker`  . Also, moniker is  stored in `~/.sifnoded/config/config.toml`
+Run `sifnodecli tx staking edit-validator --moniker`  . Also, moniker is  stored in `~/.sifnoded/config/config.toml`
 
 **Instance deployed with 3 nodes running m5.2xlarge instances. Can this be changed?** \
 &#x20;You can set the setting the variable cluster\_size in the sifnode block. An t2.large should be enough. Also: If you're familiar with Terraform, you can change the instance\_type config option, in the sifchain block, in the file .live//main.tf (which will be where ever you cloned the repository to) and re-run Terraform to apply the changes (it will take your cluster down for \~15 minutes while it's re-sized, but this shouldn't be an issue with the recent changes to slashing we made)
@@ -324,10 +324,10 @@ Or this command inside the container- `sifnodecli keys add  -i --recover --keyri
 
 ## Error
 
-Problem on syncing: `sifnoded[..]: panic: Failed to process committed block ` `wrong Block.Header.AppHash. Expected .. `\
+Problem on syncing: `sifnoded[..]: panic: Failed to process committed block` `wrong Block.Header.AppHash. Expected ..` \
 &#x20;If you want to compile your own, then you need to checkout tags/mainnet-genesis. In addition to that, you'll need to download Cosmovisor and set that up to run sifnode [https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) Cosmovisor handles auto-upgrading. However note it's a non-standard approach to running a sifnode.
 
-**I imported locally and got an address and public key. The public key I got after the import is different then what's running in the container (i don't know if this matters). Now when i run the validator create cmd I get 'failed to get from fields: The specified item could not be found in the keyring' here is my cmd: ** `sifnodecli tx staking create-validator \ --commission-max-change-rate="0.1" \ --commission-max-rate="0.1" \ --commission-rate="0.1" \ --amount="1rowan" \ --pubkey=sif...\ (output of 'docker exec -it 825fde6c1e10 sifnoded tendermint show-validator' not output of rake keys:import[<**moniker>]) --moniker=<moniker> \ --chain-id=sifchain \ --min-self-delegation="1" \ --gas-prices="0.5rowan" \ --from=<moniker> \ --node tcp://<IP ADDRESS>:26657 <br>` You must use the public key generated by sifnoded tendermint show-validator Also, add `--keyring-backend=file` to the above command. The amount is also too low. It should be at least 1000000000000000000rowan as amounts are expressed with the of 1e18.
+**I imported locally and got an address and public key. The public key I got after the import is different then what's running in the container (i don't know if this matters). Now when i run the validator create cmd I get 'failed to get from fields: The specified item could not be found in the keyring' here is my cmd:** `sifnodecli tx staking create-validator \ --commission-max-change-rate="0.1" \ --commission-max-rate="0.1" \ --commission-rate="0.1" \ --amount="1rowan" \ --pubkey=sif...\ (output of 'docker exec -it 825fde6c1e10 sifnoded tendermint show-validator' not output of rake keys:import[<**moniker>]) --moniker=<moniker> \ --chain-id=sifchain \ --min-self-delegation="1" \ --gas-prices="0.5rowan" \ --from=<moniker> \ --node tcp://<IP ADDRESS>:26657 <br>` You must use the public key generated by sifnoded tendermint show-validator Also, add `--keyring-backend=file` to the above command. The amount is also too low. It should be at least 1000000000000000000rowan as amounts are expressed with the of 1e18.
 
 **I get an error when running this - ERROR: invalid Bech32 prefix; expected sifvaloper, got sifvalcons** \
 &#x20;You need to use the node operator address. you can get it from the explorer as you can see you provide the wrong address sifvalcons and sifnodecli is expecting sifvaloper you can go on your validator and get the operator address from there.
@@ -346,7 +346,7 @@ Problem on syncing: `sifnoded[..]: panic: Failed to process committed block ` `w
 ### Missing blocks:&#x20;
 
 1. Ensure that your validator is reachable on TCP ports 26656 and 26657, and that these ports are not blocked by your firewall.&#x20;
-2.  Update your `sifnode config.toml `(found in `/root/.sifnoded/config/config.toml `on the container) and set a value for external\_address, in the \[p2p] section.&#x20;
+2.  Update your `sifnode config.toml` (found in `/root/.sifnoded/config/config.toml` on the container) and set a value for external\_address, in the \[p2p] section.&#x20;
 
     For example, if your public IPv4 address is 1.2.3.4, then that line in the config would look like: external\_address = "1.2.3.4:26656"
 3. Or, move to AWS EKS (k8s). This is our preferred stack and as the network matures, there will be additional services you're going to have to run on your validators.

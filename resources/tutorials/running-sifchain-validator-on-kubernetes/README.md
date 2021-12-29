@@ -6,11 +6,11 @@ description: >-
 
 # Running Sifnode & Becoming a Validator
 
-## Prerequisites <a href="9cbf" id="9cbf"></a>
+## Prerequisites <a href="#9cbf" id="9cbf"></a>
 
 * Make sure your provisioned EC2 machine meets the following requirements:
   * **Hardware:**
-    * Minimum**: **4 vCPU, 16 GB RAM
+    * Minimum**:** 4 vCPU, 16 GB RAM
     * Recommended: 8 vCPU, 32 GB RAM
   * **Storage**:
     * Minimum: 500GB SSD
@@ -39,7 +39,7 @@ In order to acquire ROWAN you can:&#x20;
 
 Now that you have your node up and running and you have ROWAN to stake with, you must now execute the following command:
 
-* `sifnoded tx staking create-validator `
+* `sifnoded tx staking create-validator`&#x20;
   * In order to execute this command, there are several decisions that must be made in relation to your node. Some of these settings will not be editable after creation (pointed out below), so please be sure about the values you are setting:
     * **commission-max-change-rate \<max-rate-change>**
       * This is the most that you will be able to change your commission rate at a time. This value IS NOT editable after validator creation. Commission rates can be changed only once every 24 hours.
@@ -47,22 +47,22 @@ Now that you have your node up and running and you have ROWAN to stake with, you
       * This is the highest rate that your validator node will be able to charge. This value IS NOT editable after validator creation.
     * **commission-rate \<rate>**
       * This is the starting commission rate that your validator node will charge its delegators. This value IS editable after validator creation.
-    * **amount \<amount> **
+    * **amount \<amount>**&#x20;
       * This is the amount of your starting self-delegation. This can be both unbonded and added to later.
-    * **pubkey $(sifnoded tendermint show-validator) **
+    * **pubkey $(sifnoded tendermint show-validator)**&#x20;
       * This is the public validator key associated with your node.
     * **moniker \<moniker>**
       * This is the publicly viewable name of your node.
     * **chain-id \<chain-id>**
       * &#x20;This is the identifier of the network the node is connecting to.
-    * **min-self-delegation 1 **
+    * **min-self-delegation 1**&#x20;
       * This is the minimum number of tokens that the node must delegate to itself.
-    * **gas auto **
-      * ** **This is the amount of gas submitted for the create validator transaction.
-    * **from \<moniker> **
+    * **gas auto**&#x20;
+      * &#x20;**** This is the amount of gas submitted for the create validator transaction.
+    * **from \<moniker>**&#x20;
       * This is a reference to the signer of this transaction (your validator address/moniker).
     * **keyring-backend file**
       * This specifies the location of your node’s keyring.
-* Next, you can verify that this was executed correctly by running this command: `sifnoded query staking validator <validator-address> . `This will return information about your validator.
+* Next, you can verify that this was executed correctly by running this command: `sifnoded query staking validator <validator-address> .` This will return information about your validator.
 
 After you have setup your node and successfully staked it with ROWAN, you are now considered eligible to be a part of Sifchain's validator set. Please reference our [guide on being a Validator here for additional information](https://docs.sifchain.finance/roles/validators). \

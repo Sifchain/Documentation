@@ -47,9 +47,9 @@ IBC enables Sifchain users to export Cosmos-specific assets onto Ethereum and tr
 
 ### Continuous Liquidity Pools
 
-[**Liquidity pools**](https://www.investopedia.com/terms/l/liquidity.asp)** **enable you to buy or sell an asset for another asset on a crypto-currency exchange. Think of each liquidity pool as a mini-market within the larger market, ensuring reliability and expediency when you trade two different tokens.
+[**Liquidity pools**](https://www.investopedia.com/terms/l/liquidity.asp) **** enable you to buy or sell an asset for another asset on a crypto-currency exchange. Think of each liquidity pool as a mini-market within the larger market, ensuring reliability and expediency when you trade two different tokens.
 
-Liquidity pools are important in[ **decentralized finance (DeFi)**](https://www.coindesk.com/what-is-defi)** **— particularly decentralized exchanges (DEX). Because Sifchain is the world’s first omni-chain DEX, this technology is fundamental to our vision. We use something called a Continuous Liquidity Pool (CLP).
+Liquidity pools are important in[ **decentralized finance (DeFi)**](https://www.coindesk.com/what-is-defi) **** — particularly decentralized exchanges (DEX). Because Sifchain is the world’s first omni-chain DEX, this technology is fundamental to our vision. We use something called a Continuous Liquidity Pool (CLP).
 
 Centralized exchanges (e.g. Coinbase, New York Stock Exchange) use [**order books**](https://www.investopedia.com/terms/o/order-book.asp): marketplaces where buyers and sellers come together, respectively trying to buy at the lowest possible price and sell at the highest possible price.
 

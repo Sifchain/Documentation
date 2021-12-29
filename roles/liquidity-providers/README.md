@@ -12,7 +12,7 @@ If users are simply adding to an already existing liquidity pool, they may do so
 
 ## Why provide liquidity to a pool?
 
-Liquidity pools are important in[ **decentralized finance (DeFi)**](https://www.coindesk.com/what-is-defi)** **— particularly decentralized exchanges (DEX). Because Sifchain is the world’s first omni-chain DEX, this technology is fundamental to our vision.&#x20;
+Liquidity pools are important in[ **decentralized finance (DeFi)**](https://www.coindesk.com/what-is-defi) **** — particularly decentralized exchanges (DEX). Because Sifchain is the world’s first omni-chain DEX, this technology is fundamental to our vision.&#x20;
 
 Sifchain enables liquidity providers to add liquidity into pools where they can earn income without constraints endemic to other exchanges. Liquidity providers can deposit any token Sifchain supports to the appropriate pool. They can add liquidity asymmetrically, meaning they can add only Rowan or only TKN for any token.
 

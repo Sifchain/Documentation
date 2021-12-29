@@ -25,7 +25,7 @@ In order to be a validator in Sifchain, you must have a Sifchain wallet address.
 
 ### **Delegation**
 
-Any Sifchain user can delegate their tokens to any number of validators on the network. Delegating to a validator entitles the user to a share of that validator’s block rewards based on the commission rate (see below) set by the validator. Delegating to a validator does not give that validator direct control over the delegator’s funds. However, the delegator does assume the risk of being slashed (see below) if the validator misbehaves.** **
+Any Sifchain user can delegate their tokens to any number of validators on the network. Delegating to a validator entitles the user to a share of that validator’s block rewards based on the commission rate (see below) set by the validator. Delegating to a validator does not give that validator direct control over the delegator’s funds. However, the delegator does assume the risk of being slashed (see below) if the validator misbehaves. ****&#x20;
 
 When performing a delegation, we recommend you do due diligence on the following:
 
@@ -63,10 +63,10 @@ Validators committing a slashable offense will have their stake removed by a sla
 
 ### Future Additions
 
-* **Double Sign Slashing: **We plan to add functionality to slash validators for double sign infractions. The penalty for a double sign infraction will be a 5% slash of the offender’s stake and a permanent jail and tombstone. This means that the validator will be unable to ever rejoin the validator set.
-* **Inflationary Block Rewards: **Inflationary block rewards will be minted per block based on a schedule set by governance. These rewards will be added to and distributed by the same global reward pool as fee rewards.
+* **Double Sign Slashing:** We plan to add functionality to slash validators for double sign infractions. The penalty for a double sign infraction will be a 5% slash of the offender’s stake and a permanent jail and tombstone. This means that the validator will be unable to ever rejoin the validator set.
+* **Inflationary Block Rewards:** Inflationary block rewards will be minted per block based on a schedule set by governance. These rewards will be added to and distributed by the same global reward pool as fee rewards.
 * **Governance**: In the future, validators will be able to participate in governance proposals and votes that will alter the functionality of the chain.
-* **Dynamic Rebalancing Policy: **We plan to add a system that will dynamically rebalance rewards between the validator system outlined above and Sifchain’s liquidity pool system rewards. The goal of the policy is to prevent one system’s rewards from becoming more profitable than the other, which would over-incentivize users to participate in that system and lead to an imbalance in the chain.
+* **Dynamic Rebalancing Policy:** We plan to add a system that will dynamically rebalance rewards between the validator system outlined above and Sifchain’s liquidity pool system rewards. The goal of the policy is to prevent one system’s rewards from becoming more profitable than the other, which would over-incentivize users to participate in that system and lead to an imbalance in the chain.
 
 ## Validator Subsidy Rewards
 

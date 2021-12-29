@@ -35,6 +35,7 @@
   * [Running Sifnode & Becoming a Validator](resources/tutorials/running-sifchain-validator-on-kubernetes/README.md)
     * [Running Sifnode on Kubernetes](resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes.md)
     * [Running Sifnode on your Ubuntu server](resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server.md)
+  * [Submitting Support Tickets](resources/tutorials/submitting-support-tickets.md)
 * [Tokenomics](https://assets.website-files.com/60ec70152eafa8dd30cb2fb5/6100250b18eca84d2952ea0e\_sif\_tokenomics\_latex.pdf)
 * [Client SDK](resources/client-sdk.md)
 * [Block Explorers](resources/blockexplorers.md)

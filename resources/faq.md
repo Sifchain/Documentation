@@ -26,11 +26,11 @@ Here is a list of known exchanges that support ROWAN/eROWAN:
 ROWAN:
 
 * [Sifchain DEX](https://dex.sifchain.finance) — _live now_
-* __[_AscendEX_](https://ascendex.com/en/cashtrade-spottrading/usdt/rowan)_ - live now_
+* __[_AscendEX_](https://ascendex.com/en/cashtrade-spottrading/usdt/rowan) _- live now_
 
 eROWAN:
 
-* [QuickSwap: QUICK <> eROWAN](https://info.quickswap.exchange/pair/0x631f39d22430e889a3cfbea4fd73ed101059075f)** **- _live now_
+* [QuickSwap: QUICK <> eROWAN](https://info.quickswap.exchange/pair/0x631f39d22430e889a3cfbea4fd73ed101059075f) **** - _live now_
 * [QuickSwap: ATOM <> eROWAN](https://info.quickswap.exchange/pair/0x7051810a53030171f01d89e9aebd8a599de1b530) - _live now_
 * [QuickSwap: REGEN <> eROWAN](https://info.quickswap.exchange/pair/0x66c37a00e426a613b188180198aac12b0b4ae4d4) - _live now_
 * [QuickSwap: AKT <> eROWAN](https://info.quickswap.exchange/pair/0xa651ef83fa6a90e76206de4e79a5c69f80994556) - _live now_

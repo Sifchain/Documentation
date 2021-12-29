@@ -30,7 +30,7 @@ When performing a delegation, we recommend you do due diligence on the following
 
 Below contains a list of commands that you can use to get this information.
 
-## **How to Delegate **
+## **How to Delegate**&#x20;
 
 The delegation process is the same for both validators and delegators; whereas a validator delegating to itself is called a self-delegation. Follow the below steps when executing a delegation:
 
@@ -47,7 +47,7 @@ The delegation process is the same for both validators and delegators; whereas a
 
 
 * If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
-  1. `rake "keys:generate:mnemonic" `- This will generate a mnemonic for you.
+  1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
      1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
   2. Take this generated key and run: `rake "keys:import[<moniker>]"`
      1. This will give you your newly generate Sifchain address.

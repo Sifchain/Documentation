@@ -25,21 +25,21 @@ description: This contains a summarized list of all relevant CLI commands for de
   * The validators in this list with the status '2' means they are in the top 100.
 * Execute a new delegation: `sifnoded tx staking delegate <validator-address> <amount> --from <address>`
 * See the status of a previous delegation: `sifnoded query staking delegation <delegator-address> <validator-address>`
-* See a list of all delegations associated with your address:** **`sifnoded query staking delegations <delegator-address>`
+* See a list of all delegations associated with your address: **** `sifnoded query staking delegations <delegator-address>`
 
 ## **Rewards**
 
 ### **View**
 
 * Delegators can view their unclaimed rewards with the following commands:&#x20;
-  * `sifnoded query distribution rewards <delegator-address> `
+  * `sifnoded query distribution rewards <delegator-address>`&#x20;
   * `sifnoded query distribution rewards <delegator-address> <validator-address>`
     * The first command will show all rewards for the specified delegator. The second will show only delegation rewards from the specified validator.
 
 ### Withdraw
 
 * Rewards must be claimed manually. The following command will withdraw rewards from a delegation to the specified validator:
-  * `sifnoded tx distribution withdraw-rewards <validator-address> --from <address> `
+  * `sifnoded tx distribution withdraw-rewards <validator-address> --from <address>`&#x20;
 * Delegators can also withdraw **all** outstanding rewards from **all** of their delegations with the following command:
   * `sifnoded tx distribution withdraw-all-rewards --from <address>`
 * By default, reward withdrawals will be sent to the source address. This default can be modified with the following command:
@@ -50,7 +50,7 @@ description: This contains a summarized list of all relevant CLI commands for de
 If you want to unbond an existing delegation, you can follow the below steps:
 
 * 1\) Submit an unbond transaction:
-  * `sifnoded tx staking unbond <validator-address> <amount> --from <address> `
+  * `sifnoded tx staking unbond <validator-address> <amount> --from <address>`&#x20;
     * Specify the validator you want to unbond from, the amount to unbond, and your delegator address. If the validator is currently in the active validator set and not jailed, successful submission of this transaction will put the specified amount of the delegation into an unbonding period. The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address.
   * 2\) Check the status of an existing unbond transaction:
     * `sifnoded query staking unbonding-delegation <delegator-address> <validator-address>`
