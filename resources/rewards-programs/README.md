@@ -38,7 +38,7 @@ description: >-
 **Sif's Expansion Dates**
 
 * Phase 1: 11/22 - 12/21
-* Phase 2: 12/21 - 1/18
+* Phase 2: 12/21 - 1/17
 
 ## Ongoing Programs
 
