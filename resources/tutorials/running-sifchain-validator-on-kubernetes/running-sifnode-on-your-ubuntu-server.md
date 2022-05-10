@@ -8,7 +8,7 @@ description: >-
 
 ## Network and Node Setup
 
-Please refer to this [link](https://github.com/Sifchain/sifchain-validators/blob/master/docs/setup.md) for the most up to date and accurate directions on how to finish this setup.
+Please refer to this [link](https://github.com/Sifchain/sifchain-validators/blob/master/docs/nodes/setup/standalone/manual.md) for the most up to date and accurate directions on how to finish this setup.
 
 ## Stake your Node:
 
