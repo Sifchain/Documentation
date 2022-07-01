@@ -114,6 +114,8 @@ In comparison, Thorchain’s incentive pendulum uses a scalar to define the rati
 
 ## Liquidity Pools Resources <a href="#liquidity-pools-architecture" id="liquidity-pools-architecture"></a>
 
-While the general Liquidity Pools architecture [documentation can be found here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md), Sifchain is constantly innovating by releasing new cryptoeconomics feature. For further information on how [PMTP](https://docs.sifchain.finance/project/pmtp) release affects Liquidity Pools, please make sure to check  the [PMTP technical specs](https://hackmd.io/vrCeYGvURZio4yWc-ChYzA).\
+While the general Liquidity Pools architecture [documentation can be found here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md), Sifchain is constantly innovating by releasing new cryptoeconomics feature.\
+\
+For further information on how [PMTP](https://docs.sifchain.finance/project/pmtp) release affects Liquidity Pools, please make sure to check  the [PMTP technical specs](https://hackmd.io/vrCeYGvURZio4yWc-ChYzA).\
 \
 If you are interested on the technical details, make sure to [check the implementation](https://github.com/Sifchain/sifnode/blob/cff2ed4cfdd55f84d296b5e46d7b63dfa55768e3/x/clp/keeper/calculations.go#L283-L289)
