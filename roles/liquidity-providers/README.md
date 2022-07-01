@@ -8,7 +8,7 @@ The LPs are then compensated with swap fees and system rewards. Compensation is 
 
 Liquidity providers are able to deposit any token Sifchain supports to the appropriate pool. Anyone can create a liquidity pool by pooling ROWAN and a new token into a pool initialization transaction. The price of the new token is set based on the amount of ROWAN pooled. Sifchain enforces a minimum LP size but multiple depositors can contribute to the creation of a single LP.
 
-If users are simply adding to an already existing liquidity pool, they may do so asymmetrically. This means users can add either ROWAN or the token (TKN) the pool comprises of. This is as opposed to Uniswap where users must add equal values of the settlement token (ETH/UNI) and the other token (TKN).  Liquidity providers are able to add or remove liquidity whenever they choose. Please refer to our [Documentation on Liquidity Pools ](https://docs.sifchain.finance/using-the-website/pool/sifchain-liquidity-pools)for additional details around these concepts.
+If users are simply adding to an already existing liquidity pool, they may do so asymmetrically. This means users can add either ROWAN or the token (TKN) the pool comprises of. This is as opposed to Uniswap where users must add equal values of the settlement token (ETH/UNI) and the other token (TKN).  Liquidity providers are able to add or remove liquidity whenever they choose. Please refer to our [Core Concept Documentation on Liquidity Pools ](https://docs.sifchain.finance/core-concepts/liquidity-pool)for additional details around these concepts.
 
 ## Why provide liquidity to a pool?
 
@@ -16,13 +16,13 @@ Liquidity pools are important in[ **decentralized finance (DeFi)**](https://www.
 
 Sifchain enables liquidity providers to add liquidity into pools where they can earn income without constraints endemic to other exchanges. Liquidity providers can deposit any token Sifchain supports to the appropriate pool. They can add liquidity asymmetrically, meaning they can add only Rowan or only TKN for any token.
 
-Sifchain rewards users who provide liquidity with various forms of income. To learn more about what types of income you can expect to earn as a liquidity provider, please reference [here](https://docs.sifchain.finance/using-the-website/pool/sifchain-liquidity-pools).
+Sifchain rewards users who provide liquidity with various forms of income. To learn more about what types of income you can expect to earn as a liquidity provider, please reference [here](https://docs.sifchain.finance/core-concepts/liquidity-pool).
 
 ## Pooler Liquidity Mining Rewards
 
-Sifchain runs liquidity mining rewards program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+Sifchain will run a 12-week pooler liquidity mining rewards program for poolers, in order to incentivize early adopters. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
-To learn more about rewards programs, reference our docs [here](https://docs.sifchain.finance/using-the-website/rewards-sifs-ascension).
+To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02).
 
 ## Liquidity Provider Fees
 
@@ -70,4 +70,4 @@ There are a few ways you can remove liquidity to a pool:
 
 * 1\) Sifchain-DEX-UI: You can use our user-friendly portal to remove liquidity at any time. Please refer to our [Sifchain-DEX-UI Resource](https://docs.sifchain.finance/resources/sifchain-dex-ui) for clear instructions on how to perform these actions.
 * 2\) Manually by running commands.&#x20;
-  * Please refer to the [Liquidity Provider CLI Commands](https://docs.sifchain.finance/command-line-interface/liquidity-provider-cli-commands) page for additional information.&#x20;
+  * Please refer to the [Liquidity Provider CLI Commands](https://docs.sifchain.finance/roles/liquidity-providers/liquidity-provider-cli-commands) page for additional information.&#x20;

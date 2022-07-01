@@ -8,14 +8,13 @@ description: >-
 
 ## **Validators, Delegators, and Staking**
 
-This covers a functional overview of being a validator in the Sifchain Network. For technical help and CLI commands relating to these processes, please reference our [Validator CLI Commands page](https://docs.sifchain.finance/roles/validators/validator-cli-commands).&#x20;
+This covers a functional overview of being a validator in the Sifchain Network. For technical help and CLI commands relating to these processes, please reference our [Validator CLI Commands page](https://docs.sifchain.finance/command-line-interface/validator-cli-commands).&#x20;
 
 ### **Becoming a Validator in the Sifchain network**
 
-To become a validator in the Sifchain network, please refer to our tutorials linked below. These will guide you through the steps of setting up the Sifnode network and setting up your node.
+To become a validator in the Sifchain network, please refer to our tutorial linked below. This will guide you through the steps of setting up the Sifnode network and setting up your node.
 
-* [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-your-ubuntu-server)(EC2/Digital Ocean or local)
-* [Running Sifnode on Kubernetes ](https://docs.sifchain.finance/resources/tutorials/running-sifchain-validator-on-kubernetes/running-sifnode-on-kubernetes)(**recommended**)
+* [Running Sifnode on your Ubuntu server ](https://docs.sifchain.finance/developers/tutorials/setup-standalone-validator-node-manually)(EC2/Digital Ocean or local)
 
 ### **Validator Set**
 
@@ -36,8 +35,6 @@ When performing a delegation, we recommend you do due diligence on the following
    3. Maximum Commission Rate Change - This is the maximum daily increase possible. For example, if this is set to 5% then the most a node validator can change their rate by in a single 24 hour period is 5%.
 3. The top 100 node validator list and their staked/delegated amounts. It's important to do this because you want the node you are delegating to, to be a part of the network to ensure you are also earning rewards.
 4. We recommend that you continuously monitor your delegation and the node validators that you have delegated to.
-
-Please reference our [guide on Delegation here](https://docs.sifchain.finance/roles/delegators) for additional information.
 
 ### **Fees**
 
@@ -70,6 +67,6 @@ Validators committing a slashable offense will have their stake removed by a sla
 
 ## Validator Subsidy Rewards
 
-Sifchain will run a **12-week** validator subsidy program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
+Sifchain is running a validator subsidy program for validators to incentivize early adoption. Rewards are subject to change based on evaluations of the network from the Sifchain core team, community feedback, and governance over time.
 
-To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here](https://medium.com/sifchain-finance/uses-for-rowan-the-polyvalent-token-for-omni-chain-decentralized-exchange-dex-3207e7f70f02).
+To learn more about this program and what you can expect to earn as part of this program, reference our announcement article [here](https://docs.sifchain.finance/using-the-website/rewards-sifs-ascension).
