@@ -43,19 +43,9 @@ The delegation process is the same for both validators and delegators; whereas a
 ### Ways to Delegate &#x20;
 
 * Go to the [Keplr Dashboard](https://wallet.keplr.app/#/dashboard), select Sifchain on the left hand side navigation bar, and click 'Stake'. This will take you to the list of validators in our network. Click on the 'manage' link beside any of them you are interested in delegating to (or managing your existing delegations with). From here you can manage your delegations accordingly.
+* Have a look at the Delegator CLI commands page for all relevant commands that can be run in order to execute and manage a delegation.
 
-
-
-* If running on K8s, Use [ruby](https://www.ruby-lang.org/en/documentation/installation/) to run the below two commands:
-  1. `rake "keys:generate:mnemonic"` - This will generate a mnemonic for you.
-     1. **Important:** write this mnemonic phrase in a safe place. It is the only way to recover your account if you ever forget your password.
-  2. Take this generated key and run: `rake "keys:import[<moniker>]"`
-     1. This will give you your newly generate Sifchain address.
-  3. If running locally, run Command `sifnoded keys add <name>`.  This command will give you your: address, public key, and mnemonic phrase.&#x20;
-
-You can now reference the Delegator CLI commands page for all relevant commands that can be run in order to execute a delegation.
-
-After you have successfully submitted a delegation, you now have the below actions that you are eligible to do:
+After you have successfully submitted a delegation there are several actions that you are able to do:
 
 * **Claim your earned Rewards**: Rewards must be claimed manually.
 * **Unbond your delegation:** If the validator is currently in the active validator set and not jailed, successful submission of this transaction will put the specified amount of the delegation into an unbonding period. The unbonding period is currently set to 21 days, during which time the tokens will not be usable and will still be susceptible to slashing. After the unbonding period the tokens will be fully released to the source address.
