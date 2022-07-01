@@ -6,7 +6,7 @@ description: >-
 
 # Sifchain Liquidity Pools
 
-A liquidity pool is a primitive for many decentralized cryptocurrency trading platforms including [Uniswap](https://docs.ethhub.io/guides/graphical-guide-for-understanding-uniswap), [Sushiswap](https://boxmining.com/sushi/), [Balancer](https://docs.balancer.finance/getting-started/faq#balancer-pools), Mooniswap (from 1inch), MCDEX, [Thorchain](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools), Perpetual Protocol, [Curve](https://www.curve.fi/stableswap-paper.pdf), [Bancor](https://support.bancor.network/hc/en-us/articles/360000472072-What-Are-Bancor-Liquidity-Pools-#:\~:text=Liquidity%20pools%20perform%20autonomous%2C%20peer,holding%20its%20%E2%80%9Cpool%20token%E2%80%9D.%29) and more. Centralized exchanges have even created a liquidity pool swap program because the returns are so lucrative.‌
+A liquidity pool is a primitive for many decentralized cryptocurrency trading platforms including [Uniswap](https://docs.ethhub.io/guides/graphical-guide-for-understanding-uniswap), [Sushiswap](https://boxmining.com/sushi/), [Balancer](https://docs.balancer.finance/getting-started/faq#balancer-pools), Mooniswap (from 1inch), MCDEX, [Thorchain](https://docs.thorchain.org/how-it-works/continuous-liquidity-pools), Perpetual Protocol, [Curve](https://www.curve.fi/stableswap-paper.pdf), [Bancor](https://support.bancor.network/hc/en-us/articles/360000472072-What-Are-Bancor-Liquidity-Pools-) and more. Centralized exchanges have even created a liquidity pool swap program because the returns are so lucrative.‌
 
 Sifchain's liquidity pools are based on Sushiswap with extensibility in mind for potential updates. Rowan will be the settlement token for each pool, meaning each pool will contain Rowan as one asset and an external asset as the other. Sifchain’s swap UI will support swaps between external assets (for example, cMKR:cCOMP) but such transactions will actually require two swaps between two different liquidity pools (for example, cMKR:ROWAN and then ROWAN:cCOMP).‌
 
@@ -14,7 +14,7 @@ Liquidity providers will be able to add liquidity into Sifchain’s liquidity po
 
 Sifchain allows swappers to send a transaction to a liquidity pool with the amount of tokens they want to give up in exchange for tokens on the other side of the pool. Sifchain uses both an order book and a CLP for trade completion.‌
 
-## Asymmetric Liquidity Pool‌ <a href="asymmetric-liquidity-pool" id="asymmetric-liquidity-pool"></a>
+## Asymmetric Liquidity Pool‌ <a href="#asymmetric-liquidity-pool" id="asymmetric-liquidity-pool"></a>
 
 In many decentralized exchanges, users can add liquidity to liquidity pools and earn a portion of the transaction fees charged to other users who want to swap tokens in the pool. The constraint that most liquidity pools put on liquidity providers is that they must put in an equal value of each token pair. For example, in the ETH/DAI liquidity pool in Uniswap, a user is required to add 2.64 ETH for every 1,000 DAI that is added at the time of this writing. And then based on the amount the user puts into the pool, they then receive a proportionate amount of the fees charged.‌
 
@@ -112,6 +112,8 @@ In comparison, Thorchain’s incentive pendulum uses a scalar to define the rati
 
 ![](<../.gitbook/assets/Screen Shot 2021-01-20 at 12.08.55 PM.png>)
 
-## Liquidity Pools Architecture‌ <a href="liquidity-pools-architecture" id="liquidity-pools-architecture"></a>
+## Liquidity Pools Resources <a href="#liquidity-pools-architecture" id="liquidity-pools-architecture"></a>
 
-For additional information on our Liquidity Pool Architecture, please refer to our [documentation here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md).
+While the general Liquidity Pools architecture [documentation can be found here](https://github.com/Sifchain/sifnode/blob/develop/docs/clp/Liquidity%20Pools%20Architecture.md), Sifchain is constantly innovating by releasing new cryptoeconomics feature. For further information on how [PMTP](https://docs.sifchain.finance/project/pmtp) release affects Liquidity Pools, please make sure to check  the [PMTP technical specs](https://hackmd.io/vrCeYGvURZio4yWc-ChYzA).\
+\
+If you are interested on the technical details, make sure to [check the implementation](https://github.com/Sifchain/sifnode/blob/cff2ed4cfdd55f84d296b5e46d7b63dfa55768e3/x/clp/keeper/calculations.go#L283-L289)
