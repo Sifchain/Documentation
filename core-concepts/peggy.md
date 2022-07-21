@@ -24,12 +24,16 @@ An Ethereum user can send tokens from their Ethereum wallet to a Peggy smart con
 
 At maturity, Sifchain will utilize IBC and use a Peggy deployment with a separate peg-zone blockchain in which Peggy-specific validators stake collateral specifically used to secure the bridge. These peg-zone validators are subject to slashing as per Tendermint consensus rules on both the Cosmos SDK peg zone chain and the Ethereum smart contract side of that bridge. This solves crypto-economic security issues on the bridge. In exchange for being subject to this new slashing requirement, validators will earn a service rate.
 
-At BetaNet launch, Sifchain's initial Peggy design will be slightly different than this due to the immaturity of IBC. At BetaNet launch, Peggy and Sifnode will co-exist together within Sifnode. This allows Sifchain to support cross-chain transfers, adding & removing of liquidity, and token swaps from day 1 without the reliance on IBC. Once IBC has matured and is production-ready, we will shift to this model to realize its scalability benefits.
+At BetaNet launch, Sifchain's initial Peggy design will be slightly different than this due to the immaturity of IBC. At BetaNet launch, Peggy and Sifnode will co-exist together within Sifnode. This allows Sifchain to support cross-chain transfers, adding & removing of liquidity, and token swaps from day 1 without the reliance on IBC. Once IBC has matured and is production-ready, we will shift to this model to realize its scalability benefits.\
+\
 
-Find additional details about Peggy's architecture here:
+
+Find additional details about current Peggy's architecture here:
 
 * [Peggy Architecture with IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture.md)
-* [Peggy Architecture without IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture-no-ibc.md) \
+* [Peggy Architecture without IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture-no-ibc.md)&#x20;
+
+\
 
 
 ## Peggy 2.0
