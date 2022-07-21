@@ -26,7 +26,13 @@ At maturity, Sifchain will utilize IBC and use a Peggy deployment with a separat
 
 At BetaNet launch, Sifchain's initial Peggy design will be slightly different than this due to the immaturity of IBC. At BetaNet launch, Peggy and Sifnode will co-exist together within Sifnode. This allows Sifchain to support cross-chain transfers, adding & removing of liquidity, and token swaps from day 1 without the reliance on IBC. Once IBC has matured and is production-ready, we will shift to this model to realize its scalability benefits.
 
-Find additional details about Peggy's architecture here.
+Find additional details about Peggy's architecture here:
 
 * [Peggy Architecture with IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture.md)
-* [Peggy Architecture without IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture-no-ibc.md)&#x20;
+* [Peggy Architecture without IBC](https://github.com/Sifchain/peggy/blob/develop/docs/sifchain-peggy-architecture-no-ibc.md) \
+
+
+## Peggy 2.0
+
+Sifchain is actively working on the next iteration of the Peggy bridge, called [Peggy 2.0](https://peggy.sifchain.finance/#/) !\
+Peggy 2.0 is designed to increase its scalability and being able to handle import and exports across different chains. Peggy 2.0 is sometimes called the Omni-EVM bridge, as it is very straightforward to tune it in order to integrate all the EVM chains. Regardless of the easiness to integrate EVM chains, Peggy 2.0's architecture is designed to handle every chain
