@@ -18,11 +18,11 @@ description: Join the Sifchain community
 
 &#x20;[GitHub](https://github.com/Sifchain)
 
-[Website](https://sifchain.finance)
+[Website](https://sifchain.finance/)
 
 ### Local Language Channels
 
-[Chinese Medium](https://sifchainasia.medium.com)
+[Chinese Medium](https://sifchainasia.medium.com/)
 
 [Chinese Telegram](https://t.me/sifchainchinese)
 

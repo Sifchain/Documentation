@@ -30,6 +30,7 @@
 ## Resources
 
 * [Tutorials](resources/tutorials/README.md)
+  * [Margin](resources/tutorials/margin.md)
   * [Peggy Tutorial](resources/tutorials/peggy-tutorial.md)
   * [Peggy ethBridge Tutorial](resources/tutorials/peggy-ethbridge-tutorial.md)
   * [Running Sifnode & Becoming a Validator](resources/tutorials/running-sifchain-validator-on-kubernetes/README.md)

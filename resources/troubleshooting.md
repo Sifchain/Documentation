@@ -179,7 +179,7 @@ You can launch: `sifnodecli tx staking edit-validator --commission-rate 1 --from
 
 **How can i change the logo of my validator?**
 
-&#x20;1\. Set up an identity here: [https://keybase.io/](https://keybase.io) .&#x20;
+&#x20;1\. Set up an identity here: [https://keybase.io/](https://keybase.io/) .&#x20;
 
 2\. Edit your validator providing the key base key of your identity with the flag `—identity="XXXXXXXX".` You can also write a description and link it to your webpage, for example: `sifnodecli tx staking edit-validator and --website="your_website" plus --details="your_description" --identity="XXXXXXXX"`
 
@@ -294,7 +294,7 @@ Run `sifnodecli tx staking edit-validator --moniker`  . Also, moniker is  stored
 **Instance deployed with 3 nodes running m5.2xlarge instances. Can this be changed?** \
 &#x20;You can set the setting the variable cluster\_size in the sifnode block. An t2.large should be enough. Also: If you're familiar with Terraform, you can change the instance\_type config option, in the sifchain block, in the file .live//main.tf (which will be where ever you cloned the repository to) and re-run Terraform to apply the changes (it will take your cluster down for \~15 minutes while it's re-sized, but this shouldn't be an issue with the recent changes to slashing we made)
 
-**`Enter keyring passphrase: ERROR: ABCIQuery: Post failed:` Post "**[http://localhost:26657/](http://localhost:26657)**": dial tcp :26657: connect: connection refused'** \
+**`Enter keyring passphrase: ERROR: ABCIQuery: Post failed:` Post "**[http://localhost:26657/](http://localhost:26657/)**": dial tcp :26657: connect: connection refused'** \
 &#x20;Add the flag: `--node tcp://<IP Address>:26657`
 
 **ERROR: unknown address: Account does not exist** \

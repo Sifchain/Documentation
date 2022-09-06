@@ -8,7 +8,7 @@ _This tutorial assumes that you have at least a basic understanding of setting u
 
 **What is Kubernetes? (k8s)**
 
-[Kubernetes](https://kubernetes.io) is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available. Overall costs will depend largely on your final setup.
+[Kubernetes](https://kubernetes.io/) is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available. Overall costs will depend largely on your final setup.
 
 **Install Dependencies:**
 
