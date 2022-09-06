@@ -137,6 +137,6 @@
 ### How to check the Profitability of a Position
 
 * Once you click the Close button to close a position, you can see data regarding the position
-* Trade PnL shows you how profitable (or unprofitable)![](../../.gitbook/assets/4.png)
+* Trade PnL shows you how profitable (or unprofitable)
 
-Margin Metrics Walkthrough
+![](../../.gitbook/assets/4.png)
