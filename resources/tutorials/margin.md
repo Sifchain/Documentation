@@ -56,11 +56,11 @@
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00.png" alt=""><figcaption></figcaption></figure>
 
 *   **Choose** the Pool you want to trade on:
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00 (1).png" alt=""><figcaption></figcaption></figure>
 * Now you can **check** the different Pool Metrics:
 * **Pool’s Health**: Pool’s Health is a way to monitor how much value is being borrowed from the pool and compare it to the value of assets of the pool. When capital is borrowed by the users from the pool, the pool assumes liabilities. When the pool has few liabilities, the health percentage will be high and close to the maximum (100%)
 
@@ -134,6 +134,9 @@
 
 ![](https://lh3.googleusercontent.com/kMgtFQyLelr6menp6h2TWpQtZerZ8C7jfdwsGWcVs0OxqSFknR20X5RL\_P6zfHj5RRuSP3FamESlm3ItqAxDjd5P7SeVoRejCczhHKzg9xnGCZcmdl9zAjW4vEcSDYqqG0qP2YcjXp2dgLNufhAtgAU)
 
-How to check the Profitability of a Position
+### How to check the Profitability of a Position
+
+* Once you click the Close button to close a position, you can see data regarding the position
+* Trade PnL shows you how profitable (or unprofitable)![](../../.gitbook/assets/4.png)
 
 Margin Metrics Walkthrough
