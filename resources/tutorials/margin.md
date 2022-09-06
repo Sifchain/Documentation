@@ -50,10 +50,18 @@
 
 
 
-### **How to check Pool's Data**
+### **How to check Pool's Metrics**
 
-****
+* Go to **Trade** tab
 
+&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00 (1).png" alt=""><figcaption></figcaption></figure>
+
+*   **Choose** the Pool you want to trade on:
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00.png" alt=""><figcaption></figcaption></figure>
+* Now you can **check** the different Pool Metrics:
 * **Pool’s Health**: Pool’s Health is a way to monitor how much value is being borrowed from the pool and compare it to the value of assets of the pool. When capital is borrowed by the users from the pool, the pool assumes liabilities. When the pool has few liabilities, the health percentage will be high and close to the maximum (100%)
 
 <figure><img src="https://lh6.googleusercontent.com/LkRSSH4beMN41my2cRrNZjVi2mK9n2HbK0gNH3pfMD1BFwf7UTAc_f_IjUe5QOHiLlATqeYga9I1kwoAe_3YM-HSQ98nd_KemIAcZXOzwJ6TuYbppbJJH3-Hm0y1LJkgtQI1KN9aeKtzvX0pJ_7lEe0IofFNwG96murStVysp1Z9ViT2NP1Iy_9kaw" alt=""><figcaption></figcaption></figure>
