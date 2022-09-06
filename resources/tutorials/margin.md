@@ -1,6 +1,6 @@
 # Margin
 
-### Access Margin:&#x20;
+## How to Access Margin:&#x20;
 
 * Apply by filling out [this form ](https://docs.google.com/forms/d/e/1FAIpQLSeaPvWCa4ANlYUmf3hFeHr44O2tBhjaB4LmHPlaYFICjN0u3Q/viewform)
 * Go to [https://sifchain-margin.vercel.app/margin?tab=trade Connect Wallet](https://sifchain-margin.vercel.app/margin?tab=trade)
@@ -16,7 +16,7 @@
 
 ![](https://lh5.googleusercontent.com/i9pzTLiBiWL\_n0ZGJyNLIT-ChZ8lVeDcaN57eTOxd96EWCGFFYZ-NMtV1Gvg2BN5jQap-S2QoQy1C-ZFrF-TbpKK7VAlK8PgbZlWwQrGZj9usGwaQc9iSqHJuwtEboFt0k00zgGDXXkFphm8k2dYdeQkJ3csGkZcizOXNxyXhm29eCTKdoT2WI\_QJQ)
 
-### How To Open a Position&#x20;
+## How To Open a Position&#x20;
 
 * Open the **Trade Tab** Select the Pool you want to open a position in&#x20;
 
@@ -50,7 +50,9 @@
 
 
 
-### **How to check Pool's Metrics**
+## **How to check Pool's Metrics**
+
+### **Choose a Pool**
 
 * Go to **Trade** tab
 
@@ -61,30 +63,40 @@
 *   **Choose** the Pool you want to trade on:
 
     <figure><img src="../../.gitbook/assets/Screenshot 2022-09-06 at 14.53.00 (1).png" alt=""><figcaption></figcaption></figure>
-* Now you can **check** the different Pool Metrics:
-* **Pool’s Health**: Pool’s Health is a way to monitor how much value is being borrowed from the pool and compare it to the value of assets of the pool. When capital is borrowed by the users from the pool, the pool assumes liabilities. When the pool has few liabilities, the health percentage will be high and close to the maximum (100%)
+
+### **How to Check** **Pool's Metrics**:
+
+#### ****
+
+#### **Pool’s Health**
+
+Pool’s Health is a way to monitor how much value is being borrowed from the pool and compare it to the value of assets of the pool. When capital is borrowed by the users from the pool, the pool assumes liabilities. When the pool has few liabilities, the health percentage will be high and close to the maximum (100%)
 
 <figure><img src="https://lh6.googleusercontent.com/LkRSSH4beMN41my2cRrNZjVi2mK9n2HbK0gNH3pfMD1BFwf7UTAc_f_IjUe5QOHiLlATqeYga9I1kwoAe_3YM-HSQ98nd_KemIAcZXOzwJ6TuYbppbJJH3-Hm0y1LJkgtQI1KN9aeKtzvX0pJ_7lEe0IofFNwG96murStVysp1Z9ViT2NP1Iy_9kaw" alt=""><figcaption></figcaption></figure>
 
-* **Liquidation Threshold LR** is a parameter that tells you, for that pool, when your position will be liquidated. When you are “losing” on a trade, the value of your Collateral may reach the point in which it is not enough to pay for the Capital you borrowed. Before this happens, the protocol itself will liquidate you, in order to avoid other users doing it. This way, any potential gain from a liquidation is distributed to the liquidity pool, rather than being gained from a single Liquidator. So be sure that your Liquidation Ratio never reaches the Liquidation Threshold (by adding more collateral or closing the position)
+#### **Liquidation Threshold LR**&#x20;
+
+is a parameter that tells you, for that pool, when your position will be liquidated. When you are “losing” on a trade, the value of your Collateral may reach the point in which it is not enough to pay for the Capital you borrowed. Before this happens, the protocol itself will liquidate you, in order to avoid other users doing it. This way, any potential gain from a liquidation is distributed to the liquidity pool, rather than being gained from a single Liquidator. So be sure that your Liquidation Ratio never reaches the Liquidation Threshold (by adding more collateral or closing the position)
 
 <figure><img src="https://lh4.googleusercontent.com/U34O_CDkK0MexnGNM8TuqrgO2CNCCFz78j4G9aK8nwkoQzdISzDjnK5r_H4o_w6VZyufjfuBLHEPmW30pbqwfN2peLS5-RRBS1GaGKXdU2xHW3VI-i0oKtdwIM7i_NBFPXDzWnJC6ba6MnqsjRv9PvSyxNKV6EThruPj35_zzNV-PPJuwRWPZzmTsw" alt=""><figcaption></figcaption></figure>
 
-* **Interest Rate** is the price you are paying on a per-block basis to the Liquidity Providers for the borrowed capital. When Interest Rates are higher, the pool discourages borrowing. The cost you pay for Interests will affect your PnL negatively, and it is beneficial for LPs (as they get rewarded for providing liquidity)
+#### **Interest Rate**
+
+Interest Rate is the price you are paying on a per-block basis to the Liquidity Providers for the borrowed capital. When Interest Rates are higher, the pool discourages borrowing. The cost you pay for Interests will affect your PnL negatively, and it is beneficial for LPs (as they get rewarded for providing liquidity)
 
 <figure><img src="https://lh3.googleusercontent.com/PrcIu0jmSX2NTFsLs2zaH0w1h5yF-lsyP5jwhqmFuF6qB7v16-PcK70o1-owGd4O0vhk_mq0JGnkW3Ic0wJz_rFhD3S_7Rl4RW3Dee-t8Kd_87N3Usw5LwsF2NjlK2Pmq0ga-5iEzBpBszqKN9ttJGjLnar0c307EaFQ0N2xcTYH--wFOLvJudON5A" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://lh3.googleusercontent.com/gFCFXMgN7KJWZYObX0xsQDUFKYvldEnD6SkRAa53gbhhdWcvuEUXU3jPyMR5RdNvF_tUevO_5L4YzNzoEY7YQo08PYv-EZP4JdCrtVNUdLfq-pkpt5e5Ps7K5D2z6fO-W1oVG5Rt146aNswbeLQc0IWxH9kpZnu4xTTA55VrSxmmUWNzmgB6fF1-tw" alt=""><figcaption></figcaption></figure>
 
-### How to check your Positions
+## How to check Positions' data
 
 * Open the **Positions tab**
 
-
-
 <figure><img src="https://lh4.googleusercontent.com/qqKFTUMW7p21TE0hnw3GT-aEXDShIgZdM8USVehG3eXKSQ3Gbfb_sM0YJ-zAdUn4oaQRc2d4rNXWnkz5PxnQZr2dPlk9uXPmn15JL1LltdT_XL17zvxEXELgMYssSLz_hfSdfmVr00K84wpr6l1MuOM_s3m3D2KXOpvubQfthF97QOaG9JL-ovpeJw" alt=""><figcaption></figcaption></figure>
 
-* **Date** (year/month/day): the time on which you opened the position
+### **General Position Data:**
+
+**Date** (year/month/day): the time on which you opened the position
 
 <figure><img src="https://lh5.googleusercontent.com/xwBBbuEKs8Jh8d5oL377Mm0PuX8jphnA6k7JsYsQLB-m48NV72eQ1__hfcW7TG4vDgiTRwAmbdtq-lpRGmoH2COz-7KBbp1ZpQlmwrqp5zOlx4d0sEC7KRKGGs103R6wreGmm1JQQ8bluUM4edndleLPoTyux2CFUuhe-Q2GISaFHNOy52OaXP7W7A" alt=""><figcaption></figcaption></figure>
 
@@ -104,27 +116,37 @@
 
 <figure><img src="https://lh6.googleusercontent.com/8vOnLFMPHXgecWEuEkpxamMvfd6T_pxzHwvecAwqvnVA5gHh0BG7_ENDUwSC1eMxS5V2z7VjqLdSCp45q08WOJHTFM_tkL2B5meLv2KYjLwIfYj_q33O372k80Ap2cwkKAC12O37rGhormS2ZvqBK9yp7Mzn1MeVuLFbHuKA4oTR5FKm647Z3sarYQ" alt=""><figcaption></figcaption></figure>
 
-* **NPV**: Net Present Value is the value of your position (calculated from the spot prices for each asset). It does not represent the amount you receive if you close the position
-
-<figure><img src="https://lh3.googleusercontent.com/omt99yUJWT0Kra3AOG42yikBAANCM8fIOmsg0BlrBoEYhSYapXdu3IlSat1jOKhi0mY9P4PLuGZ-s3mdj2qU_WNPR8KuKuH4TEnV3j8oAX8FWYui9puL90bW9ZjPlEf895THroQbdAEJWndtcG3jJ1QAgIe4WIk7OWWLNXwWBmw79p465w8g1I0SPw" alt=""><figcaption></figcaption></figure>
-
-* **Interest Rate**: This is the amount you pay to LPs on a per-block basis. As you are borrowing assets from the Pool, you are charged an Interest Fee to maintain your loan. Interest Rate depends on the pool
-
-<figure><img src="https://lh3.googleusercontent.com/pU_OIFbFZoK5LTyMm5SPTFAb_UfFiCpW5TXiKbS7RkYXoPFNq2nrfj4nKE2Yc5MenzPY2-9flRLVDtPfXMBF3kDl72jWbC-xWVmvHXeBl3B0MvfytxFgxX0JjXZNaZE6DX6N38KOi0HrQt-bouAaSxc" alt=""><figcaption></figcaption></figure>
-
-* **Paid Interest**: this is the amount you paid as Interest to the LPs. It is the results from the number of blocks on which your position has been open, and the Interest rate (which is applied on a block basis)
-
-<figure><img src="https://lh3.googleusercontent.com/kRAy0ZqVyf9_5zybapcSt82LxGMoSERn9vXSpgkNFf4YTvFVm4-_s8N80XGvfYvcnYZivd-tbR3LA20zohsT8JoiDjjaAvYVRqHySAwvdRSf6SgQN29lPWHmCdYi9pUHthUWbIIJjwggITZcUPDBkBQ" alt=""><figcaption></figcaption></figure>
-
-* **Liquidation Ratio:** LR is a very important parameter, as it tells you how close you are to a Liquidation. When the LR reaches the Liquidation Threshold (LT), your position gets liquidated. Make sure to monitor the Liquidation Ratio of your positions, so that you can add more collateral when needed (or close the position)
-
-<figure><img src="https://lh4.googleusercontent.com/DCUU-l9D6qzdLrEI1GGkZMqLX00sLqZEwCkLDXLtzF5TdAxebhxS8cy9GpeyK5ORKijhu2pHrpEXRk1flAUvaB3BguG4DnRmZbkt3LEqDaWd-5PRw6hZkS3Gvm0Db3xsKL0_Kba92xs3axeOwgu74ys" alt=""><figcaption></figcaption></figure>
-
-* **Duration**: The total time on which your position has been opened
+**Duration**: The total time on which your position has been opened
 
 <figure><img src="https://lh5.googleusercontent.com/zA5Tw5RQGGpMnFmEIY4VKniWYOVM0lYlSSr8dr7ZSpA2ZDjDWO1jUlSq1qs2tsMA4AZ01S4Awl8PrTMhC7RzSkwWB7p1LduZcCsNaUraw_RvaC8kytxyP1rISmL_LGutVjS81uDe4jz3vSKKRA78ijk3XH0O7DIKno64gtbI8cHSjOFQsr2zckjxWA" alt=""><figcaption></figcaption></figure>
 
-### How to Close a Position
+### **Margin Metrics**
+
+#### **NPV**:&#x20;
+
+Net Present Value is the value of your position (calculated from the spot prices for each asset). It does not represent the amount you receive if you close the position
+
+<figure><img src="https://lh3.googleusercontent.com/omt99yUJWT0Kra3AOG42yikBAANCM8fIOmsg0BlrBoEYhSYapXdu3IlSat1jOKhi0mY9P4PLuGZ-s3mdj2qU_WNPR8KuKuH4TEnV3j8oAX8FWYui9puL90bW9ZjPlEf895THroQbdAEJWndtcG3jJ1QAgIe4WIk7OWWLNXwWBmw79p465w8g1I0SPw" alt=""><figcaption></figcaption></figure>
+
+#### **Interest Rate**
+
+This is the amount you pay to LPs on a per-block basis. As you are borrowing assets from the Pool, you are charged an Interest Fee to maintain your loan. Interest Rate depends on the pool
+
+<figure><img src="https://lh3.googleusercontent.com/pU_OIFbFZoK5LTyMm5SPTFAb_UfFiCpW5TXiKbS7RkYXoPFNq2nrfj4nKE2Yc5MenzPY2-9flRLVDtPfXMBF3kDl72jWbC-xWVmvHXeBl3B0MvfytxFgxX0JjXZNaZE6DX6N38KOi0HrQt-bouAaSxc" alt=""><figcaption></figcaption></figure>
+
+#### **Paid Interest**
+
+Paid Interest is the amount you paid as Interest to the LPs. It is the results from the number of blocks on which your position has been open, and the Interest rate (which is applied on a block basis)
+
+<figure><img src="https://lh3.googleusercontent.com/kRAy0ZqVyf9_5zybapcSt82LxGMoSERn9vXSpgkNFf4YTvFVm4-_s8N80XGvfYvcnYZivd-tbR3LA20zohsT8JoiDjjaAvYVRqHySAwvdRSf6SgQN29lPWHmCdYi9pUHthUWbIIJjwggITZcUPDBkBQ" alt=""><figcaption></figcaption></figure>
+
+#### **Liquidation Ratio**
+
+LR is a very important parameter, as it tells you how close you are to a Liquidation. When the LR reaches the Liquidation Threshold (LT), your position gets liquidated. Make sure to monitor the Liquidation Ratio of your positions, so that you can add more collateral when needed (or close the position)
+
+<figure><img src="https://lh4.googleusercontent.com/DCUU-l9D6qzdLrEI1GGkZMqLX00sLqZEwCkLDXLtzF5TdAxebhxS8cy9GpeyK5ORKijhu2pHrpEXRk1flAUvaB3BguG4DnRmZbkt3LEqDaWd-5PRw6hZkS3Gvm0Db3xsKL0_Kba92xs3axeOwgu74ys" alt=""><figcaption></figcaption></figure>
+
+## How to Close a Position
 
 * Go to the Positions tab, and click “**Close**”
 
@@ -134,9 +156,25 @@
 
 ![](https://lh3.googleusercontent.com/kMgtFQyLelr6menp6h2TWpQtZerZ8C7jfdwsGWcVs0OxqSFknR20X5RL\_P6zfHj5RRuSP3FamESlm3ItqAxDjd5P7SeVoRejCczhHKzg9xnGCZcmdl9zAjW4vEcSDYqqG0qP2YcjXp2dgLNufhAtgAU)
 
-### How to check the Profitability of a Position
+## How to check the Profitability of a Position
 
 * Once you click the Close button to close a position, you can see data regarding the position
 * Trade PnL shows you how profitable (or unprofitable)
 
 ![](../../.gitbook/assets/4.png)
+
+
+
+## How to check your Position's health
+
+As mentioned before, it is important to continuously monitor your Position's health status. They way you can do it is by looking at the[ Liquidation Threshold](margin.md#liquidation-threshold-lr) for a specific Pool, and monitoring your [Liquidation Ratio](margin.md#liquidation-ratio). When the Liquidation Ratio approaches to the Liquidation Threshold, your Position will be liquidated and your Collateral is lost, and paid to the LPs. This protocol-enforced Liquidation is a way to avoid singular actors to gain from specific Liquidations, distributing value across the Liquidity Providers.
+
+* To check the pool's **Liquidation Threshold**, open the Trade Tab
+
+<figure><img src="https://lh4.googleusercontent.com/U34O_CDkK0MexnGNM8TuqrgO2CNCCFz78j4G9aK8nwkoQzdISzDjnK5r_H4o_w6VZyufjfuBLHEPmW30pbqwfN2peLS5-RRBS1GaGKXdU2xHW3VI-i0oKtdwIM7i_NBFPXDzWnJC6ba6MnqsjRv9PvSyxNKV6EThruPj35_zzNV-PPJuwRWPZzmTsw" alt=""><figcaption></figcaption></figure>
+
+* To check the **Liquidation Ratio** for your position, open the Positions Tab:&#x20;
+
+<figure><img src="https://lh4.googleusercontent.com/DCUU-l9D6qzdLrEI1GGkZMqLX00sLqZEwCkLDXLtzF5TdAxebhxS8cy9GpeyK5ORKijhu2pHrpEXRk1flAUvaB3BguG4DnRmZbkt3LEqDaWd-5PRw6hZkS3Gvm0Db3xsKL0_Kba92xs3axeOwgu74ys" alt=""><figcaption></figcaption></figure>
+
+* ****
