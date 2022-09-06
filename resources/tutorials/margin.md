@@ -176,5 +176,3 @@ As mentioned before, it is important to continuously monitor your Position's hea
 * To check the **Liquidation Ratio** for your position, open the Positions Tab:&#x20;
 
 <figure><img src="https://lh4.googleusercontent.com/DCUU-l9D6qzdLrEI1GGkZMqLX00sLqZEwCkLDXLtzF5TdAxebhxS8cy9GpeyK5ORKijhu2pHrpEXRk1flAUvaB3BguG4DnRmZbkt3LEqDaWd-5PRw6hZkS3Gvm0Db3xsKL0_Kba92xs3axeOwgu74ys" alt=""><figcaption></figcaption></figure>
-
-* ****
