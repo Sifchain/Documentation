@@ -84,7 +84,7 @@ After connecting your Keplr and MetaMask wallets, you are now ready to move asse
 
 ![](<../.gitbook/assets/Screen Shot 2021-08-02 at 1.04.12 PM.png>)
 
-* This balances tab will show you a list of ALL allowable tokens to be imported into Sifchain. If you do not see a token you are desiring to import, please reach out to the Sifchain team on [Discord](https://discord.gg/bGxWngDAvw). &#x20;
+* This balances tab will show you a list of ALL allowable tokens to be imported into Sifchain. If you do not see a token you are desiring to import, please reach out to the Sifchain team on [Discord](https://discord.gg/sifchain-769209144515100693). &#x20;
 * Within this balances tab, you can see your associated Sifchain token balances with each of the tokens. This represents the amount of that token a user has **already** imported into Sifchain.
 * Click on the 'Import' button next to the token you want to move into Sifchain. This will bring you to the next screen:
 

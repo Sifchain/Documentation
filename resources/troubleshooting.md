@@ -29,7 +29,7 @@ description: FAQ and troubleshooting on validators
 &#x20;([https://docs.sifchain.finance/roles/validators#future-additions](https://docs.sifchain.finance/roles/validators#future-additions)).
 
 **How to increase the stake to my validator?** \
-**** You can use the [Delegator CLI commands](https://docs.sifchain.finance/roles/delegators/delegator-cli-commands) to delegate additional ROWAN to your validator
+&#x20;You can use the [Delegator CLI commands](https://docs.sifchain.finance/roles/delegators/delegator-cli-commands) to delegate additional ROWAN to your validator
 
 **I can't create a validator because the validator address exists. How can I change the validator address? Or do I need to recreate the account?** \
 &#x20;You need to delegate more funds to the validator with the `sifnodecli tx staking delegate` command
@@ -217,7 +217,7 @@ step 3 is then the install command
 **I have Rowan at my Keplr wallet, how do I transfer it to the validator wallet ?** \
 &#x20;Once you have the address for the wallet you simply do a send transaction from within Keplr. You can also import the wallet into keplr.
 
-**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`**` ``` \
+**Is there any way to change commission-max-rate or commission-max-change-rate after the validator is created? I noticed there are no options for this in `sifnodecli tx staking edit-validator`** \
 &#x20;You can pass docker compose flags to your instance....for example, you could provide a flag of '-d'and it would run the container in detached mode. (It's a new, undocumented option, that we're testing.)
 
 **How to get Rowans and use the DEX?** \
@@ -279,10 +279,8 @@ step 3 is then the install command
 * Check if you have enough ROWAN to pay the fees
 * Increase the Gas Limit
 
-**Is Thorchain a Sifchain competitor? What are the differences between Thorchain and Sifchain?** \
+**Is Thorchain a Sifchain competitor? What are the differences between Thorchain and Sifchain?**&#x20;
 
-
-* [https://discord.com/channels/769209144515100693/775951939426320414/827838067426852874](https://discord.com/channels/769209144515100693/775951939426320414/827838067426852874)
 * [https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706](https://medium.com/sifchain-finance/key-differences-sifchain-thorchain-db6c47127706)
 
 **Error :- no required module provides package github.com/belitre/gotpl;** \

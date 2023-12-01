@@ -16,7 +16,7 @@ Our goal for this program is to put daily active user count on an exponential gr
 
 1. Liquidity Providers will have _no_ lockup period
 2. Claim rewards at any time (Payouts for claims made weekly on Fridays)
-3. LPs will expect a highly-competitive APY percentage
+3. fLPs will expect a highly-competitive APY percentage
 4. All pools are eligible
 5. The LM program will run for six (6) weeks
 
@@ -126,7 +126,7 @@ During Sif's Fields of Gold, there will be several side competitions, named 'Bat
   * To: Top 10
   * When: TBD
 
-If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/5gy5BtkWsc)
+If you want to sponsor a pool with additional rewards, please reach out to sif\_moon#4486 on [Discord](https://discord.gg/sifchain-769209144515100693).
 
 #### Livestream Information
 
