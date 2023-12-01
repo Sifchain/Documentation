@@ -12,7 +12,7 @@ description: Join the Sifchain community
 
 [Medium](https://medium.com/sifchain-finance)
 
-[Discord](https://discord.gg/sifchain)
+[Discord](https://discord.gg/sifchain-769209144515100693)
 
 [YouTube](https://www.youtube.com/channel/UCybJH9xaQx0cemM9\_S8ZInA)
 
